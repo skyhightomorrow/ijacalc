@@ -54,10 +54,11 @@ const NAV = (active, base) => `
   </nav>
   </div>`;
 
-const FOOTER = `
+const FOOTER = (base = "") => `
   <footer>
     출처: 금융감독원 금융상품통합비교공시 「금융상품한눈에」, 저축은행중앙회 소비자포털 · 금리는 수시로 변동될 수 있으며 실제 가입 조건은 각 금융회사에서 확인하세요.<br>
-    본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.
+    본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.<br>
+    <a href="${base}about.html">사이트 소개</a> · <a href="${base}privacy.html">개인정보처리방침</a>
   </footer>`;
 
 function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, active = "" }) {
@@ -84,7 +85,7 @@ ${extraHead}
   </div>
 ${NAV(active, base)}
 ${body}
-${FOOTER}
+${FOOTER(base)}
 </div>
 </body>
 </html>`;
@@ -514,10 +515,68 @@ function buildListPages() {
   }
 }
 
+// ---------- 소개 / 개인정보처리방침 ----------
+function buildInfoPages() {
+  const CONTACT = "skyhightomorrow@gmail.com";
+
+  fs.writeFileSync(
+    path.join(PUB, "about.html"),
+    layout({
+      title: "사이트 소개 | 이자계산기 (ijacalc.com)",
+      desc: "이자계산기는 금융감독원·저축은행중앙회 공시 데이터를 매일 수집해 파킹통장·예적금 금리를 비교하고 세후 이자를 계산해주는 정보 서비스입니다.",
+      canonicalPath: "/about.html",
+      body: `
+  <div class="hero"><h1>사이트 <span class="em">소개</span></h1></div>
+  <div class="prose">
+    <p><b>이자계산기(ijacalc.com)</b>는 "오늘 돈을 넣으면 언제, 얼마의 이자를 받을 수 있는지"를
+    가장 쉽게 알려드리기 위해 만든 금리 정보 서비스입니다.</p>
+    <p style="margin-top:12px"><b>데이터는 이렇게 만들어집니다.</b></p>
+    <ul style="margin:8px 0 0 20px; line-height:1.9">
+      <li>금융감독원 금융상품통합비교공시 「금융상품한눈에」 오픈API — 정기예금·적금·대출 공시</li>
+      <li>저축은행중앙회 소비자포털 — 입출금자유예금(파킹통장) 공시</li>
+      <li>매일 새벽 자동으로 수집·갱신되며, 각 상품에 금리 기준일을 표시합니다</li>
+    </ul>
+    <p style="margin-top:12px"><b>계산 기준.</b> 모든 이자는 이자소득세 15.4%(소득세 14% + 지방소득세 1.4%)를
+    차감한 세후 금액으로, 단리 기준으로 계산합니다. 상품별 우대조건·한도(예: "1억원 이하")는 계산에 자동 반영됩니다.</p>
+    <p style="margin-top:12px"><b>알려드립니다.</b> 본 사이트는 정보 제공 목적의 서비스로,
+    금융상품을 판매·중개하지 않으며 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.
+    금리는 수시로 변동될 수 있으므로 실제 가입 전 반드시 해당 금융회사의 공식 페이지에서 확인하세요.</p>
+    <p style="margin-top:12px"><b>문의.</b> 데이터 오류 제보나 제휴 문의는 <a href="mailto:${CONTACT}">${CONTACT}</a>로 보내주세요.</p>
+  </div>`,
+    })
+  );
+
+  fs.writeFileSync(
+    path.join(PUB, "privacy.html"),
+    layout({
+      title: "개인정보처리방침 | 이자계산기 (ijacalc.com)",
+      desc: "이자계산기(ijacalc.com)의 개인정보처리방침입니다.",
+      canonicalPath: "/privacy.html",
+      body: `
+  <div class="hero"><h1>개인정보<span class="em">처리방침</span></h1><p>시행일: 2026년 7월 11일</p></div>
+  <div class="prose">
+    <p><b>1. 수집하는 개인정보.</b> 이자계산기(ijacalc.com)는 회원가입 없이 이용하는 서비스로,
+    이름·이메일·전화번호 등 개인 식별 정보를 수집하지 않습니다.</p>
+    <p style="margin-top:12px"><b>2. 브라우저에 저장되는 정보.</b> 계산기에 입력한 금액은 이용 편의를 위해
+    이용자의 기기(브라우저 localStorage)에만 저장되며, 서버로 전송되거나 수집되지 않습니다.</p>
+    <p style="margin-top:12px"><b>3. 자동으로 수집되는 정보.</b> 서비스 운영을 위해 호스팅 사업자(Cloudflare)가
+    접속 IP, 브라우저 정보, 방문 일시 등을 표준 서버 로그로 처리할 수 있습니다. 이는 보안 및 트래픽 관리 목적으로만 사용됩니다.</p>
+    <p style="margin-top:12px"><b>4. 광고 및 쿠키.</b> 본 사이트는 Google AdSense 광고를 게재할 수 있습니다.
+    Google을 포함한 제3자 광고 사업자는 쿠키를 사용하여 이용자의 이전 방문 기록에 기반한 맞춤 광고를 표시할 수 있습니다.
+    이용자는 <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google 광고 설정</a>에서 맞춤 광고를 해제하거나,
+    <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a>에서 제3자 광고 쿠키 사용을 거부할 수 있습니다.</p>
+    <p style="margin-top:12px"><b>5. 개인정보의 제3자 제공.</b> 본 사이트는 이용자의 개인정보를 수집하지 않으므로 제3자에게 제공하지 않습니다.</p>
+    <p style="margin-top:12px"><b>6. 문의처.</b> 개인정보 관련 문의: <a href="mailto:${CONTACT}">${CONTACT}</a></p>
+    <p style="margin-top:12px"><b>7. 변경 고지.</b> 본 방침이 변경되는 경우 이 페이지를 통해 고지합니다.</p>
+  </div>`,
+    })
+  );
+}
+
 // ---------- sitemap / robots ----------
 function buildSitemap(slugs) {
   const today = DATA.builtAt.slice(0, 10);
-  const urls = ["/", "/calculator.html", "/new.html", "/rates.html", "/loans.html", ...slugs.map((s) => `/p/${encodeURIComponent(s)}.html`)];
+  const urls = ["/", "/calculator.html", "/new.html", "/rates.html", "/loans.html", "/about.html", "/privacy.html", ...slugs.map((s) => `/p/${encodeURIComponent(s)}.html`)];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${ORIGIN}${u}</loc><lastmod>${today}</lastmod></url>`).join("\n")}
@@ -530,5 +589,6 @@ buildIndex();
 buildCalculator();
 const slugs = buildProductPages();
 buildListPages();
+buildInfoPages();
 buildSitemap(slugs);
 console.log(`페이지 생성 완료: index + 계산기 + rates/loans/new + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
