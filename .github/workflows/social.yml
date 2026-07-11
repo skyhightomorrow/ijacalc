@@ -1,0 +1,25 @@
+# 매일 아침 8시(KST) 스레드에 오늘의 파킹통장 TOP3 포스팅
+# 새벽 5:30 daily-update가 갱신한 data.json을 사용한다.
+# THREADS_USER_ID / THREADS_ACCESS_TOKEN 시크릿이 없으면 드라이런으로 끝난다.
+name: social-post
+
+on:
+  schedule:
+    - cron: "0 23 * * *" # UTC 23:00 = KST 08:00
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Post daily TOP3 to Threads
+        run: node scripts/post-social.js
+        env:
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
