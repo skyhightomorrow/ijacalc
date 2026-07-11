@@ -17,6 +17,15 @@ const DATA = JSON.parse(fs.readFileSync(path.join(PUB, "data.json"), "utf8"));
 const AMT = 10000000; // 1,000만원 기준
 const SITE = "https://ijacalc.com";
 
+// 옆에서 가볍게 말 거는 톤의 오프닝 — 날마다 돌아가며 써서 봇 티를 줄인다
+const HOOKS = [
+  "통장에 애매하게 남는 돈 있으면\n그냥 두지 말고 파킹통장에 넣어둬요.\n하루만 맡겨도 이자 붙어서, 최소 밥값은 나와요 🍚",
+  "월급 들어오고 아직 안 쓴 돈,\n그냥 통장에 두면 이자 거의 0원이에요.\n파킹통장에 잠깐 옮겨두면 하루치라도 챙겨요.",
+  "비상금이나 어디 넣기 애매한 돈,\n파킹통장에 두면 매일 이자가 붙어요.\n같이 가볍게 굴려봐요 🙂",
+  "은행에 그냥 둔 목돈, 하루에 이자 얼마 붙는지 아세요?\n파킹통장으로 옮기면 밥 한 끼 값은 나와요.",
+  "노는 돈은 하루라도 놀리면 아까워요.\n파킹통장은 넣고 빼는 것도 자유라 부담 없어요.",
+];
+
 function composePost() {
   const top = DATA.parking
     .filter((p) => p.instant)
@@ -28,6 +37,9 @@ function composePost() {
 
   const kst = new Date(Date.now() + 9 * 3600 * 1000);
   const dateStr = `${kst.getUTCMonth() + 1}월 ${kst.getUTCDate()}일`;
+  // 연중 일수로 오프닝을 순환 (결정적 — 같은 날은 항상 같은 문구)
+  const dayOfYear = Math.floor((kst - new Date(Date.UTC(kst.getUTCFullYear(), 0, 0))) / 86400000);
+  const hook = HOOKS[dayOfYear % HOOKS.length];
   const medals = ["🥇", "🥈", "🥉"];
 
   const lines = top.map(({ p, calc }, i) =>
@@ -35,15 +47,16 @@ function composePost() {
   );
 
   return [
-    `📊 오늘의 파킹통장 TOP3 (${dateStr})`,
+    hook,
     ``,
-    `1,000만원 기준 · 세후 하루 이자`,
+    `📌 오늘의 파킹통장 TOP3 (${dateStr})`,
+    `1,000만원 넣으면 세후 하루 이자`,
     ``,
     lines.join("\n"),
     ``,
-    `내 금액으로 계산 + 전체 순위 👉 ${SITE}`,
+    `내 금액으론 얼마인지 여기서 계산 👉 ${SITE}`,
     ``,
-    `#파킹통장 #금리비교 #재테크 #이자계산기`,
+    `#파킹통장 #짠테크 #재테크`,
   ].join("\n");
 }
 
