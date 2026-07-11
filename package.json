@@ -1,0 +1,13 @@
+{
+  "name": "rate-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "매일 이자 주는 파킹통장 + 신규 예적금 상품 트래커",
+  "scripts": {
+    "fetch": "node scripts/fetch-finlife.js",
+    "fetch:parking": "node scripts/fetch-parking.js",
+    "build": "node scripts/build-site-data.js && node scripts/build-pages.js",
+    "daily": "node scripts/fetch-finlife.js && node scripts/fetch-parking.js && node scripts/build-site-data.js && node scripts/build-pages.js",
+    "start": "node server.js"
+  }
+}

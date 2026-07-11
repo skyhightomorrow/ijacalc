@@ -1,0 +1,76 @@
+{
+  "_comment": "저축은행중앙회 공시에 없는 은행권(인터넷은행 등) 파킹통장 수동 큐레이션. 금리는 asOf 기준이며 needsVerify=true 항목은 공식 페이지 재확인 필요.",
+  "asOf": "2026-07-11",
+  "products": [
+    {
+      "bank": "토스뱅크",
+      "product": "토스뱅크 통장",
+      "baseRate": 2,
+      "maxRate": 2,
+      "maxRateCondition": "잔액 1억원 이하",
+      "payout": "수시지급",
+      "timing": "내일 '지금 이자 받기'로 수령 (매일 1회, 안 누르면 매월 1일 자동)",
+      "group": "인터넷은행",
+      "sourceUrl": "https://www.tossbank.com/product-service/savings/account",
+      "needsVerify": true,
+      "appAndroid": "viva.republica.toss",
+      "appIos": "839333328"
+    },
+    {
+      "bank": "토스뱅크",
+      "product": "나눠모으기 통장",
+      "baseRate": 1.4,
+      "maxRate": 1.4,
+      "maxRateCondition": "한도 공식 페이지 확인",
+      "payout": "매일 자동",
+      "timing": "내일 아침 자동 입금 — 누를 필요도 없음",
+      "group": "인터넷은행",
+      "sourceUrl": "https://www.tossbank.com/articles/sleeping-wealth-account",
+      "needsVerify": true,
+      "appAndroid": "viva.republica.toss",
+      "appIos": "839333328"
+    },
+    {
+      "bank": "카카오뱅크",
+      "product": "세이프박스",
+      "baseRate": 1.6,
+      "maxRate": 1.6,
+      "maxRateCondition": "최대 1억원",
+      "payout": "수시지급",
+      "timing": "내일 앱에서 '이자 바로 받기'로 수령",
+      "group": "인터넷은행",
+      "sourceUrl": "https://www.kakaobank.com/products/safeboxes",
+      "needsVerify": true,
+      "appAndroid": "com.kakaobank.channel",
+      "appIos": "1258016944"
+    },
+    {
+      "bank": "케이뱅크",
+      "product": "플러스박스",
+      "baseRate": 2.2,
+      "maxRate": 2.2,
+      "maxRateCondition": "한도 및 우대조건 공식 페이지 확인",
+      "payout": "수시지급",
+      "timing": "내일 앱에서 '바로 이자 받기'로 수령",
+      "group": "인터넷은행",
+      "sourceUrl": "https://www.kbanknow.com/",
+      "needsVerify": true,
+      "appAndroid": "com.kbankwith.smartbank",
+      "appIos": "1178872627"
+    },
+    {
+      "bank": "SBI저축은행",
+      "product": "사이다뱅크 입출금통장",
+      "baseRate": 3,
+      "maxRate": 3,
+      "maxRateCondition": "잔액 1억원 이하 구간",
+      "payout": "수시지급",
+      "timing": "내일 앱에서 '이자 바로 지급'으로 수령",
+      "group": "저축은행",
+      "sourceUrl": "https://www.sbisb.co.kr/",
+      "needsVerify": true,
+      "appAndroid": "com.sbi.saidabank",
+      "appIos": "1460544457"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이자계산기 — 예금·적금·파킹통장 세후 이자 계산 | ijacalc</title>
+<meta name="description" content="예금 이자계산기, 적금 이자계산기, 파킹통장 하루 이자계산기. 이자소득세 15.4%를 차감한 세후 실수령 이자를 바로 계산하고, 오늘 금리가 가장 높은 상품도 확인하세요.">
+<link rel="canonical" href="https://ijacalc.com/calculator.html">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"이자계산기","applicationCategory":"FinanceApplication","description":"예금·적금·파킹통장 세후 이자 계산기. 이자소득세 15.4% 자동 차감.","offers":{"@type":"Offer","price":"0"}}</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="logo" href="./">이자<b>계산기</b></a>
+    <div class="top-right">
+      <span class="date">7월 11일 업데이트</span>
+      <a class="loan-btn" href="loans.html">🏛️ 금감원 대출공시 조회</a>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+  <nav class="tabs">
+    <a href="./" class="">바로 이자</a>
+    <a href="calculator.html" class="active">계산기</a>
+    <a href="new.html" class="">신상품</a>
+    <a href="rates.html" class="">예·적금</a>
+  </nav>
+  </div>
+
+  <div class="hero">
+    <h1>이자계산기<br><span class="em">세후 이자</span>를 바로 계산하세요</h1>
+    <p>예금·적금·파킹통장 이자를 이자소득세 15.4% 차감한 실수령 기준으로 계산해드려요.</p>
+  </div>
+
+  <div class="calc" id="calc-form">
+    <nav class="tabs" style="margin-bottom:10px">
+      <a href="#" data-mode="deposit" class="active">예금 (목돈 맡기기)</a>
+      <a href="#" data-mode="saving">적금 (매달 붓기)</a>
+      <a href="#" data-mode="parking">파킹 (하루 단위)</a>
+    </nav>
+    <label id="lb-principal" for="principal">맡길 금액</label>
+    <div class="inputline">
+      <input id="principal" type="text" value="10,000,000" inputmode="numeric">
+      <span class="won">원</span>
+    </div>
+    <label for="rate" style="margin-top:10px">연 이율 (%)</label>
+    <div class="inputline">
+      <input id="rate" type="text" value="3.0" inputmode="decimal">
+      <span class="won">%</span>
+    </div>
+    <label for="term" style="margin-top:10px" id="lb-term">기간 (개월)</label>
+    <div class="inputline">
+      <input id="term" type="text" value="12" inputmode="numeric">
+      <span class="won" id="term-unit">개월</span>
+    </div>
+    <div class="hint">단리 기준 · 이자소득세 15.4% 자동 차감</div>
+  </div>
+
+  <div class="summary" id="calc-result">
+    <div class="row"><span class="k">세전 이자</span><span class="v" id="r-gross">-</span></div>
+    <div class="row"><span class="k">이자소득세 (15.4%)</span><span class="v" id="r-tax">-</span></div>
+    <div class="row"><span class="k">세후 이자</span><span class="v hl" id="r-net">-</span></div>
+    <div class="row"><span class="k">총 수령액</span><span class="v" id="r-total">-</span></div>
+  </div>
+
+  <p class="prose" id="calc-note"></p>
+
+  <h2 class="sec">지금 금리가 가장 높은 곳 <small>매일 갱신</small></h2>
+  <div class="related">
+    <a href="p/%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">예가람저축은행 E-RUN플러스 파킹통장<span class="r-rate">연 3.50%</span></a><a href="p/%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">고려저축은행 보고파플러스 파킹통장<span class="r-rate">연 3.50%</span></a><a href="p/%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EB%A9%A4%EB%B2%84%EC%8B%AD-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">예가람저축은행 The프리미엄 멤버십 파킹통장<span class="r-rate">연 3.31%</span></a>
+    <a href="rates.html">HB저축은행 e-회전정기예금<span class="r-rate">연 4.51%</span></a><a href="rates.html">HB저축은행 스마트회전정기예금<span class="r-rate">연 4.51%</span></a><a href="rates.html">바로저축은행 스마트정기예금(인터넷)<span class="r-rate">연 4.50%</span></a>
+  </div>
+
+  <script src="render-card.js"></script>
+  <script>
+    (function () {
+    var AMT_KEY = "ijacalc_amount";
+    function loadAmt(def) {
+      try { var v = parseInt(localStorage.getItem(AMT_KEY), 10); return v > 0 ? v : def; } catch (e) { return def; }
+    }
+    function saveAmt(v) { try { if (v > 0) localStorage.setItem(AMT_KEY, String(v)); } catch (e) {} }
+      var mode = "deposit";
+      var $ = function (id) { return document.getElementById(id); };
+      var TAX = 0.154;
+
+      function num(v) { return parseFloat(String(v).replace(/[^0-9.]/g, "")) || 0; }
+
+      $("principal").value = fmt(loadAmt(10000000));
+
+      function calc() {
+        var P = num($("principal").value);
+        var r = num($("rate").value) / 100;
+        var n = num($("term").value);
+        var gross = 0, note = "";
+        if (mode === "deposit") {
+          gross = P * r * (n / 12);
+          note = "목돈 " + fmt(P) + "원을 연 " + (r * 100).toFixed(2) + "%에 " + n + "개월 맡기는 정기예금 단리 기준입니다.";
+        } else if (mode === "saving") {
+          gross = P * r * (n * (n + 1) / 2) / 12;
+          note = "매달 " + fmt(P) + "원씩 " + n + "개월 붓는 적금 단리 기준입니다. 첫 달 납입금은 " + n + "개월치, 마지막 달은 1개월치 이자가 붙어요.";
+        } else {
+          gross = P * r * (n / 365);
+          note = fmt(P) + "원을 " + n + "일 동안 파킹통장에 두는 경우입니다. 자정 잔액 기준으로 매일 계산돼요.";
+        }
+        var tax = gross * TAX;
+        var net = gross - tax;
+        $("r-gross").textContent = fmt(Math.round(gross)) + "원";
+        $("r-tax").textContent = "-" + fmt(Math.round(tax)) + "원";
+        $("r-net").textContent = fmt(Math.round(net)) + "원";
+        $("r-total").textContent = fmt(Math.round((mode === "saving" ? P * n : P) + net)) + "원";
+        $("calc-note").textContent = note;
+      }
+
+      document.querySelectorAll("#calc-form nav.tabs a").forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelectorAll("#calc-form nav.tabs a").forEach(function (b) { b.classList.remove("active"); });
+          a.classList.add("active");
+          mode = a.dataset.mode;
+          $("lb-principal").textContent = mode === "saving" ? "매달 넣을 금액" : "맡길 금액";
+          $("lb-term").textContent = mode === "parking" ? "기간 (일)" : "기간 (개월)";
+          $("term-unit").textContent = mode === "parking" ? "일" : "개월";
+          $("term").value = mode === "parking" ? "30" : "12";
+          calc();
+        });
+      });
+
+      ["principal", "rate", "term"].forEach(function (id) {
+        $(id).addEventListener("input", function () {
+          if (id === "principal") {
+            var v = num($(id).value);
+            $(id).value = v ? fmt(v) : "";
+            if (mode !== "saving") saveAmt(v); // 월 납입액은 여유자금과 다르므로 저장 제외
+          }
+          calc();
+        });
+      });
+
+      calc();
+    })();
+  </script>
+
+  <footer>
+    출처: 금융감독원 금융상품통합비교공시 「금융상품한눈에」, 저축은행중앙회 소비자포털 · 금리는 수시로 변동될 수 있으며 실제 가입 조건은 각 금융회사에서 확인하세요.<br>
+    본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.
+  </footer>
+</div>
+</body>
+</html>

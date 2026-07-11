@@ -1,0 +1,34 @@
+# 매일 새벽 5:30 (KST) 금리 데이터 수집 + 페이지 재생성 + 커밋
+# 커밋되면 Cloudflare Pages가 자동으로 재배포한다.
+name: daily-update
+
+on:
+  schedule:
+    - cron: "30 20 * * *" # UTC 20:30 = KST 05:30
+  workflow_dispatch: # 수동 실행 버튼
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Collect data & build pages
+        run: npm run daily
+        env:
+          FINLIFE_API_KEY: ${{ secrets.FINLIFE_API_KEY }}
+          SITE_ORIGIN: https://ijacalc.com
+
+      - name: Commit & push
+        run: |
+          git config user.name "ijacalc-bot"
+          git config user.email "actions@ijacalc.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "daily update $(date -u +%Y-%m-%d)"
+          git push

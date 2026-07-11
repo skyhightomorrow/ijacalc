@@ -1,0 +1,1455 @@
+{
+  "fetchedAt": "2026-07-10T16:49:01.403Z",
+  "source": "저축은행중앙회 소비자포털",
+  "products": [
+    {
+      "bank": "KB",
+      "product": "kiwi팡팡통장",
+      "baseRate": 1.3,
+      "maxRate": 2.5,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20250409",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "키움YES",
+      "product": "예스파킹통장",
+      "baseRate": 0.5,
+      "maxRate": 2.7,
+      "maxRateCondition": "100,000,000원 초과",
+      "disclosedAt": "20251124",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "키움",
+      "product": "더 키움 파킹통장",
+      "baseRate": 2,
+      "maxRate": 2.4,
+      "maxRateCondition": "30,000,000원 초과",
+      "disclosedAt": "20260430",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "키움",
+      "product": "함께키움통장",
+      "baseRate": 0.2,
+      "maxRate": 2.2,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260430",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "키움",
+      "product": "키움주니어통장",
+      "baseRate": 1,
+      "maxRate": 2.5,
+      "maxRateCondition": "20,000,000원 이하",
+      "disclosedAt": "20260430",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "E-RUN급여 파킹통장",
+      "baseRate": 2,
+      "maxRate": 2.8,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260401",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "한화",
+      "product": "Mymo 파킹통장",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260708",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "E-RUN플러스 파킹통장",
+      "baseRate": 2.7,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260703",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "The프리미엄 멤버십 파킹통장",
+      "baseRate": 3.3,
+      "maxRate": 3.31,
+      "maxRateCondition": "200,000,000원 미만",
+      "disclosedAt": "20260703",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "고려",
+      "product": "보고파플러스 파킹통장",
+      "baseRate": 3.2,
+      "maxRate": 3.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260701",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "고려",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20241010",
+      "payout": "월지급"
+    },
+    {
+      "bank": "상상인플러스",
+      "product": "보통예금(비대면)",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "월지급"
+    },
+    {
+      "bank": "상상인플러스",
+      "product": "크크크 파킹통장 보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "월지급"
+    },
+    {
+      "bank": "상상인",
+      "product": "뱅뱅뱅 파킹통장 보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240625",
+      "payout": "월지급"
+    },
+    {
+      "bank": "웰컴",
+      "product": "웰뱅 모두페이 통장",
+      "baseRate": 0.5,
+      "maxRate": 3,
+      "maxRateCondition": "10,000,000원 이하",
+      "disclosedAt": "20250403",
+      "payout": "월지급"
+    },
+    {
+      "bank": "KB",
+      "product": "kiwi팡팡통장",
+      "baseRate": 1.3,
+      "maxRate": 2.5,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20250409",
+      "payout": "월지급"
+    },
+    {
+      "bank": "JT친애",
+      "product": "플러스입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 2.45,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20251226",
+      "payout": "월지급"
+    },
+    {
+      "bank": "OK",
+      "product": "OK짠테크통장Ⅱ",
+      "baseRate": 0.1,
+      "maxRate": 7,
+      "maxRateCondition": "500,000원 이하",
+      "disclosedAt": "20251103",
+      "payout": "월지급"
+    },
+    {
+      "bank": "NH",
+      "product": "NH FIC-One 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.8,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20251201",
+      "payout": "월지급"
+    },
+    {
+      "bank": "하나",
+      "product": "하이(High)하나 보통예금",
+      "baseRate": 2,
+      "maxRate": 2.5,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20250605",
+      "payout": "월지급"
+    },
+    {
+      "bank": "OK",
+      "product": "OK파킹플렉스통장",
+      "baseRate": 1.5,
+      "maxRate": 3.01,
+      "maxRateCondition": "5,000,000원 이하",
+      "disclosedAt": "20250709",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "M-DreamBig 보통예금",
+      "baseRate": 0.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "70,000,000원 이하",
+      "disclosedAt": "20251105",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "DreamBig 보통예금",
+      "baseRate": 0.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "70,000,000원 이하",
+      "disclosedAt": "20251105",
+      "payout": "월지급"
+    },
+    {
+      "bank": "JT친애",
+      "product": "비대면 플러스입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 2.45,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20251226",
+      "payout": "월지급"
+    },
+    {
+      "bank": "웰컴",
+      "product": "웰컴 주거래통장",
+      "baseRate": 0.8,
+      "maxRate": 3,
+      "maxRateCondition": "300,000,000원 이하",
+      "disclosedAt": "20260615",
+      "payout": "월지급"
+    },
+    {
+      "bank": "대신",
+      "product": "대신 더더더파킹",
+      "baseRate": 2,
+      "maxRate": 6,
+      "maxRateCondition": "2,000,000원 이하",
+      "disclosedAt": "20260701",
+      "payout": "월지급"
+    },
+    {
+      "bank": "신한",
+      "product": "참신한파킹통장",
+      "baseRate": 2.5,
+      "maxRate": 3.5,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260701",
+      "payout": "월지급"
+    },
+    {
+      "bank": "신한",
+      "product": "e-저축예금",
+      "baseRate": 1.3,
+      "maxRate": 1.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260701",
+      "payout": "월지급"
+    },
+    {
+      "bank": "SBI",
+      "product": "사이다입출금통장",
+      "baseRate": 0.2,
+      "maxRate": 2.7,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260624",
+      "payout": "월지급"
+    },
+    {
+      "bank": "SBI",
+      "product": "아이통장",
+      "baseRate": 0.2,
+      "maxRate": 3.2,
+      "maxRateCondition": "3,000,000원 이하",
+      "disclosedAt": "20260624",
+      "payout": "월지급"
+    },
+    {
+      "bank": "JT",
+      "product": "JT점프업Ⅱ저축예금",
+      "baseRate": 0.5,
+      "maxRate": 3.01,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260615",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "DB행복파킹통장",
+      "baseRate": 0.8,
+      "maxRate": 3.5,
+      "maxRateCondition": "5,000,000원 이하",
+      "disclosedAt": "20260318",
+      "payout": "월지급"
+    },
+    {
+      "bank": "대신",
+      "product": "더드리고입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 3,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20260618",
+      "payout": "월지급"
+    },
+    {
+      "bank": "다올",
+      "product": "Fi 쌈짓돈Ⅲ 통장",
+      "baseRate": 1,
+      "maxRate": 5,
+      "maxRateCondition": "1,000,000원 이하",
+      "disclosedAt": "20260626",
+      "payout": "월지급"
+    },
+    {
+      "bank": "다올",
+      "product": "Fi 저축예금",
+      "baseRate": 3,
+      "maxRate": 3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260702",
+      "payout": "월지급"
+    },
+    {
+      "bank": "고려",
+      "product": "보고파플러스 파킹통장",
+      "baseRate": 3.2,
+      "maxRate": 3.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260701",
+      "payout": "월지급"
+    },
+    {
+      "bank": "흥국",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "드림",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "드림",
+      "product": "꿈그린 보통예금",
+      "baseRate": 0.1,
+      "maxRate": 1.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "더케이",
+      "product": "e-보통예금",
+      "baseRate": 0.6,
+      "maxRate": 0.6,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "부림",
+      "product": "보통예금",
+      "baseRate": 0.25,
+      "maxRate": 0.25,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "세람",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240625",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "세람",
+      "product": "저축예금",
+      "baseRate": 0.1,
+      "maxRate": 1,
+      "maxRateCondition": "100,000,000원 이상",
+      "disclosedAt": "20240625",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "인천",
+      "product": "플러스저축예금",
+      "baseRate": 2.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오투",
+      "product": "자유저축예금",
+      "baseRate": 0.5,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대백",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대백",
+      "product": "애플보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "바로",
+      "product": "저축예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240617",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "DH",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240621",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "DH",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240621",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "라온",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "민국",
+      "product": "e-행복보통예금",
+      "baseRate": 0.2,
+      "maxRate": 1,
+      "maxRateCondition": "10,000,000원 이하",
+      "disclosedAt": "20240628",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "민국",
+      "product": "비대면보통예금",
+      "baseRate": 0.2,
+      "maxRate": 1,
+      "maxRateCondition": "10,000,000원 이하",
+      "disclosedAt": "20240628",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "센트럴",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.75,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "센트럴",
+      "product": "n-보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스마트",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스마트",
+      "product": "자유저축예금",
+      "baseRate": 0.5,
+      "maxRate": 1.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "인성",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대원",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "아산",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240613",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "에스앤티",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "1원 이상",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "삼호",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "삼호",
+      "product": "저축예금",
+      "baseRate": 1.3,
+      "maxRate": 1.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대아",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240812",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조흥",
+      "product": "보통예금",
+      "baseRate": 0.6,
+      "maxRate": 0.6,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "머스트삼일",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "한성",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안양",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안양",
+      "product": "저축예금",
+      "baseRate": 0.1,
+      "maxRate": 1,
+      "maxRateCondition": "20,000,000원 이상",
+      "disclosedAt": "20240620",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "BNK",
+      "product": "보통예금",
+      "baseRate": 0.01,
+      "maxRate": 0.01,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오투",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "엠에스",
+      "product": "알찬자유저축예금(기간별)",
+      "baseRate": 0.1,
+      "maxRate": 1.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240621",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스카이",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스카이",
+      "product": "e-보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "모아",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240613",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "모아",
+      "product": "e-모아저축예금",
+      "baseRate": 0.2,
+      "maxRate": 0.5,
+      "maxRateCondition": "100,000원 이상",
+      "disclosedAt": "20240613",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움YES",
+      "product": "e-보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "엠에스",
+      "product": "알찬기업자유예금(기간별)",
+      "baseRate": 0.1,
+      "maxRate": 1.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "민국",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240611",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대한",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "금화",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240614",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "진주",
+      "product": "보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "진주",
+      "product": "지니 파킹통장",
+      "baseRate": 2.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "20,000,000원 이하",
+      "disclosedAt": "20240624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "삼정",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240805",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "동양",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "동양",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240617",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240617",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "IBK",
+      "product": "참알찬IBK저축은행보통예금",
+      "baseRate": 0.4,
+      "maxRate": 0.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240617",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "우리",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "국제",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "남양",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "남양",
+      "product": "비대면-보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240620",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대명",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "대명",
+      "product": "내가그린 보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240612",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "유안타",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240613",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "유안타",
+      "product": "저축예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240613",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "더블",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "솔브레인",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "동원제일",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240716",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "동원제일",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240716",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "영진",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20250423",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "영진",
+      "product": "SB톡톡-보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20250423",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "HB",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20250311",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "HB",
+      "product": "비대면 보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20250311",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "청주",
+      "product": "보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20241129",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움YES",
+      "product": "예스파킹통장",
+      "baseRate": 0.5,
+      "maxRate": 2.7,
+      "maxRateCondition": "100,000,000원 초과",
+      "disclosedAt": "20251124",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "비대면보통예금(모임통장)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20251105",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "비대면보통예금(미성년자)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20251105",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "비대면보통예금(법인통장)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20251105",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "페퍼",
+      "product": "페퍼룰루 파킹통장",
+      "baseRate": 0.5,
+      "maxRate": 1.2,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20251103",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "에스앤티",
+      "product": "우리가족사랑통장",
+      "baseRate": 0.5,
+      "maxRate": 2.75,
+      "maxRateCondition": "10,000,000원 이상",
+      "disclosedAt": "20260520",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "인천",
+      "product": "e-보다보통예금(비대면)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260604",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "인천",
+      "product": "e-보다보통예금(미성년자)",
+      "baseRate": 2.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260604",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "인천",
+      "product": "e-보다보통예금(모임)",
+      "baseRate": 2.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260604",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "인천",
+      "product": "플러스기업자유예금",
+      "baseRate": 2.5,
+      "maxRate": 2.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260604",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "e-보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260630",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260630",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "기업자유예금",
+      "baseRate": 0.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "30,000,000,000원 이하",
+      "disclosedAt": "20260630",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "생계비계좌",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260630",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "한국투자",
+      "product": "한투 알아서 더드림 파킹통장",
+      "baseRate": 0.2,
+      "maxRate": 3,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260701",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "애큐온",
+      "product": "고수익자유예금",
+      "baseRate": 2.8,
+      "maxRate": 2.8,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260212",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "페퍼",
+      "product": "페퍼스 파킹통장5",
+      "baseRate": 1,
+      "maxRate": 3,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260414",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움",
+      "product": "키우는 e저축예금",
+      "baseRate": 0.8,
+      "maxRate": 1.1,
+      "maxRateCondition": "5,000,000원 이상",
+      "disclosedAt": "20260430",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움",
+      "product": "더 키움 파킹통장",
+      "baseRate": 2,
+      "maxRate": 2.4,
+      "maxRateCondition": "30,000,000원 초과",
+      "disclosedAt": "20260430",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움",
+      "product": "함께키움통장",
+      "baseRate": 0.2,
+      "maxRate": 2.2,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260430",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움",
+      "product": "키움주니어통장",
+      "baseRate": 1,
+      "maxRate": 2.5,
+      "maxRateCondition": "20,000,000원 이하",
+      "disclosedAt": "20260430",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "생계비계좌",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260319",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "E-RUN급여 파킹통장",
+      "baseRate": 2,
+      "maxRate": 2.8,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260401",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "유안타",
+      "product": "생계비계좌",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260213",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "푸른",
+      "product": "푸른보통예금",
+      "baseRate": 1,
+      "maxRate": 3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260601",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "푸른",
+      "product": "E-푸른보통예금",
+      "baseRate": 3,
+      "maxRate": 3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260601",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "IBK",
+      "product": "IBKSB e-파킹통장",
+      "baseRate": 0.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "300,000,000원 이하",
+      "disclosedAt": "20260618",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "IBK",
+      "product": "IBK모임통장",
+      "baseRate": 0.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "300,000,000원 이하",
+      "disclosedAt": "20260618",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260624",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조흥",
+      "product": "조흥생계비통장",
+      "baseRate": 0.6,
+      "maxRate": 0.6,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260202",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "애큐온",
+      "product": "애큐온모바일자유예금",
+      "baseRate": 3.4,
+      "maxRate": 3.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260616",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "센트럴",
+      "product": "보통예금(생계비)",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260202",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "보통예금(생계비계좌)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260202",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "오성",
+      "product": "비대면 보통예금(생계비계좌)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260202",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "바로",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260202",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "바로",
+      "product": "보통예금(생계비계좌)",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260202",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260630",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260706",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "The프리미엄 Biz통장",
+      "baseRate": 0.2,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000,000원 이하",
+      "disclosedAt": "20260709",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스타",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260706",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스타",
+      "product": "생계비계좌",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260706",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "내가그린 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "함께그린 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "생계비 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "생계비 내가그린 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "생계비 함께그린 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "융창",
+      "product": "이음 저축예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "30,000,000원 이상",
+      "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "E-RUN플러스 파킹통장",
+      "baseRate": 2.7,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260703",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "The프리미엄 멤버십 파킹통장",
+      "baseRate": 3.3,
+      "maxRate": 3.31,
+      "maxRateCondition": "200,000,000원 미만",
+      "disclosedAt": "20260703",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "E-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260706",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "S-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260706",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "BNK",
+      "product": "삼삼한파킹통장",
+      "baseRate": 1.2,
+      "maxRate": 2.7,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260702",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "우리금융",
+      "product": "첫번째저축예금",
+      "baseRate": 0.1,
+      "maxRate": 2.5,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260706",
+      "payout": "분기지급"
+    }
+  ]
+}

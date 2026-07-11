@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>파킹통장 금리비교·이자계산기 — 오늘 넣으면 바로 이자 | ijacalc</title>
+<meta name="description" content="오늘 입금하면 내일 바로 이자를 받는 파킹통장 15개 실시간 비교. 금액을 입력하면 상품별 하루 세후 이자를 계산해드립니다. 매일 공시 데이터 자동 갱신.">
+<link rel="canonical" href="https://ijacalc.com/">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="logo" href="./">이자<b>계산기</b></a>
+    <div class="top-right">
+      <span class="date">7월 11일 업데이트</span>
+      <a class="loan-btn" href="loans.html">🏛️ 금감원 대출공시 조회</a>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+  <nav class="tabs">
+    <a href="./" class="active">바로 이자</a>
+    <a href="calculator.html" class="">계산기</a>
+    <a href="new.html" class="">신상품</a>
+    <a href="rates.html" class="">예·적금</a>
+  </nav>
+  </div>
+
+  <div class="hero">
+    <h1>오늘 넣으면,<br><span class="em">오늘 이자</span> 받는 파킹통장</h1>
+    <p>매일 갱신되는 공시 데이터로, 지금 가장 유리한 파킹통장을 찾아드려요.</p>
+  </div>
+
+  <div class="calc">
+    <label for="amount">내 여유자금</label>
+    <div class="inputline">
+      <input id="amount" type="text" value="" placeholder="예: 10,000,000" inputmode="numeric" autofocus>
+      <span class="won">원</span>
+    </div>
+    <div class="hint">하루 이자는 세후(이자소득세 15.4% 차감) 기준 · 한도/조건 자동 반영 · 비어있으면 1,000만원 기준</div>
+  </div>
+
+  <div class="notice">
+    <span class="ic">💡</span>
+    <span>파킹통장 이자는 <b>밤 12시(자정)에 통장에 남아있는 돈</b> 기준으로 하루 단위 계산돼요.
+    오늘 몇 시에 넣든 자정 전에만 넣으면, <b>내일부터 오늘 치 이자</b>를 받을 수 있어요. 받는 방법은 은행마다 달라서 카드에 표시해뒀어요.</span>
+  </div>
+
+  <div id="instant-list">
+    <div class="card">
+      <div class="left">
+        <div class="bank">예가람저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">E-RUN플러스 파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>3.50%</b> (기본 2.70%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond">5천만원까지만 최고금리</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+811원<small>/하루</small></div>
+        <div class="mo">한 달 약 24,337원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">고려저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">보고파플러스 파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>3.50%</b> (기본 3.20%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag free">한도 제한 없음</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+811원<small>/하루</small></div>
+        <div class="mo">한 달 약 24,337원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">예가람저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84-%EB%A9%A4%EB%B2%84%EC%8B%AD-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">The프리미엄 멤버십 파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>3.31%</b> (기본 3.30%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond">2억원까지만 최고금리</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+767원<small>/하루</small></div>
+        <div class="mo">한 달 약 23,016원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">SBI저축은행 · 저축은행</div>
+        <div class="name"><a href="p/SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EC%82%AC%EC%9D%B4%EB%8B%A4%EB%B1%85%ED%81%AC-%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5.html">사이다뱅크 입출금통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>3.00%</b> (기본 3.00%) · 기준일 2026-07-11</div>
+        <div class="tags">
+          <span class="tag cond">1억원까지만 최고금리</span>
+          <span class="tag verify">금리 변동 가능</span>
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 내일 앱에서 '이자 바로 지급'으로 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+695원<small>/하루</small></div>
+        <div class="mo">한 달 약 20,860원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">예가람저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-E-RUN%EA%B8%89%EC%97%AC-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">E-RUN급여 파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.80%</b> (기본 2.00%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag free">한도 제한 없음</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+649원<small>/하루</small></div>
+        <div class="mo">한 달 약 19,470원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">KB저축은행 · 저축은행</div>
+        <div class="name"><a href="p/KB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-kiwi%ED%8C%A1%ED%8C%A1%ED%86%B5%EC%9E%A5.html">kiwi팡팡통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.50%</b> (기본 1.30%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond">1억원까지만 최고금리</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+579원<small>/하루</small></div>
+        <div class="mo">한 달 약 17,384원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">키움저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%ED%82%A4%EC%9B%80%EC%A3%BC%EB%8B%88%EC%96%B4%ED%86%B5%EC%9E%A5.html">키움주니어통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.50%</b> (기본 1.00%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond">2천만원까지만 최고금리</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+579원<small>/하루</small></div>
+        <div class="mo">한 달 약 17,384원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">케이뱅크 · 인터넷은행</div>
+        <div class="name"><a href="p/%EC%BC%80%EC%9D%B4%EB%B1%85%ED%81%AC-%ED%94%8C%EB%9F%AC%EC%8A%A4%EB%B0%95%EC%8A%A4.html">플러스박스<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.20%</b> (기본 2.20%) · 기준일 2026-07-11</div>
+        <div class="tags">
+          
+          <span class="tag verify">금리 변동 가능</span>
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 내일 앱에서 '바로 이자 받기'로 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+510원<small>/하루</small></div>
+        <div class="mo">한 달 약 15,298원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">키움저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%ED%95%A8%EA%BB%98%ED%82%A4%EC%9B%80%ED%86%B5%EC%9E%A5.html">함께키움통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.20%</b> (기본 0.20%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond">5천만원까지만 최고금리</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+510원<small>/하루</small></div>
+        <div class="mo">한 달 약 15,298원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">키움저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EB%8D%94-%ED%82%A4%EC%9B%80-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">더 키움 파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.40%</b> (기본 2.00%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond-hit">3천만원 넘어야 최고금리 · 지금은 기본금리 적용</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+464원<small>/하루</small></div>
+        <div class="mo">한 달 약 13,907원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">토스뱅크 · 인터넷은행</div>
+        <div class="name"><a href="p/%ED%86%A0%EC%8A%A4%EB%B1%85%ED%81%AC-%ED%86%A0%EC%8A%A4%EB%B1%85%ED%81%AC-%ED%86%B5%EC%9E%A5.html">토스뱅크 통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.00%</b> (기본 2.00%) · 기준일 2026-07-11</div>
+        <div class="tags">
+          <span class="tag cond">1억원까지만 최고금리</span>
+          <span class="tag verify">금리 변동 가능</span>
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 내일 '지금 이자 받기'로 수령 (매일 1회, 안 누르면 매월 1일 자동)</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+464원<small>/하루</small></div>
+        <div class="mo">한 달 약 13,907원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">카카오뱅크 · 인터넷은행</div>
+        <div class="name"><a href="p/%EC%B9%B4%EC%B9%B4%EC%98%A4%EB%B1%85%ED%81%AC-%EC%84%B8%EC%9D%B4%ED%94%84%EB%B0%95%EC%8A%A4.html">세이프박스<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>1.60%</b> (기본 1.60%) · 기준일 2026-07-11</div>
+        <div class="tags">
+          
+          <span class="tag verify">금리 변동 가능</span>
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 내일 앱에서 '이자 바로 받기'로 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+371원<small>/하루</small></div>
+        <div class="mo">한 달 약 11,125원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">토스뱅크 · 인터넷은행</div>
+        <div class="name"><a href="p/%ED%86%A0%EC%8A%A4%EB%B1%85%ED%81%AC-%EB%82%98%EB%88%A0%EB%AA%A8%EC%9C%BC%EA%B8%B0-%ED%86%B5%EC%9E%A5.html">나눠모으기 통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>1.40%</b> (기본 1.40%) · 기준일 2026-07-11</div>
+        <div class="tags">
+          
+          <span class="tag verify">금리 변동 가능</span>
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 내일 아침 자동 입금 — 누를 필요도 없음</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+324원<small>/하루</small></div>
+        <div class="mo">한 달 약 9,735원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">키움YES저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EC%98%88%EC%8A%A4%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">예스파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>2.70%</b> (기본 0.50%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag cond-hit">1억원 넘어야 최고금리 · 지금은 기본금리 적용</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+116원<small>/하루</small></div>
+        <div class="mo">한 달 약 3,477원</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="left">
+        <div class="bank">한화저축은행 · 저축은행</div>
+        <div class="name"><a href="p/%ED%95%9C%ED%99%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-Mymo-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5.html">Mymo 파킹통장<span class="lk">자세히 ↗</span></a></div>
+        <div class="rateline">연 <b>0.10%</b> (기본 0.10%) · 기준일 2026-07-10</div>
+        <div class="tags">
+          <span class="tag free">한도 제한 없음</span>
+          
+        </div>
+        <div class="timing"><span class="tic">오늘 입금 →</span> 자정 잔액 기준 계산, 다음날부터 수시 수령</div>
+        
+      </div>
+      <div class="right">
+        <div class="daily">+23원<small>/하루</small></div>
+        <div class="mo">한 달 약 695원</div>
+      </div>
+    </div></div>
+
+  <h2 class="sec">그 외 파킹통장 최고금리 <small>월지급 등 · 저축은행 공시</small></h2>
+  <div class="tbl-wrap"><table id="parking-rest"><tr><th>저축은행</th><th>상품</th><th class='r'>최고금리</th><th>지급</th><th>조건</th></tr><tr><td>OK저축은행</td><td><a href="https://search.naver.com/search.naver?query=OK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20OK%EC%A7%A0%ED%85%8C%ED%81%AC%ED%86%B5%EC%9E%A5%E2%85%A1" target="_blank" rel="noopener" class="cell-lk">OK짠테크통장Ⅱ ↗</a></td><td class="r rate-em">7.00%</td><td>월지급</td><td><span class="b2">500,000원 이하</span></td></tr><tr><td>대신저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EB%8C%80%EC%8B%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8C%80%EC%8B%A0%20%EB%8D%94%EB%8D%94%EB%8D%94%ED%8C%8C%ED%82%B9" target="_blank" rel="noopener" class="cell-lk">대신 더더더파킹 ↗</a></td><td class="r rate-em">6.00%</td><td>월지급</td><td><span class="b2">2,000,000원 이하</span></td></tr><tr><td>다올저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EB%8B%A4%EC%98%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Fi%20%EC%8C%88%EC%A7%93%EB%8F%88%E2%85%A2%20%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">Fi 쌈짓돈Ⅲ 통장 ↗</a></td><td class="r rate-em">5.00%</td><td>월지급</td><td><span class="b2">1,000,000원 이하</span></td></tr><tr><td>신한저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%8B%A0%ED%95%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B0%B8%EC%8B%A0%ED%95%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">참신한파킹통장 ↗</a></td><td class="r rate-em">3.50%</td><td>월지급</td><td><span class="b2">100,000,000원 이하</span></td></tr><tr><td>DB저축은행</td><td><a href="https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DB%ED%96%89%EB%B3%B5%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">DB행복파킹통장 ↗</a></td><td class="r rate-em">3.50%</td><td>월지급</td><td><span class="b2">5,000,000원 이하</span></td></tr><tr><td>고려저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">보고파플러스 파킹통장 ↗</a></td><td class="r rate-em">3.50%</td><td>월지급</td><td><span class="b2">제한없음</span></td></tr><tr><td>IBK저축은행</td><td><a href="https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20IBKSB%20e-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">IBKSB e-파킹통장 ↗</a></td><td class="r rate-em">3.50%</td><td>분기지급</td><td><span class="b2">300,000,000원 이하</span></td></tr><tr><td>IBK저축은행</td><td><a href="https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20IBK%EB%AA%A8%EC%9E%84%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">IBK모임통장 ↗</a></td><td class="r rate-em">3.50%</td><td>분기지급</td><td><span class="b2">300,000,000원 이하</span></td></tr><tr><td>애큐온저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%95%A0%ED%81%90%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%A0%ED%81%90%EC%98%A8%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88" target="_blank" rel="noopener" class="cell-lk">애큐온모바일자유예금 ↗</a></td><td class="r rate-em">3.50%</td><td>분기지급</td><td><span class="b2">제한없음</span></td></tr><tr><td>예가람저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20Biz%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">The프리미엄 Biz통장 ↗</a></td><td class="r rate-em">3.50%</td><td>분기지급</td><td><span class="b2">50,000,000,000원 이하</span></td></tr><tr><td>예가람저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">E-RUN플러스 파킹통장 ↗</a></td><td class="r rate-em">3.50%</td><td>분기지급</td><td><span class="b2">50,000,000원 이하</span></td></tr><tr><td>참저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88" target="_blank" rel="noopener" class="cell-lk">기업자유예금 ↗</a></td><td class="r rate-em">3.40%</td><td>분기지급</td><td><span class="b2">30,000,000,000원 이하</span></td></tr><tr><td>예가람저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EB%A9%A4%EB%B2%84%EC%8B%AD%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">The프리미엄 멤버십 파킹통장 ↗</a></td><td class="r rate-em">3.31%</td><td>분기지급</td><td><span class="b2">200,000,000원 미만</span></td></tr><tr><td>SBI저축은행</td><td><a href="https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%84%EC%9D%B4%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">아이통장 ↗</a></td><td class="r rate-em">3.20%</td><td>월지급</td><td><span class="b2">3,000,000원 이하</span></td></tr><tr><td>OK저축은행</td><td><a href="https://search.naver.com/search.naver?query=OK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20OK%ED%8C%8C%ED%82%B9%ED%94%8C%EB%A0%89%EC%8A%A4%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">OK파킹플렉스통장 ↗</a></td><td class="r rate-em">3.01%</td><td>월지급</td><td><span class="b2">5,000,000원 이하</span></td></tr><tr><td>JT저축은행</td><td><a href="https://search.naver.com/search.naver?query=JT%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20JT%EC%A0%90%ED%94%84%EC%97%85%E2%85%A1%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88" target="_blank" rel="noopener" class="cell-lk">JT점프업Ⅱ저축예금 ↗</a></td><td class="r rate-em">3.01%</td><td>월지급</td><td><span class="b2">50,000,000원 이하</span></td></tr><tr><td>웰컴저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%9B%B0%EC%BB%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9B%B0%EB%B1%85%20%EB%AA%A8%EB%91%90%ED%8E%98%EC%9D%B4%20%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">웰뱅 모두페이 통장 ↗</a></td><td class="r rate-em">3.00%</td><td>월지급</td><td><span class="b2">10,000,000원 이하</span></td></tr><tr><td>웰컴저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EC%9B%B0%EC%BB%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9B%B0%EC%BB%B4%20%EC%A3%BC%EA%B1%B0%EB%9E%98%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">웰컴 주거래통장 ↗</a></td><td class="r rate-em">3.00%</td><td>월지급</td><td><span class="b2">300,000,000원 이하</span></td></tr><tr><td>대신저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EB%8C%80%EC%8B%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%EB%93%9C%EB%A6%AC%EA%B3%A0%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5" target="_blank" rel="noopener" class="cell-lk">더드리고입출금통장 ↗</a></td><td class="r rate-em">3.00%</td><td>월지급</td><td><span class="b2">200,000,000원 이하</span></td></tr><tr><td>다올저축은행</td><td><a href="https://search.naver.com/search.naver?query=%EB%8B%A4%EC%98%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Fi%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88" target="_blank" rel="noopener" class="cell-lk">Fi 저축예금 ↗</a></td><td class="r rate-em">3.00%</td><td>월지급</td><td><span class="b2">제한없음</span></td></tr></table></div>
+
+  <script src="render-card.js"></script>
+  <script>
+    (function () {
+    var AMT_KEY = "ijacalc_amount";
+    function loadAmt(def) {
+      try { var v = parseInt(localStorage.getItem(AMT_KEY), 10); return v > 0 ? v : def; } catch (e) { return def; }
+    }
+    function saveAmt(v) { try { if (v > 0) localStorage.setItem(AMT_KEY, String(v)); } catch (e) {} }
+      var PARKING = null;
+      var inp = document.getElementById("amount");
+      var saved = loadAmt(0);
+      inp.value = saved > 0 ? fmt(saved) : "";
+      inp.focus();
+      function rerender() {
+        var amt = parseAmount(inp.value) || 10000000; // 비어있으면 1,000만원 기준
+        document.getElementById("instant-list").innerHTML = renderInstantList(PARKING, amt);
+      }
+      fetch("data.json").then(function (r) { return r.json(); }).then(function (d) {
+        PARKING = d.parking;
+        rerender(); // 저장된 금액 + 모바일 앱 링크 반영
+      });
+      inp.addEventListener("input", function () {
+        var n = parseAmount(inp.value);
+        inp.value = n ? fmt(n) : "";
+        saveAmt(n);
+        if (PARKING) rerender();
+      });
+    })();
+  </script>
+
+  <footer>
+    출처: 금융감독원 금융상품통합비교공시 「금융상품한눈에」, 저축은행중앙회 소비자포털 · 금리는 수시로 변동될 수 있으며 실제 가입 조건은 각 금융회사에서 확인하세요.<br>
+    본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.
+  </footer>
+</div>
+</body>
+</html>
