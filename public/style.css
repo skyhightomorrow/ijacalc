@@ -15,6 +15,7 @@
   --border: #f2f4f6;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
+html { overflow-y: scroll; } /* 짧은 페이지에서도 스크롤바 공간 유지 — 페이지 이동 시 좌우 밀림 방지 */
 body {
   font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Malgun Gothic", sans-serif;
   background: var(--bg); color: var(--text); line-height: 1.5; letter-spacing: -0.02em;
