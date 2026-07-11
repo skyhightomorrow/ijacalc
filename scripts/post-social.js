@@ -2,8 +2,8 @@
 // 실행: node scripts/post-social.js  (data.json 빌드 이후)
 //
 // 필요 환경변수 (없으면 드라이런 — 포스트 내용만 출력하고 성공 종료):
-//   THREADS_USER_ID      Threads 사용자 ID (Meta 개발자 앱에서 확인)
 //   THREADS_ACCESS_TOKEN 장기 액세스 토큰 (60일 유효 — 만료 전 재발급 필요)
+//                        사용자 ID는 이 토큰에서 /me 로 자동 조회하므로 별도 시크릿 불필요.
 //
 // 포스팅 시간은 .github/workflows/social.yml 의 cron이 결정한다 (08:00 KST).
 
@@ -48,9 +48,13 @@ function composePost() {
 }
 
 async function postToThreads(text) {
-  const uid = process.env.THREADS_USER_ID;
   const token = process.env.THREADS_ACCESS_TOKEN;
-  const base = `https://graph.threads.net/v1.0/${uid}`;
+
+  // 0) 토큰에서 사용자 ID 자동 조회 (별도 시크릿 불필요)
+  const meRes = await fetch(`https://graph.threads.net/v1.0/me?fields=id,username&access_token=${token}`);
+  const me = await meRes.json();
+  if (!meRes.ok || !me.id) throw new Error(`사용자 ID 조회 실패: ${JSON.stringify(me)}`);
+  const base = `https://graph.threads.net/v1.0/${me.id}`;
 
   // 1) 미디어 컨테이너 생성
   const createRes = await fetch(`${base}/threads`, {
@@ -77,8 +81,8 @@ async function postToThreads(text) {
   console.log("--- 포스트 내용 ---\n" + text + "\n-------------------");
   console.log(`길이: ${text.length}자 (Threads 한도 500자)`);
 
-  if (!process.env.THREADS_USER_ID || !process.env.THREADS_ACCESS_TOKEN) {
-    console.log("THREADS_* 환경변수 없음 → 드라이런 종료 (포스팅 안 함)");
+  if (!process.env.THREADS_ACCESS_TOKEN) {
+    console.log("THREADS_ACCESS_TOKEN 없음 → 드라이런 종료 (포스팅 안 함)");
     return;
   }
   const id = await postToThreads(text);
