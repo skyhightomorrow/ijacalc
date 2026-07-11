@@ -68,6 +68,7 @@ function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, a
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="naver-site-verification" content="af1b61ef432cf39f301684fb8053556d4728b3f8" />
 <title>${title}</title>
 <meta name="description" content="${desc}">
 <link rel="canonical" href="${ORIGIN}${canonicalPath}">
