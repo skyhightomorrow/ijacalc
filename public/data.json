@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-07-11T09:28:53.608Z",
+  "builtAt": "2026-07-11T11:16:02.747Z",
   "finlifeFetchedAt": "2026-07-11T09:27:33.017Z",
   "finlifeDisclosureMonth": "202606",
   "parking": [
@@ -134,18 +134,18 @@
     {
       "bank": "케이뱅크",
       "product": "플러스박스",
-      "baseRate": 2.2,
+      "baseRate": 1.7,
       "maxRate": 2.2,
-      "maxRateCondition": "한도 및 우대조건 공식 페이지 확인",
+      "maxRateCondition": "50,000,000원 초과",
       "payout": "수시지급",
       "timing": "내일 앱에서 '바로 이자 받기'로 수령",
-      "linkUrl": "https://www.kbanknow.com/",
+      "linkUrl": "https://www.kbanknow.com/web/product/deposit/plusbox",
       "appAndroid": "com.kbankwith.smartbank",
       "appIos": "1178872627",
       "group": "인터넷은행",
       "instant": true,
       "asOf": "2026-07-11",
-      "needsVerify": true
+      "needsVerify": false
     },
     {
       "bank": "키움저축은행",
@@ -162,22 +162,6 @@
       "needsVerify": false
     },
     {
-      "bank": "토스뱅크",
-      "product": "토스뱅크 통장",
-      "baseRate": 2,
-      "maxRate": 2,
-      "maxRateCondition": "잔액 1억원 이하",
-      "payout": "수시지급",
-      "timing": "내일 '지금 이자 받기'로 수령 (매일 1회, 안 누르면 매월 1일 자동)",
-      "linkUrl": "https://www.tossbank.com/product-service/savings/account",
-      "appAndroid": "viva.republica.toss",
-      "appIos": "839333328",
-      "group": "인터넷은행",
-      "instant": true,
-      "asOf": "2026-07-11",
-      "needsVerify": true
-    },
-    {
       "bank": "카카오뱅크",
       "product": "세이프박스",
       "baseRate": 1.6,
@@ -191,23 +175,39 @@
       "group": "인터넷은행",
       "instant": true,
       "asOf": "2026-07-11",
-      "needsVerify": true
+      "needsVerify": false
     },
     {
       "bank": "토스뱅크",
       "product": "나눠모으기 통장",
       "baseRate": 1.4,
       "maxRate": 1.4,
-      "maxRateCondition": "한도 공식 페이지 확인",
+      "maxRateCondition": "제한없음",
       "payout": "매일 자동",
       "timing": "내일 아침 자동 입금 — 누를 필요도 없음",
-      "linkUrl": "https://www.tossbank.com/articles/sleeping-wealth-account",
+      "linkUrl": "https://www.tossbank.com/product-service/savings/space-account",
       "appAndroid": "viva.republica.toss",
       "appIos": "839333328",
       "group": "인터넷은행",
       "instant": true,
       "asOf": "2026-07-11",
-      "needsVerify": true
+      "needsVerify": false
+    },
+    {
+      "bank": "토스뱅크",
+      "product": "토스뱅크 통장",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "payout": "수시지급",
+      "timing": "내일 '지금 이자 받기'로 수령 (매일 1회, 안 누르면 매월 1일 자동)",
+      "linkUrl": "https://www.tossbank.com/product-service/savings/account",
+      "appAndroid": "viva.republica.toss",
+      "appIos": "839333328",
+      "group": "인터넷은행",
+      "instant": true,
+      "asOf": "2026-07-11",
+      "needsVerify": false
     },
     {
       "bank": "한화저축은행",
