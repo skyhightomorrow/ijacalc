@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-07-11T09:00:31.716Z",
-  "finlifeFetchedAt": "2026-07-10T16:39:52.672Z",
+  "builtAt": "2026-07-11T09:28:53.608Z",
+  "finlifeFetchedAt": "2026-07-11T09:27:33.017Z",
   "finlifeDisclosureMonth": "202606",
   "parking": [
     {
@@ -14,7 +14,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -28,7 +28,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -42,7 +42,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EB%A9%A4%EB%B2%84%EC%8B%AD%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -72,7 +72,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%EA%B8%89%EC%97%AC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -86,7 +86,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%98%88%EC%8A%A4%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -100,7 +100,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=KB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20kiwi%ED%8C%A1%ED%8C%A1%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -114,7 +114,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%82%A4%EC%9B%80%EC%A3%BC%EB%8B%88%EC%96%B4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -128,7 +128,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%20%ED%82%A4%EC%9B%80%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -158,7 +158,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%A8%EA%BB%98%ED%82%A4%EC%9B%80%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -220,7 +220,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%ED%99%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Mymo%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -234,7 +234,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20OK%EC%A7%A0%ED%85%8C%ED%81%AC%ED%86%B5%EC%9E%A5%E2%85%A1",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -248,7 +248,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%8B%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8C%80%EC%8B%A0%20%EB%8D%94%EB%8D%94%EB%8D%94%ED%8C%8C%ED%82%B9",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -262,7 +262,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%98%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Fi%20%EC%8C%88%EC%A7%93%EB%8F%88%E2%85%A2%20%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -276,7 +276,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%ED%95%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B0%B8%EC%8B%A0%ED%95%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -290,7 +290,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DB%ED%96%89%EB%B3%B5%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -304,7 +304,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -318,7 +318,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20IBKSB%20e-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -332,7 +332,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20IBK%EB%AA%A8%EC%9E%84%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -346,7 +346,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%A0%ED%81%90%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%A0%ED%81%90%EC%98%A8%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -360,7 +360,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20Biz%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -374,7 +374,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -388,7 +388,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -402,7 +402,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EB%A9%A4%EB%B2%84%EC%8B%AD%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -416,7 +416,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%84%EC%9D%B4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -430,7 +430,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20OK%ED%8C%8C%ED%82%B9%ED%94%8C%EB%A0%89%EC%8A%A4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -444,7 +444,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=JT%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20JT%EC%A0%90%ED%94%84%EC%97%85%E2%85%A1%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -458,7 +458,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9B%B0%EC%BB%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9B%B0%EB%B1%85%20%EB%AA%A8%EB%91%90%ED%8E%98%EC%9D%B4%20%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -472,7 +472,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9B%B0%EC%BB%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9B%B0%EC%BB%B4%20%EC%A3%BC%EA%B1%B0%EB%9E%98%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -486,7 +486,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%8B%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%EB%93%9C%EB%A6%AC%EA%B3%A0%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -500,7 +500,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%98%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Fi%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -514,7 +514,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%9C%ED%88%AC%20%EC%95%8C%EC%95%84%EC%84%9C%20%EB%8D%94%EB%93%9C%EB%A6%BC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -528,7 +528,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%ED%8D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%8E%98%ED%8D%BC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A55",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -542,7 +542,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%91%B8%EB%A5%B8%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -556,7 +556,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-%ED%91%B8%EB%A5%B8%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -570,7 +570,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=NH%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20NH%20FIC-One%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -584,7 +584,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%A0%ED%81%90%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B3%A0%EC%88%98%EC%9D%B5%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -598,7 +598,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%EA%B8%89%EC%97%AC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -612,7 +612,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%8A%A4%EC%95%A4%ED%8B%B0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9A%B0%EB%A6%AC%EA%B0%80%EC%A1%B1%EC%82%AC%EB%9E%91%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -626,7 +626,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%82%AC%EC%9D%B4%EB%8B%A4%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -640,7 +640,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%98%88%EC%8A%A4%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -654,7 +654,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=BNK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%82%BC%EC%82%BC%ED%95%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -668,7 +668,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=KB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20kiwi%ED%8C%A1%ED%8C%A1%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -682,7 +682,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%98%EB%82%98%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%98%EC%9D%B4(High)%ED%95%98%EB%82%98%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -696,7 +696,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20M-DreamBig%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -710,7 +710,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DreamBig%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -724,7 +724,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -738,7 +738,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%EC%A3%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A7%80%EB%8B%88%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -752,7 +752,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%EB%8B%A4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AF%B8%EC%84%B1%EB%85%84%EC%9E%90)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -766,7 +766,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%EB%8B%A4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AA%A8%EC%9E%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -780,7 +780,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -794,7 +794,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%82%A4%EC%9B%80%EC%A3%BC%EB%8B%88%EC%96%B4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -808,7 +808,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%EA%B8%88%EC%9C%B5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B2%AB%EB%B2%88%EC%A7%B8%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -822,7 +822,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=JT%EC%B9%9C%EC%95%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -836,7 +836,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=JT%EC%B9%9C%EC%95%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -850,7 +850,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%20%ED%82%A4%EC%9B%80%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -864,7 +864,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9D%B4%EC%9D%8C%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -878,7 +878,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OSB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -892,7 +892,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OSB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20S-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -906,7 +906,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%A8%EA%BB%98%ED%82%A4%EC%9B%80%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -920,7 +920,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%AA%85%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -934,7 +934,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%ED%95%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -948,7 +948,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%82%BC%ED%98%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -962,7 +962,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%A0%EC%97%90%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%8C%EC%B0%AC%EC%9E%90%EC%9C%A0%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88(%EA%B8%B0%EA%B0%84%EB%B3%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -976,7 +976,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%A0%EC%97%90%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%8C%EC%B0%AC%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88(%EA%B8%B0%EA%B0%84%EB%B3%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -990,7 +990,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%93%9C%EB%A6%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%BF%88%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1004,7 +1004,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9E%90%EC%9C%A0%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1018,7 +1018,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%ED%8D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%8E%98%ED%8D%BC%EB%A3%B0%EB%A3%A8%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1032,7 +1032,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%82%A4%EC%9A%B0%EB%8A%94%20e%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1046,7 +1046,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%83%81%EC%9D%B8%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1060,7 +1060,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%83%81%EC%9D%B8%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%81%AC%ED%81%AC%ED%81%AC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1074,7 +1074,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%83%81%EC%9D%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B1%85%EB%B1%85%EB%B1%85%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1088,7 +1088,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1102,7 +1102,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%ED%88%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9E%90%EC%9C%A0%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1116,7 +1116,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AF%BC%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%ED%96%89%EB%B3%B5%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1130,7 +1130,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AF%BC%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1144,7 +1144,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1158,7 +1158,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EC%B9%B4%EC%9D%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1172,7 +1172,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%EC%A3%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1186,7 +1186,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B2%AD%EC%A3%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1200,7 +1200,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%EC%9D%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1214,7 +1214,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1228,7 +1228,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8D%94%EC%BC%80%EC%9D%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1242,7 +1242,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%A5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1256,7 +1256,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%A5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A1%B0%ED%9D%A5%EC%83%9D%EA%B3%84%EB%B9%84%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1270,7 +1270,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B0%94%EB%A1%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1284,7 +1284,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DH%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1298,7 +1298,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DH%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1312,7 +1312,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20n-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1326,7 +1326,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%82%BC%ED%98%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1340,7 +1340,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%ED%88%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1354,7 +1354,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%95%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%AA%A8%EC%95%84%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1368,7 +1368,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1382,7 +1382,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%95%88%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1396,7 +1396,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%9B%90%EC%A0%9C%EC%9D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1410,7 +1410,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%9B%90%EC%A0%9C%EC%9D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1424,7 +1424,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EC%A7%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1438,7 +1438,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EC%A7%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20SB%ED%86%A1%ED%86%A1-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1452,7 +1452,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%95%88%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1466,7 +1466,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1480,7 +1480,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%EC%9D%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1494,7 +1494,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B0%B8%EC%95%8C%EC%B0%ACIBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1508,7 +1508,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%82%B4%EA%B0%80%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1522,7 +1522,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%A8%EA%BB%98%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1536,7 +1536,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%20%EB%82%B4%EA%B0%80%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1550,7 +1550,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%20%ED%95%A8%EA%BB%98%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1564,7 +1564,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1578,7 +1578,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%84%EC%82%B0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1592,7 +1592,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1606,7 +1606,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%A0%95%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1620,7 +1620,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%AA%85%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%82%B4%EA%B0%80%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1634,7 +1634,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%86%94%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1648,7 +1648,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1662,7 +1662,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1676,7 +1676,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EB%A6%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1690,7 +1690,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%9D%A5%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1704,7 +1704,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%B0%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1718,7 +1718,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%B0%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%A0%ED%94%8C%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1732,7 +1732,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%8A%A4%EC%95%A4%ED%8B%B0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1746,7 +1746,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%A8%B8%EC%8A%A4%ED%8A%B8%EC%82%BC%EC%9D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1760,7 +1760,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EC%B9%B4%EC%9D%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1774,7 +1774,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AF%BC%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1788,7 +1788,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%ED%99%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1802,7 +1802,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1816,7 +1816,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%95%88%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1830,7 +1830,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8D%94%EB%B8%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1844,7 +1844,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1858,7 +1858,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1872,7 +1872,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1886,7 +1886,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1900,7 +1900,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1914,7 +1914,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1928,7 +1928,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%93%9C%EB%A6%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1942,7 +1942,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1956,7 +1956,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1970,7 +1970,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1984,7 +1984,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%9B%90%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -1998,7 +1998,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%95%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2012,7 +2012,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2026,7 +2026,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%95%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2040,7 +2040,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%95%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2054,7 +2054,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2068,7 +2068,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2082,7 +2082,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2096,7 +2096,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2110,7 +2110,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B5%AD%EC%A0%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2124,7 +2124,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2138,7 +2138,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2152,7 +2152,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=HB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2166,7 +2166,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=HB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2180,7 +2180,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AA%A8%EC%9E%84%ED%86%B5%EC%9E%A5)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2194,7 +2194,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AF%B8%EC%84%B1%EB%85%84%EC%9E%90)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2208,7 +2208,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B2%95%EC%9D%B8%ED%86%B5%EC%9E%A5)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2222,7 +2222,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%EB%8B%A4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2236,7 +2236,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2250,7 +2250,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2264,7 +2264,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2278,7 +2278,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2292,7 +2292,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B0%94%EB%A1%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2306,7 +2306,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B0%94%EB%A1%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2320,7 +2320,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=CK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     },
     {
@@ -2334,7 +2334,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=BNK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-10",
+      "asOf": "2026-07-11",
       "needsVerify": false
     }
   ],
