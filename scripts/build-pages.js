@@ -73,6 +73,18 @@ function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, a
 <title>${title}</title>
 <meta name="description" content="${desc}">
 <link rel="canonical" href="${ORIGIN}${canonicalPath}">
+<link rel="icon" href="${base}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${base}favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="${base}apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="이자계산기">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${desc}">
+<meta property="og:url" content="${ORIGIN}${canonicalPath}">
+<meta property="og:image" content="${ORIGIN}/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="${base}style.css">
 ${extraHead}
 </head>
