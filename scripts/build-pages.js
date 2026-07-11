@@ -519,7 +519,12 @@ function buildListPages() {
 
 // ---------- 가이드 ----------
 function buildGuidePages() {
-  const GUIDES = require("./guides-content.js");
+  const ALL_GUIDES = require("./guides-content.js");
+  // 발행일(date)이 오늘(KST) 이하인 글만 공개 — 미래 날짜 글은 매일 새벽 빌드가 날짜 도래 시 자동 공개
+  const todayKST = process.env.BUILD_DATE || new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+  const GUIDES = ALL_GUIDES.filter((g) => g.date <= todayKST);
+  const pending = ALL_GUIDES.length - GUIDES.length;
+  if (pending > 0) console.log(`가이드 예약 대기 ${pending}편 (오늘 KST: ${todayKST})`);
   const dir = path.join(PUB, "guide");
   fs.rmSync(dir, { recursive: true, force: true });
   fs.mkdirSync(dir, { recursive: true });
@@ -558,8 +563,8 @@ function buildGuidePages() {
     );
   }
 
-  // 가이드 목록 페이지
-  const list = GUIDES.map(
+  // 가이드 목록 페이지 (최신 글 먼저)
+  const list = [...GUIDES].sort((a, b) => b.date.localeCompare(a.date)).map(
     (g) => `<a class="related-item" href="guide/${encodeURIComponent(g.slug)}.html" style="display:block; padding:18px 4px; border-bottom:1px solid var(--border); text-decoration:none; color:inherit">
       <div style="font-size:16.5px; font-weight:700">${g.title}</div>
       <div style="font-size:13px; color:var(--sub); margin-top:5px; line-height:1.6">${g.desc}</div>
