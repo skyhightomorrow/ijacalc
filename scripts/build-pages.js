@@ -51,6 +51,7 @@ const NAV = (active, base) => `
     <a href="${base}calculator.html" class="${active === "calc" ? "active" : ""}">계산기</a>
     <a href="${base}new.html" class="${active === "new" ? "active" : ""}">신상품</a>
     <a href="${base}rates.html" class="${active === "rates" ? "active" : ""}">예·적금</a>
+    <a href="${base}guide.html" class="${active === "guide" ? "active" : ""}">가이드</a>
   </nav>
   </div>`;
 
@@ -516,6 +517,71 @@ function buildListPages() {
   }
 }
 
+// ---------- 가이드 ----------
+function buildGuidePages() {
+  const GUIDES = require("./guides-content.js");
+  const dir = path.join(PUB, "guide");
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+
+  for (const g of GUIDES) {
+    const others = GUIDES.filter((x) => x.slug !== g.slug)
+      .slice(0, 4)
+      .map((x) => `<a href="${encodeURIComponent(x.slug)}.html">${x.title}</a>`)
+      .join("");
+
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: g.title,
+      description: g.desc,
+      datePublished: g.date,
+      author: { "@type": "Organization", name: "이자계산기 (ijacalc.com)" },
+    };
+
+    fs.writeFileSync(
+      path.join(dir, `${g.slug}.html`),
+      layout({
+        title: `${g.title} | 이자계산기`,
+        desc: g.desc,
+        canonicalPath: `/guide/${encodeURIComponent(g.slug)}.html`,
+        depth: 1,
+        active: "guide",
+        extraHead: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
+        body: `
+  <div class="crumb"><a href="../">홈</a> › <a href="../guide.html">가이드</a></div>
+  <div class="prod-head"><h1>${g.title}</h1></div>
+  <div class="prose" style="font-size:15px">${g.body}</div>
+  <h2 class="sec">다른 가이드</h2>
+  <div class="related">${others}</div>`,
+      })
+    );
+  }
+
+  // 가이드 목록 페이지
+  const list = GUIDES.map(
+    (g) => `<a class="related-item" href="guide/${encodeURIComponent(g.slug)}.html" style="display:block; padding:18px 4px; border-bottom:1px solid var(--border); text-decoration:none; color:inherit">
+      <div style="font-size:16.5px; font-weight:700">${g.title}</div>
+      <div style="font-size:13px; color:var(--sub); margin-top:5px; line-height:1.6">${g.desc}</div>
+    </a>`
+  ).join("");
+
+  fs.writeFileSync(
+    path.join(PUB, "guide.html"),
+    layout({
+      title: "금리·이자 가이드 — 파킹통장, 세금, 예금자보호 총정리 | 이자계산기",
+      desc: "파킹통장 원리, 이자소득세 15.4%, 예금자보호 1억원, CMA 비교, 우대금리 함정까지 — 이자 재테크에 필요한 지식을 정리한 가이드 모음입니다.",
+      canonicalPath: "/guide.html",
+      active: "guide",
+      body: `
+  <div class="hero"><h1>금리·이자 <span class="em">가이드</span></h1><p>이자 재테크에 필요한 지식을 하나씩, 정확하게</p></div>
+  ${list}`,
+    })
+  );
+
+  return GUIDES.map((g) => g.slug);
+}
+
 // ---------- 소개 / 개인정보처리방침 ----------
 function buildInfoPages() {
   const CONTACT = "skyhightomorrow@gmail.com";
@@ -575,9 +641,13 @@ function buildInfoPages() {
 }
 
 // ---------- sitemap / robots ----------
-function buildSitemap(slugs) {
+function buildSitemap(slugs, guideSlugs) {
   const today = DATA.builtAt.slice(0, 10);
-  const urls = ["/", "/calculator.html", "/new.html", "/rates.html", "/loans.html", "/about.html", "/privacy.html", ...slugs.map((s) => `/p/${encodeURIComponent(s)}.html`)];
+  const urls = [
+    "/", "/calculator.html", "/new.html", "/rates.html", "/loans.html", "/guide.html", "/about.html", "/privacy.html",
+    ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}.html`),
+    ...slugs.map((s) => `/p/${encodeURIComponent(s)}.html`),
+  ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${ORIGIN}${u}</loc><lastmod>${today}</lastmod></url>`).join("\n")}
@@ -590,6 +660,7 @@ buildIndex();
 buildCalculator();
 const slugs = buildProductPages();
 buildListPages();
+const guideSlugs = buildGuidePages();
 buildInfoPages();
-buildSitemap(slugs);
-console.log(`페이지 생성 완료: index + 계산기 + rates/loans/new + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
+buildSitemap(slugs, guideSlugs);
+console.log(`페이지 생성 완료: index + 계산기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
