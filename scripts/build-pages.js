@@ -38,7 +38,8 @@ const naverLink = (bank, product) =>
 const nameLink = (bank, product) =>
   `<a href="${naverLink(bank, product)}" target="_blank" rel="noopener" class="cell-lk">${product} ↗</a>`;
 
-const updatedStr = new Date(DATA.builtAt).toLocaleDateString("ko-KR", { month: "long", day: "numeric" }) + " 업데이트";
+const builtKST = new Date(new Date(DATA.builtAt).getTime() + 9 * 3600 * 1000); // KST 기준일 (Actions 러너는 UTC라 offset 필요)
+const updatedStr = `${builtKST.getUTCMonth() + 1}월 ${builtKST.getUTCDate()}일 업데이트`;
 const dclsStr = DATA.finlifeDisclosureMonth
   ? `${DATA.finlifeDisclosureMonth.slice(0, 4)}년 ${parseInt(DATA.finlifeDisclosureMonth.slice(4), 10)}월 공시`
   : "";
