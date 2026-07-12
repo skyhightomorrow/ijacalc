@@ -186,7 +186,7 @@ function buildIndex() {
   </script>`;
 
   const title = "파킹통장 금리비교·이자계산기 — 오늘 넣으면 바로 이자 | ijacalc";
-  const desc = `오늘 입금하면 내일 바로 이자를 받는 파킹통장 ${DATA.parking.filter((p) => p.instant).length}개 실시간 비교. 금액을 입력하면 상품별 하루 세후 이자를 계산해드립니다. 매일 공시 데이터 자동 갱신.`;
+  const desc = `오늘 넣으면 내일 이자 받는 파킹통장 비교 + 금액별 하루 세후 이자 계산기. 매일 자동 갱신.`;
   fs.writeFileSync(path.join(PUB, "index.html"), layout({ title, desc, canonicalPath: "/", body, active: "instant" }));
 }
 
