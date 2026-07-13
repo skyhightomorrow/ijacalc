@@ -4,8 +4,10 @@
 name: social-post
 
 on:
-  schedule:
-    - cron: "0 23 * * *" # UTC 23:00 = KST 08:00
+  # 2026-07-13 자동 스케줄 중단 — 매일 같은 내용 반복 비선호 + THREADS_ACCESS_TOKEN "API access blocked"(앱 이슈)로
+  # 실패 중이라 당분간 수동 발행으로 전환(claude-in-chrome로 직접 포스팅). 재개하려면 아래 schedule 주석 해제 + 토큰 재발급.
+  # schedule:
+  #   - cron: "0 23 * * *" # UTC 23:00 = KST 08:00
   workflow_dispatch:
 
 jobs:
