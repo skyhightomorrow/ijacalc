@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-12T21:24:04.312Z",
+  "fetchedAt": "2026-07-13T21:29:40.257Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -237,24 +237,6 @@
       "payout": "월지급"
     },
     {
-      "bank": "신한",
-      "product": "참신한파킹통장",
-      "baseRate": 2.5,
-      "maxRate": 3.5,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260701",
-      "payout": "월지급"
-    },
-    {
-      "bank": "신한",
-      "product": "e-저축예금",
-      "baseRate": 1.3,
-      "maxRate": 1.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260701",
-      "payout": "월지급"
-    },
-    {
       "bank": "SBI",
       "product": "사이다입출금통장",
       "baseRate": 0.2,
@@ -291,15 +273,6 @@
       "payout": "월지급"
     },
     {
-      "bank": "대신",
-      "product": "더드리고입출금통장",
-      "baseRate": 0.1,
-      "maxRate": 3,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20260618",
-      "payout": "월지급"
-    },
-    {
       "bank": "다올",
       "product": "Fi 쌈짓돈Ⅲ 통장",
       "baseRate": 1,
@@ -315,6 +288,24 @@
       "maxRate": 3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260702",
+      "payout": "월지급"
+    },
+    {
+      "bank": "대신",
+      "product": "더드리고입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 2.8,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20260713",
+      "payout": "월지급"
+    },
+    {
+      "bank": "신한",
+      "product": "e-저축예금",
+      "baseRate": 1.3,
+      "maxRate": 1.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260713",
       "payout": "월지급"
     },
     {
@@ -1299,15 +1290,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260706",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "The프리미엄 Biz통장",
       "baseRate": 0.2,
@@ -1395,6 +1377,15 @@
       "maxRate": 2.3,
       "maxRateCondition": "30,000,000원 이상",
       "disclosedAt": "20260710",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260713",
       "payout": "분기지급"
     },
     {
