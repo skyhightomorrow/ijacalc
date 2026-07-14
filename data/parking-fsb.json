@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-13T21:29:40.257Z",
+  "fetchedAt": "2026-07-14T21:31:23.757Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1290,6 +1290,15 @@
       "payout": "분기지급"
     },
     {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260714",
+      "payout": "분기지급"
+    },
+    {
       "bank": "예가람",
       "product": "The프리미엄 Biz통장",
       "baseRate": 0.2,
@@ -1377,15 +1386,6 @@
       "maxRate": 2.3,
       "maxRateCondition": "30,000,000원 이상",
       "disclosedAt": "20260710",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260713",
       "payout": "분기지급"
     },
     {
