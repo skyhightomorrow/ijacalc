@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-15T21:30:19.029Z",
+  "fetchedAt": "2026-07-16T21:33:15.150Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1281,21 +1281,21 @@
       "payout": "분기지급"
     },
     {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260714",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "The프리미엄 멤버십 파킹통장",
       "baseRate": 3.1,
       "maxRate": 3.11,
       "maxRateCondition": "200,000,000원 미만",
       "disclosedAt": "20260715",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260716",
       "payout": "분기지급"
     },
     {
