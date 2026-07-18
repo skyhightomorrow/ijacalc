@@ -26,6 +26,17 @@ http
     }
     fs.readFile(filePath, (err, data) => {
       if (err) {
+        // 확장자 없는 경로는 .html 파일로 폴백 (Cloudflare Pages의 clean URL 동작과 동일)
+        if (!path.extname(filePath)) {
+          return fs.readFile(filePath + ".html", (err2, data2) => {
+            if (err2) {
+              res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+              return res.end("Not Found");
+            }
+            res.writeHead(200, { "Content-Type": MIME[".html"] });
+            res.end(data2);
+          });
+        }
         res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
         return res.end("Not Found");
       }

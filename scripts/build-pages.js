@@ -55,10 +55,10 @@ const NAV = (active, base) => `
   <div class="nav-wrap">
   <nav class="tabs">
     <a href="${base}./" class="${active === "instant" ? "active" : ""}">바로 이자</a>
-    <a href="${base}calculator.html" class="${active === "calc" ? "active" : ""}">계산기</a>
-    <a href="${base}new.html" class="${active === "new" ? "active" : ""}">신상품</a>
-    <a href="${base}rates.html" class="${active === "rates" ? "active" : ""}">예·적금</a>
-    <a href="${base}guide.html" class="${active === "guide" ? "active" : ""}">가이드</a>
+    <a href="${base}calculator" class="${active === "calc" ? "active" : ""}">계산기</a>
+    <a href="${base}new" class="${active === "new" ? "active" : ""}">신상품</a>
+    <a href="${base}rates" class="${active === "rates" ? "active" : ""}">예·적금</a>
+    <a href="${base}guide" class="${active === "guide" ? "active" : ""}">가이드</a>
   </nav>
   </div>`;
 
@@ -66,7 +66,7 @@ const FOOTER = (base = "") => `
   <footer>
     출처: 금융감독원 금융상품통합비교공시 「금융상품한눈에」, 저축은행중앙회 소비자포털 · 금리는 수시로 변동될 수 있으며 실제 가입 조건은 각 금융회사에서 확인하세요.<br>
     본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.<br>
-    <a href="${base}about.html">사이트 소개</a> · <a href="${base}privacy.html">개인정보처리방침</a>
+    <a href="${base}about">사이트 소개</a> · <a href="${base}privacy">개인정보처리방침</a>
   </footer>`;
 
 function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, active = "" }) {
@@ -102,7 +102,7 @@ ${extraHead}
     <a class="logo" href="${base}./">이자<b>계산기</b></a>
     <div class="top-right">
       <span class="date">${updatedStr}</span>
-      <a class="loan-btn" href="${base}loans.html">🏛️ 금감원 대출공시 조회</a>
+      <a class="loan-btn" href="${base}loans">🏛️ 금감원 대출공시 조회</a>
     </div>
   </div>
 ${NAV(active, base)}
@@ -200,10 +200,10 @@ function buildCalculator() {
   const topDepo = DATA.topDeposits.slice(0, 3);
 
   const parkingLinks = topParking
-    .map((x) => `<a href="p/${encodeURIComponent(R.slugify(x.p))}.html">${x.p.bank} ${x.p.product}<span class="r-rate">연 ${x.p.maxRate?.toFixed(2)}%</span></a>`)
+    .map((x) => `<a href="p/${encodeURIComponent(R.slugify(x.p))}">${x.p.bank} ${x.p.product}<span class="r-rate">연 ${x.p.maxRate?.toFixed(2)}%</span></a>`)
     .join("");
   const depoLinks = topDepo
-    .map((r) => `<a href="rates.html">${r.bank} ${r.product}<span class="r-rate">연 ${r.maxRate?.toFixed(2)}%</span></a>`)
+    .map((r) => `<a href="rates">${r.bank} ${r.product}<span class="r-rate">연 ${r.maxRate?.toFixed(2)}%</span></a>`)
     .join("");
 
   const body = `
@@ -329,7 +329,7 @@ function buildCalculator() {
     layout({
       title: "이자계산기 — 예금·적금·파킹통장 세후 이자 계산 | ijacalc",
       desc: "예금 이자계산기, 적금 이자계산기, 파킹통장 하루 이자계산기. 이자소득세 15.4%를 차감한 세후 실수령 이자를 바로 계산하고, 오늘 금리가 가장 높은 상품도 확인하세요.",
-      canonicalPath: "/calculator.html",
+      canonicalPath: "/calculator",
       body,
       active: "calc",
       extraHead: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
@@ -367,7 +367,7 @@ function buildProductPages() {
     const related = instantTop
       .filter((q) => R.slugify(q) !== slug)
       .slice(0, 5)
-      .map((q) => `<a href="${encodeURIComponent(R.slugify(q))}.html">${q.bank} ${q.product}<span class="r-rate">연 ${q.maxRate?.toFixed(2)}%</span></a>`)
+      .map((q) => `<a href="${encodeURIComponent(R.slugify(q))}">${q.bank} ${q.product}<span class="r-rate">연 ${q.maxRate?.toFixed(2)}%</span></a>`)
       .join("");
 
     const officialBtn = p.linkUrl
@@ -426,7 +426,7 @@ function buildProductPages() {
       layout({
         title,
         desc,
-        canonicalPath: `/p/${encodeURIComponent(slug)}.html`,
+        canonicalPath: `/p/${encodeURIComponent(slug)}`,
         body,
         depth: 1,
         active: "instant",
@@ -469,7 +469,7 @@ function buildListPages() {
     layout({
       title: `정기예금·적금 금리 순위 TOP 15 (12개월) — ${dclsStr} | 이자계산기`,
       desc: `전 은행·저축은행 정기예금·적금 최고금리 순위. 예금 1위 ${DATA.topDeposits[0]?.bank} 연 ${DATA.topDeposits[0]?.maxRate?.toFixed(2)}%, 적금 1위 ${DATA.topSavings[0]?.bank} 연 ${DATA.topSavings[0]?.maxRate?.toFixed(2)}%. 금융감독원 공시 기준 매일 갱신.`,
-      canonicalPath: "/rates.html",
+      canonicalPath: "/rates",
       body: `
   <div class="hero"><h1>예·적금 <span class="em">금리 순위</span></h1><p>12개월 최고우대금리 기준 · ${dclsStr} · 은행 + 저축은행</p></div>
   <h2 class="sec">정기예금 TOP 15 <small>목돈 맡기기</small></h2>
@@ -486,7 +486,7 @@ function buildListPages() {
     layout({
       title: `주택담보대출·전세·신용대출 금리 비교 — ${dclsStr} | 이자계산기`,
       desc: `주담대·전세자금·개인신용대출 은행별 최저금리 비교. 금융감독원 금융상품통합비교공시 데이터, 광고·중개 아님.`,
-      canonicalPath: "/loans.html",
+      canonicalPath: "/loans",
       body: `
   <div class="hero"><h1>대출 <span class="em">최저금리</span> 비교</h1><p>${dclsStr} · 은행 공시 기준</p></div>
   <div class="notice gray">
@@ -522,7 +522,7 @@ function buildListPages() {
     layout({
       title: `새로 나온 파킹통장·예적금 신상품 — 매일 갱신 | 이자계산기`,
       desc: `오늘 새로 공시된 파킹통장·예금·적금 신상품 모음. 금융감독원·저축은행중앙회 공시를 매일 비교해서 새 상품만 골라 보여드립니다.`,
-      canonicalPath: "/new.html",
+      canonicalPath: "/new",
       body: `
   <div class="hero"><h1>새로 나온 <span class="em">파킹통장, 예적금</span></h1><p>어제까지 없던 상품만 골라서 · 매일 갱신</p></div>
   ${newBody}`,
@@ -552,7 +552,7 @@ function buildGuidePages() {
   for (const g of GUIDES) {
     const others = GUIDES.filter((x) => x.slug !== g.slug)
       .slice(0, 4)
-      .map((x) => `<a href="${encodeURIComponent(x.slug)}.html">${x.title}</a>`)
+      .map((x) => `<a href="${encodeURIComponent(x.slug)}">${x.title}</a>`)
       .join("");
 
     const jsonLd = {
@@ -569,12 +569,12 @@ function buildGuidePages() {
       layout({
         title: `${g.title} | 이자계산기`,
         desc: g.desc,
-        canonicalPath: `/guide/${encodeURIComponent(g.slug)}.html`,
+        canonicalPath: `/guide/${encodeURIComponent(g.slug)}`,
         depth: 1,
         active: "guide",
         extraHead: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
         body: `
-  <div class="crumb"><a href="../">홈</a> › <a href="../guide.html">가이드</a></div>
+  <div class="crumb"><a href="../">홈</a> › <a href="../guide">가이드</a></div>
   <div class="prod-head"><h1>${g.title}</h1></div>
   <div class="prose" style="font-size:15px">${g.body}</div>
   <h2 class="sec">다른 가이드</h2>
@@ -585,7 +585,7 @@ function buildGuidePages() {
 
   // 가이드 목록 페이지 (최신 글 먼저)
   const list = [...GUIDES].sort((a, b) => b.date.localeCompare(a.date)).map(
-    (g) => `<a class="related-item" href="guide/${encodeURIComponent(g.slug)}.html" style="display:block; padding:18px 4px; border-bottom:1px solid var(--border); text-decoration:none; color:inherit">
+    (g) => `<a class="related-item" href="guide/${encodeURIComponent(g.slug)}" style="display:block; padding:18px 4px; border-bottom:1px solid var(--border); text-decoration:none; color:inherit">
       <div style="font-size:16.5px; font-weight:700">${g.title}</div>
       <div style="font-size:13px; color:var(--sub); margin-top:5px; line-height:1.6">${g.desc}</div>
     </a>`
@@ -596,7 +596,7 @@ function buildGuidePages() {
     layout({
       title: "금리·이자 가이드 — 파킹통장, 세금, 예금자보호 총정리 | 이자계산기",
       desc: "파킹통장 원리, 이자소득세 15.4%, 예금자보호 1억원, CMA 비교, 우대금리 함정까지 — 이자 재테크에 필요한 지식을 정리한 가이드 모음입니다.",
-      canonicalPath: "/guide.html",
+      canonicalPath: "/guide",
       active: "guide",
       body: `
   <div class="hero"><h1>금리·이자 <span class="em">가이드</span></h1><p>이자 재테크에 필요한 지식을 하나씩, 정확하게</p></div>
@@ -674,9 +674,9 @@ function buildInfoPages() {
 function buildSitemap(slugs, guideSlugs) {
   const today = DATA.builtAt.slice(0, 10);
   const urls = [
-    "/", "/calculator.html", "/new.html", "/rates.html", "/loans.html", "/guide.html", "/about.html", "/privacy.html",
-    ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}.html`),
-    ...slugs.map((s) => `/p/${encodeURIComponent(s)}.html`),
+    "/", "/calculator", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
+    ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}`),
+    ...slugs.map((s) => `/p/${encodeURIComponent(s)}`),
   ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

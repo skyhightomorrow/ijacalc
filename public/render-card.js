@@ -72,7 +72,7 @@
     const { daily } = calcDaily(p, amt);
     const monthly = daily * 30;
     const app = appStoreLink(p);
-    const name = `<a href="p/${encodeURIComponent(slugify(p))}.html">${p.product}<span class="lk">자세히 ↗</span></a>`;
+    const name = `<a href="p/${encodeURIComponent(slugify(p))}">${p.product}<span class="lk">자세히 ↗</span></a>`;
     return `
     <div class="card">
       <div class="left">
