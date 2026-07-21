@@ -1,7 +1,7 @@
 {
-  "builtAt": "2026-07-20T21:42:51.435Z",
-  "finlifeFetchedAt": "2026-07-20T21:41:33.472Z",
-  "finlifeDisclosureMonth": "202606",
+  "builtAt": "2026-07-21T21:38:39.359Z",
+  "finlifeFetchedAt": "2026-07-21T21:38:09.226Z",
+  "finlifeDisclosureMonth": "202607",
   "parking": [
     {
       "bank": "예가람저축은행",
@@ -14,7 +14,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -28,7 +28,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -42,7 +42,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EB%A9%A4%EB%B2%84%EC%8B%AD%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -72,7 +72,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%EA%B8%89%EC%97%AC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -86,7 +86,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%98%88%EC%8A%A4%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -100,7 +100,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=KB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20kiwi%ED%8C%A1%ED%8C%A1%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -114,7 +114,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%82%A4%EC%9B%80%EC%A3%BC%EB%8B%88%EC%96%B4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -128,7 +128,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%20%ED%82%A4%EC%9B%80%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -158,7 +158,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%A8%EA%BB%98%ED%82%A4%EC%9B%80%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -220,7 +220,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%ED%99%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Mymo%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -234,7 +234,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20OK%EC%A7%A0%ED%85%8C%ED%81%AC%ED%86%B5%EC%9E%A5%E2%85%A1",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -248,7 +248,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%8B%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8C%80%EC%8B%A0%20%EB%8D%94%EB%8D%94%EB%8D%94%ED%8C%8C%ED%82%B9",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -262,7 +262,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%98%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Fi%20%EC%8C%88%EC%A7%93%EB%8F%88%E2%85%A2%20%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -276,7 +276,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DB%ED%96%89%EB%B3%B5%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -290,7 +290,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%EA%B3%A0%ED%8C%8C%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -304,7 +304,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20IBKSB%20e-%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -318,7 +318,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20IBK%EB%AA%A8%EC%9E%84%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -332,7 +332,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%A0%ED%81%90%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%A0%ED%81%90%EC%98%A8%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -346,7 +346,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20Biz%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -360,7 +360,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%ED%94%8C%EB%9F%AC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -374,7 +374,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -388,7 +388,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%84%EC%9D%B4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -402,7 +402,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20The%ED%94%84%EB%A6%AC%EB%AF%B8%EC%97%84%20%EB%A9%A4%EB%B2%84%EC%8B%AD%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -416,7 +416,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20OK%ED%8C%8C%ED%82%B9%ED%94%8C%EB%A0%89%EC%8A%A4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -430,7 +430,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=JT%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20JT%EC%A0%90%ED%94%84%EC%97%85%E2%85%A1%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -444,7 +444,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9B%B0%EC%BB%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9B%B0%EB%B1%85%20%EB%AA%A8%EB%91%90%ED%8E%98%EC%9D%B4%20%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -458,7 +458,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9B%B0%EC%BB%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9B%B0%EC%BB%B4%20%EC%A3%BC%EA%B1%B0%EB%9E%98%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -472,7 +472,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8B%A4%EC%98%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20Fi%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -486,7 +486,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%ED%8D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%8E%98%ED%8D%BC%EC%8A%A4%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A55",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -500,7 +500,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%91%B8%EB%A5%B8%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -514,7 +514,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%91%B8%EB%A5%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-%ED%91%B8%EB%A5%B8%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -528,7 +528,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%9C%ED%88%AC%20ACE%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -542,7 +542,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=NH%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20NH%20FIC-One%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -556,7 +556,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%8B%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%EB%93%9C%EB%A6%AC%EA%B3%A0%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -570,7 +570,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%A0%ED%81%90%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B3%A0%EC%88%98%EC%9D%B5%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -584,7 +584,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-RUN%EA%B8%89%EC%97%AC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -598,7 +598,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%8A%A4%EC%95%A4%ED%8B%B0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9A%B0%EB%A6%AC%EA%B0%80%EC%A1%B1%EC%82%AC%EB%9E%91%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -612,7 +612,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%82%AC%EC%9D%B4%EB%8B%A4%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -626,7 +626,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%98%88%EC%8A%A4%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -640,7 +640,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=BNK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%82%BC%EC%82%BC%ED%95%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -654,7 +654,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=KB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20kiwi%ED%8C%A1%ED%8C%A1%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -668,7 +668,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%98%EB%82%98%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%98%EC%9D%B4(High)%ED%95%98%EB%82%98%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -682,7 +682,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20M-DreamBig%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -696,7 +696,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DreamBig%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -710,7 +710,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -724,7 +724,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%EC%A3%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A7%80%EB%8B%88%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -738,7 +738,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%EB%8B%A4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AF%B8%EC%84%B1%EB%85%84%EC%9E%90)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -752,7 +752,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%EB%8B%A4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AA%A8%EC%9E%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -766,7 +766,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -780,7 +780,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%82%A4%EC%9B%80%EC%A3%BC%EB%8B%88%EC%96%B4%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -794,7 +794,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%EA%B8%88%EC%9C%B5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B2%AB%EB%B2%88%EC%A7%B8%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -808,7 +808,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=JT%EC%B9%9C%EC%95%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -822,7 +822,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=JT%EC%B9%9C%EC%95%A0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%20%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%9E%85%EC%B6%9C%EA%B8%88%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -836,7 +836,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%8D%94%20%ED%82%A4%EC%9B%80%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -850,7 +850,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9D%B4%EC%9D%8C%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -864,7 +864,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OSB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20E-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -878,7 +878,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=OSB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20S-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -892,7 +892,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%A8%EA%BB%98%ED%82%A4%EC%9B%80%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -906,7 +906,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%AA%85%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -920,7 +920,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8B%A0%ED%95%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -934,7 +934,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%82%BC%ED%98%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -948,7 +948,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%A0%EC%97%90%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%8C%EC%B0%AC%EC%9E%90%EC%9C%A0%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88(%EA%B8%B0%EA%B0%84%EB%B3%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -962,7 +962,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%A0%EC%97%90%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%8C%EC%B0%AC%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88(%EA%B8%B0%EA%B0%84%EB%B3%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -976,7 +976,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%93%9C%EB%A6%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%BF%88%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -990,7 +990,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9E%90%EC%9C%A0%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1004,7 +1004,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%8E%98%ED%8D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%8E%98%ED%8D%BC%EB%A3%B0%EB%A3%A8%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1018,7 +1018,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%82%A4%EC%9A%B0%EB%8A%94%20e%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1032,7 +1032,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%83%81%EC%9D%B8%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1046,7 +1046,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%83%81%EC%9D%B8%ED%94%8C%EB%9F%AC%EC%8A%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%81%AC%ED%81%AC%ED%81%AC%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1060,7 +1060,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%83%81%EC%83%81%EC%9D%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B1%85%EB%B1%85%EB%B1%85%20%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1074,7 +1074,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1088,7 +1088,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%ED%88%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%9E%90%EC%9C%A0%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1102,7 +1102,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AF%BC%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%ED%96%89%EB%B3%B5%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1116,7 +1116,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AF%BC%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1130,7 +1130,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1144,7 +1144,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EC%B9%B4%EC%9D%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1158,7 +1158,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A7%84%EC%A3%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1172,7 +1172,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B2%AD%EC%A3%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1186,7 +1186,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%EC%9D%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1200,7 +1200,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1214,7 +1214,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8D%94%EC%BC%80%EC%9D%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1228,7 +1228,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%A5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1242,7 +1242,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%ED%9D%A5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A1%B0%ED%9D%A5%EC%83%9D%EA%B3%84%EB%B9%84%ED%86%B5%EC%9E%A5",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1256,7 +1256,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B0%94%EB%A1%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1270,7 +1270,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DH%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1284,7 +1284,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=DH%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1298,7 +1298,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20n-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1312,7 +1312,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%82%BC%ED%98%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1326,7 +1326,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%ED%88%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1340,7 +1340,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%95%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%AA%A8%EC%95%84%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1354,7 +1354,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%82%A4%EC%9B%80YES%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1368,7 +1368,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%95%88%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1382,7 +1382,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%9B%90%EC%A0%9C%EC%9D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1396,7 +1396,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%9B%90%EC%A0%9C%EC%9D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1410,7 +1410,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EC%A7%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1424,7 +1424,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%81%EC%A7%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20SB%ED%86%A1%ED%86%A1-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1438,7 +1438,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%95%88%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1452,7 +1452,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1466,7 +1466,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%A1%B0%EC%9D%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1480,7 +1480,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=IBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B0%B8%EC%95%8C%EC%B0%ACIBK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1494,7 +1494,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%82%B4%EA%B0%80%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1508,7 +1508,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%ED%95%A8%EA%BB%98%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1522,7 +1522,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%20%EB%82%B4%EA%B0%80%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1536,7 +1536,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%20%ED%95%A8%EA%BB%98%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1550,7 +1550,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1564,7 +1564,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%84%EC%82%B0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1578,7 +1578,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%95%9C%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1592,7 +1592,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%82%BC%EC%A0%95%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1606,7 +1606,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%AA%85%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%82%B4%EA%B0%80%EA%B7%B8%EB%A6%B0%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1620,7 +1620,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%86%94%EB%B8%8C%EB%A0%88%EC%9D%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1634,7 +1634,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1648,7 +1648,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1662,7 +1662,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B6%80%EB%A6%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1676,7 +1676,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%ED%9D%A5%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1690,7 +1690,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%B0%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1704,7 +1704,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EB%B0%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%A0%ED%94%8C%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1718,7 +1718,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%97%90%EC%8A%A4%EC%95%A4%ED%8B%B0%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1732,7 +1732,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%A8%B8%EC%8A%A4%ED%8A%B8%EC%82%BC%EC%9D%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1746,7 +1746,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%8A%A4%EC%B9%B4%EC%9D%B4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1760,7 +1760,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AF%BC%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1774,7 +1774,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B8%88%ED%99%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1788,7 +1788,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1802,7 +1802,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%A0%EC%95%88%ED%83%80%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1816,7 +1816,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8D%94%EB%B8%94%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1830,7 +1830,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%88%EA%B0%80%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1844,7 +1844,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1858,7 +1858,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EA%B5%AD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1872,7 +1872,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1886,7 +1886,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9C%B5%EC%B0%BD%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1900,7 +1900,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B3%A0%EB%A0%A4%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1914,7 +1914,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%93%9C%EB%A6%BC%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1928,7 +1928,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%84%B8%EB%9E%8C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1942,7 +1942,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%9D%BC%EC%98%A8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1956,7 +1956,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1970,7 +1970,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%9B%90%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1984,7 +1984,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%EC%95%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -1998,7 +1998,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%95%88%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2012,7 +2012,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%AA%A8%EC%95%84%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2026,7 +2026,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8C%80%ED%95%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2040,7 +2040,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2054,7 +2054,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%8F%99%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2068,7 +2068,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2082,7 +2082,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2096,7 +2096,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EA%B5%AD%EC%A0%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2110,7 +2110,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2124,7 +2124,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%82%A8%EC%96%91%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4-%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2138,7 +2138,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=HB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2152,7 +2152,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=HB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2166,7 +2166,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AA%A8%EC%9E%84%ED%86%B5%EC%9E%A5)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2180,7 +2180,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%AF%B8%EC%84%B1%EB%85%84%EC%9E%90)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2194,7 +2194,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B2%95%EC%9D%B8%ED%86%B5%EC%9E%A5)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2208,7 +2208,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%9D%B8%EC%B2%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20e-%EB%B3%B4%EB%8B%A4%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EB%B9%84%EB%8C%80%EB%A9%B4)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2222,7 +2222,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2236,7 +2236,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2250,7 +2250,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2264,7 +2264,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EC%98%A4%EC%84%B1%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B9%84%EB%8C%80%EB%A9%B4%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2278,7 +2278,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B0%94%EB%A1%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2292,7 +2292,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=%EB%B0%94%EB%A1%9C%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88(%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C)",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2306,7 +2306,7 @@
       "linkUrl": "https://search.naver.com/search.naver?query=CK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     },
     {
@@ -2320,11 +2320,28 @@
       "linkUrl": "https://search.naver.com/search.naver?query=BNK%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-21",
       "needsVerify": false
     }
   ],
-  "newProducts": [],
+  "newProducts": [
+    {
+      "bank": "아이엠뱅크",
+      "product": "iM스마트예금",
+      "kind": "deposit",
+      "group": "은행",
+      "disclosureStart": "20260721",
+      "maxRate": 3.3
+    },
+    {
+      "bank": "대한저축은행",
+      "product": "개인신용대출",
+      "kind": "creditLoan",
+      "group": "저축은행",
+      "disclosureStart": "20260720",
+      "maxRate": null
+    }
+  ],
   "topDeposits": [
     {
       "bank": "엔에이치저축은행",
@@ -2337,46 +2354,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "없음",
       "maxLimit": null,
-      "disclosureMonth": "202606"
-    },
-    {
-      "bank": "페퍼저축은행",
-      "product": "회전정기예금 (비대면)",
-      "group": "저축은행",
-      "baseRate": 4.45,
-      "maxRate": 4.45,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "*회전정기예금(회전주기 12개월) 기본금리: 매 1년마다 해당시점 정기예금 1년 금리 +0.1%로 자동연장되는 변동금리 상품(1년 단위 확정금리). 매 1년 경과 후 중도해지시 회전일로부터 1년 경과 시점까지는 정상이율 적용.\n12개월 정기예금(비대면) 기본금리(연 4.35%)+ 기본 우대금리(연 0.10%)",
-      "maxLimit": null,
-      "disclosureMonth": "202606"
-    },
-    {
-      "bank": "페퍼저축은행",
-      "product": "페퍼스회전정기예금 (디지털페퍼앱)",
-      "group": "저축은행",
-      "baseRate": 4.45,
-      "maxRate": 4.45,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "*페퍼스회전정기예금(회전주기 12개월) 기본금리:매 1년마다 해당시점 정기예금 1년 금리 +0.1%로 자동연장되는 변동금리 상품(1년 단위 확정금리). 매 1년 경과 후 중도해지시 회전일로부터 1년 경과 시점까지는 정상이율 적용.\n12개월 정기예금(비대면) 기본금리(연 4.35%)+ 기본 우대금리(연 0.10%)",
-      "maxLimit": null,
-      "disclosureMonth": "202606"
-    },
-    {
-      "bank": "더블저축은행",
-      "product": "정기예금(인터넷뱅킹,스마트뱅킹)",
-      "group": "저축은행",
-      "baseRate": 4.45,
-      "maxRate": 4.45,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "동원제일저축은행",
@@ -2389,59 +2367,33 @@
       "joinWay": "영업점",
       "specialCondition": "없음",
       "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
-      "bank": "더케이저축은행",
-      "product": "e-정기예금",
+      "bank": "페퍼저축은행",
+      "product": "회전정기예금 (비대면)",
       "group": "저축은행",
       "baseRate": 4.4,
       "maxRate": 4.4,
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
+      "specialCondition": "*회전정기예금(회전주기 12개월) 기본금리: 매 1년마다 해당시점 정기예금 1년 금리 +0.1%로 자동연장되는 변동금리 상품(1년 단위 확정금리). 매 1년 경과 후 중도해지시 회전일로부터 1년 경과 시점까지는 정상이율 적용.\n12개월 정기예금(비대면) 기본금리(연 4.30%)+ 기본 우대금리(연 0.10%)",
       "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
-      "bank": "더케이저축은행",
-      "product": "e-회전식정기예금(1년단위 변동금리상품)",
-      "group": "저축은행",
-      "baseRate": 4.4,
-      "maxRate": 4.4,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202606"
-    },
-    {
-      "bank": "바로저축은행",
-      "product": "스마트정기예금(인터넷)",
-      "group": "저축은행",
-      "baseRate": 4.4,
-      "maxRate": 4.4,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202606"
-    },
-    {
-      "bank": "바로저축은행",
-      "product": "SB톡톡 정기예금(비대면)",
+      "bank": "페퍼저축은행",
+      "product": "페퍼스회전정기예금 (디지털페퍼앱)",
       "group": "저축은행",
       "baseRate": 4.4,
       "maxRate": 4.4,
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "스마트폰",
-      "specialCondition": "없음",
+      "specialCondition": "*페퍼스회전정기예금(회전주기 12개월) 기본금리:매 1년마다 해당시점 정기예금 1년 금리 +0.1%로 자동연장되는 변동금리 상품(1년 단위 확정금리). 매 1년 경과 후 중도해지시 회전일로부터 1년 경과 시점까지는 정상이율 적용.\n12개월 정기예금(비대면) 기본금리(연 4.30%)+ 기본 우대금리(연 0.10%)",
       "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "CK저축은행",
@@ -2454,33 +2406,20 @@
       "joinWay": "인터넷,스마트폰",
       "specialCondition": "없음",
       "maxLimit": 1000000000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
-      "bank": "머스트삼일저축은행",
-      "product": "e-정기예금",
+      "bank": "더블저축은행",
+      "product": "정기예금(인터넷뱅킹,스마트뱅킹)",
       "group": "저축은행",
       "baseRate": 4.4,
       "maxRate": 4.4,
       "rateType": "단리",
       "reserveType": null,
-      "joinWay": "인터넷",
+      "joinWay": "인터넷,스마트폰",
       "specialCondition": "없음",
       "maxLimit": null,
-      "disclosureMonth": "202606"
-    },
-    {
-      "bank": "머스트삼일저축은행",
-      "product": "비대면정기예금",
-      "group": "저축은행",
-      "baseRate": 4.4,
-      "maxRate": 4.4,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "동원제일저축은행",
@@ -2493,7 +2432,33 @@
       "joinWay": "영업점",
       "specialCondition": "없음",
       "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
+    },
+    {
+      "bank": "바로저축은행",
+      "product": "스마트정기예금(인터넷)",
+      "group": "저축은행",
+      "baseRate": 4.35,
+      "maxRate": 4.35,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202607"
+    },
+    {
+      "bank": "바로저축은행",
+      "product": "SB톡톡 정기예금(비대면)",
+      "group": "저축은행",
+      "baseRate": 4.35,
+      "maxRate": 4.35,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202607"
     },
     {
       "bank": "국제저축은행",
@@ -2506,20 +2471,72 @@
       "joinWay": "스마트폰",
       "specialCondition": "없음",
       "maxLimit": 100000000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
-      "bank": "페퍼저축은행",
-      "product": "정기예금 (비대면)",
+      "bank": "솔브레인저축은행",
+      "product": "e-정기예금",
       "group": "저축은행",
       "baseRate": 4.35,
       "maxRate": 4.35,
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "인터넷,스마트폰",
-      "specialCondition": null,
+      "specialCondition": "없음",
       "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
+    },
+    {
+      "bank": "솔브레인저축은행",
+      "product": "정기예금(비대면)",
+      "group": "저축은행",
+      "baseRate": 4.35,
+      "maxRate": 4.35,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202607"
+    },
+    {
+      "bank": "예가람저축은행",
+      "product": "회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.32,
+      "maxRate": 4.32,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "영업점",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202607"
+    },
+    {
+      "bank": "예가람저축은행",
+      "product": "e-회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.32,
+      "maxRate": 4.32,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202607"
+    },
+    {
+      "bank": "유안타저축은행",
+      "product": "회전정기예금 (변동금리)",
+      "group": "저축은행",
+      "baseRate": 4.31,
+      "maxRate": 4.31,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "영업점",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202607"
     }
   ],
   "topSavings": [
@@ -2534,7 +2551,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "① 롯데카드 결제계좌를 당행 입출금통장으로 지정 및 납부실적 3개월 이상 (연 2.0%p)\n롯데카드 우대조건\n② LOCA LIKIT 카드 누적 이용실적 50만원 이상 (연 7.0%p)\n③ LOCA LIKIT 카드 자동이체 납부 실적 3개월 이상 (연 3.0%p)",
       "maxLimit": 300000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "예가람저축은행",
@@ -2547,7 +2564,7 @@
       "joinWay": "영업점",
       "specialCondition": "* 임신 또는 당해연도 출산\n* 미취학 자녀수 에 따른 차등 적용\n* 한부모가족 지원 대상자",
       "maxLimit": 300000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "주식회사 케이뱅크",
@@ -2560,7 +2577,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "1. 입금실적에 따라 우대금리 적용\n2. 금리쿠폰을 입력시 우대금리 적용",
       "maxLimit": 300000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "애큐온저축은행",
@@ -2568,12 +2585,12 @@
       "group": "저축은행",
       "baseRate": 3,
       "maxRate": 8,
-      "rateType": "복리",
+      "rateType": "단리",
       "reserveType": "자유적립식",
       "joinWay": "스마트폰",
       "specialCondition": "최대 연5.0% 우대금리 적용 \n※ 우대금리 적용조건\n① 아이사랑우대(임신,출산,자녀)_1회만 인정 : 연3.5%\n② 입출금통장 월 평잔(50만원) 3회이상 : 연1.5%",
       "maxLimit": 300000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "애큐온저축은행",
@@ -2581,12 +2598,12 @@
       "group": "저축은행",
       "baseRate": 6.5,
       "maxRate": 8,
-      "rateType": "복리",
+      "rateType": "단리",
       "reserveType": "정액적립식",
       "joinWay": "스마트폰",
       "specialCondition": "최대 연5.0% 우대 금리 적용\n※우대금리 적용조건\n①첫거래 고객 우대 : 연 3.5%(고시금리 포함)\n②장기미거래 고객 우대 : 연 2.0%(고시금리 미포함)\n③당행 입출금 통장 자동이체 우대(6회이상) : 연 1.5%(고시금리 미포함)\n※조건①,조건②의 우대금리는 중복 적용되지 않음",
       "maxLimit": 200000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "SBI저축은행",
@@ -2599,7 +2616,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "- 세대주 우대금리 : 연0.1%\n\n- 청년층 우대금리 : 연0.9%\n\n- 소득취약계층 우대금리 : 연 1.0%\n\n- 전세사기피해자 우대금리 : 연 2.0%",
       "maxLimit": 6000000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "웰컴저축은행",
@@ -2612,7 +2629,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "① 연간 걸음수 달성여부에 따른 우대금리 지급 -1백만보 이상 1.0%p -2백만보 이상 2.0%p -3백만보 이상 3.0%p -4백만보 이상 6.0%p \n② 6회 이상 당행 입출금 통장을 통한 자동이체로 적금 납입 시 연 1.0%p\n* 적금 신규일부터 계약상 만기일 전일까지의 웰뱅 워킹 서비스를 통해 기록된 걸음수로 실적 산정",
       "maxLimit": 200000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "웰컴저축은행",
@@ -2625,7 +2642,7 @@
       "joinWay": "영업점,인터넷,스마트폰",
       "specialCondition": "① 계약기간의 2/3회 이상 웰컴 입출금통장을 통한 자동이체로 납입 : 1.0%p \n② 증빙서류 제출 시점 만 16세이하 가구원수에 따른 우대 - 1명 : 3.0%p - 2명 : 4.0%p - 3명 이상 : 6.0%p",
       "maxLimit": 100000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "SBI저축은행",
@@ -2638,7 +2655,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "① 아이계좌서비스 우대금리 : 연 0.2%\n\n② 만기 우대금리 : 연 0.5%\n\n③ 형제자매 우대금리 : 연 2.5% (1인당 0.5%p 우대, 최대 5명까지 적용)",
       "maxLimit": 6000000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "경남은행",
@@ -2651,7 +2668,7 @@
       "joinWay": "영업점,인터넷,스마트폰",
       "specialCondition": "신규고객\n①적금가입시3.0%\n②상품가입 전 마케팅동의시0.1%\n③이 적금 신규월 포함 3개월 동안 10만원 이상 경남은행 카드 대금결제시2.0%\n기존고객\n①급여 또는 연금입금시1.5%\n②공과금 자동이체시 2.0%\n③경남은행 카드이용시(8회이상&10만원이상 카드대금 결제보유)1.5%\n④상품가입 전 마케팅동의시0.1%",
       "maxLimit": 500000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "주식회사 카카오뱅크",
@@ -2664,7 +2681,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "자동이체시 우대금리 제공 : 연 4.00%p\n - 제공조건 : 전체 계약월수의 1/2이상을 자동이체로 납입하고 만기 해지하는 경우\n - 유의사항 : 만기 자동연장된 원리금은 우대금리를 제공하지 않음",
       "maxLimit": null,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "애큐온저축은행",
@@ -2672,12 +2689,12 @@
       "group": "저축은행",
       "baseRate": 3.5,
       "maxRate": 7,
-      "rateType": "복리",
+      "rateType": "단리",
       "reserveType": "자유적립식",
       "joinWay": "스마트폰",
       "specialCondition": "최대 연3.5% 우대 금리 적용\n※우대금리 적용조건\n①목표금액 달성 우대: 연 2.5%\n②모바일뱅킹 거래 실적 우대(3회이상) : 연 1.0%",
       "maxLimit": 500000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "웰컴저축은행",
@@ -2690,7 +2707,7 @@
       "joinWay": "인터넷",
       "specialCondition": "① 8회 이상 당행 입출금통장 통한 자동이체로 납입 시 연 2.0%p\n② 적금 신규일부터 계약상 만기일 전일까지의 입출금통장 평잔 50만원 이상 시 연 4.0%p",
       "maxLimit": 200000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "웰컴저축은행",
@@ -2703,7 +2720,7 @@
       "joinWay": "스마트폰",
       "specialCondition": "① 8회 이상 당행 입출금통장 통한 자동이체로 납입 시 연 2.0%p\n② 적금 신규일부터 계약상 만기일 전일까지의 입출금통장 평잔 50만원 이상 시 연 4.0%p",
       "maxLimit": 200000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     },
     {
       "bank": "유안타저축은행",
@@ -2716,7 +2733,7 @@
       "joinWay": "영업점",
       "specialCondition": "※ 최고우대금리 : 3.00 %p\n- 신규 가입일 당시 18세 이하 자녀 2명 이상인 경우 : 1.00 %p\n- 의료기관에서 발급받은 임신확인서 제출하는 경우 또는\n신규 가입일 당시 2년 이내 출생한 자녀의 부모인 경우 : 1.00 %p\n- 한부모가정의 부모인 경우 : 1.00 %p",
       "maxLimit": 300000,
-      "disclosureMonth": "202606"
+      "disclosureMonth": "202607"
     }
   ],
   "loans": {
@@ -2725,146 +2742,146 @@
         "bank": "경남은행",
         "product": "집집마다 도움대출II",
         "group": "은행",
-        "minRate": 3.44,
-        "maxRate": 5.05,
-        "avgRate": 4.78,
-        "detail": "아파트외 · 변동금리 · 만기일시상환방식"
-      },
-      {
-        "bank": "농협은행주식회사",
-        "product": "NH주택담보대출",
-        "group": "은행",
-        "minRate": 3.78,
-        "maxRate": 6.08,
-        "avgRate": 4.09,
+        "minRate": 3.64,
+        "maxRate": 5.25,
+        "avgRate": 4.62,
         "detail": "아파트 · 변동금리 · 만기일시상환방식"
-      },
-      {
-        "bank": "경남은행",
-        "product": "BNK모바일주택담보대출",
-        "group": "은행",
-        "minRate": 3.81,
-        "maxRate": 6.77,
-        "avgRate": 3.9,
-        "detail": "아파트 · 변동금리 · 분할상환방식"
-      },
-      {
-        "bank": "전북은행",
-        "product": "JB해피홈론",
-        "group": "은행",
-        "minRate": 3.84,
-        "maxRate": 5.84,
-        "avgRate": null,
-        "detail": "아파트 · 고정금리 · 분할상환방식"
-      },
-      {
-        "bank": "중소기업은행",
-        "product": "IBK주택담보대출",
-        "group": "은행",
-        "minRate": 3.92,
-        "maxRate": 4.72,
-        "avgRate": null,
-        "detail": "아파트 · 변동금리 · 만기일시상환방식"
-      },
-      {
-        "bank": "주식회사 하나은행",
-        "product": "하나원큐아파트론2",
-        "group": "은행",
-        "minRate": 4.04,
-        "maxRate": 5.24,
-        "avgRate": 4.41,
-        "detail": "아파트 · 변동금리 · 분할상환방식"
-      },
-      {
-        "bank": "전북은행",
-        "product": "JB우리집대출",
-        "group": "은행",
-        "minRate": 4.08,
-        "maxRate": 6.08,
-        "avgRate": null,
-        "detail": "아파트 · 고정금리 · 분할상환방식"
       },
       {
         "bank": "주식회사 카카오뱅크",
         "product": "주택담보대출",
         "group": "은행",
-        "minRate": 4.16,
-        "maxRate": 4.81,
-        "avgRate": 4.78,
+        "minRate": 4.01,
+        "maxRate": 4.66,
+        "avgRate": 4.62,
+        "detail": "아파트 · 변동금리 · 분할상환방식"
+      },
+      {
+        "bank": "주식회사 하나은행",
+        "product": "하나원큐아파트론2",
+        "group": "은행",
+        "minRate": 4.17,
+        "maxRate": 5.37,
+        "avgRate": 4.73,
         "detail": "아파트 · 변동금리 · 분할상환방식"
       },
       {
         "bank": "우리은행",
         "product": "우리아파트론",
         "group": "은행",
-        "minRate": 4.17,
-        "maxRate": 5.37,
-        "avgRate": 4.35,
-        "detail": "아파트 · 변동금리 · 분할상환방식"
+        "minRate": 4.18,
+        "maxRate": 5.28,
+        "avgRate": null,
+        "detail": "아파트 · 변동금리 · 만기일시상환방식"
       },
       {
         "bank": "우리은행",
         "product": "우리부동산론",
         "group": "은행",
-        "minRate": 4.17,
-        "maxRate": 5.37,
-        "avgRate": 4.79,
-        "detail": "아파트외 · 변동금리 · 분할상환방식"
+        "minRate": 4.18,
+        "maxRate": 5.28,
+        "avgRate": null,
+        "detail": "아파트외 · 변동금리 · 만기일시상환방식"
+      },
+      {
+        "bank": "부산은행",
+        "product": "BNK행복스케치 모기지론",
+        "group": "은행",
+        "minRate": 4.2,
+        "maxRate": 5.6,
+        "avgRate": 4.1,
+        "detail": "아파트 · 변동금리 · 분할상환방식"
+      },
+      {
+        "bank": "전북은행",
+        "product": "JB해피홈론",
+        "group": "은행",
+        "minRate": 4.2,
+        "maxRate": 6.2,
+        "avgRate": null,
+        "detail": "아파트 · 변동금리 · 만기일시상환방식"
+      },
+      {
+        "bank": "농협은행주식회사",
+        "product": "NH주택담보대출",
+        "group": "은행",
+        "minRate": 4.24,
+        "maxRate": 6.54,
+        "avgRate": null,
+        "detail": "아파트 · 변동금리 · 만기일시상환방식"
+      },
+      {
+        "bank": "신한은행",
+        "product": "신한주택대출(아파트)",
+        "group": "은행",
+        "minRate": 4.25,
+        "maxRate": 4.85,
+        "avgRate": 4.8,
+        "detail": "아파트 · 변동금리 · 분할상환방식"
+      },
+      {
+        "bank": "경남은행",
+        "product": "BNK모바일주택담보대출",
+        "group": "은행",
+        "minRate": 4.26,
+        "maxRate": 6.79,
+        "avgRate": 3.85,
+        "detail": "아파트 · 변동금리 · 분할상환방식"
       }
     ],
     "rent": [
       {
         "bank": "농협은행주식회사",
-        "product": "NH전세대출(주택도시보증공사)",
-        "group": "은행",
-        "minRate": 3.13,
-        "maxRate": 5.83,
-        "avgRate": 3.69,
-        "detail": "변동금리 · 만기일시상환방식"
-      },
-      {
-        "bank": "농협은행주식회사",
         "product": "NH전세대출(서울보증보험)",
         "group": "은행",
-        "minRate": 3.19,
-        "maxRate": 5.89,
-        "avgRate": 3.86,
+        "minRate": 3.28,
+        "maxRate": 5.98,
+        "avgRate": 3.97,
         "detail": "변동금리 · 만기일시상환방식"
       },
       {
         "bank": "농협은행주식회사",
         "product": "NH전세대출(주택금융공사)",
         "group": "은행",
-        "minRate": 3.19,
-        "maxRate": 5.89,
-        "avgRate": 3.69,
-        "detail": "변동금리 · 분할상환방식"
+        "minRate": 3.28,
+        "maxRate": 5.98,
+        "avgRate": 3.97,
+        "detail": "변동금리 · 만기일시상환방식"
+      },
+      {
+        "bank": "농협은행주식회사",
+        "product": "NH전세대출(주택도시보증공사)",
+        "group": "은행",
+        "minRate": 3.28,
+        "maxRate": 5.98,
+        "avgRate": 3.82,
+        "detail": "변동금리 · 만기일시상환방식"
       },
       {
         "bank": "광주은행",
         "product": "청년맞춤형 전월세보증금 대출",
         "group": "은행",
-        "minRate": 3.64,
-        "maxRate": 3.84,
-        "avgRate": 3.39,
+        "minRate": 3.32,
+        "maxRate": 3.52,
+        "avgRate": 3.38,
         "detail": "변동금리 · 만기일시상환방식"
       },
       {
         "bank": "주식회사 카카오뱅크",
         "product": "HF 전월세보증금 대출",
         "group": "은행",
-        "minRate": 3.64,
-        "maxRate": 3.84,
-        "avgRate": 3.81,
+        "minRate": 3.5,
+        "maxRate": 3.7,
+        "avgRate": 3.83,
         "detail": "변동금리 · 만기일시상환방식"
       },
       {
-        "bank": "국민은행",
-        "product": "KB주택전세자금대출",
+        "bank": "주식회사 카카오뱅크",
+        "product": "SGI 전월세보증금 대출",
         "group": "은행",
         "minRate": 3.71,
-        "maxRate": 5.11,
-        "avgRate": 4.11,
+        "maxRate": 3.91,
+        "avgRate": 4.09,
         "detail": "변동금리 · 만기일시상환방식"
       },
       {
@@ -2873,7 +2890,7 @@
         "group": "은행",
         "minRate": 3.72,
         "maxRate": 4.42,
-        "avgRate": 4.25,
+        "avgRate": 4.1,
         "detail": "변동금리 · 분할상환방식"
       },
       {
@@ -2882,54 +2899,45 @@
         "group": "은행",
         "minRate": 3.76,
         "maxRate": 4.46,
-        "avgRate": 4.78,
+        "avgRate": 3.96,
+        "detail": "변동금리 · 분할상환방식"
+      },
+      {
+        "bank": "국민은행",
+        "product": "KB주택전세자금대출",
+        "group": "은행",
+        "minRate": 3.81,
+        "maxRate": 5.21,
+        "avgRate": 4.05,
         "detail": "변동금리 · 분할상환방식"
       },
       {
         "bank": "국민은행",
         "product": "KB플러스전세자금대출",
         "group": "은행",
-        "minRate": 3.83,
-        "maxRate": 5.23,
-        "avgRate": 4.36,
+        "minRate": 3.93,
+        "maxRate": 5.33,
+        "avgRate": null,
         "detail": "변동금리 · 분할상환방식"
-      },
-      {
-        "bank": "주식회사 카카오뱅크",
-        "product": "SGI 전월세보증금 대출",
-        "group": "은행",
-        "minRate": 3.85,
-        "maxRate": 4.05,
-        "avgRate": 4.02,
-        "detail": "변동금리 · 만기일시상환방식"
       }
     ],
     "credit": [
       {
-        "bank": "주식회사 카카오뱅크",
-        "product": "일반신용대출",
-        "group": "은행",
-        "minRate": null,
-        "maxRate": null,
-        "avgRate": 0.01,
-        "detail": "가감조정금리"
-      },
-      {
         "bank": "광주은행",
         "product": "마이너스한도대출",
         "group": "은행",
-        "minRate": 0.04,
+        "minRate": 0.01,
         "maxRate": null,
-        "avgRate": 0.06,
+        "avgRate": 0.4,
         "detail": "가감조정금리"
       },
       {
         "bank": "중소기업은행",
         "product": "마이너스\n한도대출",
         "group": "은행",
-        "minRate": 0.2,
+        "minRate": 0.25,
         "maxRate": null,
-        "avgRate": 0.2,
+        "avgRate": 0.26,
         "detail": "가감조정금리"
       },
       {
@@ -2938,7 +2946,16 @@
         "group": "은행",
         "minRate": 0.29,
         "maxRate": null,
-        "avgRate": 0.24,
+        "avgRate": 0.27,
+        "detail": "가감조정금리"
+      },
+      {
+        "bank": "수협은행",
+        "product": "개인신용마이너스한도대출",
+        "group": "은행",
+        "minRate": 0.33,
+        "maxRate": null,
+        "avgRate": 0.34,
         "detail": "가감조정금리"
       },
       {
@@ -2947,52 +2964,52 @@
         "group": "은행",
         "minRate": 0.34,
         "maxRate": null,
-        "avgRate": 0.33,
-        "detail": "가감조정금리"
-      },
-      {
-        "bank": "우리은행",
-        "product": "협약금리 外 신용대출상품",
-        "group": "은행",
-        "minRate": 0.41,
-        "maxRate": null,
-        "avgRate": 0.38,
-        "detail": "가감조정금리"
-      },
-      {
-        "bank": "수협은행",
-        "product": "개인신용마이너스한도대출",
-        "group": "은행",
-        "minRate": 0.5,
-        "maxRate": null,
-        "avgRate": 0.5,
+        "avgRate": 0.34,
         "detail": "가감조정금리"
       },
       {
         "bank": "아이엠뱅크",
         "product": "일반신용대출",
         "group": "은행",
-        "minRate": 0.59,
+        "minRate": 0.49,
         "maxRate": null,
-        "avgRate": 0.53,
+        "avgRate": 0.5,
         "detail": "가감조정금리"
       },
       {
-        "bank": "경남은행",
-        "product": "마이너스한도대출",
+        "bank": "우리은행",
+        "product": "협약금리 外 신용대출상품",
         "group": "은행",
-        "minRate": 0.59,
+        "minRate": 0.5,
         "maxRate": null,
-        "avgRate": 0.59,
+        "avgRate": 0.48,
+        "detail": "가감조정금리"
+      },
+      {
+        "bank": "국민은행",
+        "product": "일반신용대출",
+        "group": "은행",
+        "minRate": 0.63,
+        "maxRate": null,
+        "avgRate": 0.62,
         "detail": "가감조정금리"
       },
       {
         "bank": "전북은행",
-        "product": "가계일반자금대출",
+        "product": "평생종합통장",
         "group": "은행",
-        "minRate": 0.64,
+        "minRate": 0.69,
         "maxRate": null,
-        "avgRate": 0.7,
+        "avgRate": 0.65,
+        "detail": "가감조정금리"
+      },
+      {
+        "bank": "경남은행",
+        "product": "일반신용대출",
+        "group": "은행",
+        "minRate": 0.7,
+        "maxRate": null,
+        "avgRate": 0.58,
         "detail": "가감조정금리"
       }
     ]
