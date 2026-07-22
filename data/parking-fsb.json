@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T21:38:39.319Z",
+  "fetchedAt": "2026-07-22T21:37:03.655Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1295,7 +1295,7 @@
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20260716",
+      "disclosedAt": "20260722",
       "payout": "분기지급"
     },
     {
