@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-22T21:37:03.655Z",
+  "fetchedAt": "2026-07-23T21:34:55.727Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1038,15 +1038,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "조은",
-      "product": "e-보통예금",
-      "baseRate": 1,
-      "maxRate": 1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260630",
-      "payout": "분기지급"
-    },
-    {
       "bank": "참",
       "product": "보통예금",
       "baseRate": 0.1,
@@ -1191,24 +1182,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "안국",
-      "product": "보통예금",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260624",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "안국",
-      "product": "보통예금(비대면)",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260624",
-      "payout": "분기지급"
-    },
-    {
       "bank": "조흥",
       "product": "조흥생계비통장",
       "baseRate": 0.6,
@@ -1272,15 +1245,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "조은",
-      "product": "보통예금",
-      "baseRate": 0.5,
-      "maxRate": 0.5,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260630",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "The프리미엄 멤버십 파킹통장",
       "baseRate": 3.1,
@@ -1290,21 +1254,30 @@
       "payout": "분기지급"
     },
     {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260722",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "The프리미엄 Biz통장",
       "baseRate": 0.2,
       "maxRate": 3.5,
       "maxRateCondition": "50,000,000,000원 이하",
       "disclosedAt": "20260709",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "E-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260723",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "S-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260723",
       "payout": "분기지급"
     },
     {
@@ -1389,6 +1362,15 @@
       "payout": "분기지급"
     },
     {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260723",
+      "payout": "분기지급"
+    },
+    {
       "bank": "예가람",
       "product": "E-RUN플러스 파킹통장",
       "baseRate": 2.7,
@@ -1398,21 +1380,39 @@
       "payout": "분기지급"
     },
     {
-      "bank": "OSB",
-      "product": "E-보통예금",
-      "baseRate": 0.2,
-      "maxRate": 2.3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260706",
+      "bank": "조은",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260723",
       "payout": "분기지급"
     },
     {
-      "bank": "OSB",
-      "product": "S-보통예금",
+      "bank": "조은",
+      "product": "e-보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260723",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금",
       "baseRate": 0.2,
-      "maxRate": 2.3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260706",
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260723",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260723",
       "payout": "분기지급"
     },
     {
