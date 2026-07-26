@@ -39,6 +39,19 @@ const GA_TAG = ORIGIN.startsWith("https")
 const DATA = JSON.parse(fs.readFileSync(path.join(PUB, "data.json"), "utf8"));
 const DEFAULT_AMT = 10000000;
 
+// 파킹통장 상품 목록 (슬러그 중복 제거) — 상품 상세·전체목록 허브·사이트맵이 공유한다
+const PARKING_LIST = (() => {
+  const seen = new Set();
+  const out = [];
+  for (const p of DATA.parking) {
+    const slug = R.slugify(p);
+    if (seen.has(slug)) continue;
+    seen.add(slug);
+    out.push({ p, slug });
+  }
+  return out;
+})();
+
 const naverLink = (bank, product) =>
   `https://search.naver.com/search.naver?query=${encodeURIComponent(bank + " " + product)}`;
 const nameLink = (bank, product) =>
@@ -55,6 +68,7 @@ const NAV = (active, base) => `
   <div class="nav-wrap">
   <nav class="tabs">
     <a href="${base}./" class="${active === "instant" ? "active" : ""}">바로 이자</a>
+    <a href="${base}parking" class="${active === "parking" ? "active" : ""}">전체 목록</a>
     <a href="${base}calculator" class="${active === "calc" ? "active" : ""}">계산기</a>
     <a href="${base}new" class="${active === "new" ? "active" : ""}">신상품</a>
     <a href="${base}rates" class="${active === "rates" ? "active" : ""}">예·적금</a>
@@ -160,6 +174,15 @@ function buildIndex() {
   <h2 class="sec">그 외 파킹통장 최고금리 <small>월지급 등 · 저축은행 공시</small></h2>
   <div class="tbl-wrap"><table id="parking-rest">${restRows}</table></div>
 
+  <h2 class="sec">파킹통장 전체 목록 <small>은행별로 모아보기</small></h2>
+  <p class="prose">이 페이지에는 오늘 유리한 상품만 추려서 보여드립니다.
+  저축은행·인터넷은행 파킹통장 <b>${PARKING_LIST.length}개 전부</b>를 금융회사별로 정리한 목록은 아래에서 볼 수 있어요.</p>
+  <div class="related">
+    <a href="parking">파킹통장 ${PARKING_LIST.length}개 전체 금리 목록<span class="r-rate">은행별</span></a>
+    <a href="calculator">파킹통장 이자 계산기<span class="r-rate">세후</span></a>
+    <a href="guide">금리·이자 가이드<span class="r-rate">읽을거리</span></a>
+  </div>
+
   <script src="render-card.js"></script>
   <script>
     (function () {${AMOUNT_SYNC_JS}
@@ -189,6 +212,27 @@ function buildIndex() {
   const desc = `오늘 넣으면 내일 이자 받는 파킹통장 비교 + 금액별 하루 세후 이자 계산기. 매일 자동 갱신.`;
   fs.writeFileSync(path.join(PUB, "index.html"), layout({ title, desc, canonicalPath: "/", body, active: "instant" }));
 }
+
+// 계산기 페이지 FAQ — "파킹통장 이자 계산기 / 파킹통장 계산기 / 파킹통장 이자 계산" 롱테일 타겟.
+// 숫자는 금리 공시가 아니라 고정된 계산 예시라 시간이 지나도 틀리지 않는다.
+const FAQ_ITEMS = [
+  {
+    q: "파킹통장 이자는 어떻게 계산하나요?",
+    a: "예치금 × 연이율 ÷ 365 = 하루 세전 이자입니다. 여기에서 이자소득세 15.4%를 빼면 실제로 받는 세후 이자가 됩니다. 예를 들어 1,000만 원을 연 3.0% 파킹통장에 넣으면 하루 세전 822원, 세후 약 695원입니다.",
+  },
+  {
+    q: "하루만 맡겨도 이자를 받나요?",
+    a: "네. 파킹통장 이자는 매일 밤 12시(자정) 기준 잔액으로 하루 단위 계산됩니다. 밤 11시 59분에 입금해도 그날 치 이자가 붙고, 다음 날 아침에 출금해도 이미 계산된 이자는 사라지지 않습니다. 다만 이자를 실제로 <b>지급</b>하는 주기(수시·월·분기)는 상품마다 다릅니다.",
+  },
+  {
+    q: "\"최고 연 7%\"인데 계산해보니 이자가 적습니다. 왜인가요?",
+    a: "대부분 <b>한도(캡)</b> 때문입니다. 최고금리를 50만 원이나 100만 원까지만 적용하고 초과분에는 기본금리(연 0.1% 수준)를 주는 상품이 많습니다. 이 사이트의 하루 이자 계산은 상품별 한도 조건을 자동으로 반영해서 실수령 기준으로 순위를 매깁니다.",
+  },
+  {
+    q: "이자에 붙는 세금은 얼마인가요?",
+    a: "이자소득세 15.4%(소득세 14% + 지방소득세 1.4%)가 원천징수됩니다. 세전 이자가 1만 원이면 1,540원을 떼고 8,460원이 들어옵니다. 이 사이트의 모든 계산은 세후 기준입니다.",
+  },
+];
 
 // ---------- 이자계산기 (calculator.html) ----------
 function buildCalculator() {
@@ -249,6 +293,24 @@ function buildCalculator() {
   <div class="related">
     ${parkingLinks}
     ${depoLinks}
+  </div>
+
+  <h2 class="sec">파킹통장 이자 계산기 사용법</h2>
+  <div class="prose">
+    <p>위 계산기에서 <b>파킹(하루 단위)</b> 탭을 고르면 파킹통장 이자 계산기로 바뀝니다.
+    맡길 금액과 연 이율, 며칠 둘지를 넣으면 이자소득세 15.4%를 뺀 세후 이자가 바로 나옵니다.</p>
+    <p style="margin-top:10px">파킹통장 이자는 <b>매일 밤 12시(자정) 잔액</b>을 기준으로 하루씩 계산되기 때문에,
+    하루만 넣어둬도 그날 치 이자가 붙습니다. 그래서 "며칠"을 넣는 방식으로 계산해야 실제와 맞습니다.</p>
+    <p style="margin-top:10px">상품마다 다른 한도·우대조건까지 자동으로 반영한 계산 결과를 보고 싶다면
+    <a href="./">바로 이자 페이지</a>에 금액만 넣으면 되고,
+    은행별 금리를 한눈에 비교하려면 <a href="parking">파킹통장 전체 금리 목록</a>을 보세요.</p>
+  </div>
+
+  <h2 class="sec">자주 묻는 질문</h2>
+  <div class="prose">
+    ${FAQ_ITEMS.map(
+      (f) => `<p style="margin-top:14px"><b>Q. ${f.q}</b><br>${f.a}</p>`
+    ).join("")}
   </div>
 
   <script src="render-card.js"></script>
@@ -324,15 +386,27 @@ function buildCalculator() {
     offers: { "@type": "Offer", price: "0" },
   };
 
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_ITEMS.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") },
+    })),
+  };
+
   fs.writeFileSync(
     path.join(PUB, "calculator.html"),
     layout({
-      title: "이자계산기 — 예금·적금·파킹통장 세후 이자 계산 | ijacalc",
-      desc: "예금 이자계산기, 적금 이자계산기, 파킹통장 하루 이자계산기. 이자소득세 15.4%를 차감한 세후 실수령 이자를 바로 계산하고, 오늘 금리가 가장 높은 상품도 확인하세요.",
+      title: "이자계산기 — 예금·적금·파킹통장 이자 계산기 (세후) | ijacalc",
+      desc: "예금 이자계산기, 적금 이자계산기, 파킹통장 이자 계산기. 이자소득세 15.4%를 차감한 세후 실수령 이자를 바로 계산하고, 오늘 금리가 가장 높은 상품도 확인하세요.",
       canonicalPath: "/calculator",
       body,
       active: "calc",
-      extraHead: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
+      extraHead:
+        `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` +
+        `<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`,
     })
   );
 }
@@ -350,11 +424,7 @@ function buildProductPages() {
     .slice(0, 6)
     .map((x) => x.p);
 
-  const slugs = [];
-  for (const p of DATA.parking) {
-    const slug = R.slugify(p);
-    if (slugs.includes(slug)) continue; // 동일 슬러그 중복 방지
-    slugs.push(slug);
+  for (const { p, slug } of PARKING_LIST) {
 
     const amounts = [1000000, 5000000, 10000000, 30000000, 50000000, 100000000];
     const calcRows = amounts
@@ -392,7 +462,7 @@ function buildProductPages() {
     };
 
     const body = `
-  <div class="crumb"><a href="../">홈</a> › <a href="../">파킹통장</a> › ${p.product}</div>
+  <div class="crumb"><a href="../">홈</a> › <a href="../parking">파킹통장 전체 목록</a> › <a href="../parking#${encodeURIComponent(p.bank)}">${p.bank}</a> › ${p.product}</div>
   <div class="prod-head">
     <div class="bank">${p.bank} · ${p.group}</div>
     <h1>${p.product} 금리 <span class="em">연 ${p.maxRate?.toFixed(2)}%</span></h1>
@@ -415,9 +485,12 @@ function buildProductPages() {
     <tr><th>예치 금액</th><th class="r">적용 금리</th><th class="r">하루</th><th class="r">한 달(30일)</th><th class="r">1년</th></tr>
     ${calcRows}
   </table></div>
+  <p class="prose">위 표에 없는 금액이라면 <a href="../calculator">파킹통장 이자 계산기</a>에서
+  금액과 기간을 직접 넣어 세후 이자를 계산해보세요. 연 ${p.maxRate?.toFixed(2)}%를 입력하면 이 상품 기준으로 계산됩니다.</p>
 
   <h2 class="sec">함께 볼 만한 파킹통장</h2>
-  <div class="related">${related}</div>`;
+  <div class="related">${related}</div>
+  <p class="prose"><a href="../parking">파킹통장 ${PARKING_LIST.length}개 전체 금리 목록 보기 →</a></p>`;
 
     const title = `${p.bank} ${p.product} 금리 연 ${p.maxRate?.toFixed(2)}% — 하루 이자 계산 | 이자계산기`;
     const desc = `${p.bank} ${p.product} 파킹통장: 최고 연 ${p.maxRate?.toFixed(2)}% (기본 ${p.baseRate?.toFixed(2)}%), ${p.maxRateCondition || ""}. 1천만원 예치 시 하루 세후 ${R.won(R.calcDaily(p, DEFAULT_AMT).daily)}. 금액별 이자 계산표 제공.`;
@@ -434,7 +507,84 @@ function buildProductPages() {
       })
     );
   }
-  return slugs;
+  return PARKING_LIST.map((x) => x.slug);
+}
+
+// ---------- 파킹통장 전체 목록 허브 (parking.html) ----------
+// 상품 상세 156p는 홈에서 19개만 링크돼 나머지가 고아 페이지였다.
+// 은행별로 묶어 전 상품에 링크를 한 번씩 공급하는 허브 (F babyhyetaek /r/ 허브와 같은 처방).
+function buildParkingHub() {
+  const byBank = new Map();
+  for (const item of PARKING_LIST) {
+    const b = item.p.bank;
+    if (!byBank.has(b)) byBank.set(b, []);
+    byBank.get(b).push(item);
+  }
+  const banks = [...byBank.keys()].sort((a, b) => a.localeCompare(b, "ko"));
+
+  // 은행별 섹션 — 각 상품이 정확히 한 번씩 링크된다
+  const bankSections = banks
+    .map((bank) => {
+      const items = byBank.get(bank).sort((x, y) => (y.p.maxRate || 0) - (x.p.maxRate || 0));
+      const rows = items
+        .map(
+          ({ p, slug }) =>
+            `<tr><td><a href="p/${encodeURIComponent(slug)}">${p.product}</a></td>` +
+            `<td class="r rate-em">${p.maxRate?.toFixed(2)}%</td>` +
+            `<td class="r">${p.baseRate?.toFixed(2)}%</td>` +
+            `<td>${p.payout || "-"}</td>` +
+            `<td><span class="b2">${p.maxRateCondition || "-"}</span></td></tr>`
+        )
+        .join("");
+      return `
+  <h3 class="sec" id="${encodeURIComponent(bank)}" style="font-size:17px">${bank} <small>${items.length}개 · ${items[0].p.group}</small></h3>
+  <div class="tbl-wrap"><table>
+    <tr><th>상품</th><th class="r">최고</th><th class="r">기본</th><th>지급</th><th>한도·조건</th></tr>
+    ${rows}
+  </table></div>`;
+    })
+    .join("");
+
+  // 상단 은행 색인 (앵커) — 목록이 길어 바로 찾아갈 수 있게
+  const bankIndex = banks
+    .map((b) => `<a href="#${encodeURIComponent(b)}">${b} <span class="r-rate">${byBank.get(b).length}</span></a>`)
+    .join("");
+
+  const instantCount = PARKING_LIST.filter((x) => x.p.instant).length;
+  const topRate = Math.max(...PARKING_LIST.map((x) => x.p.maxRate || 0));
+
+  const body = `
+  <div class="hero">
+    <h1>파킹통장 <span class="em">전체 금리 목록</span></h1>
+    <p>저축은행·인터넷은행 파킹통장 ${PARKING_LIST.length}개를 은행별로 모았습니다 · ${updatedStr}</p>
+  </div>
+
+  <div class="summary">
+    <div class="row"><span class="k">등록된 파킹통장</span><span class="v">${PARKING_LIST.length}개 · ${banks.length}개 금융회사</span></div>
+    <div class="row"><span class="k">최고 금리</span><span class="v hl">연 ${topRate.toFixed(2)}%</span></div>
+    <div class="row"><span class="k">수시(바로) 지급 상품</span><span class="v">${instantCount}개</span></div>
+  </div>
+
+  <p class="prose">금리는 각 상품의 <b>최고금리</b> 기준이며, 한도·우대조건을 채우지 못하면 기본금리가 적용됩니다.
+  내 금액 기준으로 하루에 얼마가 붙는지는 <a href="./">바로 이자 페이지</a>나
+  <a href="calculator">파킹통장 이자 계산기</a>에서 확인하세요.</p>
+
+  <h2 class="sec">은행으로 바로 찾기</h2>
+  <div class="related">${bankIndex}</div>
+
+  <h2 class="sec">은행별 파킹통장 금리 <small>가나다순 · ${updatedStr}</small></h2>
+  ${bankSections}`;
+
+  fs.writeFileSync(
+    path.join(PUB, "parking.html"),
+    layout({
+      title: `파킹통장 금리 전체 목록 ${PARKING_LIST.length}개 — 은행별 비교 | 이자계산기`,
+      desc: `저축은행·인터넷은행 파킹통장 ${PARKING_LIST.length}개 금리를 은행별로 정리했습니다. 최고 연 ${topRate.toFixed(2)}%, 수시지급 ${instantCount}개. 최고금리·기본금리·한도조건·이자 지급방식을 한 번에 비교하세요. 매일 공시 갱신.`,
+      canonicalPath: "/parking",
+      body,
+      active: "parking",
+    })
+  );
 }
 
 // ---------- 랭킹/목록 페이지 ----------
@@ -577,6 +727,16 @@ function buildGuidePages() {
   <div class="crumb"><a href="../">홈</a> › <a href="../guide">가이드</a></div>
   <div class="prod-head"><h1>${g.title}</h1></div>
   <div class="prose" style="font-size:15px">${g.body}</div>
+
+  <h2 class="sec">내 금액으로 계산해보기</h2>
+  <p class="prose">읽은 내용을 내 돈에 대입해보면 훨씬 빨리 이해됩니다.
+  금액을 넣으면 세후 이자를 바로 계산해드려요.</p>
+  <div class="related">
+    <a href="../calculator">이자계산기<span class="r-rate">세후 계산</span></a>
+    <a href="../">오늘 이자 주는 파킹통장<span class="r-rate">하루 이자순</span></a>
+    <a href="../parking">파킹통장 전체 금리 목록<span class="r-rate">${PARKING_LIST.length}개</span></a>
+  </div>
+
   <h2 class="sec">다른 가이드</h2>
   <div class="related">${others}</div>`,
       })
@@ -600,6 +760,10 @@ function buildGuidePages() {
       active: "guide",
       body: `
   <div class="hero"><h1>금리·이자 <span class="em">가이드</span></h1><p>이자 재테크에 필요한 지식을 하나씩, 정확하게</p></div>
+  <div class="related" style="margin-bottom:8px">
+    <a href="calculator">이자계산기<span class="r-rate">세후 계산</span></a>
+    <a href="parking">파킹통장 전체 금리 목록<span class="r-rate">${PARKING_LIST.length}개</span></a>
+  </div>
   ${list}`,
     })
   );
@@ -674,7 +838,7 @@ function buildInfoPages() {
 function buildSitemap(slugs, guideSlugs) {
   const today = DATA.builtAt.slice(0, 10);
   const urls = [
-    "/", "/calculator", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
+    "/", "/parking", "/calculator", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
     ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}`),
     ...slugs.map((s) => `/p/${encodeURIComponent(s)}`),
   ];
@@ -689,8 +853,9 @@ ${urls.map((u) => `  <url><loc>${ORIGIN}${u}</loc><lastmod>${today}</lastmod></u
 buildIndex();
 buildCalculator();
 const slugs = buildProductPages();
+buildParkingHub();
 buildListPages();
 const guideSlugs = buildGuidePages();
 buildInfoPages();
 buildSitemap(slugs, guideSlugs);
-console.log(`페이지 생성 완료: index + 계산기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
+console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
