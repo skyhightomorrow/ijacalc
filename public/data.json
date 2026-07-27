@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-07-26T21:26:14.458Z",
+  "builtAt": "2026-07-27T00:11:13.813Z",
   "finlifeFetchedAt": "2026-07-26T21:25:57.949Z",
   "finlifeDisclosureMonth": "202607",
   "parking": [
@@ -58,7 +58,7 @@
       "appIos": "1460544457",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-27",
       "needsVerify": true
     },
     {
@@ -144,7 +144,7 @@
       "appIos": "1178872627",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-27",
       "needsVerify": false
     },
     {
@@ -174,7 +174,7 @@
       "appIos": "1258016944",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-27",
       "needsVerify": false
     },
     {
@@ -190,7 +190,7 @@
       "appIos": "839333328",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-27",
       "needsVerify": false
     },
     {
@@ -206,7 +206,7 @@
       "appIos": "839333328",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-07-20",
+      "asOf": "2026-07-27",
       "needsVerify": false
     },
     {
