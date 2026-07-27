@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-26T21:26:14.409Z",
+  "fetchedAt": "2026-07-27T21:37:37.900Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1362,15 +1362,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260723",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "E-RUN플러스 파킹통장",
       "baseRate": 2.7,
@@ -1431,6 +1422,15 @@
       "maxRate": 3,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260715",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260727",
       "payout": "분기지급"
     },
     {
