@@ -1,0 +1,192 @@
+{
+  "_comment": "금액 구간별 차등금리·우대조건 수동 큐레이션. 저축은행중앙회/금감원 공시는 '최고금리·기본금리·한도조건' 3개만 제공하므로, 구간별 금리는 각 금융회사 공식 페이지에서 직접 확인해 여기에 적는다. ⚠️ 원칙: 공시 데이터(data/parking-fsb.json)와 최고/기본 금리가 충돌하면 공시를 신뢰하고 여기에 넣지 않는다. 공시는 매일 갱신되지만 기사·블로그는 낡은 값일 수 있다. tiers는 marginal(구간별 해당 금액분에만 그 금리 적용) 방식이며, key는 '은행|상품명'.",
+  "tiers": {
+    "다올저축은행|Fi 쌈짓돈Ⅲ 통장": {
+      "tiers": [
+        { "upto": 1000000, "rate": 5.0 },
+        { "upto": 5000000, "rate": 3.6 },
+        { "upto": 30000000, "rate": 3.5 },
+        { "upto": 50000000, "rate": 3.4 },
+        { "upto": null, "rate": 1.0 }
+      ],
+      "conditionFree": true,
+      "conditions": "우대조건 없음 — 누구나 구간별 금리를 그대로 받습니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://m.daolsb.com/deposit/goods.do?gds_cd=DC215",
+      "sourceName": "다올저축은행 공식 상품페이지"
+    },
+    "대신저축은행|대신 더더더파킹": {
+      "tiers": [
+        { "upto": 2000000, "rate": 6.0 },
+        { "upto": null, "rate": 2.0 }
+      ],
+      "conditionFree": false,
+      "conditions": "기본금리 연 2.0%에 마케팅 활용 동의 +2.0%p, 첫 거래 고객 +2.0%p가 붙어 최고 6.0%가 됩니다. 첫거래 우대는 가입일로부터 1년간만 적용되고, 기존 고객은 마케팅 동의분만 받아 최고 4.0%입니다. 우대금리는 200만원 이하분에만 적용됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.hankyung.com/article/202607018315P",
+      "sourceName": "한국경제 (2026-07-01)"
+    },
+    "케이뱅크|플러스박스": {
+      "tiers": [
+        { "upto": 50000000, "rate": 1.7 },
+        { "upto": null, "rate": 2.2 }
+      ],
+      "conditionFree": true,
+      "conditions": "상시 우대조건 없이 적용됩니다. 특이하게 5천만원을 넘는 금액에 더 높은 금리가 붙는 역구조입니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.kbanknow.com/ib20/mnu/PDPTDP000000",
+      "sourceName": "케이뱅크 공식"
+    },
+    "카카오뱅크|세이프박스": {
+      "tiers": [{ "upto": null, "rate": 1.6 }],
+      "conditionFree": true,
+      "conditions": "금액 구간별 차등 없이 전액 동일 금리입니다. 우대조건도 없습니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.kakaobank.com/products/safeboxes",
+      "sourceName": "카카오뱅크 공식 상품페이지"
+    },
+    "토스뱅크|토스뱅크 통장": {
+      "tiers": [{ "upto": null, "rate": 1.0 }],
+      "conditionFree": true,
+      "conditions": "금액과 상관없이 전액 동일 금리이며 우대조건이 없습니다. 과거의 1억원 이하·초과 차등 구조는 현재 적용되지 않습니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.tossbank.com/product-service/savings/account",
+      "sourceName": "토스뱅크 공식"
+    },
+    "토스뱅크|나눠모으기 통장": {
+      "tiers": [{ "upto": null, "rate": 1.4 }],
+      "conditionFree": true,
+      "conditions": "금액 구간별 차등 없이 전액 동일 금리이고, 이자는 매일 자동 지급됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.tossbank.com/product-service/savings/account",
+      "sourceName": "토스뱅크 공식"
+    },
+    "OK저축은행|OK파킹플렉스통장": {
+      "tiers": [
+        { "upto": 5000000, "rate": 3.01 },
+        { "upto": 300000000, "rate": 2.4 },
+        { "upto": null, "rate": 1.5 }
+      ],
+      "conditionFree": true,
+      "conditions": "우대금리 조건이 없습니다(공식 상품페이지 우대금리란 '해당사항없음'). 금액 구간에 따라 이율만 달라집니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.oksavingsbank.com/product/withdraw/parking.jsp",
+      "sourceName": "OK저축은행 공식 상품페이지"
+    },
+    "JT저축은행|JT점프업Ⅱ저축예금": {
+      "tiers": [
+        { "upto": 50000000, "rate": 3.01 },
+        { "upto": 100000000, "rate": 2.75 },
+        { "upto": null, "rate": 0.5 }
+      ],
+      "conditionFree": true,
+      "conditions": "우대금리 항목 자체가 없어 조건 없이 구간별 금리가 적용됩니다. 개인 1인 1계좌.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.jt-bank.co.kr/deposit/DEP0501.view",
+      "sourceName": "JT저축은행 공식 금리표"
+    },
+    "페퍼저축은행|페퍼스 파킹통장5": {
+      "tiers": [
+        { "upto": 50000000, "rate": 3.0 },
+        { "upto": null, "rate": 1.0 }
+      ],
+      "conditionFree": true,
+      "conditions": "우대금리 없이 금액 구간별 차등이율만 적용됩니다. 디지털페퍼 앱 전용 비대면 상품이며 개인 1인 1계좌입니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.pepperbank.kr/product/deposite/view.pepper?prdSn=98",
+      "sourceName": "페퍼저축은행 공식 상품페이지"
+    },
+    "한국투자저축은행|한투 ACE 파킹통장": {
+      "tiers": [
+        { "upto": 100000000, "rate": 3.0 },
+        { "upto": null, "rate": 0.2 }
+      ],
+      "conditionFree": true,
+      "conditions": "기본이율만 있고 우대이율 항목이 없습니다. 비대면 채널에서는 하루 1회 수시로 이자 지급을 요청할 수 있습니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://sb.koreainvestment.com/",
+      "sourceName": "한국투자저축은행 금융상품공시"
+    },
+    "웰컴저축은행|웰뱅 모두페이 통장": {
+      "tiers": [
+        { "upto": 10000000, "rate": 3.0 },
+        { "upto": null, "rate": 0.5 }
+      ],
+      "conditionFree": false,
+      "conditions": "기본금리는 연 0.5%이고, 두 조건을 모두 채워야 연 3.0%가 됩니다. ①잔액 50만원 초과(매일 최종잔액 기준) +0.5%p ②당월 이 통장을 연결한 간편결제(토스·카카오페이·페이코·네이버페이) 실적 10만원 이상 +2.0%p. ②는 충족한 달의 <b>다음 달</b>부터 적용되어 첫 달에는 최고금리를 받을 수 없습니다. 우대금리는 1천만원 이하분에만 적용됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.welcomebank.co.kr/ib20/mnu/IBNFPMDSP001",
+      "sourceName": "웰컴저축은행 공식 상품페이지"
+    },
+    "SBI저축은행|아이통장": {
+      "tiers": [
+        { "upto": 3000000, "rate": 3.2 },
+        { "upto": null, "rate": 0.2 }
+      ],
+      "conditionFree": true,
+      "conditions": "우대금리 조건은 없습니다.",
+      "notice": "⚠️ 이 통장은 <b>만 19세 미만 미성년자 전용</b>입니다. 성인은 가입할 수 없으며, 사이다뱅크 앱에서 본인(17세 이상) 또는 법정대리인이 개설합니다. 예금주가 만 19세가 되면 일반 입출금 예금으로 자동 전환됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.sbisb.co.kr/gds0010201.act?PROD_CD=130015",
+      "sourceName": "SBI저축은행 공식 상품공시"
+    },
+    "IBK저축은행|IBKSB e-파킹통장": {
+      "tiers": [
+        { "upto": 300000000, "rate": 3.5 },
+        { "upto": 1000000000, "rate": 1.5 },
+        { "upto": null, "rate": 0.1 }
+      ],
+      "conditionFree": true,
+      "conditions": "구간별 금리 자체에는 조건이 없습니다.",
+      "notice": "⚠️ 공식 상품페이지에 <b>판매 일시중단</b>으로 표기돼 있어 현재 신규 가입이 어려울 수 있습니다(기존 계좌는 유지). 가입 전 은행에 확인하세요.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.ibksb.co.kr/deposit/interest",
+      "sourceName": "IBK저축은행 수신금리 공시"
+    }
+  },
+  "conditionsOnly": {
+    "_comment": "구간금리는 확인하지 못했지만 우대조건은 확인된 상품 — 조건 문구만 보강한다.",
+    "OK저축은행|OK짠테크통장Ⅱ": {
+      "conditionFree": false,
+      "conditions": "최고금리를 받으려면 4대페이(네이버·카카오·페이코·토스) 중 한 곳 이상에 계좌를 등록하거나 카드 결제계좌로 등록하고(+1.8%p), 마케팅 활용에 동의(+0.2%p)해야 합니다. 우대금리는 5천만원 이하분에만 적용됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://m.oksavingsbank.com/product/withdraw/free.jsp",
+      "sourceName": "OK저축은행 공식"
+    },
+    "예가람저축은행|E-RUN플러스 파킹통장": {
+      "conditionFree": false,
+      "conditions": "기본금리가 5천만원 이하분은 연 3.20%, 초과분은 연 2.70%이고, 여기에 우대금리가 항목당 0.10%p씩 최대 0.30%p 붙어 최고 3.50%가 됩니다. 우대 조건은 ①예가람 첫 거래 고객 ②당행 대출·적금 자동이체를 이 통장으로 등록 ③체크카드 월 10만원 이상 결제입니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://nsl.yegaramsb.co.kr/dep/inq/depDetail.frm?LINK_ACT=BBS_SELECT&PDCD=P000000114",
+      "sourceName": "예가람저축은행 공식 상품페이지"
+    },
+    "고려저축은행|보고파플러스 파킹통장": {
+      "conditionFree": false,
+      "conditions": "금액 구간별 차등 없이 기본금리 연 3.20%가 적용되고, 우대금리가 항목당 0.10%p씩 최대 0.30%p 붙어 최고 3.50%가 됩니다. 우대 조건은 ①고려저축은행 첫 거래 고객 ②당행 대출·적금 자동이체를 이 통장으로 등록 ③체크카드 월 10만원 이상 결제입니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.goryosb.co.kr/deposit/product/P000000191",
+      "sourceName": "고려저축은행 공식 상품페이지"
+    },
+    "애큐온저축은행|애큐온모바일자유예금": {
+      "conditionFree": false,
+      "conditions": "금액 구간별 차등 없이 기본금리 연 3.30%가 적용되고, 우대금리 0.20%p가 붙어 최고 3.50%가 됩니다. 우대 조건은 ①모바일뱅킹으로 신규 가입 +0.1%p ②애큐온멤버십플러스 가입 +0.1%p이며, 모바일 전용 상품이라 ①은 사실상 자동 충족됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.acuonsb.co.kr/sv_dpt0010180.act",
+      "sourceName": "애큐온저축은행 공식 상품공시"
+    },
+    "SBI저축은행|사이다입출금통장": {
+      "conditionFree": true,
+      "conditions": "우대금리 조건 없이 1억원까지 연 2.70%가 일괄 적용됩니다(2026년 6월 24일 0.7%p 인상). 1억원 초과분에는 낮은 금리가 적용됩니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.viva100.com/article/20260624500581",
+      "sourceName": "브릿지경제 (2026-06-24)"
+    },
+    "DB저축은행|DB행복파킹통장": {
+      "conditionFree": false,
+      "conditions": "DB저축은행과 모바일로 처음 거래하는 신규 고객에게 우대금리가 적용됩니다(신규 +1.0%p, 마케팅 동의 +0.2%p). 만 19세 이상 개인, 1인 1계좌, 모바일뱅킹 전용입니다.",
+      "verified": "2026-07-28",
+      "sourceUrl": "https://www.m-i.kr/news/articleView.html?idxno=1342876",
+      "sourceName": "매일일보 (2026-03)"
+    }
+  }
+}

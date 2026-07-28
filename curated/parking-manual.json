@@ -59,16 +59,12 @@
       "appIos": "1178872627"
     },
     {
-      "bank": "SBI저축은행",
-      "product": "사이다뱅크 입출금통장",
-      "baseRate": 3,
-      "maxRate": 3,
-      "maxRateCondition": "잔액 1억원 이하 구간",
+      "_note": "공시에 '사이다입출금통장'으로 이미 있는 상품이라 중복 등록을 제거했다(2026-07-28). 수동 입력 금리 3.0%가 공시 2.70%(2026-06-24 인상 반영)보다 낡아 잘못된 이자가 표시되고 있었음. 금리는 공시를 따르고, 앱·수령방식 등 공시에 없는 정보만 아래 enrichOnly로 얹는다.",
+      "enrichOnly": true,
+      "matchProduct": "사이다입출금통장",
       "payout": "수시지급",
       "timing": "내일 앱에서 '이자 바로 지급'으로 수령",
-      "group": "저축은행",
       "sourceUrl": "https://www.sbisb.co.kr/",
-      "needsVerify": true,
       "appAndroid": "com.sbi.saidabank",
       "appIos": "1460544457"
     }

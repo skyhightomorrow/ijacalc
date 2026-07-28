@@ -30,14 +30,32 @@
   }
 
   // 입력 금액 기준 적용 원금·금리·하루 세후 이자 계산
+  // p.tiers가 있으면 구간별(marginal) 계산 — 각 구간 금액분에 그 구간 금리를 적용한다.
+  // 없으면 공시의 최고금리·한도조건만으로 근사한다(한도 초과분은 계산에서 제외).
   function calcDaily(p, amt) {
+    if (p.tiers && p.tiers.length) {
+      let pretax = 0;
+      let prev = 0;
+      for (const t of p.tiers) {
+        const top = t.upto == null ? Infinity : t.upto;
+        const portion = Math.min(amt, top) - prev;
+        if (portion <= 0) continue;
+        pretax += (portion * (t.rate || 0)) / 100 / 365;
+        prev = top;
+        if (prev >= amt) break;
+      }
+      const daily = pretax * (1 - TAX);
+      // 표시용 실효금리 — 구간이 섞이면 단일 금리로 말할 수 없으므로 가중평균을 쓴다
+      const rate = amt > 0 ? ((pretax * 365) / amt) * 100 : 0;
+      return { applied: amt, rate, daily, tiered: true };
+    }
     const cond = parseCondition(p.maxRateCondition);
     let applied = amt;
     let rate = p.maxRate || 0;
     if (cond.type === "upto") applied = Math.min(amt, cond.value);
     else if (cond.type === "above" && amt <= cond.value) rate = p.baseRate ?? rate;
     const daily = ((applied * rate) / 100 / 365) * (1 - TAX);
-    return { applied, rate, daily };
+    return { applied, rate, daily, tiered: false };
   }
 
   function condTag(p, amt) {

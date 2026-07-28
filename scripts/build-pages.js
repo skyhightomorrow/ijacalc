@@ -453,7 +453,7 @@ function buildProductPages() {
     const calcRows = amounts
       .map((a) => {
         const c = R.calcDaily(p, a);
-        return `<tr><td>${R.fmtKorMoney(a)}</td><td class="r">적용 ${c.rate.toFixed(2)}%</td><td class="r rate-em">+${R.won(c.daily)}</td><td class="r">${R.won(c.daily * 30)}</td><td class="r">${R.won(c.daily * 365)}</td></tr>`;
+        return `<tr><td>${R.fmtKorMoney(a)}</td><td class="r">${c.tiered ? "실효" : "적용"} ${c.rate.toFixed(2)}%</td><td class="r rate-em">+${R.won(c.daily)}</td><td class="r">${R.won(c.daily * 30)}</td><td class="r">${R.won(c.daily * 365)}</td></tr>`;
       })
       .join("");
 
@@ -521,6 +521,47 @@ function buildProductPages() {
           : `<p class="prose">현재 최고금리 1위 ${topName} 대비 1천만원 기준 하루 세후 이자가 <b>${R.won(-gap)} 적습니다</b>. 다만 상품마다 우대 조건과 한도(이 상품: ${p.maxRateCondition || "제한 없음"})가 달라, 내 예치 금액 기준으로 비교하는 것이 정확합니다.${sameBankProse}</p>`;
     }
 
+    // --- 금액 구간별 금리 (큐레이션된 상품만) ---
+    // 공시는 최고/기본 금리만 주지만 파킹통장의 실제 구조는 구간별 차등이다.
+    // 구간이 있는 상품은 표 자체가 상품마다 완전히 달라 페이지 고유성이 가장 크게 올라간다.
+    let tierSection = "";
+    if (p.tiers && p.tiers.length) {
+      const multi = p.tiers.length > 1;
+      const rows = p.tiers
+        .map((t, i) => {
+          const from = i === 0 ? 0 : p.tiers[i - 1].upto;
+          const label =
+            t.upto == null
+              ? `${R.fmtKorMoney(from)} 초과분`
+              : i === 0
+                ? `${R.fmtKorMoney(t.upto)} 이하`
+                : `${R.fmtKorMoney(from)} 초과 ~ ${R.fmtKorMoney(t.upto)}`;
+          return `<tr><td>${label}</td><td class="r rate-em">연 ${t.rate.toFixed(2)}%</td></tr>`;
+        })
+        .join("");
+      const src = p.tierSource
+        ? `<small>${p.tierSource.name} 확인 ${p.tierSource.verified}</small>`
+        : "";
+      tierSection = `
+  <h2 class="sec">금액 구간별 금리 ${src}</h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>예치 금액 구간</th><th class="r">적용 금리</th></tr>
+    ${rows}
+  </table></div>
+  <p class="prose">${
+    multi
+      ? `이 통장은 <b>구간마다 금리가 다릅니다.</b> 예치금 전체에 최고금리가 붙는 것이 아니라, 각 구간에 해당하는 금액분에만 그 구간 금리가 적용됩니다. 위 계산 결과도 이 구조를 반영한 값입니다.`
+      : `이 통장은 금액 구간별 차등 없이 <b>전액 동일 금리</b>가 적용됩니다.`
+  }</p>`;
+    }
+    const conditionSection = p.conditions
+      ? `
+  <h2 class="sec">우대조건 ${p.conditionFree ? '<small>조건 없음</small>' : "<small>최고금리를 받으려면</small>"}</h2>
+  <p class="prose">${p.conditions}${
+    p.tierSource ? ` <span class="b2">(${p.tierSource.name} · ${p.tierSource.verified} 확인)</span>` : ""
+  }</p>`
+      : "";
+
     // --- 금리 변동 이력 ---
     const series = HISTORY?.products?.[`${p.bank}|${p.product}`];
     let histSection = "";
@@ -553,7 +594,23 @@ function buildProductPages() {
     const cond = R.parseCondition(p.maxRateCondition);
     const preTaxDaily = myDaily / (1 - R.TAX);
     const faqs = [];
-    if (cond.type === "upto") {
+    if (p.tiers && p.tiers.length > 1) {
+      // 구간을 아는 상품은 "초과하면 어떻게 되나"에 정확히 답할 수 있다
+      const t0 = p.tiers[0];
+      const rest = p.tiers
+        .slice(1)
+        .map((t, i) => {
+          const from = p.tiers[i].upto;
+          return t.upto == null
+            ? `${R.fmtKorMoney(from)} 초과분은 연 ${t.rate.toFixed(2)}%`
+            : `${R.fmtKorMoney(t.upto)}까지는 연 ${t.rate.toFixed(2)}%`;
+        })
+        .join(", ");
+      faqs.push({
+        q: `${R.fmtKorMoney(t0.upto)}을 넘게 넣으면 어떻게 되나요?`,
+        a: `초과분이 사라지는 것이 아니라 구간별로 다른 금리가 붙습니다. ${R.fmtKorMoney(t0.upto)}까지는 연 ${t0.rate.toFixed(2)}%, ${rest}가 적용됩니다. 위 계산기는 이 구조를 그대로 반영하므로 내 금액을 넣으면 실제 받을 이자를 볼 수 있습니다.`,
+      });
+    } else if (cond.type === "upto") {
       faqs.push({
         q: `${R.fmtKorMoney(cond.value)}을 넘게 넣으면 어떻게 되나요?`,
         a: `최고 연 ${p.maxRate?.toFixed(2)}%는 ${R.fmtKorMoney(cond.value)}까지만 적용됩니다. 초과 금액에는 최고금리가 적용되지 않으므로(상품에 따라 기본금리 연 ${p.baseRate?.toFixed(2)}% 또는 별도 구간 금리), 초과분은 다른 파킹통장에 나눠 예치하는 편이 유리할 수 있습니다. 전체 목록에서 두 번째 통장을 골라보세요.`,
@@ -603,6 +660,7 @@ function buildProductPages() {
       baseRate: p.baseRate,
       maxRate: p.maxRate,
       maxRateCondition: p.maxRateCondition,
+      tiers: p.tiers || null, // 구간금리가 있으면 브라우저 계산도 같은 로직을 쓰게 한다
     });
     const inlineCalc = `
   <h2 class="sec">이 상품으로 바로 계산 <small>금액을 바꿔보세요 · 세후 기준</small></h2>
@@ -621,7 +679,7 @@ var P=${calcProduct};
 var amt=document.getElementById("pc-amt"),d=document.getElementById("pc-d"),m=document.getElementById("pc-m"),y=document.getElementById("pc-y"),note=document.getElementById("pc-note");
 function upd(){var a=parseAmount(amt.value)||0;var c=calcDaily(P,a);
 d.textContent="+"+won(c.daily);m.textContent=won(c.daily*30);y.textContent=won(c.daily*365);
-note.textContent="적용 금리 연 "+c.rate.toFixed(2)+"%"+(c.applied<a?" · "+fmtKorMoney(c.applied)+"까지만 최고금리 적용, 초과분은 계산 제외":"");
+note.textContent=(c.tiered?"구간 반영 실효금리 연 ":"적용 금리 연 ")+c.rate.toFixed(2)+"%"+(c.applied<a?" · "+fmtKorMoney(c.applied)+"까지만 최고금리 적용, 초과분은 계산 제외":"");
 if(a)amt.value=fmt(a);}
 amt.addEventListener("input",upd);upd();
 })();</script>`;
@@ -633,6 +691,7 @@ amt.addEventListener("input",upd);upd();
     <h1>${p.product} 금리 <span class="em">연 ${p.maxRate?.toFixed(2)}%</span></h1>
   </div>
   ${badges}
+  ${p.notice ? `<div class="notice gray"><span class="ic">🔔</span><span>${p.notice}</span></div>` : ""}
 
   <div class="summary">
     <div class="row"><span class="k">최고 금리</span><span class="v hl">연 ${p.maxRate?.toFixed(2)}%</span></div>
@@ -646,6 +705,8 @@ amt.addEventListener("input",upd);upd();
 
   ${timingProse}
   ${compareProse}
+  ${tierSection}
+  ${conditionSection}
 
   <h2 class="sec">금액별 예상 이자 <small>세후 · 이자소득세 15.4% 차감</small></h2>
   <div class="tbl-wrap"><table>
@@ -806,7 +867,7 @@ function buildAmountPages() {
         (x, i) =>
           `<tr><td>${i + 1}</td><td>${x.p.bank}<div class="b2">${x.p.group}</div></td>` +
           `<td><a href="../p/${encodeURIComponent(x.slug)}">${x.p.product}</a></td>` +
-          `<td class="r">연 ${x.rate.toFixed(2)}%</td>` +
+          `<td class="r">${x.tiered ? "실효 " : ""}연 ${x.rate.toFixed(2)}%</td>` +
           `<td class="r rate-em">+${R.won(x.daily)}</td>` +
           `<td class="r">${R.won(x.daily * 30)}</td>` +
           `<td class="r">${R.won(x.year)}</td></tr>`
@@ -921,6 +982,7 @@ function buildSplitPage() {
     baseRate: p.baseRate,
     maxRate: p.maxRate,
     maxRateCondition: p.maxRateCondition,
+    tiers: p.tiers || null,
     group: p.group,
     slug,
   }));
@@ -989,30 +1051,55 @@ function buildSplitPage() {
     var amtEl=document.getElementById("sp-amt"),protEl=document.getElementById("sp-protect"),out=document.getElementById("sp-result");
     function plan(total,useProtect,bigOnly){
       // 상품별 "이 상품에 넣을 수 있는 최대 금액"과 그 금리를 뽑아 금리 높은 순으로 채운다
-      var cands=POOL.map(function(p){
-        var c=parseCondition(p.maxRateCondition);
-        var cap=(c.type==="upto")?c.value:Infinity;
-        // "N원 초과라야 최고금리"인 상품은 최고금리를 받으려면 그 이상 넣어야 한다
-        var minNeed=(c.type==="above")?c.value+1:0;
-        return {p:p,cap:cap,minNeed:minNeed,rate:p.maxRate||0};
-      }).filter(function(x){
-        if(x.rate<=0)return false;
-        // bigOnly: 소액 우대 통장을 제외한 "큰 통장만 쓰는" 비교 기준용 배분
-        return bigOnly?x.cap>=PROTECT:true;
+      // 상품을 "금리 구간(segment)" 단위로 펼친다 — 구간금리 상품은 상위 구간만 쓰고 버리면 손해다.
+      // (예: 다올 쌈짓돈Ⅲ는 100만까지 5.0%지만 그 위 구간도 3.6/3.5%로 경쟁력이 있다)
+      var segs=[];
+      POOL.forEach(function(p){
+        if(p.tiers&&p.tiers.length){
+          var prev=0;
+          p.tiers.forEach(function(t){
+            var to=t.upto==null?Infinity:t.upto;
+            segs.push({p:p,from:prev,to:to,rate:t.rate||0});
+            prev=to;
+          });
+        } else {
+          var c=parseCondition(p.maxRateCondition);
+          if(c.type==="upto")segs.push({p:p,from:0,to:c.value,rate:p.maxRate||0});
+          else if(c.type==="above")segs.push({p:p,from:c.value+1,to:Infinity,rate:p.maxRate||0});
+          else segs.push({p:p,from:0,to:Infinity,rate:p.maxRate||0});
+        }
+      });
+      segs=segs.filter(function(s){
+        if(s.rate<=0)return false;
+        // bigOnly: 소액 우대 구간을 뺀 "한도 큰 통장만 쓰는" 비교 기준용 배분
+        return bigOnly?s.to>=PROTECT:true;
       }).sort(function(a,b){return b.rate-a.rate;});
 
-      var left=total,alloc=[],perBank={};
-      for(var i=0;i<cands.length&&left>0;i++){
-        var x=cands[i],bank=x.p.bank;
-        var bankRoom=useProtect?Math.max(0,PROTECT-(perBank[bank]||0)):Infinity;
-        if(bankRoom<=0)continue;
-        var put=Math.min(left,x.cap,bankRoom);
-        if(x.minNeed>0&&put<x.minNeed)continue; // 최소 금액을 못 채우면 최고금리를 못 받으니 건너뜀
-        if(put<10000)continue;
-        alloc.push({p:x.p,amt:put,rate:x.rate});
-        perBank[bank]=(perBank[bank]||0)+put;
-        left-=put;
+      var left=total,perBank={},filled={},pass=true;
+      while(pass&&left>=10000){
+        pass=false;
+        for(var i=0;i<segs.length&&left>=10000;i++){
+          var s=segs[i],key=s.p.bank+"|"+s.p.product,bank=s.p.bank;
+          var got=filled[key]||0;
+          if(got>=s.to)continue;           // 이 구간은 이미 다 찼다
+          if(got<s.from)continue;          // 아래 구간이 안 찼으면 이 구간은 아직 못 쓴다(다음 패스에서 재시도)
+          var bankRoom=useProtect?Math.max(0,PROTECT-(perBank[bank]||0)):Infinity;
+          if(bankRoom<10000)continue;
+          var put=Math.min(left,s.to-got,bankRoom);
+          if(put<10000)continue;
+          filled[key]=got+put;
+          perBank[bank]=(perBank[bank]||0)+put;
+          left-=put;
+          pass=true;
+        }
       }
+      // 상품 단위로 합산 (구간을 여러 개 채운 경우 한 줄로 보여준다)
+      var alloc=[];
+      POOL.forEach(function(p){
+        var amt=filled[p.bank+"|"+p.product];
+        if(amt>=10000)alloc.push({p:p,amt:amt,rate:calcDaily(p,amt).rate});
+      });
+      alloc.sort(function(a,b){return b.amt-a.amt;});
       return {alloc:alloc,left:left};
     }
     function render(){
