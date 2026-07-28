@@ -160,3 +160,10 @@ footer a { color: var(--sub); }
 .related a { display: block; padding: 14px 4px; border-bottom: 1px solid var(--border); text-decoration: none; color: var(--text); font-size: 14.5px; font-weight: 600; }
 .related a:hover { color: var(--blue); }
 .related .r-rate { float: right; color: var(--blue); font-weight: 800; }
+
+/* 상품 상세 — 순위 배지·FAQ */
+.rank-badges { display: flex; flex-wrap: wrap; gap: 5px; margin: 10px 0 2px; }
+.tag.rank { background: #eef2ff; color: var(--blue); }
+details.faq { border-bottom: 1px solid #eef0f3; padding: 4px 0; }
+details.faq summary { font-size: 14px; font-weight: 700; padding: 9px 0; cursor: pointer; list-style-position: inside; }
+details.faq p { font-size: 14px; color: var(--sub2); line-height: 1.7; padding: 0 0 12px 4px; margin: 0; }

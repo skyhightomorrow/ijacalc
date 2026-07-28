@@ -16,6 +16,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # build-rate-history.js가 git 이력에서 금리 변동을 복원한다
 
       - uses: actions/setup-node@v4
         with:

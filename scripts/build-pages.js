@@ -424,6 +424,28 @@ function buildProductPages() {
     .slice(0, 6)
     .map((x) => x.p);
 
+  // 순위·이력·비교 사전 계산 — 페이지마다 다른 숫자와 문장을 만들어 템플릿 유사중복을 깬다
+  const HISTORY = (() => {
+    try {
+      return JSON.parse(fs.readFileSync(path.join(ROOT, "data", "rate-history.json"), "utf8"));
+    } catch {
+      return null;
+    }
+  })();
+  const byMax = [...PARKING_LIST].sort((a, b) => (b.p.maxRate || 0) - (a.p.maxRate || 0));
+  const rankMax = new Map(byMax.map((x, i) => [x.slug, i + 1]));
+  const byBase = [...PARKING_LIST].sort((a, b) => (b.p.baseRate || 0) - (a.p.baseRate || 0));
+  const rankBase = new Map(byBase.map((x, i) => [x.slug, i + 1]));
+  const groupRankMap = new Map();
+  const groupCount = {};
+  for (const g of new Set(PARKING_LIST.map((x) => x.p.group))) {
+    const list = PARKING_LIST.filter((x) => x.p.group === g).sort((a, b) => (b.p.maxRate || 0) - (a.p.maxRate || 0));
+    groupCount[g] = list.length;
+    list.forEach((x, i) => groupRankMap.set(x.slug, i + 1));
+  }
+  const top1 = byMax[0];
+  const fmtDateK = (d) => `${parseInt(d.slice(0, 4), 10)}년 ${parseInt(d.slice(5, 7), 10)}월 ${parseInt(d.slice(8, 10), 10)}일`;
+
   for (const { p, slug } of PARKING_LIST) {
 
     const amounts = [1000000, 5000000, 10000000, 30000000, 50000000, 100000000];
@@ -461,12 +483,155 @@ function buildProductPages() {
       description: `${p.bank} ${p.product} — 최고 연 ${p.maxRate}% (기본 ${p.baseRate}%), ${p.maxRateCondition || ""}`,
     };
 
+    // --- 순위 배지 ---
+    const rk = rankMax.get(slug);
+    const rkG = groupRankMap.get(slug);
+    const rkB = rankBase.get(slug);
+    const badges = `<div class="rank-badges">
+    <span class="tag rank">최고금리 전체 ${rk}위 / ${PARKING_LIST.length}개</span>
+    <span class="tag rank">${p.group} 중 ${rkG}위 / ${groupCount[p.group]}개</span>
+    <span class="tag rank">조건 없는 기본금리 기준 ${rkB}위</span>
+  </div>`;
+
+    // --- 비교 문장 (상품마다 숫자·문장이 달라진다) ---
+    const myDaily = R.calcDaily(p, DEFAULT_AMT).daily;
+    const sameBank = PARKING_LIST.filter((x) => x.p.bank === p.bank && x.slug !== slug);
+    const sameBankProse = sameBank.length
+      ? ` ${p.bank}에는 이 상품 외에 파킹통장이 ${sameBank.length}개 더 있습니다: ${sameBank
+          .slice(0, 4)
+          .map(({ p: q, slug: s }) => `<a href="${encodeURIComponent(s)}">${q.product}</a>(연 ${q.maxRate?.toFixed(2)}%)`)
+          .join(", ")}.`
+      : "";
+    let compareProse;
+    if (rk === 1) {
+      const c1 = R.calcDaily(p, DEFAULT_AMT);
+      compareProse =
+        c1.applied < DEFAULT_AMT
+          ? `<p class="prose">현재 <b>${PARKING_LIST.length}개 파킹통장 중 명목 최고금리 1위</b> 상품입니다. 단 최고 연 ${p.maxRate?.toFixed(2)}%는 <b>${R.fmtKorMoney(c1.applied)}까지만</b> 적용되는 소액 우대형이라, 1천만원을 넣어도 하루 세후 이자는 <b>+${R.won(myDaily)}</b>입니다. ${R.fmtKorMoney(c1.applied)} 이하 비상금 통장으로 쓰고 나머지는 한도가 넉넉한 통장에 나누는 것이 정석입니다.${sameBankProse}</p>`
+          : `<p class="prose">현재 <b>${PARKING_LIST.length}개 파킹통장 중 최고금리 1위</b> 상품입니다. 1천만원 예치 기준 하루 세후 <b>+${R.won(myDaily)}</b>을 받습니다.${sameBankProse}</p>`;
+    } else {
+      const topDaily = R.calcDaily(top1.p, DEFAULT_AMT).daily;
+      const gap = Math.round(myDaily - topDaily);
+      const topName = `<a href="${encodeURIComponent(top1.slug)}">${top1.p.bank} ${top1.p.product}</a>(연 ${top1.p.maxRate?.toFixed(2)}%)`;
+      // 명목 1위가 한도 조건 탓에 실수령이 더 적은 경우 — 이 상품의 실질 우위를 문장으로 살린다
+      compareProse =
+        gap >= 0
+          ? `<p class="prose">명목 최고금리 1위는 ${topName}이지만, 1위 상품의 한도 조건(${top1.p.maxRateCondition || "-"}) 때문에 <b>1천만원 기준 실수령은 이 상품이 하루 세후 ${R.won(gap)} 더 많습니다</b>. 파킹통장은 표시 금리가 아니라 내 예치 금액 기준 실수령으로 비교해야 합니다.${sameBankProse}</p>`
+          : `<p class="prose">현재 최고금리 1위 ${topName} 대비 1천만원 기준 하루 세후 이자가 <b>${R.won(-gap)} 적습니다</b>. 다만 상품마다 우대 조건과 한도(이 상품: ${p.maxRateCondition || "제한 없음"})가 달라, 내 예치 금액 기준으로 비교하는 것이 정확합니다.${sameBankProse}</p>`;
+    }
+
+    // --- 금리 변동 이력 ---
+    const series = HISTORY?.products?.[`${p.bank}|${p.product}`];
+    let histSection = "";
+    if (HISTORY && series) {
+      if (series.length > 1) {
+        const rows = series
+          .map((s, i) => {
+            const label = i === 0 ? "관측 시작" : "금리 변경";
+            return `<tr><td>${fmtDateK(s.d)}</td><td>${label}</td><td class="r rate-em">연 ${s.max?.toFixed(2)}%</td><td class="r">연 ${s.base?.toFixed(2)}%</td></tr>`;
+          })
+          .join("");
+        const last = series[series.length - 1];
+        const first = series[0];
+        const dir = (last.max || 0) < (first.max || 0) ? "인하" : "인상";
+        histSection = `
+  <h2 class="sec">금리 변동 이력 <small>${fmtDateK(HISTORY.since)} 관측 시작 · 매일 자동 추적</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>날짜</th><th>구분</th><th class="r">최고금리</th><th class="r">기본금리</th></tr>
+    ${rows}
+  </table></div>
+  <p class="prose">관측 시작 이후 <b>${series.length - 1}회 변동(${dir})</b>이 있었습니다. 파킹통장 금리는 예고 없이 바뀌므로, 이 페이지는 매일 공시를 다시 확인해 변동을 기록합니다.</p>`;
+      } else {
+        histSection = `
+  <h2 class="sec">금리 변동 이력 <small>${fmtDateK(HISTORY.since)} 관측 시작 · 매일 자동 추적</small></h2>
+  <p class="prose">${fmtDateK(HISTORY.since)} 관측 시작 이후 금리 변동이 없습니다 — 최고 연 ${p.maxRate?.toFixed(2)}%를 유지 중입니다. 금리가 바뀌면 이 표에 자동으로 기록됩니다.</p>`;
+      }
+    }
+
+    // --- 상품별 FAQ (조건·권역·지급방식에서 자동 도출 — 상품마다 내용이 다르다) ---
+    const cond = R.parseCondition(p.maxRateCondition);
+    const preTaxDaily = myDaily / (1 - R.TAX);
+    const faqs = [];
+    if (cond.type === "upto") {
+      faqs.push({
+        q: `${R.fmtKorMoney(cond.value)}을 넘게 넣으면 어떻게 되나요?`,
+        a: `최고 연 ${p.maxRate?.toFixed(2)}%는 ${R.fmtKorMoney(cond.value)}까지만 적용됩니다. 초과 금액에는 최고금리가 적용되지 않으므로(상품에 따라 기본금리 연 ${p.baseRate?.toFixed(2)}% 또는 별도 구간 금리), 초과분은 다른 파킹통장에 나눠 예치하는 편이 유리할 수 있습니다. 전체 목록에서 두 번째 통장을 골라보세요.`,
+      });
+    } else if (cond.type === "above") {
+      faqs.push({
+        q: `${R.fmtKorMoney(cond.value)} 이하로 넣으면 금리가 어떻게 되나요?`,
+        a: `이 상품은 ${R.fmtKorMoney(cond.value)}을 넘어야 최고 연 ${p.maxRate?.toFixed(2)}%가 적용됩니다. 그 이하 금액에는 기본금리 연 ${p.baseRate?.toFixed(2)}%가 적용됩니다.`,
+      });
+    } else {
+      faqs.push({
+        q: `예치 한도가 있나요?`,
+        a: `공시 기준 금액 한도 조건이 없습니다. 예치 금액 전체에 최고 연 ${p.maxRate?.toFixed(2)}%가 적용됩니다. 단 우대금리 조건이나 상품 개편으로 조건이 바뀔 수 있으니 가입 전 상품설명서를 확인하세요.`,
+      });
+    }
+    faqs.push({
+      q: `${p.bank} 파킹통장은 예금자보호가 되나요?`,
+      a: `네. ${p.bank}(${p.group})은 예금자보호법 적용 대상이라 원금과 이자를 합해 1인당 최고 1억 원까지 보호됩니다(2025년 9월 1일부터 5천만 원에서 1억 원으로 상향). 1억 원을 넘는 돈은 여러 금융회사에 나누면 각각 보호받을 수 있습니다.`,
+    });
+    faqs.push({
+      q: `이자는 언제 받나요?`,
+      a: p.instant
+        ? `매일 밤 12시(자정) 잔액 기준으로 하루치 이자가 계산되고, ${p.timing || "다음날부터 수시로 수령할 수 있습니다"}.`
+        : `이자는 매일 잔액 기준으로 계산되며 지급은 ${p.payout} 주기로 이뤄집니다.`,
+    });
+    faqs.push({
+      q: `세금을 떼면 실제로 얼마나 받나요?`,
+      a: `이자에는 이자소득세 15.4%(소득세 14% + 지방소득세 1.4%)가 원천징수됩니다. 이 상품에 1천만원을 예치하면 하루 세전 약 ${R.won(preTaxDaily)}, 세후 약 ${R.won(myDaily)}입니다.`,
+    });
+    const faqHtml = faqs
+      .map((f) => `<details class="faq"><summary>${f.q}</summary><p>${f.a}</p></details>`)
+      .join("");
+    const faqLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") },
+      })),
+    };
+
+    // --- 페이지 내 즉시 계산기 (render-card.js의 calcDaily를 브라우저에서 재사용) ---
+    const calcProduct = JSON.stringify({
+      bank: p.bank,
+      product: p.product,
+      baseRate: p.baseRate,
+      maxRate: p.maxRate,
+      maxRateCondition: p.maxRateCondition,
+    });
+    const inlineCalc = `
+  <h2 class="sec">이 상품으로 바로 계산 <small>금액을 바꿔보세요 · 세후 기준</small></h2>
+  <div class="calc">
+    <label for="pc-amt">예치 금액</label>
+    <div class="inputline"><input id="pc-amt" inputmode="numeric" value="10,000,000"><span class="won">원</span></div>
+    <div class="hint" id="pc-note"></div>
+    <div class="tbl-wrap"><table>
+      <tr><th class="r">하루</th><th class="r">한 달(30일)</th><th class="r">1년</th></tr>
+      <tr><td class="r rate-em" id="pc-d">-</td><td class="r" id="pc-m">-</td><td class="r" id="pc-y">-</td></tr>
+    </table></div>
+  </div>`;
+    const calcScript = `<script src="../render-card.js"></script>
+<script>(function(){
+var P=${calcProduct};
+var amt=document.getElementById("pc-amt"),d=document.getElementById("pc-d"),m=document.getElementById("pc-m"),y=document.getElementById("pc-y"),note=document.getElementById("pc-note");
+function upd(){var a=parseAmount(amt.value)||0;var c=calcDaily(P,a);
+d.textContent="+"+won(c.daily);m.textContent=won(c.daily*30);y.textContent=won(c.daily*365);
+note.textContent="적용 금리 연 "+c.rate.toFixed(2)+"%"+(c.applied<a?" · "+fmtKorMoney(c.applied)+"까지만 최고금리 적용, 초과분은 계산 제외":"");
+if(a)amt.value=fmt(a);}
+amt.addEventListener("input",upd);upd();
+})();</script>`;
+
     const body = `
   <div class="crumb"><a href="../">홈</a> › <a href="../parking">파킹통장 전체 목록</a> › <a href="../parking#${encodeURIComponent(p.bank)}">${p.bank}</a> › ${p.product}</div>
   <div class="prod-head">
     <div class="bank">${p.bank} · ${p.group}</div>
     <h1>${p.product} 금리 <span class="em">연 ${p.maxRate?.toFixed(2)}%</span></h1>
   </div>
+  ${badges}
 
   <div class="summary">
     <div class="row"><span class="k">최고 금리</span><span class="v hl">연 ${p.maxRate?.toFixed(2)}%</span></div>
@@ -479,21 +644,27 @@ function buildProductPages() {
   <div class="btns">${officialBtn}${appBtns}</div>
 
   ${timingProse}
+  ${compareProse}
 
   <h2 class="sec">금액별 예상 이자 <small>세후 · 이자소득세 15.4% 차감</small></h2>
   <div class="tbl-wrap"><table>
     <tr><th>예치 금액</th><th class="r">적용 금리</th><th class="r">하루</th><th class="r">한 달(30일)</th><th class="r">1년</th></tr>
     ${calcRows}
   </table></div>
-  <p class="prose">위 표에 없는 금액이라면 <a href="../calculator">파킹통장 이자 계산기</a>에서
-  금액과 기간을 직접 넣어 세후 이자를 계산해보세요. 연 ${p.maxRate?.toFixed(2)}%를 입력하면 이 상품 기준으로 계산됩니다.</p>
+  ${inlineCalc}
+  <p class="prose">여러 상품을 한 번에 비교하려면 <a href="../calculator">파킹통장 이자 계산기</a>를 이용하세요.</p>
+  ${histSection}
+
+  <h2 class="sec">자주 묻는 질문</h2>
+  ${faqHtml}
 
   <h2 class="sec">함께 볼 만한 파킹통장</h2>
   <div class="related">${related}</div>
-  <p class="prose"><a href="../parking">파킹통장 ${PARKING_LIST.length}개 전체 금리 목록 보기 →</a></p>`;
+  <p class="prose"><a href="../parking">파킹통장 ${PARKING_LIST.length}개 전체 금리 목록 보기 →</a></p>
+  ${calcScript}`;
 
     const title = `${p.bank} ${p.product} 금리 연 ${p.maxRate?.toFixed(2)}% — 하루 이자 계산 | 이자계산기`;
-    const desc = `${p.bank} ${p.product} 파킹통장: 최고 연 ${p.maxRate?.toFixed(2)}% (기본 ${p.baseRate?.toFixed(2)}%), ${p.maxRateCondition || ""}. 1천만원 예치 시 하루 세후 ${R.won(R.calcDaily(p, DEFAULT_AMT).daily)}. 금액별 이자 계산표 제공.`;
+    const desc = `${p.bank} ${p.product} 파킹통장: 최고 연 ${p.maxRate?.toFixed(2)}% (기본 ${p.baseRate?.toFixed(2)}%), ${p.maxRateCondition || ""}. 최고금리 전체 ${rk}위/${PARKING_LIST.length}개. 1천만원 예치 시 하루 세후 ${R.won(myDaily)}. 금리 변동 이력·이자 계산기 제공.`;
     fs.writeFileSync(
       path.join(dir, `${slug}.html`),
       layout({
@@ -503,7 +674,9 @@ function buildProductPages() {
         body,
         depth: 1,
         active: "instant",
-        extraHead: `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`,
+        extraHead:
+          `<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>` +
+          `<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`,
       })
     );
   }

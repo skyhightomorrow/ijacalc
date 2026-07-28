@@ -6,8 +6,8 @@
   "scripts": {
     "fetch": "node scripts/fetch-finlife.js",
     "fetch:parking": "node scripts/fetch-parking.js",
-    "build": "node scripts/build-site-data.js && node scripts/build-pages.js",
-    "daily": "node scripts/fetch-finlife.js && node scripts/fetch-parking.js && node scripts/build-site-data.js && node scripts/build-pages.js",
+    "build": "node scripts/build-site-data.js && node scripts/build-rate-history.js && node scripts/build-pages.js",
+    "daily": "node scripts/fetch-finlife.js && node scripts/fetch-parking.js && node scripts/build-site-data.js && node scripts/build-rate-history.js && node scripts/build-pages.js",
     "start": "node server.js"
   }
 }
