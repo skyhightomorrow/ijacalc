@@ -69,6 +69,7 @@ const NAV = (active, base) => `
   <nav class="tabs">
     <a href="${base}./" class="${active === "instant" ? "active" : ""}">바로 이자</a>
     <a href="${base}parking" class="${active === "parking" ? "active" : ""}">전체 목록</a>
+    <a href="${base}bank" class="${active === "bank" ? "active" : ""}">은행별</a>
     <a href="${base}calculator" class="${active === "calc" ? "active" : ""}">계산기</a>
     <a href="${base}split" class="${active === "split" ? "active" : ""}">쪼개기</a>
     <a href="${base}new" class="${active === "new" ? "active" : ""}">신상품</a>
@@ -685,7 +686,11 @@ amt.addEventListener("input",upd);upd();
 })();</script>`;
 
     const body = `
-  <div class="crumb"><a href="../">홈</a> › <a href="../parking">파킹통장 전체 목록</a> › <a href="../parking#${encodeURIComponent(p.bank)}">${p.bank}</a> › ${p.product}</div>
+  <div class="crumb"><a href="../">홈</a> › <a href="../parking">파킹통장 전체 목록</a> › ${
+    BANK_PAGES.has(p.bank)
+      ? `<a href="../bank/${encodeURIComponent(BANK_PAGES.get(p.bank))}">${p.bank}</a>`
+      : `<a href="../parking#${encodeURIComponent(p.bank)}">${p.bank}</a>`
+  } › ${p.product}</div>
   <div class="prod-head">
     <div class="bank">${p.bank} · ${p.group}</div>
     <h1>${p.product} 금리 <span class="em">연 ${p.maxRate?.toFixed(2)}%</span></h1>
@@ -726,7 +731,11 @@ amt.addEventListener("input",upd);upd();
   ${faqHtml}
 
   <h2 class="sec">함께 볼 만한 파킹통장</h2>
-  <div class="related">${related}</div>
+  <div class="related">${
+    BANK_PAGES.has(p.bank)
+      ? `<a href="../bank/${encodeURIComponent(BANK_PAGES.get(p.bank))}">${p.bank} 금리 총정리<span class="r-rate">예금·적금·파킹 전체</span></a>`
+      : ""
+  }${related}</div>
 
   <h2 class="sec">금액대별 이자 순위 <small>금액마다 1위가 다릅니다</small></h2>
   <div class="related">${AMOUNT_BRACKETS.map((x) => `<a href="../amount/${encodeURIComponent(x.slug)}">파킹통장 ${x.slug}<span class="r-rate">이자 순위</span></a>`).join("")}<a href="../split">목돈 쪼개기 계산기<span class="r-rate">1억 초과</span></a></div>
@@ -780,7 +789,9 @@ function buildParkingHub() {
         )
         .join("");
       return `
-  <h3 class="sec" id="${encodeURIComponent(bank)}" style="font-size:17px">${bank} <small>${items.length}개 · ${items[0].p.group}</small></h3>
+  <h3 class="sec" id="${encodeURIComponent(bank)}" style="font-size:17px">${bank} <small>${items.length}개 · ${items[0].p.group}${
+        BANK_PAGES.has(bank) ? ` · <a href="bank/${encodeURIComponent(BANK_PAGES.get(bank))}">예금 포함 전체 금리 →</a>` : ""
+      }</small></h3>
   <div class="tbl-wrap"><table>
     <tr><th>상품</th><th class="r">최고</th><th class="r">기본</th><th>지급</th><th>한도·조건</th></tr>
     ${rows}
@@ -831,6 +842,452 @@ function buildParkingHub() {
       active: "parking",
     })
   );
+}
+
+// ---------- 은행별 금리 총정리 페이지 (/bank/*) ----------
+// GSC 실측 근거: 표시 쿼리의 다수가 은행명 검색(예가람저축은행 파킹통장·한성저축은행 대출 금리 공시 등).
+// 이 니치에서 검색 상위에 오른 개인 사이트들도 전부 "기관별 금리" 롱테일 갱신형 페이지다.
+// 페이지 고유성은 은행마다 완전히 다른 상품 표(파킹 구간·예금 기간별·대출 등급별)에서 나온다.
+
+const LATEST = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(ROOT, "data", "latest.json"), "utf8"));
+  } catch {
+    return null;
+  }
+})();
+
+// 저축은행중앙회(파킹) 표기와 금감원 공시 표기가 다른 은행 — 파킹 쪽 표기를 대표명으로 쓴다
+const FIN_ALIAS = {
+  "키움예스저축은행": "키움YES저축은행",
+  "디비저축은행": "DB저축은행",
+  "엔에이치저축은행": "NH저축은행",
+  "대명상호저축은행": "대명저축은행",
+  "MS저축은행": "엠에스저축은행",
+  "대아상호저축은행": "대아저축은행",
+};
+const canonBankName = (kor) =>
+  FIN_ALIAS[kor] || String(kor || "").replace(/^주식회사\s*/, "").replace(/\s*주식회사$/, "").trim();
+
+const BANKS = (() => {
+  const m = new Map();
+  const get = (name, group) => {
+    if (!m.has(name)) m.set(name, { name, group, parking: [], deposits: [], savings: [], credits: [] });
+    const b = m.get(name);
+    if (group && !b.group) b.group = group;
+    return b;
+  };
+  // 파킹을 먼저 넣어 그룹 표기(저축은행/인터넷은행)를 우선시킨다
+  for (const item of PARKING_LIST) get(item.p.bank, item.p.group).parking.push(item);
+  if (LATEST && LATEST.products) {
+    const P = LATEST.products;
+    const sector = (k) => (k.endsWith("_020000") ? "은행" : "저축은행");
+    for (const k of ["deposit_020000", "deposit_030300"])
+      for (const r of P[k] || []) get(canonBankName(r.kor_co_nm), sector(k)).deposits.push(r);
+    for (const k of ["saving_020000", "saving_030300"])
+      for (const r of P[k] || []) get(canonBankName(r.kor_co_nm), sector(k)).savings.push(r);
+    for (const k of ["creditLoan_020000", "creditLoan_030300"])
+      for (const r of P[k] || []) get(canonBankName(r.kor_co_nm), sector(k)).credits.push(r);
+  }
+  return m;
+})();
+
+const bankSlugify = (name) => name.replace(/\s+/g, "-").replace(/[^\w가-힣-]/g, "");
+// 상품 2개 이상인 은행만 페이지 생성 (1개짜리는 thin page 위험)
+const BANK_PAGES = new Map();
+for (const [name, b] of BANKS) {
+  if (b.parking.length + b.deposits.length + b.savings.length + b.credits.length >= 2)
+    BANK_PAGES.set(name, bankSlugify(name));
+}
+
+const escHtml = (s) =>
+  String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\s+/g, " ").trim();
+const clip = (s, n) => {
+  const e = escHtml(s);
+  return e.length > n ? e.slice(0, n) + "…" : e;
+};
+const termOpt = (opts, trm) => (opts || []).find((o) => String(o.save_trm) === String(trm)) || null;
+const pct = (v) => (v == null ? "-" : `${Number(v).toFixed(2)}%`);
+
+function buildBankPages() {
+  const dir = path.join(PUB, "bank");
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+
+  const banks = [...BANK_PAGES.keys()].map((n) => BANKS.get(n));
+
+  // 은행 단위 대표 수치 사전 계산 (순위·비교 문장용)
+  const bestParking = (b) =>
+    b.parking.length ? [...b.parking].sort((x, y) => (y.p.maxRate || 0) - (x.p.maxRate || 0))[0] : null;
+  const best12 = (b) => {
+    let top = null;
+    for (const d of b.deposits) {
+      const o = termOpt(d.options, 12);
+      if (o && o.intr_rate2 != null && (!top || o.intr_rate2 > top.rate)) top = { rate: o.intr_rate2, base: o.intr_rate, d };
+    }
+    return top;
+  };
+  const bestSaving12 = (b) => {
+    let top = null;
+    for (const s of b.savings) {
+      const o = termOpt(s.options, 12);
+      if (o && o.intr_rate2 != null && (!top || o.intr_rate2 > top.rate)) top = { rate: o.intr_rate2, s };
+    }
+    return top;
+  };
+
+  const parkingRank = new Map(
+    banks.filter((b) => b.parking.length).sort((x, y) => (bestParking(y).p.maxRate || 0) - (bestParking(x).p.maxRate || 0)).map((b, i) => [b.name, i + 1])
+  );
+  const parkingRankTotal = parkingRank.size;
+  const depositRank = new Map(
+    banks.filter((b) => best12(b)).sort((x, y) => best12(y).rate - best12(x).rate).map((b, i) => [b.name, i + 1])
+  );
+  const depositRankTotal = depositRank.size;
+  const marketTopParking = banks.filter((b) => b.parking.length).map(bestParking).sort((x, y) => (y.p.maxRate || 0) - (x.p.maxRate || 0))[0];
+  const marketTop12 = [...depositRank.keys()].map((n) => best12(BANKS.get(n))).sort((x, y) => y.rate - x.rate)[0];
+
+  for (const b of banks) {
+    const slug = BANK_PAGES.get(b.name);
+    const bp = bestParking(b);
+    const bd = best12(b);
+    const bs = bestSaving12(b);
+    const total = b.parking.length + b.deposits.length + b.savings.length + b.credits.length;
+
+    // --- 요약 ---
+    const summaryRows = [
+      bp
+        ? `<div class="row"><span class="k">파킹통장 최고</span><span class="v hl">연 ${bp.p.maxRate?.toFixed(2)}% <span class="b2">(${escHtml(bp.p.product)})</span></span></div>`
+        : "",
+      bd
+        ? `<div class="row"><span class="k">정기예금 최고 (12개월)</span><span class="v hl">연 ${bd.rate.toFixed(2)}% <span class="b2">(${escHtml(bd.d.fin_prdt_nm)})</span></span></div>`
+        : "",
+      bs
+        ? `<div class="row"><span class="k">적금 최고 (12개월)</span><span class="v">연 ${bs.rate.toFixed(2)}% <span class="b2">(${escHtml(bs.s.fin_prdt_nm)})</span></span></div>`
+        : "",
+      `<div class="row"><span class="k">권역</span><span class="v">${b.group} · 예금자보호 1억 원</span></div>`,
+      `<div class="row"><span class="k">기준일</span><span class="v">${bp ? bp.p.asOf : ""}${bp && dclsStr ? " · " : ""}${dclsStr}</span></div>`,
+    ].join("");
+
+    // --- 순위 배지 ---
+    const badgeItems = [];
+    if (parkingRank.has(b.name))
+      badgeItems.push(`<span class="tag rank">파킹통장 최고금리 은행 순위 ${parkingRank.get(b.name)}위 / ${parkingRankTotal}곳</span>`);
+    if (depositRank.has(b.name))
+      badgeItems.push(`<span class="tag rank">정기예금 12개월 은행 순위 ${depositRank.get(b.name)}위 / ${depositRankTotal}곳</span>`);
+    const badges = badgeItems.length ? `<div class="rank-badges">${badgeItems.join("\n    ")}</div>` : "";
+
+    // --- 파킹통장 섹션 ---
+    let parkingSection = "";
+    if (b.parking.length) {
+      const rows = [...b.parking]
+        .sort((x, y) => (y.p.maxRate || 0) - (x.p.maxRate || 0))
+        .map(({ p, slug: ps }) => {
+          const daily = R.calcDaily(p, DEFAULT_AMT).daily;
+          return `<tr><td><a href="../p/${encodeURIComponent(ps)}">${escHtml(p.product)}</a></td><td class="r rate-em">${p.maxRate?.toFixed(2)}%</td><td class="r">${p.baseRate?.toFixed(2)}%</td><td class="r">+${R.won(daily)}</td><td><span class="b2">${escHtml(p.maxRateCondition || "-")}</span></td></tr>`;
+        })
+        .join("");
+      const gap = marketTopParking && bp !== marketTopParking ? (marketTopParking.p.maxRate - bp.p.maxRate).toFixed(2) : null;
+      const marketProse =
+        bp === marketTopParking
+          ? `${b.name} <a href="../p/${encodeURIComponent(bp.slug)}">${escHtml(bp.p.product)}</a>이(가) 현재 <b>전체 파킹통장 최고금리 1위</b>입니다.`
+          : `전체 1위(${marketTopParking.p.bank} ${escHtml(marketTopParking.p.product)}, 연 ${marketTopParking.p.maxRate?.toFixed(2)}%)와의 차이는 ${gap}%p입니다. 다만 한도·우대조건에 따라 실수령은 달라지므로 <a href="../calculator">계산기</a>에서 내 금액 기준으로 비교하세요.`;
+      parkingSection = `
+  <h2 class="sec">${b.name} 파킹통장 <small>${b.parking.length}개 · 하루 이자는 1천만원 세후 기준</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>상품</th><th class="r">최고</th><th class="r">기본</th><th class="r">하루 이자</th><th>한도·조건</th></tr>
+    ${rows}
+  </table></div>
+  <p class="prose">${b.name}에서 가장 금리가 높은 파킹통장은 <a href="../p/${encodeURIComponent(bp.slug)}"><b>${escHtml(bp.p.product)}</b></a>(최고 연 ${bp.p.maxRate?.toFixed(2)}%)입니다. ${marketProse}</p>`;
+    }
+
+    // --- 정기예금 섹션 ---
+    let depositSection = "";
+    if (b.deposits.length) {
+      const rows = [...b.deposits]
+        .map((d) => ({ d, o12: termOpt(d.options, 12) }))
+        .sort((x, y) => (y.o12?.intr_rate2 || 0) - (x.o12?.intr_rate2 || 0))
+        .map(({ d, o12 }) => {
+          const o6 = termOpt(d.options, 6);
+          const o24 = termOpt(d.options, 24);
+          const cell12 =
+            o12 == null
+              ? "-"
+              : o12.intr_rate2 !== o12.intr_rate
+                ? `<b>${pct(o12.intr_rate2)}</b> <span class="b2">(기본 ${pct(o12.intr_rate)})</span>`
+                : `<b>${pct(o12.intr_rate2)}</b>`;
+          const spcl = d.spcl_cnd && d.spcl_cnd !== "해당사항 없음" ? clip(d.spcl_cnd, 90) : "-";
+          return `<tr><td>${escHtml(d.fin_prdt_nm)}</td><td class="r">${pct(o6?.intr_rate2)}</td><td class="r rate-em">${cell12}</td><td class="r">${pct(o24?.intr_rate2)}</td><td><span class="b2">${spcl}</span></td></tr>`;
+        })
+        .join("");
+      const rk = depositRank.get(b.name);
+      const vsMarket =
+        bd && marketTop12 && bd.rate < marketTop12.rate
+          ? ` 전체 1위(${canonBankName(marketTop12.d.kor_co_nm)} ${escHtml(marketTop12.d.fin_prdt_nm)}, 연 ${marketTop12.rate.toFixed(2)}%)와 ${(marketTop12.rate - bd.rate).toFixed(2)}%p 차이입니다. <a href="../rates">전체 예·적금 순위 보기 →</a>`
+          : bd && marketTop12 && bd.rate >= marketTop12.rate
+            ? ` 현재 <b>전 금융회사 정기예금 12개월 1위</b>입니다.`
+            : "";
+      depositSection = `
+  <h2 class="sec">${b.name} 정기예금 금리 <small>${b.deposits.length}개 · 우대금리 포함 최고 기준 · ${dclsStr}</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>상품</th><th class="r">6개월</th><th class="r">12개월</th><th class="r">24개월</th><th>우대조건</th></tr>
+    ${rows}
+  </table></div>${
+    bd
+      ? `
+  <p class="prose">${b.name} 정기예금 12개월 최고는 <b>${escHtml(bd.d.fin_prdt_nm)}</b> 연 ${bd.rate.toFixed(2)}%${rk ? ` — 12개월 기준 ${depositRankTotal}개 금융회사 중 <b>${rk}위</b>` : ""}입니다.${vsMarket}</p>`
+      : ""
+  }`;
+    }
+
+    // --- 예금 이자 계산 (은행마다 금리·기간 구성이 달라 표의 숫자가 전부 달라진다) ---
+    let depositCalcSection = "";
+    if (bd) {
+      const opts = bd.d.options || [];
+      const terms = [6, 12, 24, 36]
+        .map((t) => ({ t, o: termOpt(opts, t) }))
+        .filter((x) => x.o && x.o.intr_rate2 != null);
+      const compound = /복리/.test(termOpt(opts, 12)?.intr_rate_type_nm || "");
+      const afterTax = (amt, rate, months) => {
+        const yrs = months / 12;
+        const gross = compound ? amt * (Math.pow(1 + rate / 100 / 12, months) - 1) : amt * (rate / 100) * yrs;
+        return gross * (1 - R.TAX);
+      };
+      const amts = [10000000, 30000000, 50000000];
+      const rows = amts
+        .map((a) => {
+          const cells = terms.map((x) => `<td class="r">${R.won(afterTax(a, x.o.intr_rate2, x.t))}</td>`).join("");
+          return `<tr><td>${R.fmtKorMoney(a)}</td>${cells}</tr>`;
+        })
+        .join("");
+      const head = terms.map((x) => `<th class="r">${x.t}개월</th>`).join("");
+      // 기간별로 금리가 꺾이는 지점은 은행마다 달라 이 문장도 페이지마다 달라진다
+      const bestTerm = terms.reduce((m, x) => (x.o.intr_rate2 > m.o.intr_rate2 ? x : m), terms[0]);
+      const termProse =
+        terms.length > 1
+          ? `기간별로 보면 <b>${bestTerm.t}개월</b>이 연 ${bestTerm.o.intr_rate2.toFixed(2)}%로 가장 높습니다. ${
+              bestTerm.t !== 12
+                ? `12개월보다 ${bestTerm.t}개월 쪽 금리가 높으므로, 자금을 더 묶어둘 수 있다면 ${bestTerm.t}개월이 유리합니다.`
+                : `기간을 더 길게 잡는다고 금리가 오르지는 않으므로 12개월이 기준입니다.`
+            }`
+          : `공시된 기간은 ${terms[0].t}개월 하나입니다.`;
+      const nonDeal = [...new Set(b.deposits.flatMap((d) => String(d.join_way || "").split(",")))].filter(Boolean);
+      const wayProse = nonDeal.length
+        ? ` 가입 방법은 ${nonDeal.slice(0, 5).join("·")} 등이 공시돼 있습니다.`
+        : "";
+      depositCalcSection = `
+  <h2 class="sec">${b.name} 예금 이자 계산 <small>${escHtml(bd.d.fin_prdt_nm)} 기준 · 세후 · ${compound ? "월복리" : "단리"}</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>예치 금액</th>${head}</tr>
+    ${rows}
+  </table></div>
+  <p class="prose">${b.name}의 최고금리 예금(<b>${escHtml(bd.d.fin_prdt_nm)}</b>)에 넣었을 때 만기에 받는 <b>세후</b> 이자입니다(이자소득세 15.4% 차감). ${termProse}${wayProse} 다른 은행과 같은 조건으로 비교하려면 <a href="../calculator">이자 계산기</a>를 쓰세요.</p>`;
+    }
+
+    // --- 적금 섹션 ---
+    let savingSection = "";
+    if (b.savings.length) {
+      const rows = [...b.savings]
+        .map((s) => ({ s, o12: termOpt(s.options, 12) }))
+        .sort((x, y) => (y.o12?.intr_rate2 || 0) - (x.o12?.intr_rate2 || 0))
+        .map(({ s, o12 }) => {
+          const types = [...new Set((s.options || []).map((o) => o.rsrv_type_nm).filter(Boolean))].join("·") || "-";
+          const spcl = s.spcl_cnd && s.spcl_cnd !== "해당사항 없음" ? clip(s.spcl_cnd, 90) : "-";
+          const cell12 =
+            o12 == null
+              ? "-"
+              : o12.intr_rate2 !== o12.intr_rate
+                ? `<b>${pct(o12.intr_rate2)}</b> <span class="b2">(기본 ${pct(o12.intr_rate)})</span>`
+                : `<b>${pct(o12.intr_rate2)}</b>`;
+          return `<tr><td>${escHtml(s.fin_prdt_nm)}</td><td>${types}</td><td class="r rate-em">${cell12}</td><td><span class="b2">${spcl}</span></td></tr>`;
+        })
+        .join("");
+      savingSection = `
+  <h2 class="sec">${b.name} 적금 금리 <small>${b.savings.length}개 · 12개월 기준</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>상품</th><th>적립방식</th><th class="r">12개월</th><th>우대조건</th></tr>
+    ${rows}
+  </table></div>`;
+    }
+
+    // --- 신용대출 섹션 ---
+    let creditSection = "";
+    if (b.credits.length) {
+      const rows = b.credits
+        .map((c) => {
+          const oA = (c.options || []).find((o) => o.crdt_lend_rate_type === "A") || (c.options || [])[0];
+          if (!oA) return "";
+          return `<tr><td>${escHtml(c.fin_prdt_nm)}</td><td>${escHtml(c.crdt_prdt_type_nm || "-")}</td><td class="r">${pct(oA.crdt_grad_1)}</td><td class="r rate-em">${pct(oA.crdt_grad_avg)}</td></tr>`;
+        })
+        .join("");
+      creditSection = `
+  <h2 class="sec">${b.name} 신용대출 금리 공시 <small>${dclsStr} · 신용점수별 공시 금리</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>상품</th><th>유형</th><th class="r">1~2등급</th><th class="r">평균금리</th></tr>
+    ${rows}
+  </table></div>
+  <p class="prose">위 금리는 금융감독원 공시 기준이며 <b>광고가 아닙니다</b>. 실제 금리는 개인 신용도·조건에 따라 달라집니다. 은행권 대출 비교는 <a href="../loans">대출 공시 페이지</a>에서 확인하세요.</p>`;
+    }
+
+    // --- FAQ (은행마다 숫자가 다른 자동 도출 문답) ---
+    const faqs = [];
+    if (bp) {
+      const daily = R.calcDaily(bp.p, DEFAULT_AMT).daily;
+      faqs.push({
+        q: `${b.name} 파킹통장 최고 금리는 얼마인가요?`,
+        a: `${bp.p.product}이(가) 최고 연 ${bp.p.maxRate?.toFixed(2)}%(기본 ${bp.p.baseRate?.toFixed(2)}%)로 가장 높습니다. 조건: ${bp.p.maxRateCondition || "없음"}. 1천만원 예치 시 하루 세후 약 ${R.won(daily)}을 받습니다.`,
+      });
+    }
+    if (bd)
+      faqs.push({
+        q: `${b.name} 정기예금 금리는 얼마인가요?`,
+        a: `12개월 기준 ${bd.d.fin_prdt_nm}이(가) 우대 포함 최고 연 ${bd.rate.toFixed(2)}%(기본 ${pct(bd.base)})로 가장 높습니다. 우대조건과 가입 방법은 위 표에서 확인하세요.`,
+      });
+    if (bp && bd)
+      faqs.push({
+        q: `${b.name}에서 파킹통장과 정기예금 중 무엇이 유리한가요?`,
+        a: `언제든 뺄 수 있어야 하는 돈은 파킹통장(최고 연 ${bp.p.maxRate?.toFixed(2)}%), 만기까지 묶어둘 수 있는 목돈은 정기예금(12개월 최고 연 ${bd.rate.toFixed(2)}%)이 유리합니다. 금리 차이가 ${Math.abs(bd.rate - (bp.p.maxRate || 0)).toFixed(2)}%p이므로, 사용 예정 시점이 확실하다면 예금 쪽 이자가 더 큽니다.`,
+      });
+    faqs.push({
+      q: `${b.name}은 예금자보호가 되나요?`,
+      a: `네. ${b.name}(${b.group})은 예금자보호법 적용 대상으로 원금과 이자를 합해 1인당 최고 1억 원까지 보호됩니다(2025년 9월 1일부터 상향). 1억 원을 넘는 금액은 다른 금융회사에 나누면 각각 보호받을 수 있습니다.`,
+    });
+    const faqHtml = faqs.map((f) => `<details class="faq"><summary>${f.q}</summary><p>${f.a}</p></details>`).join("");
+    const faqLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") } })),
+    };
+    const orgLd = {
+      "@context": "https://schema.org",
+      "@type": "BankOrCreditUnion",
+      name: b.name,
+      description: `${b.name} 파킹통장·정기예금·적금 금리 정리${bp ? ` — 파킹통장 최고 연 ${bp.p.maxRate?.toFixed(2)}%` : ""}${bd ? `, 정기예금 12개월 최고 연 ${bd.rate.toFixed(2)}%` : ""}`,
+    };
+
+    // --- 같은 권역 다른 은행 ---
+    // 파킹 금리와 예금 금리는 성격이 달라 한 숫자로 섞지 않는다 — 어느 쪽 금리인지 라벨로 구분
+    const peers = banks
+      .filter((x) => x.name !== b.name && x.group === b.group)
+      .map((x) => {
+        const xp = bestParking(x);
+        const xd = best12(x);
+        return xp
+          ? { x, r: xp.p.maxRate || 0, kind: "파킹" }
+          : { x, r: xd?.rate || 0, kind: "예금" };
+      })
+      .sort((a, c) => (a.kind === c.kind ? c.r - a.r : a.kind === "파킹" ? -1 : 1))
+      .slice(0, 8)
+      .map(({ x, r, kind }) => `<a href="${encodeURIComponent(BANK_PAGES.get(x.name))}">${x.name}<span class="r-rate">${kind} ${r.toFixed(2)}%</span></a>`)
+      .join("");
+
+    const heroCounts = [
+      b.parking.length ? `파킹통장 ${b.parking.length}개` : "",
+      b.deposits.length ? `정기예금 ${b.deposits.length}개` : "",
+      b.savings.length ? `적금 ${b.savings.length}개` : "",
+      b.credits.length ? `신용대출 ${b.credits.length}개` : "",
+    ].filter(Boolean).join(" · ");
+
+    const body = `
+  <div class="crumb"><a href="../">홈</a> › <a href="../bank">은행별 금리</a> › ${b.name}</div>
+  <div class="prod-head">
+    <div class="bank">${b.group} · 상품 ${total}개 · ${updatedStr}</div>
+    <h1>${b.name} <span class="em">금리 총정리</span></h1>
+  </div>
+  ${badges}
+  <div class="summary">${summaryRows}</div>
+  <p class="prose">${b.name}의 ${heroCounts} 금리를 금융감독원·저축은행중앙회 공시 기준으로 매일 갱신해 정리합니다. 표시 금리는 우대조건 충족 시 최고금리이며, 조건을 못 채우면 기본금리가 적용됩니다.</p>
+  ${parkingSection}
+  ${depositSection}
+  ${depositCalcSection}
+  ${savingSection}
+  ${creditSection}
+
+  <h2 class="sec">자주 묻는 질문</h2>
+  ${faqHtml}
+
+  <h2 class="sec">같은 권역 다른 금융회사 <small>${b.group}</small></h2>
+  <div class="related">${peers}</div>
+  <p class="prose"><a href="../bank">은행별 금리 전체 목록 →</a> · <a href="../parking">파킹통장 ${PARKING_LIST.length}개 전체 보기</a> · <a href="../calculator">이자 계산기</a></p>`;
+
+    const titleBits = [
+      bp ? `파킹통장 연 ${bp.p.maxRate?.toFixed(2)}%` : "",
+      bd ? `예금 연 ${bd.rate.toFixed(2)}%` : "",
+    ].filter(Boolean).join(" · ");
+    const title = `${b.name} 금리 총정리${titleBits ? ` — ${titleBits}` : ""} | 이자계산기`;
+    const desc = `${b.name} ${heroCounts} 금리 한눈에 보기. ${bp ? `파킹통장 최고 ${bp.p.product} 연 ${bp.p.maxRate?.toFixed(2)}%` : ""}${bp && bd ? ", " : ""}${bd ? `정기예금 12개월 최고 연 ${bd.rate.toFixed(2)}%` : ""}. 공시 기준 매일 갱신, 우대조건·하루 이자 계산 포함.`;
+
+    fs.writeFileSync(
+      path.join(dir, `${slug}.html`),
+      layout({
+        title,
+        desc,
+        canonicalPath: `/bank/${encodeURIComponent(slug)}`,
+        body,
+        depth: 1,
+        active: "bank",
+        extraHead:
+          `<script type="application/ld+json">${JSON.stringify(orgLd)}</script>` +
+          `<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`,
+      })
+    );
+  }
+
+  // --- 은행별 허브 (/bank) ---
+  const groups = [...new Set(banks.map((b) => b.group))];
+  const hubSections = groups
+    .map((g) => {
+      const list = banks
+        .filter((b) => b.group === g)
+        .map((b) => ({ b, bp: bestParking(b), bd: best12(b) }))
+        // 파킹통장 보유 은행을 파킹 금리순으로 먼저, 그다음 파킹 없는 은행을 예금 금리순으로.
+        // 두 금리를 한 키로 섞어 정렬하면 성격이 다른 숫자가 뒤엉킨 순서가 된다.
+        .sort((x, y) => {
+          if (!!x.bp !== !!y.bp) return x.bp ? -1 : 1;
+          return x.bp
+            ? (y.bp.p.maxRate || 0) - (x.bp.p.maxRate || 0)
+            : (y.bd?.rate || 0) - (x.bd?.rate || 0);
+        });
+      const rows = list
+        .map(
+          ({ b, bp, bd }) =>
+            `<tr><td><a href="bank/${encodeURIComponent(BANK_PAGES.get(b.name))}">${b.name}</a></td>` +
+            `<td class="r rate-em">${bp ? bp.p.maxRate?.toFixed(2) + "%" : "-"}</td>` +
+            `<td class="r">${bd ? bd.rate.toFixed(2) + "%" : "-"}</td>` +
+            `<td class="r">${b.parking.length + b.deposits.length + b.savings.length + b.credits.length}개</td></tr>`
+        )
+        .join("");
+      return `
+  <h2 class="sec">${g} <small>${list.length}곳</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>금융회사</th><th class="r">파킹 최고</th><th class="r">예금 12개월</th><th class="r">상품 수</th></tr>
+    ${rows}
+  </table></div>`;
+    })
+    .join("");
+
+  fs.writeFileSync(
+    path.join(PUB, "bank.html"),
+    layout({
+      title: `은행별 금리 총정리 — ${banks.length}개 금융회사 파킹통장·예금·적금 | 이자계산기`,
+      desc: `은행·저축은행·인터넷은행 ${banks.length}곳의 파킹통장·정기예금·적금·신용대출 금리를 은행 단위로 정리했습니다. 금융감독원·저축은행중앙회 공시 기준 매일 갱신.`,
+      canonicalPath: "/bank",
+      body: `
+  <div class="hero">
+    <h1>은행별 <span class="em">금리 총정리</span></h1>
+    <p>${banks.length}개 금융회사의 파킹통장·예금·적금·대출 금리를 은행 단위로 · ${updatedStr}</p>
+  </div>
+  <p class="prose">은행 이름을 누르면 그 은행의 <b>모든 공시 상품 금리</b>(파킹통장·정기예금·적금·신용대출)를 한 페이지에서 볼 수 있습니다.
+  상품 기준 비교는 <a href="parking">파킹통장 전체 목록</a>·<a href="rates">예·적금 순위</a>를 이용하세요.</p>
+  ${hubSections}`,
+      active: "bank",
+    })
+  );
+
+  // /bank 는 bank.html 하나로만 서빙한다 — bank/index.html을 같이 두면
+  // Cloudflare Pages에서 /bank 가 어느 파일로 풀릴지 모호해진다.
+
+  return [...BANK_PAGES.values()];
 }
 
 // ---------- 금액대별 추천 페이지 (/amount/*) ----------
@@ -1022,7 +1479,7 @@ function buildSplitPage() {
   };
 
   const body = `
-  <div class="crumb"><a href="../">홈</a> › <a href="parking">파킹통장 전체 목록</a> › 쪼개기 계산기</div>
+  <div class="crumb"><a href="./">홈</a> › <a href="parking">파킹통장 전체 목록</a> › 쪼개기 계산기</div>
   <div class="hero">
     <h1>파킹통장 <span class="em">쪼개기</span> 계산기</h1>
     <p>예금자보호 1억 한도 + 상품별 금액 한도를 같이 계산해 이자가 가장 많은 배분을 찾아드립니다</p>
@@ -1212,7 +1669,8 @@ function buildListPages() {
   <h2 class="sec">정기예금 TOP 15 <small>목돈 맡기기</small></h2>
   <div class="tbl-wrap"><table>${rateTable(DATA.topDeposits)}</table></div>
   <h2 class="sec">적금 TOP 15 <small>매달 붓기</small></h2>
-  <div class="tbl-wrap"><table>${rateTable(DATA.topSavings)}</table></div>`,
+  <div class="tbl-wrap"><table>${rateTable(DATA.topSavings)}</table></div>
+  <p class="prose">특정 은행의 예금·적금·파킹통장을 한 번에 보려면 <a href="bank">은행별 금리 총정리</a>를 이용하세요.</p>`,
       active: "rates",
     })
   );
@@ -1422,12 +1880,13 @@ function buildInfoPages() {
 }
 
 // ---------- sitemap / robots ----------
-function buildSitemap(slugs, guideSlugs, amountSlugs) {
+function buildSitemap(slugs, guideSlugs, amountSlugs, bankSlugs) {
   const today = DATA.builtAt.slice(0, 10);
   const urls = [
-    "/", "/parking", "/calculator", "/split", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
+    "/", "/parking", "/bank", "/calculator", "/split", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
     ...amountSlugs.map((s) => `/amount/${encodeURIComponent(s)}`),
     ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}`),
+    ...bankSlugs.map((s) => `/bank/${encodeURIComponent(s)}`),
     ...slugs.map((s) => `/p/${encodeURIComponent(s)}`),
   ];
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -1442,10 +1901,11 @@ buildIndex();
 buildCalculator();
 const slugs = buildProductPages();
 buildParkingHub();
+const bankSlugs = buildBankPages();
 const amountSlugs = buildAmountPages();
 buildSplitPage();
 buildListPages();
 const guideSlugs = buildGuidePages();
 buildInfoPages();
-buildSitemap(slugs, guideSlugs, amountSlugs);
-console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + 금액대별 ${amountSlugs.length}개 + 쪼개기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
+buildSitemap(slugs, guideSlugs, amountSlugs, bankSlugs);
+console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + 은행별 ${bankSlugs.length}개 + 금액대별 ${amountSlugs.length}개 + 쪼개기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
