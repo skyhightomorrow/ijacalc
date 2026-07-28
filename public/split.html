@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="naver-site-verification" content="af1b61ef432cf39f301684fb8053556d4728b3f8" />
+<title>파킹통장 쪼개기 계산기 — 예금자보호 1억·한도까지 계산한 최적 배분 | 이자계산기</title>
+<meta name="description" content="목돈을 파킹통장 여러 개로 나눌 때 이자가 가장 많은 배분을 계산합니다. 예금자보호 1억 한도와 상품별 금액 한도를 동시에 반영. 파킹통장 156개 기준, 한 통장에만 넣을 때와 이자 차이도 비교.">
+<link rel="canonical" href="https://ijacalc.com/split">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="이자계산기">
+<meta property="og:title" content="파킹통장 쪼개기 계산기 — 예금자보호 1억·한도까지 계산한 최적 배분 | 이자계산기">
+<meta property="og:description" content="목돈을 파킹통장 여러 개로 나눌 때 이자가 가장 많은 배분을 계산합니다. 예금자보호 1억 한도와 상품별 금액 한도를 동시에 반영. 파킹통장 156개 기준, 한 통장에만 넣을 때와 이자 차이도 비교.">
+<meta property="og:url" content="https://ijacalc.com/split">
+<meta property="og:image" content="https://ijacalc.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4FSJ025P9T"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4FSJ025P9T');</script>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"파킹통장을 왜 나눠서 넣나요?","acceptedAnswer":{"@type":"Answer","text":"두 가지 이유입니다. 첫째, 예금자보호는 금융회사당 1인 1억 원까지라 한 곳에 몰면 초과분이 보호되지 않습니다. 둘째, 대부분의 파킹통장은 우대 한도(예: 5천만 원까지)를 넘는 금액에 낮은 금리를 적용하므로, 나누면 이자도 더 받습니다."}},{"@type":"Question","name":"예금자보호 한도는 얼마인가요?","acceptedAnswer":{"@type":"Answer","text":"2025년 9월 1일부터 1인당 금융회사별 원금과 이자를 합해 1억 원까지 보호됩니다(이전 5천만 원에서 상향). 한도가 이자까지 포함한 금액 기준이라, 원금을 1억 원에 꽉 채우면 이자분은 보호받지 못합니다. 또 같은 금융회사의 여러 계좌는 합산되므로, 나눌 때는 반드시 서로 다른 금융회사여야 합니다."}},{"@type":"Question","name":"저축은행에 넣어도 안전한가요?","acceptedAnswer":{"@type":"Answer","text":"저축은행도 예금자보호법 적용 대상이라 1인당 1억 원까지 보호됩니다. 다만 보호 한도 안에서 나누는 것이 원칙이고, 이 계산기는 한 금융회사당 1억 원을 넘지 않도록 배분합니다."}},{"@type":"Question","name":"계좌를 여러 개 만들 때 주의할 점은?","acceptedAnswer":{"@type":"Answer","text":"20영업일 내 다른 금융회사 입출금 계좌를 새로 만들면 거절될 수 있습니다(단기간 다수계좌 개설 제한). 한 번에 다 만들지 말고 순차적으로 개설하세요. 또 처음 만든 계좌는 한도제한계좌로 시작하는 경우가 많습니다."}}]}</script>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="logo" href="./">이자<b>계산기</b></a>
+    <div class="top-right">
+      <span class="date">7월 28일 업데이트</span>
+      <a class="loan-btn" href="loans">🏛️ 금감원 대출공시 조회</a>
+    </div>
+  </div>
+
+  <div class="nav-wrap">
+  <nav class="tabs">
+    <a href="./" class="">바로 이자</a>
+    <a href="parking" class="">전체 목록</a>
+    <a href="calculator" class="">계산기</a>
+    <a href="split" class="active">쪼개기</a>
+    <a href="new" class="">신상품</a>
+    <a href="rates" class="">예·적금</a>
+    <a href="guide" class="">가이드</a>
+  </nav>
+  </div>
+
+  <div class="crumb"><a href="../">홈</a> › <a href="parking">파킹통장 전체 목록</a> › 쪼개기 계산기</div>
+  <div class="hero">
+    <h1>파킹통장 <span class="em">쪼개기</span> 계산기</h1>
+    <p>예금자보호 1억 한도 + 상품별 금액 한도를 같이 계산해 이자가 가장 많은 배분을 찾아드립니다</p>
+  </div>
+
+  <div class="calc">
+    <label for="sp-amt">예치할 총 금액</label>
+    <div class="inputline"><input id="sp-amt" inputmode="numeric" value="300,000,000"><span class="won">원</span></div>
+    <div class="hint">
+      <label style="font-weight:600"><input type="checkbox" id="sp-protect" checked> 예금자보호 한도(1억) 안에서만 배분</label>
+    </div>
+  </div>
+
+  <div id="sp-result"></div>
+
+  <p class="prose">배분은 <b>금액 한도가 있는 고금리 상품부터 한도만큼 채우고, 남은 돈을 다음 상품으로 넘기는 방식</b>으로 계산합니다.
+  같은 금융회사의 계좌는 예금자보호가 합산되므로 한 금융회사당 1억 원을 넘지 않게 배분합니다.
+  실제 가입 시에는 각 상품의 우대조건(앱 가입·마케팅 동의 등)을 확인하세요.</p>
+
+  <h2 class="sec">자주 묻는 질문</h2>
+  <details class="faq"><summary>파킹통장을 왜 나눠서 넣나요?</summary><p>두 가지 이유입니다. 첫째, 예금자보호는 금융회사당 1인 1억 원까지라 한 곳에 몰면 초과분이 보호되지 않습니다. 둘째, 대부분의 파킹통장은 우대 한도(예: 5천만 원까지)를 넘는 금액에 낮은 금리를 적용하므로, 나누면 이자도 더 받습니다.</p></details><details class="faq"><summary>예금자보호 한도는 얼마인가요?</summary><p>2025년 9월 1일부터 1인당 금융회사별 원금과 이자를 합해 1억 원까지 보호됩니다(이전 5천만 원에서 상향). 한도가 이자까지 포함한 금액 기준이라, 원금을 1억 원에 꽉 채우면 이자분은 보호받지 못합니다. 또 같은 금융회사의 여러 계좌는 합산되므로, 나눌 때는 반드시 서로 다른 금융회사여야 합니다.</p></details><details class="faq"><summary>저축은행에 넣어도 안전한가요?</summary><p>저축은행도 예금자보호법 적용 대상이라 1인당 1억 원까지 보호됩니다. 다만 보호 한도 안에서 나누는 것이 원칙이고, 이 계산기는 한 금융회사당 1억 원을 넘지 않도록 배분합니다.</p></details><details class="faq"><summary>계좌를 여러 개 만들 때 주의할 점은?</summary><p>20영업일 내 다른 금융회사 입출금 계좌를 새로 만들면 거절될 수 있습니다(단기간 다수계좌 개설 제한). 한 번에 다 만들지 말고 순차적으로 개설하세요. 또 처음 만든 계좌는 한도제한계좌로 시작하는 경우가 많습니다.</p></details>
+
+  <h2 class="sec">금액대별로 보기</h2>
+  <div class="related"><a href="amount/500%EB%A7%8C%EC%9B%90">파킹통장 500만원<span class="r-rate">이자</span></a><a href="amount/1000%EB%A7%8C%EC%9B%90">파킹통장 1000만원<span class="r-rate">이자</span></a><a href="amount/3000%EB%A7%8C%EC%9B%90">파킹통장 3000만원<span class="r-rate">이자</span></a><a href="amount/5000%EB%A7%8C%EC%9B%90">파킹통장 5000만원<span class="r-rate">이자</span></a><a href="amount/1%EC%96%B5">파킹통장 1억<span class="r-rate">이자</span></a><a href="amount/3%EC%96%B5">파킹통장 3억<span class="r-rate">이자</span></a></div>
+
+  <script src="render-card.js"></script>
+  <script>
+  var POOL=[{"bank":"예가람저축은행","product":"E-RUN플러스 파킹통장","baseRate":2.7,"maxRate":3.5,"maxRateCondition":"50,000,000원 이하","group":"저축은행","slug":"예가람저축은행-E-RUN플러스-파킹통장"},{"bank":"고려저축은행","product":"보고파플러스 파킹통장","baseRate":3.2,"maxRate":3.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"고려저축은행-보고파플러스-파킹통장"},{"bank":"예가람저축은행","product":"The프리미엄 멤버십 파킹통장","baseRate":3.1,"maxRate":3.11,"maxRateCondition":"200,000,000원 미만","group":"저축은행","slug":"예가람저축은행-The프리미엄-멤버십-파킹통장"},{"bank":"SBI저축은행","product":"사이다뱅크 입출금통장","baseRate":3,"maxRate":3,"maxRateCondition":"잔액 1억원 이하 구간","group":"저축은행","slug":"SBI저축은행-사이다뱅크-입출금통장"},{"bank":"예가람저축은행","product":"E-RUN급여 파킹통장","baseRate":2,"maxRate":2.8,"maxRateCondition":"제한없음","group":"저축은행","slug":"예가람저축은행-E-RUN급여-파킹통장"},{"bank":"키움YES저축은행","product":"예스파킹통장","baseRate":0.5,"maxRate":2.7,"maxRateCondition":"100,000,000원 초과","group":"저축은행","slug":"키움YES저축은행-예스파킹통장"},{"bank":"KB저축은행","product":"kiwi팡팡통장","baseRate":1.3,"maxRate":2.5,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"KB저축은행-kiwi팡팡통장"},{"bank":"키움저축은행","product":"키움주니어통장","baseRate":1,"maxRate":2.5,"maxRateCondition":"20,000,000원 이하","group":"저축은행","slug":"키움저축은행-키움주니어통장"},{"bank":"키움저축은행","product":"더 키움 파킹통장","baseRate":2,"maxRate":2.4,"maxRateCondition":"30,000,000원 초과","group":"저축은행","slug":"키움저축은행-더-키움-파킹통장"},{"bank":"케이뱅크","product":"플러스박스","baseRate":1.7,"maxRate":2.2,"maxRateCondition":"50,000,000원 초과","group":"인터넷은행","slug":"케이뱅크-플러스박스"},{"bank":"키움저축은행","product":"함께키움통장","baseRate":0.2,"maxRate":2.2,"maxRateCondition":"50,000,000원 이하","group":"저축은행","slug":"키움저축은행-함께키움통장"},{"bank":"카카오뱅크","product":"세이프박스","baseRate":1.6,"maxRate":1.6,"maxRateCondition":"최대 1억원","group":"인터넷은행","slug":"카카오뱅크-세이프박스"},{"bank":"토스뱅크","product":"나눠모으기 통장","baseRate":1.4,"maxRate":1.4,"maxRateCondition":"제한없음","group":"인터넷은행","slug":"토스뱅크-나눠모으기-통장"},{"bank":"토스뱅크","product":"토스뱅크 통장","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"인터넷은행","slug":"토스뱅크-토스뱅크-통장"},{"bank":"한화저축은행","product":"Mymo 파킹통장","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"한화저축은행-Mymo-파킹통장"},{"bank":"OK저축은행","product":"OK짠테크통장Ⅱ","baseRate":0.1,"maxRate":7,"maxRateCondition":"500,000원 이하","group":"저축은행","slug":"OK저축은행-OK짠테크통장"},{"bank":"대신저축은행","product":"대신 더더더파킹","baseRate":2,"maxRate":6,"maxRateCondition":"2,000,000원 이하","group":"저축은행","slug":"대신저축은행-대신-더더더파킹"},{"bank":"다올저축은행","product":"Fi 쌈짓돈Ⅲ 통장","baseRate":1,"maxRate":5,"maxRateCondition":"1,000,000원 이하","group":"저축은행","slug":"다올저축은행-Fi-쌈짓돈-통장"},{"bank":"DB저축은행","product":"DB행복파킹통장","baseRate":0.8,"maxRate":3.5,"maxRateCondition":"5,000,000원 이하","group":"저축은행","slug":"DB저축은행-DB행복파킹통장"},{"bank":"IBK저축은행","product":"IBKSB e-파킹통장","baseRate":0.1,"maxRate":3.5,"maxRateCondition":"300,000,000원 이하","group":"저축은행","slug":"IBK저축은행-IBKSB-e-파킹통장"},{"bank":"IBK저축은행","product":"IBK모임통장","baseRate":0.1,"maxRate":3.5,"maxRateCondition":"300,000,000원 이하","group":"저축은행","slug":"IBK저축은행-IBK모임통장"},{"bank":"애큐온저축은행","product":"애큐온모바일자유예금","baseRate":3.4,"maxRate":3.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"애큐온저축은행-애큐온모바일자유예금"},{"bank":"예가람저축은행","product":"The프리미엄 Biz통장","baseRate":0.2,"maxRate":3.5,"maxRateCondition":"50,000,000,000원 이하","group":"저축은행","slug":"예가람저축은행-The프리미엄-Biz통장"},{"bank":"참저축은행","product":"기업자유예금","baseRate":0.1,"maxRate":3.4,"maxRateCondition":"30,000,000,000원 이하","group":"저축은행","slug":"참저축은행-기업자유예금"},{"bank":"SBI저축은행","product":"아이통장","baseRate":0.2,"maxRate":3.2,"maxRateCondition":"3,000,000원 이하","group":"저축은행","slug":"SBI저축은행-아이통장"},{"bank":"OK저축은행","product":"OK파킹플렉스통장","baseRate":1.5,"maxRate":3.01,"maxRateCondition":"5,000,000원 이하","group":"저축은행","slug":"OK저축은행-OK파킹플렉스통장"},{"bank":"JT저축은행","product":"JT점프업Ⅱ저축예금","baseRate":0.5,"maxRate":3.01,"maxRateCondition":"50,000,000원 이하","group":"저축은행","slug":"JT저축은행-JT점프업저축예금"},{"bank":"웰컴저축은행","product":"웰뱅 모두페이 통장","baseRate":0.5,"maxRate":3,"maxRateCondition":"10,000,000원 이하","group":"저축은행","slug":"웰컴저축은행-웰뱅-모두페이-통장"},{"bank":"웰컴저축은행","product":"웰컴 주거래통장","baseRate":0.8,"maxRate":3,"maxRateCondition":"300,000,000원 이하","group":"저축은행","slug":"웰컴저축은행-웰컴-주거래통장"},{"bank":"다올저축은행","product":"Fi 저축예금","baseRate":3,"maxRate":3,"maxRateCondition":"제한없음","group":"저축은행","slug":"다올저축은행-Fi-저축예금"},{"bank":"페퍼저축은행","product":"페퍼스 파킹통장5","baseRate":1,"maxRate":3,"maxRateCondition":"50,000,000원 이하","group":"저축은행","slug":"페퍼저축은행-페퍼스-파킹통장5"},{"bank":"푸른저축은행","product":"푸른보통예금","baseRate":1,"maxRate":3,"maxRateCondition":"제한없음","group":"저축은행","slug":"푸른저축은행-푸른보통예금"},{"bank":"푸른저축은행","product":"E-푸른보통예금","baseRate":3,"maxRate":3,"maxRateCondition":"제한없음","group":"저축은행","slug":"푸른저축은행-E-푸른보통예금"},{"bank":"한국투자저축은행","product":"한투 ACE 파킹통장","baseRate":0.2,"maxRate":3,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"한국투자저축은행-한투-ACE-파킹통장"},{"bank":"NH저축은행","product":"NH FIC-One 보통예금","baseRate":0.2,"maxRate":2.8,"maxRateCondition":"50,000,000원 이하","group":"저축은행","slug":"NH저축은행-NH-FIC-One-보통예금"},{"bank":"대신저축은행","product":"더드리고입출금통장","baseRate":0.1,"maxRate":2.8,"maxRateCondition":"200,000,000원 이하","group":"저축은행","slug":"대신저축은행-더드리고입출금통장"},{"bank":"애큐온저축은행","product":"고수익자유예금","baseRate":2.8,"maxRate":2.8,"maxRateCondition":"제한없음","group":"저축은행","slug":"애큐온저축은행-고수익자유예금"},{"bank":"에스앤티저축은행","product":"우리가족사랑통장","baseRate":0.5,"maxRate":2.75,"maxRateCondition":"10,000,000원 이상","group":"저축은행","slug":"에스앤티저축은행-우리가족사랑통장"},{"bank":"SBI저축은행","product":"사이다입출금통장","baseRate":0.2,"maxRate":2.7,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"SBI저축은행-사이다입출금통장"},{"bank":"BNK저축은행","product":"삼삼한파킹통장","baseRate":1.2,"maxRate":2.7,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"BNK저축은행-삼삼한파킹통장"},{"bank":"하나저축은행","product":"하이(High)하나 보통예금","baseRate":2,"maxRate":2.5,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"하나저축은행-하이High하나-보통예금"},{"bank":"DB저축은행","product":"M-DreamBig 보통예금","baseRate":0.5,"maxRate":2.5,"maxRateCondition":"70,000,000원 이하","group":"저축은행","slug":"DB저축은행-M-DreamBig-보통예금"},{"bank":"DB저축은행","product":"DreamBig 보통예금","baseRate":0.5,"maxRate":2.5,"maxRateCondition":"70,000,000원 이하","group":"저축은행","slug":"DB저축은행-DreamBig-보통예금"},{"bank":"인천저축은행","product":"플러스저축예금","baseRate":2.5,"maxRate":2.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"인천저축은행-플러스저축예금"},{"bank":"진주저축은행","product":"지니 파킹통장","baseRate":2.5,"maxRate":2.5,"maxRateCondition":"20,000,000원 이하","group":"저축은행","slug":"진주저축은행-지니-파킹통장"},{"bank":"인천저축은행","product":"e-보다보통예금(미성년자)","baseRate":2.5,"maxRate":2.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"인천저축은행-e-보다보통예금미성년자"},{"bank":"인천저축은행","product":"e-보다보통예금(모임)","baseRate":2.5,"maxRate":2.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"인천저축은행-e-보다보통예금모임"},{"bank":"인천저축은행","product":"플러스기업자유예금","baseRate":2.5,"maxRate":2.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"인천저축은행-플러스기업자유예금"},{"bank":"우리금융저축은행","product":"첫번째저축예금","baseRate":0.1,"maxRate":2.5,"maxRateCondition":"50,000,000원 이하","group":"저축은행","slug":"우리금융저축은행-첫번째저축예금"},{"bank":"JT친애저축은행","product":"플러스입출금통장","baseRate":0.1,"maxRate":2.45,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"JT친애저축은행-플러스입출금통장"},{"bank":"JT친애저축은행","product":"비대면 플러스입출금통장","baseRate":0.1,"maxRate":2.45,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"JT친애저축은행-비대면-플러스입출금통장"},{"bank":"OSB저축은행","product":"E-보통예금","baseRate":0.2,"maxRate":2.3,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"OSB저축은행-E-보통예금"},{"bank":"OSB저축은행","product":"S-보통예금","baseRate":0.2,"maxRate":2.3,"maxRateCondition":"100,000,000원 이하","group":"저축은행","slug":"OSB저축은행-S-보통예금"},{"bank":"융창저축은행","product":"이음 저축예금","baseRate":0.2,"maxRate":2.3,"maxRateCondition":"30,000,000원 이상","group":"저축은행","slug":"융창저축은행-이음-저축예금"},{"bank":"대명저축은행","product":"보통예금","baseRate":0.5,"maxRate":2,"maxRateCondition":"제한없음","group":"저축은행","slug":"대명저축은행-보통예금"},{"bank":"신한저축은행","product":"e-저축예금","baseRate":1.3,"maxRate":1.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"신한저축은행-e-저축예금"},{"bank":"삼호저축은행","product":"저축예금","baseRate":1.3,"maxRate":1.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"삼호저축은행-저축예금"},{"bank":"엠에스저축은행","product":"알찬자유저축예금(기간별)","baseRate":0.1,"maxRate":1.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"엠에스저축은행-알찬자유저축예금기간별"},{"bank":"엠에스저축은행","product":"알찬기업자유예금(기간별)","baseRate":0.1,"maxRate":1.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"엠에스저축은행-알찬기업자유예금기간별"},{"bank":"드림저축은행","product":"꿈그린 보통예금","baseRate":0.1,"maxRate":1.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"드림저축은행-꿈그린-보통예금"},{"bank":"스마트저축은행","product":"자유저축예금","baseRate":0.5,"maxRate":1.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"스마트저축은행-자유저축예금"},{"bank":"페퍼저축은행","product":"페퍼룰루 파킹통장","baseRate":0.5,"maxRate":1.2,"maxRateCondition":"200,000,000원 이하","group":"저축은행","slug":"페퍼저축은행-페퍼룰루-파킹통장"},{"bank":"키움저축은행","product":"키우는 e저축예금","baseRate":0.8,"maxRate":1.1,"maxRateCondition":"5,000,000원 이상","group":"저축은행","slug":"키움저축은행-키우는-e저축예금"},{"bank":"상상인플러스저축은행","product":"보통예금(비대면)","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"상상인플러스저축은행-보통예금비대면"},{"bank":"상상인플러스저축은행","product":"크크크 파킹통장 보통예금","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"상상인플러스저축은행-크크크-파킹통장-보통예금"},{"bank":"상상인저축은행","product":"뱅뱅뱅 파킹통장 보통예금","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"상상인저축은행-뱅뱅뱅-파킹통장-보통예금"},{"bank":"세람저축은행","product":"저축예금","baseRate":0.1,"maxRate":1,"maxRateCondition":"100,000,000원 이상","group":"저축은행","slug":"세람저축은행-저축예금"},{"bank":"오투저축은행","product":"자유저축예금","baseRate":0.5,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오투저축은행-자유저축예금"},{"bank":"민국저축은행","product":"e-행복보통예금","baseRate":0.2,"maxRate":1,"maxRateCondition":"10,000,000원 이하","group":"저축은행","slug":"민국저축은행-e-행복보통예금"},{"bank":"민국저축은행","product":"비대면보통예금","baseRate":0.2,"maxRate":1,"maxRateCondition":"10,000,000원 이하","group":"저축은행","slug":"민국저축은행-비대면보통예금"},{"bank":"안양저축은행","product":"저축예금","baseRate":0.1,"maxRate":1,"maxRateCondition":"20,000,000원 이상","group":"저축은행","slug":"안양저축은행-저축예금"},{"bank":"스카이저축은행","product":"e-보통예금","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"스카이저축은행-e-보통예금"},{"bank":"진주저축은행","product":"보통예금","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"진주저축은행-보통예금"},{"bank":"청주저축은행","product":"보통예금","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"청주저축은행-보통예금"},{"bank":"조은저축은행","product":"e-보통예금","baseRate":1,"maxRate":1,"maxRateCondition":"제한없음","group":"저축은행","slug":"조은저축은행-e-보통예금"},{"bank":"센트럴저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.75,"maxRateCondition":"제한없음","group":"저축은행","slug":"센트럴저축은행-보통예금"},{"bank":"더케이저축은행","product":"e-보통예금","baseRate":0.6,"maxRate":0.6,"maxRateCondition":"제한없음","group":"저축은행","slug":"더케이저축은행-e-보통예금"},{"bank":"조흥저축은행","product":"보통예금","baseRate":0.6,"maxRate":0.6,"maxRateCondition":"제한없음","group":"저축은행","slug":"조흥저축은행-보통예금"},{"bank":"조흥저축은행","product":"조흥생계비통장","baseRate":0.6,"maxRate":0.6,"maxRateCondition":"제한없음","group":"저축은행","slug":"조흥저축은행-조흥생계비통장"},{"bank":"바로저축은행","product":"저축예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"바로저축은행-저축예금"},{"bank":"DH저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"DH저축은행-보통예금"},{"bank":"DH저축은행","product":"보통예금(비대면)","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"DH저축은행-보통예금비대면"},{"bank":"센트럴저축은행","product":"n-보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"센트럴저축은행-n-보통예금"},{"bank":"삼호저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"삼호저축은행-보통예금"},{"bank":"오투저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"오투저축은행-보통예금"},{"bank":"모아저축은행","product":"e-모아저축예금","baseRate":0.2,"maxRate":0.5,"maxRateCondition":"100,000원 이상","group":"저축은행","slug":"모아저축은행-e-모아저축예금"},{"bank":"키움YES저축은행","product":"e-보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"키움YES저축은행-e-보통예금"},{"bank":"유안타저축은행","product":"저축예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"유안타저축은행-저축예금"},{"bank":"동원제일저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"동원제일저축은행-보통예금"},{"bank":"동원제일저축은행","product":"보통예금(비대면)","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"동원제일저축은행-보통예금비대면"},{"bank":"영진저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"영진저축은행-보통예금"},{"bank":"영진저축은행","product":"SB톡톡-보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"영진저축은행-SB톡톡-보통예금"},{"bank":"유안타저축은행","product":"생계비계좌","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"유안타저축은행-생계비계좌"},{"bank":"센트럴저축은행","product":"보통예금(생계비)","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"센트럴저축은행-보통예금생계비"},{"bank":"조은저축은행","product":"보통예금","baseRate":0.5,"maxRate":0.5,"maxRateCondition":"제한없음","group":"저축은행","slug":"조은저축은행-보통예금"},{"bank":"IBK저축은행","product":"참알찬IBK저축은행보통예금","baseRate":0.4,"maxRate":0.4,"maxRateCondition":"제한없음","group":"저축은행","slug":"IBK저축은행-참알찬IBK저축은행보통예금"},{"bank":"융창저축은행","product":"내가그린 보통예금","baseRate":0.2,"maxRate":0.4,"maxRateCondition":"제한없음","group":"저축은행","slug":"융창저축은행-내가그린-보통예금"},{"bank":"융창저축은행","product":"함께그린 보통예금","baseRate":0.2,"maxRate":0.4,"maxRateCondition":"제한없음","group":"저축은행","slug":"융창저축은행-함께그린-보통예금"},{"bank":"융창저축은행","product":"생계비 내가그린 보통예금","baseRate":0.2,"maxRate":0.4,"maxRateCondition":"제한없음","group":"저축은행","slug":"융창저축은행-생계비-내가그린-보통예금"},{"bank":"융창저축은행","product":"생계비 함께그린 보통예금","baseRate":0.2,"maxRate":0.4,"maxRateCondition":"제한없음","group":"저축은행","slug":"융창저축은행-생계비-함께그린-보통예금"},{"bank":"스마트저축은행","product":"보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"스마트저축은행-보통예금"},{"bank":"아산저축은행","product":"보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"아산저축은행-보통예금"},{"bank":"한성저축은행","product":"보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"한성저축은행-보통예금"},{"bank":"삼정저축은행","product":"보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"삼정저축은행-보통예금"},{"bank":"대명저축은행","product":"내가그린 보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"대명저축은행-내가그린-보통예금"},{"bank":"솔브레인저축은행","product":"보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"솔브레인저축은행-보통예금"},{"bank":"스타저축은행","product":"보통예금","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"스타저축은행-보통예금"},{"bank":"스타저축은행","product":"생계비계좌","baseRate":0.3,"maxRate":0.3,"maxRateCondition":"제한없음","group":"저축은행","slug":"스타저축은행-생계비계좌"},{"bank":"부림저축은행","product":"보통예금","baseRate":0.25,"maxRate":0.25,"maxRateCondition":"제한없음","group":"저축은행","slug":"부림저축은행-보통예금"},{"bank":"흥국저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"흥국저축은행-보통예금"},{"bank":"대백저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"대백저축은행-보통예금"},{"bank":"대백저축은행","product":"애플보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"대백저축은행-애플보통예금"},{"bank":"에스앤티저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"1원 이상","group":"저축은행","slug":"에스앤티저축은행-보통예금"},{"bank":"머스트삼일저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"머스트삼일저축은행-보통예금"},{"bank":"스카이저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"스카이저축은행-보통예금"},{"bank":"민국저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"민국저축은행-보통예금"},{"bank":"금화저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"금화저축은행-보통예금"},{"bank":"우리저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"우리저축은행-보통예금"},{"bank":"유안타저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"유안타저축은행-보통예금"},{"bank":"더블저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"더블저축은행-보통예금"},{"bank":"예가람저축은행","product":"생계비계좌","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"예가람저축은행-생계비계좌"},{"bank":"융창저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"융창저축은행-보통예금"},{"bank":"융창저축은행","product":"생계비 보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"융창저축은행-생계비-보통예금"},{"bank":"안국저축은행","product":"보통예금","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"안국저축은행-보통예금"},{"bank":"안국저축은행","product":"보통예금(비대면)","baseRate":0.2,"maxRate":0.2,"maxRateCondition":"제한없음","group":"저축은행","slug":"안국저축은행-보통예금비대면"},{"bank":"고려저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"고려저축은행-보통예금"},{"bank":"드림저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"드림저축은행-보통예금"},{"bank":"세람저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"세람저축은행-보통예금"},{"bank":"라온저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"라온저축은행-보통예금"},{"bank":"인성저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"인성저축은행-보통예금"},{"bank":"대원저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"대원저축은행-보통예금"},{"bank":"대아저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"대아저축은행-보통예금"},{"bank":"안양저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"안양저축은행-보통예금"},{"bank":"모아저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"모아저축은행-보통예금"},{"bank":"대한저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"대한저축은행-보통예금"},{"bank":"동양저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"동양저축은행-보통예금"},{"bank":"동양저축은행","product":"보통예금(비대면)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"동양저축은행-보통예금비대면"},{"bank":"오성저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-보통예금"},{"bank":"오성저축은행","product":"보통예금(비대면)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-보통예금비대면"},{"bank":"국제저축은행","product":"보통예금(비대면)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"국제저축은행-보통예금비대면"},{"bank":"남양저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"남양저축은행-보통예금"},{"bank":"남양저축은행","product":"비대면-보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"남양저축은행-비대면-보통예금"},{"bank":"HB저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"HB저축은행-보통예금"},{"bank":"HB저축은행","product":"비대면 보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"HB저축은행-비대면-보통예금"},{"bank":"오성저축은행","product":"비대면보통예금(모임통장)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-비대면보통예금모임통장"},{"bank":"오성저축은행","product":"비대면보통예금(미성년자)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-비대면보통예금미성년자"},{"bank":"오성저축은행","product":"비대면보통예금(법인통장)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-비대면보통예금법인통장"},{"bank":"인천저축은행","product":"e-보다보통예금(비대면)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"인천저축은행-e-보다보통예금비대면"},{"bank":"참저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"참저축은행-보통예금"},{"bank":"참저축은행","product":"생계비계좌","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"참저축은행-생계비계좌"},{"bank":"오성저축은행","product":"보통예금(생계비계좌)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-보통예금생계비계좌"},{"bank":"오성저축은행","product":"비대면 보통예금(생계비계좌)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"오성저축은행-비대면-보통예금생계비계좌"},{"bank":"바로저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"바로저축은행-보통예금"},{"bank":"바로저축은행","product":"보통예금(생계비계좌)","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"바로저축은행-보통예금생계비계좌"},{"bank":"CK저축은행","product":"보통예금","baseRate":0.1,"maxRate":0.1,"maxRateCondition":"제한없음","group":"저축은행","slug":"CK저축은행-보통예금"},{"bank":"BNK저축은행","product":"보통예금","baseRate":0.01,"maxRate":0.01,"maxRateCondition":"제한없음","group":"저축은행","slug":"BNK저축은행-보통예금"}];
+  var PROTECT=100000000;
+  (function(){
+    var amtEl=document.getElementById("sp-amt"),protEl=document.getElementById("sp-protect"),out=document.getElementById("sp-result");
+    function plan(total,useProtect,bigOnly){
+      // 상품별 "이 상품에 넣을 수 있는 최대 금액"과 그 금리를 뽑아 금리 높은 순으로 채운다
+      var cands=POOL.map(function(p){
+        var c=parseCondition(p.maxRateCondition);
+        var cap=(c.type==="upto")?c.value:Infinity;
+        // "N원 초과라야 최고금리"인 상품은 최고금리를 받으려면 그 이상 넣어야 한다
+        var minNeed=(c.type==="above")?c.value+1:0;
+        return {p:p,cap:cap,minNeed:minNeed,rate:p.maxRate||0};
+      }).filter(function(x){
+        if(x.rate<=0)return false;
+        // bigOnly: 소액 우대 통장을 제외한 "큰 통장만 쓰는" 비교 기준용 배분
+        return bigOnly?x.cap>=PROTECT:true;
+      }).sort(function(a,b){return b.rate-a.rate;});
+
+      var left=total,alloc=[],perBank={};
+      for(var i=0;i<cands.length&&left>0;i++){
+        var x=cands[i],bank=x.p.bank;
+        var bankRoom=useProtect?Math.max(0,PROTECT-(perBank[bank]||0)):Infinity;
+        if(bankRoom<=0)continue;
+        var put=Math.min(left,x.cap,bankRoom);
+        if(x.minNeed>0&&put<x.minNeed)continue; // 최소 금액을 못 채우면 최고금리를 못 받으니 건너뜀
+        if(put<10000)continue;
+        alloc.push({p:x.p,amt:put,rate:x.rate});
+        perBank[bank]=(perBank[bank]||0)+put;
+        left-=put;
+      }
+      return {alloc:alloc,left:left};
+    }
+    function render(){
+      var total=parseAmount(amtEl.value)||0;
+      if(total)amtEl.value=fmt(total);
+      if(total<10000){out.innerHTML='<div class="empty">금액을 입력하세요.</div>';return;}
+      var r=plan(total,protEl.checked,false),daily=0,html="";
+      if(!r.alloc.length){out.innerHTML='<div class="empty">배분할 상품을 찾지 못했습니다.</div>';return;}
+      html+='<h2 class="sec">추천 배분 <small>'+r.alloc.length+'개 통장 · 세후 기준</small></h2><div class="tbl-wrap"><table>';
+      html+='<tr><th>#</th><th>금융회사</th><th>상품</th><th class="r">넣을 금액</th><th class="r">금리</th><th class="r">하루 이자</th></tr>';
+      r.alloc.forEach(function(a,i){
+        var d=calcDaily(a.p,a.amt).daily;daily+=d;
+        html+='<tr><td>'+(i+1)+'</td><td>'+a.p.bank+'<div class="b2">'+a.p.group+'</div></td>'+
+          '<td><a href="p/'+encodeURIComponent(a.p.slug)+'">'+a.p.product+'</a></td>'+
+          '<td class="r">'+won(a.amt)+'</td><td class="r">연 '+a.rate.toFixed(2)+'%</td>'+
+          '<td class="r rate-em">+'+won(d)+'</td></tr>';
+      });
+      html+='</table></div>';
+      // 비교 기준: 같은 조건에서 "한도 큰 통장만 쓰는" 단순 배분 — 소액 고금리 통장을 더해서 얻는 순이익을 본다.
+      // (예금자보호를 끈 단일 통장과 비교하면 보호를 지킨 배분이 손해처럼 보이는 왜곡이 생긴다)
+      var base=plan(total,protEl.checked,true),baseDaily=0;
+      base.alloc.forEach(function(a){baseDaily+=calcDaily(a.p,a.amt).daily;});
+      var gain=Math.round((daily-baseDaily)*365);
+      var minAcc=base.alloc.length, extraAcc=r.alloc.length-minAcc;
+      html+='<div class="summary">'+
+        '<div class="row"><span class="k">이 배분의 하루 이자 합계</span><span class="v hl">+'+won(daily)+'</span></div>'+
+        '<div class="row"><span class="k">1년 이자</span><span class="v">'+won(daily*365)+'</span></div>'+
+        '<div class="row"><span class="k">한도 큰 통장만 쓸 때 <small>통장 '+minAcc+'개</small></span><span class="v">1년 '+won(baseDaily*365)+'</span></div>'+
+        '<div class="row"><span class="k">소액 고금리 통장을 더해 얻는 이자</span><span class="v hl">1년 '+(gain>0?"+":"")+won(gain)+'</span></div>'+
+        (r.left>0?'<div class="row"><span class="k">배분하지 못한 금액</span><span class="v">'+won(r.left)+' (상품 한도 소진)</span></div>':'')+
+        '</div>';
+      // 실익 대비 수고 안내 — 통장 1개 더 만들 때 얻는 연간 이자로 판단하게 한다
+      var perAcc=extraAcc>0?Math.round(gain/extraAcc):0;
+      var protectNote=(total>PROTECT)
+        ? ' 다만 <b>예금자보호 한도(1억)를 넘는 금액이라 이자와 무관하게 최소 '+Math.ceil(total/PROTECT)+'개 금융회사로는 반드시 나눠야</b> 원금이 보호됩니다.'
+        : '';
+      var advice;
+      if(extraAcc<=0&&gain>0){
+        // 통장 수는 그대로인데 상품 선택만으로 이자가 늘어나는 구간 — 소액 고금리 통장이 이 금액을 다 담는 경우
+        advice='통장을 더 만들 필요 없이 <b>어느 통장을 고르느냐만으로 1년에 '+won(gain)+'을 더 받습니다.</b> 이 금액대는 소액 우대 통장의 높은 금리가 그대로 적용되는 구간입니다.'+protectNote;
+      } else if(extraAcc<=0){
+        advice='이 금액은 한도 큰 통장 <b>'+minAcc+'개</b>로 충분합니다. 소액 우대 통장을 더 열어도 이자가 늘지 않습니다.'+protectNote;
+      } else if(perAcc<30000){
+        advice='통장을 <b>'+extraAcc+'개 더</b>(총 '+r.alloc.length+'개) 만들면 1년에 <b>'+won(gain)+'</b>을 더 받습니다 — 하나당 연 '+won(perAcc)+
+          ' 수준이라 <b>수고 대비 실익이 크지 않습니다.</b> 상위 몇 개만 골라 쓰는 편이 현실적입니다.'+protectNote;
+      } else {
+        advice='통장을 <b>'+extraAcc+'개 더</b>(총 '+r.alloc.length+'개) 만들면 1년에 <b>'+won(gain)+'</b>을 더 받습니다(하나당 연 '+won(perAcc)+' 수준). 쪼갤 만한 구간입니다.'+protectNote;
+      }
+      html+='<div class="notice gray"><span class="ic">💡</span><span>'+advice+
+        ' 참고로 20영업일 내에 여러 금융회사 입출금 계좌를 연달아 만들면 개설이 거절될 수 있어, 한 번에 다 만들기는 어렵습니다.</span></div>';
+      out.innerHTML=html;
+    }
+    amtEl.addEventListener("input",render);protEl.addEventListener("change",render);render();
+  })();
+  </script>
+
+  <footer>
+    출처: 금융감독원 금융상품통합비교공시 「금융상품한눈에」, 저축은행중앙회 소비자포털 · 금리는 수시로 변동될 수 있으며 실제 가입 조건은 각 금융회사에서 확인하세요.<br>
+    본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.<br>
+    <a href="about">사이트 소개</a> · <a href="privacy">개인정보처리방침</a>
+  </footer>
+</div>
+</body>
+</html>

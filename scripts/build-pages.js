@@ -70,6 +70,7 @@ const NAV = (active, base) => `
     <a href="${base}./" class="${active === "instant" ? "active" : ""}">바로 이자</a>
     <a href="${base}parking" class="${active === "parking" ? "active" : ""}">전체 목록</a>
     <a href="${base}calculator" class="${active === "calc" ? "active" : ""}">계산기</a>
+    <a href="${base}split" class="${active === "split" ? "active" : ""}">쪼개기</a>
     <a href="${base}new" class="${active === "new" ? "active" : ""}">신상품</a>
     <a href="${base}rates" class="${active === "rates" ? "active" : ""}">예·적금</a>
     <a href="${base}guide" class="${active === "guide" ? "active" : ""}">가이드</a>
@@ -570,7 +571,7 @@ function buildProductPages() {
     }
     faqs.push({
       q: `${p.bank} 파킹통장은 예금자보호가 되나요?`,
-      a: `네. ${p.bank}(${p.group})은 예금자보호법 적용 대상이라 원금과 이자를 합해 1인당 최고 1억 원까지 보호됩니다(2025년 9월 1일부터 5천만 원에서 1억 원으로 상향). 1억 원을 넘는 돈은 여러 금융회사에 나누면 각각 보호받을 수 있습니다.`,
+      a: `네. ${p.bank}(${p.group})은 예금자보호법 적용 대상이라 원금과 이자를 합해 1인당 최고 1억 원까지 보호됩니다(2025년 9월 1일부터 5천만 원에서 1억 원으로 상향). 한도는 원금이 아니라 이자까지 더한 금액 기준이므로, 원금을 1억 원에 꽉 채우면 이자는 보호 범위를 벗어납니다. 1억 원을 넘는 돈은 여러 금융회사에 나누면 각각 보호받을 수 있습니다.`,
     });
     faqs.push({
       q: `이자는 언제 받나요?`,
@@ -660,6 +661,9 @@ amt.addEventListener("input",upd);upd();
 
   <h2 class="sec">함께 볼 만한 파킹통장</h2>
   <div class="related">${related}</div>
+
+  <h2 class="sec">금액대별 이자 순위 <small>금액마다 1위가 다릅니다</small></h2>
+  <div class="related">${AMOUNT_BRACKETS.map((x) => `<a href="../amount/${encodeURIComponent(x.slug)}">파킹통장 ${x.slug}<span class="r-rate">이자 순위</span></a>`).join("")}<a href="../split">목돈 쪼개기 계산기<span class="r-rate">1억 초과</span></a></div>
   <p class="prose"><a href="../parking">파킹통장 ${PARKING_LIST.length}개 전체 금리 목록 보기 →</a></p>
   ${calcScript}`;
 
@@ -742,6 +746,9 @@ function buildParkingHub() {
   내 금액 기준으로 하루에 얼마가 붙는지는 <a href="./">바로 이자 페이지</a>나
   <a href="calculator">파킹통장 이자 계산기</a>에서 확인하세요.</p>
 
+  <h2 class="sec">내 금액으로 바로 보기 <small>금액마다 유리한 상품이 다릅니다</small></h2>
+  <div class="related">${AMOUNT_BRACKETS.map((x) => `<a href="amount/${encodeURIComponent(x.slug)}">파킹통장 ${x.slug}<span class="r-rate">이자 순위</span></a>`).join("")}<a href="split">목돈 쪼개기 계산기<span class="r-rate">1억 초과</span></a></div>
+
   <h2 class="sec">은행으로 바로 찾기</h2>
   <div class="related">${bankIndex}</div>
 
@@ -756,6 +763,321 @@ function buildParkingHub() {
       canonicalPath: "/parking",
       body,
       active: "parking",
+    })
+  );
+}
+
+// ---------- 금액대별 추천 페이지 (/amount/*) ----------
+// "파킹통장 1억", "파킹통장 5천만원" 류 금액 쿼리 대응.
+// 최고금리 순위가 아니라 **그 금액에서 실제로 받는 이자** 순으로 정렬하는 것이 핵심 —
+// 명목 7% 소액 우대형이 1억 예치에서는 최하위가 되므로 순위가 금액대마다 완전히 달라진다.
+const AMOUNT_BRACKETS = [
+  { slug: "500만원", amt: 5000000, kw: "파킹통장 500만원" },
+  { slug: "1000만원", amt: 10000000, kw: "파킹통장 1000만원" },
+  { slug: "3000만원", amt: 30000000, kw: "파킹통장 3000만원" },
+  { slug: "5000만원", amt: 50000000, kw: "파킹통장 5000만원" },
+  { slug: "1억", amt: 100000000, kw: "파킹통장 1억" },
+  { slug: "3억", amt: 300000000, kw: "파킹통장 3억" },
+];
+const PROTECT_LIMIT = 100000000; // 예금자보호 한도 (2025-09-01 상향)
+
+function buildAmountPages() {
+  const dir = path.join(PUB, "amount");
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+
+  for (const b of AMOUNT_BRACKETS) {
+    const ranked = PARKING_LIST.map(({ p, slug }) => {
+      const c = R.calcDaily(p, b.amt);
+      return { p, slug, ...c, year: c.daily * 365 };
+    })
+      .filter((x) => x.daily > 0)
+      .sort((a, b2) => b2.daily - a.daily);
+
+    const top = ranked.slice(0, 20);
+    const best = ranked[0];
+    // 명목 최고금리 1위와 이 금액대 1위가 다른지 — 페이지마다 다른 인사이트 문장이 된다
+    const nominalTop = [...PARKING_LIST].sort((x, y) => (y.p.maxRate || 0) - (x.p.maxRate || 0))[0];
+    const flipped = nominalTop.slug !== best.slug;
+    const nominalHere = ranked.find((x) => x.slug === nominalTop.slug);
+
+    const rows = top
+      .map(
+        (x, i) =>
+          `<tr><td>${i + 1}</td><td>${x.p.bank}<div class="b2">${x.p.group}</div></td>` +
+          `<td><a href="../p/${encodeURIComponent(x.slug)}">${x.p.product}</a></td>` +
+          `<td class="r">연 ${x.rate.toFixed(2)}%</td>` +
+          `<td class="r rate-em">+${R.won(x.daily)}</td>` +
+          `<td class="r">${R.won(x.daily * 30)}</td>` +
+          `<td class="r">${R.won(x.year)}</td></tr>`
+      )
+      .join("");
+
+    const insight = flipped
+      ? `<p class="prose"><b>${b.slug} 기준 1위는 ${best.p.bank} ${best.p.product}</b>(적용 연 ${best.rate.toFixed(2)}%)입니다.
+      명목 최고금리 1위는 ${nominalTop.p.bank} ${nominalTop.p.product}(연 ${nominalTop.p.maxRate?.toFixed(2)}%)이지만
+      한도 조건(${nominalTop.p.maxRateCondition || "-"}) 때문에 ${b.slug}을 넣으면 하루 세후 ${R.won(nominalHere ? nominalHere.daily : 0)}에 그쳐
+      <b>순위가 뒤집힙니다</b>. 파킹통장은 표시 금리가 아니라 내 금액에서의 실수령으로 골라야 합니다.</p>`
+      : `<p class="prose"><b>${b.slug} 기준 1위는 ${best.p.bank} ${best.p.product}</b>(적용 연 ${best.rate.toFixed(2)}%)로,
+      명목 최고금리 1위와 같습니다. 하루 세후 <b>+${R.won(best.daily)}</b>, 1년이면 ${R.won(best.year)}입니다.</p>`;
+
+    // 예금자보호 안내 — 금액대별로 문장이 달라진다
+    // 예금자보호는 원금이 아니라 **원금+이자 합산** 1억까지다 — 원금이 한도에 근접하면 이자분이 보호 밖으로 밀린다
+    const protectProse =
+      b.amt > PROTECT_LIMIT
+        ? `<p class="prose">⚠️ ${b.slug}은 <b>예금자보호 한도(1억 원)를 넘습니다.</b> 한 금융회사에 전액을 넣으면 초과분은 보호받지 못하므로,
+      최소 ${Math.ceil(b.amt / PROTECT_LIMIT)}개 금융회사에 나눠 예치하는 것이 안전합니다.
+      게다가 대부분의 파킹통장은 금액 한도를 넘으면 금리가 떨어지기 때문에, 나누는 편이 <b>이자도 더 받습니다</b>.
+      <a href="../split">파킹통장 쪼개기 계산기</a>에서 최적 배분을 계산해보세요.</p>`
+        : b.amt === PROTECT_LIMIT
+          ? `<p class="prose">⚠️ 예금자보호는 <b>원금과 이자를 합해</b> 금융회사당 1억 원까지입니다. 원금이 정확히 1억 원이면
+      <b>이자는 보호 한도를 넘어섭니다</b>. 원금까지 온전히 보호받으려면 한 곳에 1억 원 미만으로 넣거나
+      두 곳 이상에 나누는 것이 안전합니다. <a href="../split">쪼개기 계산기</a>로 배분을 확인해보세요.</p>`
+          : `<p class="prose">${b.slug}은 예금자보호 한도(1억 원) 안이라 한 금융회사에 넣어도 원금과 이자가 보호됩니다(보호 한도는 원금과 이자 합산 기준).
+      다만 상품별 한도 조건에 걸리면 금리가 떨어지므로, 위 표의 <b>적용 금리</b>가 최고금리보다 낮은 상품은 한도에 걸린 것입니다.</p>`;
+
+    const faqs = [
+      {
+        q: `${b.slug}을 파킹통장에 넣으면 이자가 얼마인가요?`,
+        a: `${b.slug} 기준 가장 유리한 ${best.p.bank} ${best.p.product}에 넣으면 하루 세후 약 ${R.won(best.daily)}, 한 달 약 ${R.won(best.daily * 30)}, 1년 약 ${R.won(best.year)}입니다(이자소득세 15.4% 차감 후). 상품별 금액은 위 표에서 비교하세요.`,
+      },
+      {
+        q: `${b.slug}은 한 통장에 다 넣어도 되나요?`,
+        a:
+          b.amt >= PROTECT_LIMIT
+            ? `권장하지 않습니다. 예금자보호는 금융회사당 1인 원금과 이자를 합해 1억 원까지라, ${b.slug}을 한 곳에 넣으면 한도를 넘는 부분(${b.amt === PROTECT_LIMIT ? "이자" : "초과 원금과 이자"})이 보호되지 않습니다. 또 대부분 파킹통장은 한도 초과분에 낮은 금리를 적용해 이자도 줄어듭니다.`
+            : `${b.slug}은 예금자보호 한도 안이라 한 곳에 넣어도 보호됩니다(원금과 이자 합산 1억 원 기준). 다만 상품의 우대 한도가 ${b.slug}보다 작으면 초과분에 낮은 금리가 붙으니, 위 표의 적용 금리를 확인하세요.`,
+      },
+      {
+        q: `이자에서 세금은 얼마나 떼나요?`,
+        a: `이자소득세 15.4%(소득세 14% + 지방소득세 1.4%)가 원천징수됩니다. 위 표의 금액은 모두 세금을 뗀 뒤 실제로 받는 금액입니다.`,
+      },
+    ];
+    const faqHtml = faqs.map((f) => `<details class="faq"><summary>${f.q}</summary><p>${f.a}</p></details>`).join("");
+    const faqLd = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a.replace(/<[^>]+>/g, "") },
+      })),
+    };
+
+    const otherLinks = AMOUNT_BRACKETS.filter((x) => x.slug !== b.slug)
+      .map((x) => `<a href="${encodeURIComponent(x.slug)}">파킹통장 ${x.slug}<span class="r-rate">이자</span></a>`)
+      .join("");
+
+    const body = `
+  <div class="crumb"><a href="../">홈</a> › <a href="../parking">파킹통장 전체 목록</a> › ${b.slug}</div>
+  <div class="hero">
+    <h1>파킹통장 <span class="em">${b.slug}</span> 넣으면 이자 얼마?</h1>
+    <p>${b.slug} 기준 실수령 이자 순위 · 파킹통장 ${PARKING_LIST.length}개 비교 · ${updatedStr}</p>
+  </div>
+
+  ${insight}
+
+  <h2 class="sec">${b.slug} 예치 시 이자 순위 TOP 20 <small>세후 · 이자소득세 15.4% 차감</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>#</th><th>금융회사</th><th>상품</th><th class="r">적용 금리</th><th class="r">하루</th><th class="r">한 달</th><th class="r">1년</th></tr>
+    ${rows}
+  </table></div>
+  <p class="prose">순위는 <b>${b.slug}을 넣었을 때 실제로 받는 이자</b> 기준입니다. 상품의 한도 조건 때문에 최고금리를 다 못 받는 경우
+  적용 금리가 낮아지며, 그래서 금액대마다 순위가 달라집니다. 다른 금액으로 보려면 <a href="../calculator">이자 계산기</a>를 이용하세요.</p>
+
+  ${protectProse}
+
+  <h2 class="sec">자주 묻는 질문</h2>
+  ${faqHtml}
+
+  <h2 class="sec">다른 금액으로 보기</h2>
+  <div class="related">${otherLinks}</div>
+  <p class="prose"><a href="../parking">파킹통장 ${PARKING_LIST.length}개 전체 금리 목록 보기 →</a></p>`;
+
+    fs.writeFileSync(
+      path.join(dir, `${b.slug}.html`),
+      layout({
+        title: `파킹통장 ${b.slug} 이자 얼마? — 실수령 순위 TOP 20 | 이자계산기`,
+        desc: `${b.slug}을 파킹통장에 넣으면 하루 ${R.won(best.daily)}, 1년 ${R.won(best.year)}(세후). ${b.slug} 기준 1위는 ${best.p.bank} ${best.p.product} 적용 연 ${best.rate.toFixed(2)}%. 한도 조건까지 반영한 실수령 순위 ${PARKING_LIST.length}개 비교.`,
+        canonicalPath: `/amount/${encodeURIComponent(b.slug)}`,
+        body,
+        depth: 1,
+        active: "parking",
+        extraHead: `<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`,
+      })
+    );
+  }
+  return AMOUNT_BRACKETS.map((b) => b.slug);
+}
+
+// ---------- 파킹통장 쪼개기(분산 예치) 계산기 (/split) ----------
+// 예금자보호 1억 한도 + 상품별 금액 한도를 동시에 고려해 배분을 제안한다.
+// 시장에 없는 기능 — 블로그들은 "나눠 넣으세요"라고 말만 하고 계산은 안 해준다.
+function buildSplitPage() {
+  // 브라우저에서 계산에 쓸 최소 데이터 (한도·금리·이름·슬러그)
+  const pool = PARKING_LIST.map(({ p, slug }) => ({
+    bank: p.bank,
+    product: p.product,
+    baseRate: p.baseRate,
+    maxRate: p.maxRate,
+    maxRateCondition: p.maxRateCondition,
+    group: p.group,
+    slug,
+  }));
+
+  const faqs = [
+    {
+      q: "파킹통장을 왜 나눠서 넣나요?",
+      a: "두 가지 이유입니다. 첫째, 예금자보호는 금융회사당 1인 1억 원까지라 한 곳에 몰면 초과분이 보호되지 않습니다. 둘째, 대부분의 파킹통장은 우대 한도(예: 5천만 원까지)를 넘는 금액에 낮은 금리를 적용하므로, 나누면 이자도 더 받습니다.",
+    },
+    {
+      q: "예금자보호 한도는 얼마인가요?",
+      a: "2025년 9월 1일부터 1인당 금융회사별 원금과 이자를 합해 1억 원까지 보호됩니다(이전 5천만 원에서 상향). 한도가 이자까지 포함한 금액 기준이라, 원금을 1억 원에 꽉 채우면 이자분은 보호받지 못합니다. 또 같은 금융회사의 여러 계좌는 합산되므로, 나눌 때는 반드시 서로 다른 금융회사여야 합니다.",
+    },
+    {
+      q: "저축은행에 넣어도 안전한가요?",
+      a: "저축은행도 예금자보호법 적용 대상이라 1인당 1억 원까지 보호됩니다. 다만 보호 한도 안에서 나누는 것이 원칙이고, 이 계산기는 한 금융회사당 1억 원을 넘지 않도록 배분합니다.",
+    },
+    {
+      q: "계좌를 여러 개 만들 때 주의할 점은?",
+      a: "20영업일 내 다른 금융회사 입출금 계좌를 새로 만들면 거절될 수 있습니다(단기간 다수계좌 개설 제한). 한 번에 다 만들지 말고 순차적으로 개설하세요. 또 처음 만든 계좌는 한도제한계좌로 시작하는 경우가 많습니다.",
+    },
+  ];
+  const faqHtml = faqs.map((f) => `<details class="faq"><summary>${f.q}</summary><p>${f.a}</p></details>`).join("");
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
+  const body = `
+  <div class="crumb"><a href="../">홈</a> › <a href="parking">파킹통장 전체 목록</a> › 쪼개기 계산기</div>
+  <div class="hero">
+    <h1>파킹통장 <span class="em">쪼개기</span> 계산기</h1>
+    <p>예금자보호 1억 한도 + 상품별 금액 한도를 같이 계산해 이자가 가장 많은 배분을 찾아드립니다</p>
+  </div>
+
+  <div class="calc">
+    <label for="sp-amt">예치할 총 금액</label>
+    <div class="inputline"><input id="sp-amt" inputmode="numeric" value="300,000,000"><span class="won">원</span></div>
+    <div class="hint">
+      <label style="font-weight:600"><input type="checkbox" id="sp-protect" checked> 예금자보호 한도(1억) 안에서만 배분</label>
+    </div>
+  </div>
+
+  <div id="sp-result"></div>
+
+  <p class="prose">배분은 <b>금액 한도가 있는 고금리 상품부터 한도만큼 채우고, 남은 돈을 다음 상품으로 넘기는 방식</b>으로 계산합니다.
+  같은 금융회사의 계좌는 예금자보호가 합산되므로 한 금융회사당 1억 원을 넘지 않게 배분합니다.
+  실제 가입 시에는 각 상품의 우대조건(앱 가입·마케팅 동의 등)을 확인하세요.</p>
+
+  <h2 class="sec">자주 묻는 질문</h2>
+  ${faqHtml}
+
+  <h2 class="sec">금액대별로 보기</h2>
+  <div class="related">${AMOUNT_BRACKETS.map((x) => `<a href="amount/${encodeURIComponent(x.slug)}">파킹통장 ${x.slug}<span class="r-rate">이자</span></a>`).join("")}</div>
+
+  <script src="render-card.js"></script>
+  <script>
+  var POOL=${JSON.stringify(pool)};
+  var PROTECT=${PROTECT_LIMIT};
+  (function(){
+    var amtEl=document.getElementById("sp-amt"),protEl=document.getElementById("sp-protect"),out=document.getElementById("sp-result");
+    function plan(total,useProtect,bigOnly){
+      // 상품별 "이 상품에 넣을 수 있는 최대 금액"과 그 금리를 뽑아 금리 높은 순으로 채운다
+      var cands=POOL.map(function(p){
+        var c=parseCondition(p.maxRateCondition);
+        var cap=(c.type==="upto")?c.value:Infinity;
+        // "N원 초과라야 최고금리"인 상품은 최고금리를 받으려면 그 이상 넣어야 한다
+        var minNeed=(c.type==="above")?c.value+1:0;
+        return {p:p,cap:cap,minNeed:minNeed,rate:p.maxRate||0};
+      }).filter(function(x){
+        if(x.rate<=0)return false;
+        // bigOnly: 소액 우대 통장을 제외한 "큰 통장만 쓰는" 비교 기준용 배분
+        return bigOnly?x.cap>=PROTECT:true;
+      }).sort(function(a,b){return b.rate-a.rate;});
+
+      var left=total,alloc=[],perBank={};
+      for(var i=0;i<cands.length&&left>0;i++){
+        var x=cands[i],bank=x.p.bank;
+        var bankRoom=useProtect?Math.max(0,PROTECT-(perBank[bank]||0)):Infinity;
+        if(bankRoom<=0)continue;
+        var put=Math.min(left,x.cap,bankRoom);
+        if(x.minNeed>0&&put<x.minNeed)continue; // 최소 금액을 못 채우면 최고금리를 못 받으니 건너뜀
+        if(put<10000)continue;
+        alloc.push({p:x.p,amt:put,rate:x.rate});
+        perBank[bank]=(perBank[bank]||0)+put;
+        left-=put;
+      }
+      return {alloc:alloc,left:left};
+    }
+    function render(){
+      var total=parseAmount(amtEl.value)||0;
+      if(total)amtEl.value=fmt(total);
+      if(total<10000){out.innerHTML='<div class="empty">금액을 입력하세요.</div>';return;}
+      var r=plan(total,protEl.checked,false),daily=0,html="";
+      if(!r.alloc.length){out.innerHTML='<div class="empty">배분할 상품을 찾지 못했습니다.</div>';return;}
+      html+='<h2 class="sec">추천 배분 <small>'+r.alloc.length+'개 통장 · 세후 기준</small></h2><div class="tbl-wrap"><table>';
+      html+='<tr><th>#</th><th>금융회사</th><th>상품</th><th class="r">넣을 금액</th><th class="r">금리</th><th class="r">하루 이자</th></tr>';
+      r.alloc.forEach(function(a,i){
+        var d=calcDaily(a.p,a.amt).daily;daily+=d;
+        html+='<tr><td>'+(i+1)+'</td><td>'+a.p.bank+'<div class="b2">'+a.p.group+'</div></td>'+
+          '<td><a href="p/'+encodeURIComponent(a.p.slug)+'">'+a.p.product+'</a></td>'+
+          '<td class="r">'+won(a.amt)+'</td><td class="r">연 '+a.rate.toFixed(2)+'%</td>'+
+          '<td class="r rate-em">+'+won(d)+'</td></tr>';
+      });
+      html+='</table></div>';
+      // 비교 기준: 같은 조건에서 "한도 큰 통장만 쓰는" 단순 배분 — 소액 고금리 통장을 더해서 얻는 순이익을 본다.
+      // (예금자보호를 끈 단일 통장과 비교하면 보호를 지킨 배분이 손해처럼 보이는 왜곡이 생긴다)
+      var base=plan(total,protEl.checked,true),baseDaily=0;
+      base.alloc.forEach(function(a){baseDaily+=calcDaily(a.p,a.amt).daily;});
+      var gain=Math.round((daily-baseDaily)*365);
+      var minAcc=base.alloc.length, extraAcc=r.alloc.length-minAcc;
+      html+='<div class="summary">'+
+        '<div class="row"><span class="k">이 배분의 하루 이자 합계</span><span class="v hl">+'+won(daily)+'</span></div>'+
+        '<div class="row"><span class="k">1년 이자</span><span class="v">'+won(daily*365)+'</span></div>'+
+        '<div class="row"><span class="k">한도 큰 통장만 쓸 때 <small>통장 '+minAcc+'개</small></span><span class="v">1년 '+won(baseDaily*365)+'</span></div>'+
+        '<div class="row"><span class="k">소액 고금리 통장을 더해 얻는 이자</span><span class="v hl">1년 '+(gain>0?"+":"")+won(gain)+'</span></div>'+
+        (r.left>0?'<div class="row"><span class="k">배분하지 못한 금액</span><span class="v">'+won(r.left)+' (상품 한도 소진)</span></div>':'')+
+        '</div>';
+      // 실익 대비 수고 안내 — 통장 1개 더 만들 때 얻는 연간 이자로 판단하게 한다
+      var perAcc=extraAcc>0?Math.round(gain/extraAcc):0;
+      var protectNote=(total>PROTECT)
+        ? ' 다만 <b>예금자보호 한도(1억)를 넘는 금액이라 이자와 무관하게 최소 '+Math.ceil(total/PROTECT)+'개 금융회사로는 반드시 나눠야</b> 원금이 보호됩니다.'
+        : '';
+      var advice;
+      if(extraAcc<=0&&gain>0){
+        // 통장 수는 그대로인데 상품 선택만으로 이자가 늘어나는 구간 — 소액 고금리 통장이 이 금액을 다 담는 경우
+        advice='통장을 더 만들 필요 없이 <b>어느 통장을 고르느냐만으로 1년에 '+won(gain)+'을 더 받습니다.</b> 이 금액대는 소액 우대 통장의 높은 금리가 그대로 적용되는 구간입니다.'+protectNote;
+      } else if(extraAcc<=0){
+        advice='이 금액은 한도 큰 통장 <b>'+minAcc+'개</b>로 충분합니다. 소액 우대 통장을 더 열어도 이자가 늘지 않습니다.'+protectNote;
+      } else if(perAcc<30000){
+        advice='통장을 <b>'+extraAcc+'개 더</b>(총 '+r.alloc.length+'개) 만들면 1년에 <b>'+won(gain)+'</b>을 더 받습니다 — 하나당 연 '+won(perAcc)+
+          ' 수준이라 <b>수고 대비 실익이 크지 않습니다.</b> 상위 몇 개만 골라 쓰는 편이 현실적입니다.'+protectNote;
+      } else {
+        advice='통장을 <b>'+extraAcc+'개 더</b>(총 '+r.alloc.length+'개) 만들면 1년에 <b>'+won(gain)+'</b>을 더 받습니다(하나당 연 '+won(perAcc)+' 수준). 쪼갤 만한 구간입니다.'+protectNote;
+      }
+      html+='<div class="notice gray"><span class="ic">💡</span><span>'+advice+
+        ' 참고로 20영업일 내에 여러 금융회사 입출금 계좌를 연달아 만들면 개설이 거절될 수 있어, 한 번에 다 만들기는 어렵습니다.</span></div>';
+      out.innerHTML=html;
+    }
+    amtEl.addEventListener("input",render);protEl.addEventListener("change",render);render();
+  })();
+  </script>`;
+
+  fs.writeFileSync(
+    path.join(PUB, "split.html"),
+    layout({
+      title: `파킹통장 쪼개기 계산기 — 예금자보호 1억·한도까지 계산한 최적 배분 | 이자계산기`,
+      desc: `목돈을 파킹통장 여러 개로 나눌 때 이자가 가장 많은 배분을 계산합니다. 예금자보호 1억 한도와 상품별 금액 한도를 동시에 반영. 파킹통장 ${PARKING_LIST.length}개 기준, 한 통장에만 넣을 때와 이자 차이도 비교.`,
+      canonicalPath: "/split",
+      body,
+      active: "split",
+      extraHead: `<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`,
     })
   );
 }
@@ -1008,10 +1330,11 @@ function buildInfoPages() {
 }
 
 // ---------- sitemap / robots ----------
-function buildSitemap(slugs, guideSlugs) {
+function buildSitemap(slugs, guideSlugs, amountSlugs) {
   const today = DATA.builtAt.slice(0, 10);
   const urls = [
-    "/", "/parking", "/calculator", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
+    "/", "/parking", "/calculator", "/split", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
+    ...amountSlugs.map((s) => `/amount/${encodeURIComponent(s)}`),
     ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}`),
     ...slugs.map((s) => `/p/${encodeURIComponent(s)}`),
   ];
@@ -1027,8 +1350,10 @@ buildIndex();
 buildCalculator();
 const slugs = buildProductPages();
 buildParkingHub();
+const amountSlugs = buildAmountPages();
+buildSplitPage();
 buildListPages();
 const guideSlugs = buildGuidePages();
 buildInfoPages();
-buildSitemap(slugs, guideSlugs);
-console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
+buildSitemap(slugs, guideSlugs, amountSlugs);
+console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + 금액대별 ${amountSlugs.length}개 + 쪼개기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
