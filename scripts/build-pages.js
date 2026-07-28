@@ -694,7 +694,12 @@ amt.addEventListener("input",upd);upd();
   ${p.notice ? `<div class="notice gray"><span class="ic">🔔</span><span>${p.notice}</span></div>` : ""}
 
   <div class="summary">
-    <div class="row"><span class="k">최고 금리</span><span class="v hl">연 ${p.maxRate?.toFixed(2)}%</span></div>
+    <div class="row"><span class="k">${p.disclosedMaxRate != null ? "실제 적용 금리" : "최고 금리"}</span><span class="v hl">연 ${p.maxRate?.toFixed(2)}%</span></div>
+    ${
+      p.disclosedMaxRate != null
+        ? `<div class="row"><span class="k">공시 최고 금리</span><span class="v">연 ${p.disclosedMaxRate.toFixed(2)}% <span class="b2">(도달 어려움)</span></span></div>`
+        : ""
+    }
     <div class="row"><span class="k">기본 금리</span><span class="v">연 ${p.baseRate?.toFixed(2)}%</span></div>
     <div class="row"><span class="k">우대/한도 조건</span><span class="v">${p.maxRateCondition || "-"}</span></div>
     <div class="row"><span class="k">이자 지급</span><span class="v">${p.payout}</span></div>

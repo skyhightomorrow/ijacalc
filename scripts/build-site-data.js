@@ -98,12 +98,25 @@ for (const p of parkingFsb?.products || []) {
     const key = `${p.bank}|${p.product}`;
     const t = curated.tiers?.[key];
     if (t) {
-      // 큐레이션 구간의 최고금리가 공시 최고금리와 다르면 신뢰하지 않는다
+      // 큐레이션 구간의 최고금리가 공시 최고금리와 다르면 원칙적으로 버린다.
+      // 예외: 공시보다 **낮게** 적으면서 사유(belowDisclosedReason)를 밝힌 경우만 받아들인다.
+      //   공시 최고금리가 "평잔 10억 이상" 같은 사실상 도달 불가 조건일 때, 그 값으로 순위를
+      //   매기면 실수령 기준 비교라는 이 사이트의 전제가 깨지기 때문이다.
+      //   반대로 공시보다 **높은** 큐레이션은 낡은 기사·블로그일 가능성이 커 언제나 버린다.
       const tierMax = Math.max(...t.tiers.map((x) => x.rate || 0));
-      if (Math.abs(tierMax - (p.maxRate ?? 0)) > 0.001) {
+      const gap = tierMax - (p.maxRate ?? 0);
+      const intentionalDowngrade = gap < -0.001 && t.belowDisclosedReason;
+      if (Math.abs(gap) > 0.001 && !intentionalDowngrade) {
         console.warn(`  ⚠️ 구간금리 불일치로 제외: ${key} (큐레이션 최고 ${tierMax}% vs 공시 ${p.maxRate}%)`);
         rejected++;
       } else {
+        if (intentionalDowngrade) {
+          // 순위·계산은 실질 금리로 하되, 공시값과 그 차이가 왜 생겼는지는 페이지에 남긴다
+          p.disclosedMaxRate = p.maxRate;
+          p.maxRate = tierMax;
+          p.belowDisclosedReason = t.belowDisclosedReason;
+          console.log(`  ↓ 실질금리 적용: ${key} (공시 ${p.disclosedMaxRate}% → 실질 ${tierMax}%)`);
+        }
         p.tiers = t.tiers;
         p.conditionFree = t.conditionFree;
         p.conditions = t.conditions;
