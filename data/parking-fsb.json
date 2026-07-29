@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-28T21:37:31.858Z",
+  "fetchedAt": "2026-07-29T21:25:59.488Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -75,21 +75,21 @@
       "payout": "수시지급"
     },
     {
+      "bank": "고려",
+      "product": "보고파플러스 파킹통장",
+      "baseRate": 3.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260729",
+      "payout": "수시지급"
+    },
+    {
       "bank": "예가람",
       "product": "E-RUN플러스 파킹통장",
       "baseRate": 2.7,
       "maxRate": 3.5,
       "maxRateCondition": "50,000,000원 이하",
       "disclosedAt": "20260703",
-      "payout": "수시지급"
-    },
-    {
-      "bank": "고려",
-      "product": "보고파플러스 파킹통장",
-      "baseRate": 3.2,
-      "maxRate": 3.5,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260701",
       "payout": "수시지급"
     },
     {
@@ -300,21 +300,21 @@
       "payout": "월지급"
     },
     {
+      "bank": "고려",
+      "product": "보고파플러스 파킹통장",
+      "baseRate": 3.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260729",
+      "payout": "월지급"
+    },
+    {
       "bank": "신한",
       "product": "e-저축예금",
       "baseRate": 1.3,
       "maxRate": 1.3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260713",
-      "payout": "월지급"
-    },
-    {
-      "bank": "고려",
-      "product": "보고파플러스 파킹통장",
-      "baseRate": 3.2,
-      "maxRate": 3.5,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260701",
       "payout": "월지급"
     },
     {
@@ -1407,6 +1407,15 @@
       "payout": "분기지급"
     },
     {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260729",
+      "payout": "분기지급"
+    },
+    {
       "bank": "BNK",
       "product": "삼삼한파킹통장",
       "baseRate": 1.2,
@@ -1422,15 +1431,6 @@
       "maxRate": 3,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260715",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260727",
       "payout": "분기지급"
     },
     {
