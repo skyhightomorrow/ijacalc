@@ -1,4 +1,38 @@
 {
-  "detectedAt": "2026-07-30T21:41:35.676Z",
-  "products": []
+  "detectedAt": "2026-07-31T21:37:12.591Z",
+  "products": [
+    {
+      "dcls_month": "202607",
+      "fin_co_no": "0010426",
+      "fin_prdt_cd": "310010",
+      "kor_co_nm": "인천저축은행",
+      "fin_prdt_nm": "매출쑥쑥정기적금",
+      "join_way": "영업점",
+      "mtrt_int": "1. 1개월이내 : 최초약정이율 / 2. 1개월초과 : 연 0.1%",
+      "spcl_cnd": "창구전용상품",
+      "join_deny": "1",
+      "join_member": "개인사업자(\"인천광역시\"에 사업장 소재지를 둔 개인사업자)",
+      "etc_note": "적금가입금액 10만원이상",
+      "max_limit": null,
+      "dcls_strt_day": "20260731",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202607310841",
+      "options": [
+        {
+          "dcls_month": "202607",
+          "fin_co_no": "0010426",
+          "fin_prdt_cd": "310010",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "rsrv_type": "S",
+          "rsrv_type_nm": "정액적립식",
+          "save_trm": "12",
+          "intr_rate": 5.8,
+          "intr_rate2": 5.8
+        }
+      ],
+      "_kind": "saving",
+      "_group": "저축은행"
+    }
+  ]
 }
