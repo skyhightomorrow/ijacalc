@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-02T21:24:18.455Z",
+  "fetchedAt": "2026-08-04T00:10:50.085Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -86,10 +86,10 @@
     {
       "bank": "예가람",
       "product": "E-RUN플러스 파킹통장",
-      "baseRate": 2.7,
-      "maxRate": 3.5,
+      "baseRate": 2.5,
+      "maxRate": 3.3,
       "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260703",
+      "disclosedAt": "20260803",
       "payout": "수시지급"
     },
     {
@@ -282,21 +282,21 @@
       "payout": "월지급"
     },
     {
+      "bank": "대신",
+      "product": "더드리고입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 2.3,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20260804",
+      "payout": "월지급"
+    },
+    {
       "bank": "다올",
       "product": "Fi 저축예금",
       "baseRate": 3,
       "maxRate": 3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260702",
-      "payout": "월지급"
-    },
-    {
-      "bank": "대신",
-      "product": "더드리고입출금통장",
-      "baseRate": 0.1,
-      "maxRate": 2.8,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20260713",
       "payout": "월지급"
     },
     {
@@ -1227,21 +1227,12 @@
       "payout": "분기지급"
     },
     {
-      "bank": "예가람",
-      "product": "The프리미엄 Biz통장",
-      "baseRate": 0.2,
-      "maxRate": 3.5,
-      "maxRateCondition": "50,000,000,000원 이하",
-      "disclosedAt": "20260709",
-      "payout": "분기지급"
-    },
-    {
       "bank": "OSB",
       "product": "E-보통예금",
       "baseRate": 0.2,
       "maxRate": 2.3,
       "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260723",
+      "disclosedAt": "20260803",
       "payout": "분기지급"
     },
     {
@@ -1250,25 +1241,25 @@
       "baseRate": 0.2,
       "maxRate": 2.3,
       "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260723",
+      "disclosedAt": "20260803",
       "payout": "분기지급"
     },
     {
-      "bank": "스타",
-      "product": "보통예금",
-      "baseRate": 0.3,
-      "maxRate": 0.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260706",
+      "bank": "예가람",
+      "product": "E-RUN플러스 파킹통장",
+      "baseRate": 2.5,
+      "maxRate": 3.3,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260803",
       "payout": "분기지급"
     },
     {
-      "bank": "스타",
-      "product": "생계비계좌",
-      "baseRate": 0.3,
-      "maxRate": 0.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260706",
+      "bank": "예가람",
+      "product": "The프리미엄 Biz통장",
+      "baseRate": 0.2,
+      "maxRate": 3.3,
+      "maxRateCondition": "50,000,000,000원 이하",
+      "disclosedAt": "20260803",
       "payout": "분기지급"
     },
     {
@@ -1353,15 +1344,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "예가람",
-      "product": "E-RUN플러스 파킹통장",
-      "baseRate": 2.7,
-      "maxRate": 3.5,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260703",
-      "payout": "분기지급"
-    },
-    {
       "bank": "안국",
       "product": "보통예금",
       "baseRate": 0.2,
@@ -1431,6 +1413,24 @@
       "maxRate": 3,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260715",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스타",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260804",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스타",
+      "product": "생계비계좌",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260804",
       "payout": "분기지급"
     },
     {
