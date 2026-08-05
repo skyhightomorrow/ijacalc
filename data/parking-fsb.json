@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-04T21:47:52.711Z",
+  "fetchedAt": "2026-08-05T21:45:29.958Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1227,6 +1227,15 @@
       "payout": "분기지급"
     },
     {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260805",
+      "payout": "분기지급"
+    },
+    {
       "bank": "OSB",
       "product": "E-보통예금",
       "baseRate": 0.2,
@@ -1386,15 +1395,6 @@
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260728",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260730",
       "payout": "분기지급"
     },
     {
