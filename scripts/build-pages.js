@@ -1834,7 +1834,7 @@ function buildGuidePages() {
 
 // ---------- 소개 / 개인정보처리방침 ----------
 function buildInfoPages() {
-  const CONTACT = "skyhightomorrow@gmail.com";
+  const CONTACT = "hello@ijacalc.com";
 
   const aboutJsonLd = {
     "@context": "https://schema.org",
