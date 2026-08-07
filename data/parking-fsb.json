@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-05T21:45:29.958Z",
+  "fetchedAt": "2026-08-07T00:10:51.233Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1290,6 +1290,24 @@
       "payout": "분기지급"
     },
     {
+      "bank": "안국",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260807",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260807",
+      "payout": "분기지급"
+    },
+    {
       "bank": "융창",
       "product": "보통예금",
       "baseRate": 0.2,
@@ -1350,24 +1368,6 @@
       "maxRate": 2.3,
       "maxRateCondition": "30,000,000원 이상",
       "disclosedAt": "20260710",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "안국",
-      "product": "보통예금",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260723",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "안국",
-      "product": "보통예금(비대면)",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260723",
       "payout": "분기지급"
     },
     {
