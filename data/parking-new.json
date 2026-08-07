@@ -1,4 +1,14 @@
 {
-  "detectedAt": "2026-08-07T00:10:51.231Z",
-  "products": []
+  "detectedAt": "2026-08-07T00:56:49.303Z",
+  "products": [
+    {
+      "bank": "SBI",
+      "product": "생활파킹통장",
+      "baseRate": 0.2,
+      "maxRate": 7.7,
+      "maxRateCondition": "2,000,000원 이하",
+      "disclosedAt": "20260807",
+      "payout": "월지급"
+    }
+  ]
 }

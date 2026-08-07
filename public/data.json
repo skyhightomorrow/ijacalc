@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-08-07T00:10:51.328Z",
-  "finlifeFetchedAt": "2026-08-07T00:10:43.114Z",
+  "builtAt": "2026-08-07T00:56:49.357Z",
+  "finlifeFetchedAt": "2026-08-07T00:56:31.777Z",
   "finlifeDisclosureMonth": "202607",
   "parking": [
     {
@@ -423,6 +423,22 @@
       "needsVerify": false
     },
     {
+      "bank": "SBI저축은행",
+      "product": "생활파킹통장",
+      "baseRate": 0.2,
+      "maxRate": 7.7,
+      "maxRateCondition": "2,000,000원 이하",
+      "payout": "월지급",
+      "timing": "",
+      "linkUrl": "https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%ED%99%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
+      "appAndroid": null,
+      "appIos": null,
+      "group": "저축은행",
+      "instant": false,
+      "asOf": "2026-08-07",
+      "needsVerify": false
+    },
+    {
       "bank": "OK저축은행",
       "product": "OK짠테크통장Ⅱ",
       "baseRate": 0.1,
@@ -739,40 +755,6 @@
       "tierSource": {
         "url": "https://www.yegaramsb.co.kr/",
         "name": "예가람저축은행 공식 상품공시실",
-        "verified": "2026-07-28"
-      }
-    },
-    {
-      "bank": "SBI저축은행",
-      "product": "아이통장",
-      "baseRate": 0.2,
-      "maxRate": 3.2,
-      "maxRateCondition": "3,000,000원 이하",
-      "payout": "월지급",
-      "timing": "",
-      "linkUrl": "https://search.naver.com/search.naver?query=SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%95%84%EC%9D%B4%ED%86%B5%EC%9E%A5",
-      "appAndroid": null,
-      "appIos": null,
-      "group": "저축은행",
-      "instant": false,
-      "asOf": "2026-08-07",
-      "needsVerify": false,
-      "tiers": [
-        {
-          "upto": 3000000,
-          "rate": 3.2
-        },
-        {
-          "upto": null,
-          "rate": 0.2
-        }
-      ],
-      "conditionFree": true,
-      "conditions": "우대금리 조건은 없습니다.",
-      "notice": "⚠️ 이 통장은 <b>만 19세 미만 미성년자 전용</b>입니다. 성인은 가입할 수 없으며, 사이다뱅크 앱에서 본인(17세 이상) 또는 법정대리인이 개설합니다. 예금주가 만 19세가 되면 일반 입출금 예금으로 자동 전환됩니다.",
-      "tierSource": {
-        "url": "https://www.sbisb.co.kr/gds0010201.act?PROD_CD=130015",
-        "name": "SBI저축은행 공식 상품공시",
         "verified": "2026-07-28"
       }
     },
@@ -3296,7 +3278,16 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [],
+  "newProducts": [
+    {
+      "bank": "SBI저축은행",
+      "product": "생활파킹통장",
+      "kind": "parking",
+      "group": "저축은행",
+      "disclosureStart": "20260807",
+      "maxRate": 7.7
+    }
+  ],
   "topDeposits": [
     {
       "bank": "엔에이치저축은행",
