@@ -4,9 +4,13 @@
 #   ijacalc 05:30 · naebaeka 05:50 · 이후 사이트 06:10, 06:30 …
 name: daily-update
 
+# ⚠️ GitHub 예약 실행은 보장되지 않는다 — 공식 문서: "If the load is sufficiently high enough,
+#    some queued jobs may be dropped." 2026-08-07에 A·C·D 3사이트가 동시에 미발화했다(실패가 아니라 run 자체가 안 생김).
+#    그래서 오후에 보충 회차를 하나 더 둔다. 오전 회차가 이미 돌았으면 guard가 건너뛴다.
 on:
   schedule:
-    - cron: "30 20 * * *" # UTC 20:30 = KST 05:30
+    - cron: "30 20 * * *" # UTC 20:30 = KST 05:30 (본 회차)
+    - cron: "20 3 * * *" # UTC 03:20 = KST 12:20 (보충 회차 — 오전이 누락됐을 때만 실행)
   workflow_dispatch: # 수동 실행 버튼
 
 jobs:
@@ -19,17 +23,33 @@ jobs:
         with:
           fetch-depth: 0 # build-rate-history.js가 git 이력에서 금리 변동을 복원한다
 
+      # 보충 회차는 최근 20시간 내 daily update 커밋이 있으면 건너뛴다(수집 중복 방지).
+      # workflow_dispatch에는 github.event.schedule이 비어 있어 수동 실행은 항상 돈다.
+      - name: Skip if today's run already succeeded
+        id: guard
+        run: |
+          last=$(git log -1 --format=%ct --grep="^daily update" || echo 0)
+          [ -z "$last" ] && last=0
+          age=$(( $(date +%s) - last ))
+          if [ "${{ github.event.schedule }}" = "20 3 * * *" ] && [ "$age" -lt 72000 ]; then
+            echo "본 회차가 ${age}초 전에 성공 — 보충 회차 건너뜀"
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: actions/setup-node@v4
+        if: steps.guard.outputs.skip != 'true'
         with:
           node-version: 20
 
       - name: Collect data & build pages
+        if: steps.guard.outputs.skip != 'true'
         run: npm run daily
         env:
           FINLIFE_API_KEY: ${{ secrets.FINLIFE_API_KEY }}
           SITE_ORIGIN: https://ijacalc.com
 
       - name: Commit & push
+        if: steps.guard.outputs.skip != 'true'
         run: |
           git config user.name "ijacalc-bot"
           git config user.email "actions@ijacalc.com"
