@@ -54,5 +54,5 @@ jobs:
           git config user.name "ijacalc-bot"
           git config user.email "actions@ijacalc.com"
           git add -A
-          git diff --cached --quiet || git commit -m "daily update $(date -u +%Y-%m-%d)"
+          git diff --cached --quiet || git commit -m "daily update $(TZ=Asia/Seoul date +%Y-%m-%d)"
           git push
