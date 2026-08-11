@@ -11,10 +11,22 @@
 
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 const ROOT = path.join(__dirname, "..");
 const PUB = path.join(ROOT, "public");
 const R = require(path.join(PUB, "render-card.js"));
+
+// render-card.js는 Cache-Control max-age=14400(4시간)으로 서빙된다.
+// 버전 쿼리가 없으면 계산 로직을 고쳐도 재방문자는 최대 4시간 동안 옛 스크립트를 쓴다
+// (HTML은 새 버전, JS는 옛 버전 → 새 필드가 undefined가 되어 조용히 옛 계산 결과가 표시된다).
+// 파일 내용 해시를 붙여 로직이 바뀐 배포에서만 캐시가 갈리게 한다.
+const RC_VER = crypto
+  .createHash("sha1")
+  .update(fs.readFileSync(path.join(PUB, "render-card.js")))
+  .digest("hex")
+  .slice(0, 8);
+const RC = (prefix = "") => `<script src="${prefix}render-card.js?v=${RC_VER}"></script>`;
 
 function loadEnv() {
   const envPath = path.join(ROOT, ".env");
@@ -189,7 +201,7 @@ function buildIndex() {
     <a href="guide">금리·이자 가이드<span class="r-rate">읽을거리</span></a>
   </div>
 
-  <script src="render-card.js"></script>
+  ${RC()}
   <script>
     (function () {${AMOUNT_SYNC_JS}
       var PARKING = null;
@@ -319,7 +331,7 @@ function buildCalculator() {
     ).join("")}
   </div>
 
-  <script src="render-card.js"></script>
+  ${RC()}
   <script>
     (function () {${AMOUNT_SYNC_JS}
       var mode = "deposit";
@@ -678,7 +690,7 @@ function buildProductPages() {
       <tr><td class="r rate-em" id="pc-d">-</td><td class="r" id="pc-m">-</td><td class="r" id="pc-y">-</td></tr>
     </table></div>
   </div>`;
-    const calcScript = `<script src="../render-card.js"></script>
+    const calcScript = `${RC("../")}
 <script>(function(){
 var P=${calcProduct};
 var amt=document.getElementById("pc-amt"),d=document.getElementById("pc-d"),m=document.getElementById("pc-m"),y=document.getElementById("pc-y"),note=document.getElementById("pc-note");
@@ -1509,7 +1521,7 @@ function buildSplitPage() {
   <h2 class="sec">금액대별로 보기</h2>
   <div class="related">${AMOUNT_BRACKETS.map((x) => `<a href="amount/${encodeURIComponent(x.slug)}">파킹통장 ${x.slug}<span class="r-rate">이자</span></a>`).join("")}</div>
 
-  <script src="render-card.js"></script>
+  ${RC()}
   <script>
   var POOL=${JSON.stringify(pool)};
   var PROTECT=${PROTECT_LIMIT};
