@@ -1,7 +1,121 @@
-// 가이드 아티클 콘텐츠 (1차분 + 2차분)
+// 가이드 아티클 콘텐츠 (1차분 + 2차분 + 집계 해석 기사)
 // 각 글은 guide/<slug>.html 로 생성된다. 내부 링크는 depth 1 기준(../)으로 작성.
+//
+// module.exports는 함수다 — build-pages.js가 site data(public/data.json)를 넘겨주면
+// 집계 해석 기사의 수치를 "빌드 시" 계산해 본문에 주입한다(하드코딩 금지).
+// 매일 05:30 KST 크론이 금리를 다시 받아 빌드하므로 기사 수치도 함께 최신화된다.
 
-module.exports = [
+const R = require("../public/render-card.js");
+
+// ── 집계 통계 ───────────────────────────────────────────────────────────
+// 모집단: public/data.json의 parking 배열.
+// ⚠️ 같은 상품이 이자지급 주기(수시/월/분기)별로 여러 행으로 들어온다 — 금리는 동일하므로
+//    순위·분포 집계에서는 bank|product로 중복을 제거한다(변형까지 세면 상위권이 부풀려짐).
+function analysis(SITE) {
+  const raw = (SITE && SITE.parking) || [];
+  const seen = new Map();
+  for (const p of raw) {
+    const k = p.bank + "|" + p.product;
+    if (!seen.has(k)) seen.set(k, p);
+  }
+  const P = [...seen.values()].filter((p) => p.maxRate != null && p.baseRate != null);
+
+  const avg = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
+  const r2 = (n) => (n == null ? "-" : n.toFixed(2));
+  const num = (n) => n.toLocaleString("en-US");
+  const money = (v) => R.fmtKorMoney(v);
+
+  // ⚠️ 상품명 뒤에는 한글 조사(은/는·이/가)를 붙이지 말 것.
+  // "OK짠테크통장Ⅱ"처럼 로마숫자·영문으로 끝나는 이름이 많은데 읽는 방식이 갈려 받침 판정이 불가능하다.
+  // 본문은 "광고 1위 — <상품명>. ~입니다" 형태로 조사 없이 쓴다.
+
+  // 한도조건 표기 정리 — 공시 원문이 "50,000,000원 이하"라 읽기 나쁘다 → "5천만원 이하"
+  const condLabel = (raw) => {
+    if (!raw || /제한없음/.test(raw)) return "제한없음";
+    const m = String(raw).replace(/,/g, "").match(/(\d+)\s*원/);
+    if (!m) return raw;
+    return String(raw).replace(/[\d,]+\s*원/, R.fmtKorMoney(+m[1]));
+  };
+
+  // 한도조건 파싱 ("50,000,000원 이하" → {t:'upto', v:50000000})
+  const parseCond = (c) => {
+    if (!c || /제한없음/.test(c)) return null;
+    const m = String(c).replace(/,/g, "").match(/(\d+)\s*원/);
+    if (!m) return null;
+    const v = +m[1];
+    if (/이하|미만|까지/.test(c)) return { t: "upto", v };
+    if (/초과|이상/.test(c)) return { t: "above", v };
+    return null;
+  };
+
+  // 실효금리 — 예치금 amt를 실제로 넣었을 때 붙는 가중평균 연이율.
+  // tiers가 큐레이션된 상품은 구간별(marginal) 계산을 그대로 쓰고,
+  // 없으면 "한도 이하분 = 최고금리, 초과분 = 기본금리"로 모델링한다.
+  // (한도를 넘긴 돈도 그 통장에 두면 기본금리는 받는다 — 0%가 아니다.)
+  const effRate = (p, amt) => {
+    if (p.tiers && p.tiers.length) return R.calcDaily(p, amt).rate;
+    const cond = parseCond(p.maxRateCondition);
+    if (!cond) return p.maxRate || 0;
+    if (cond.t === "upto") {
+      const hi = Math.min(amt, cond.v);
+      const lo = Math.max(0, amt - cond.v);
+      return (hi * (p.maxRate || 0) + lo * (p.baseRate || 0)) / amt;
+    }
+    return amt <= cond.v ? p.baseRate || 0 : p.maxRate || 0;
+  };
+
+  const rank = (amt, n = 8) => {
+    const rows = P.map((p) => ({
+      bank: p.bank, product: p.product, max: p.maxRate, base: p.baseRate,
+      cond: condLabel(p.maxRateCondition), eff: effRate(p, amt),
+    }));
+    const byAd = [...rows].sort((a, b) => b.max - a.max || b.eff - a.eff).slice(0, n);
+    const byEff = [...rows].sort((a, b) => b.eff - a.eff || b.max - a.max).slice(0, n);
+    const idOf = (r) => r.bank + "|" + r.product;
+    const overlap = byAd.filter((r) => byEff.map(idOf).includes(idOf(r))).length;
+    return { amt, byAd, byEff, overlap, n };
+  };
+
+  const gaps = P.map((p) => +(p.maxRate - p.baseRate).toFixed(2));
+  const noCond = P.filter((p, i) => gaps[i] <= 0.001);
+  const withCond = P.filter((p, i) => gaps[i] > 0.001);
+  const capped = P.filter((p) => { const c = parseCond(p.maxRateCondition); return c && c.t === "upto"; });
+  const tiny = capped.filter((p) => parseCond(p.maxRateCondition).v <= 5000000);
+
+  // 정기예금 비교군 — topDeposits는 rate가 아니라 baseRate/maxRate를 쓴다.
+  // 우대조건 없이 받는 금리로 비교해야 파킹통장 기본금리와 대칭이므로 baseRate 기준.
+  const deposits = (SITE.topDeposits || [])
+    .map((d) => ({ ...d, rate: d.baseRate != null ? d.baseRate : d.maxRate }))
+    .filter((d) => d.rate != null)
+    .sort((a, b) => b.rate - a.rate);
+  // 한도·우대조건 없는 파킹통장 중 최고 기본금리 (정기예금과 같은 조건으로 비교)
+  const freeBase = P.filter((p) => !parseCond(p.maxRateCondition)).map((p) => p.baseRate);
+  const parkBest = freeBase.length ? Math.max(...freeBase) : 0;
+
+  return {
+    P, avg, r2, num, money, effRate, parseCond, condLabel,
+    total: P.length,
+    banks: new Set(P.map((p) => p.bank)).size,
+    noCondN: noCond.length,
+    noCondPct: P.length ? (noCond.length / P.length) * 100 : 0,
+    withCondN: withCond.length,
+    withCondAvgGap: avg(withCond.map((p) => p.maxRate - p.baseRate)),
+    maxGap: P.reduce((m, p) => Math.max(m, p.maxRate - p.baseRate), 0),
+    cappedN: capped.length,
+    tinyN: tiny.length,
+    rank1000: rank(10000000),
+    rank100: rank(1000000),
+    rank5000: rank(50000000),
+    deposits, parkBest,
+    depBest: deposits.length ? deposits[0].rate : null,
+    depGap: deposits.length ? deposits[0].rate - parkBest : null,
+    asOf: (P[0] && P[0].asOf) || (SITE.builtAt || "").slice(0, 10),
+  };
+}
+
+module.exports = function guides(SITE) {
+  const A = analysis(SITE || { parking: [] });
+  return [
   {
     slug: "파킹통장이란",
     title: "파킹통장이란? 하루만 맡겨도 이자 받는 원리 총정리",
@@ -683,4 +797,149 @@ module.exports = [
 <p>비상금 통장을 만들 파킹통장은 <a href="../">오늘의 금리 순위</a>에서,
 내 금액 기준 이자는 <a href="../calculator">이자계산기</a>에서 확인하세요.</p>`,
   },
-];
+
+  // ───────── 집계 해석 기사 (2026-08-11 신설) ─────────
+  // 은행별 페이지(/bank/) 증설 대신, 보유 금리 데이터를 집계·해석해 "답"을 쓰는 방향.
+  // 수치는 전부 analysis(SITE)가 빌드 시 계산한다.
+  {
+    slug: "파킹통장-실효금리-순위",
+    title: `"최고 연 ${A.r2(A.rank1000.byAd[0].max)}%"를 믿으면 안 되는 이유 — 광고금리 vs 실효금리 ${A.total}개 비교`,
+    desc: `파킹통장 ${A.total}개(${A.banks}개 은행)의 광고 최고금리와, 실제로 돈을 넣었을 때 붙는 실효금리를 비교했습니다. 1,000만원 기준으로 순위가 뒤집힙니다.`,
+    date: "2026-08-11",
+    body: `
+<p>파킹통장 순위표는 대부분 <b>최고금리</b>로 줄을 세웁니다. 그런데 그 최고금리는
+"우대조건을 전부 채우고, 한도 안쪽 금액에만" 붙는 숫자입니다.
+공시된 파킹통장 <b>${A.total}개</b>(${A.banks}개 은행)를 놓고, 광고 금리와
+<b>실제로 1,000만원을 넣었을 때 붙는 실효금리</b>를 나란히 계산해 봤습니다.</p>
+
+<h2 class="sec">광고 금리 순위 — 그리고 그 옆의 실효금리</h2>
+<table><thead><tr><th>#</th><th>상품</th><th>광고 최고금리</th><th>1,000만원 실효</th><th>한도</th></tr></thead><tbody>
+${A.rank1000.byAd.map((r, i) => `<tr><td>${i + 1}</td><td>${r.bank} ${r.product}</td><td class="r">연 ${A.r2(r.max)}%</td><td class="r rate-em">연 ${A.r2(r.eff)}%</td><td>${r.cond}</td></tr>`).join("")}
+</tbody></table>
+<p>광고 1위 — <b>${A.rank1000.byAd[0].bank} ${A.rank1000.byAd[0].product}</b>.
+광고상 연 ${A.r2(A.rank1000.byAd[0].max)}%지만 한도가 <b>${A.rank1000.byAd[0].cond}</b>라,
+1,000만원을 넣으면 실효 <b>연 ${A.r2(A.rank1000.byAd[0].eff)}%</b>가 됩니다.</p>
+<p>광고 2위 — <b>${A.rank1000.byAd[1].bank} ${A.rank1000.byAd[1].product}</b>. 이쪽이 더 극단적입니다.
+광고 연 ${A.r2(A.rank1000.byAd[1].max)}%, 한도 ${A.rank1000.byAd[1].cond},
+실효 <b>연 ${A.r2(A.rank1000.byAd[1].eff)}%</b>. 광고 숫자의 <b>${(A.rank1000.byAd[1].eff / A.rank1000.byAd[1].max * 100).toFixed(0)}%</b>밖에 남지 않습니다.</p>
+
+<h2 class="sec">실효금리로 다시 줄을 세우면</h2>
+<table><thead><tr><th>#</th><th>상품</th><th>1,000만원 실효</th><th>광고 최고금리</th><th>한도</th></tr></thead><tbody>
+${A.rank1000.byEff.map((r, i) => `<tr><td>${i + 1}</td><td>${r.bank} ${r.product}</td><td class="r rate-em">연 ${A.r2(r.eff)}%</td><td class="r">연 ${A.r2(r.max)}%</td><td>${r.cond}</td></tr>`).join("")}
+</tbody></table>
+<p>두 표의 상위 ${A.rank1000.n}개 중 겹치는 상품은 <b>${A.rank1000.overlap}개</b>뿐입니다.
+광고 기준 1·2위가 실효 기준에서는 표에 들지도 못하고, 실효 1위인
+<b>${A.rank1000.byEff[0].bank} ${A.rank1000.byEff[0].product}</b>(실효 연 ${A.r2(A.rank1000.byEff[0].eff)}%)와
+광고 2위의 실효금리(연 ${A.r2(A.rank1000.byAd[1].eff)}%)는
+<b>약 ${(A.rank1000.byEff[0].eff / Math.max(A.rank1000.byAd[1].eff, 0.01)).toFixed(1)}배</b> 차이가 납니다.
+1,000만원을 1년 둔다면 세전 이자로 ${A.money(Math.round((A.rank1000.byEff[0].eff - A.rank1000.byAd[1].eff) / 100 * 10000000 / 10000) * 10000)} 가까이 벌어지는 차이입니다.</p>
+
+<h2 class="sec">왜 이런 일이 생기나 — 두 가지 장치</h2>
+<p><b>① 한도</b> — 최고금리가 붙는 금액에 상한이 있습니다.
+공시된 ${A.total}개 중 <b>${A.cappedN}개</b>에 상한이 걸려 있고, 그중 <b>${A.tinyN}개</b>는 상한이 500만원 이하입니다.
+상한을 넘긴 돈은 기본금리로 떨어지므로, 예치금이 클수록 광고금리와 실효금리의 괴리가 커집니다.</p>
+<p><b>② 우대조건</b> — 최고금리를 받으려면 채워야 하는 조건입니다.
+다만 오해가 있는데, <b>${A.total}개 중 ${A.noCondN}개(${A.r2(A.noCondPct)}%)는 우대조건이 아예 없습니다</b>
+(기본금리 = 최고금리). 조건이 붙은 <b>${A.withCondN}개</b>의 평균 격차가 <b>${A.r2(A.withCondAvgGap)}%p</b>,
+최대 <b>${A.r2(A.maxGap)}%p</b>로 큰 것뿐입니다. 즉 "파킹통장은 다 조건이 까다롭다"가 아니라
+<b>일부 상품이 극단적으로 조건에 의존</b>하고, 그 상품들이 광고 순위 최상단을 차지하고 있는 구조입니다.</p>
+
+<h2 class="sec">그래서 어떻게 고르면 되나</h2>
+<ol>
+<li><b>내 예치 금액을 먼저 정하고 순위를 보세요.</b> 금액이 정해지지 않으면 순위는 의미가 없습니다.
+소액(100만원 이하)이라면 광고금리 상위 상품이 실제로 유리하고, 금액이 커질수록 한도 없는 상품이 유리해집니다.</li>
+<li><b>한도 표기를 금리보다 먼저 보세요.</b> "연 ${A.r2(A.maxGap + 1)}%"보다 "제한없음"이 대체로 더 좋은 신호입니다.</li>
+<li><b>우대조건은 "지금 이미 충족돼 있는가"로 판단하세요.</b> 첫 거래·카드 실적처럼 해마다 유지해야 하는 조건은
+1년 뒤 금리가 떨어질 예약이나 마찬가지입니다.</li>
+</ol>
+<p>금액을 넣으면 위 계산을 상품별로 자동으로 해줍니다 — <a href="../">오늘의 금리 순위</a>에서
+금액을 입력하면 실효금리 기준으로 다시 정렬되고, 상품별 상세는 <a href="../parking">파킹통장 전체 목록</a>에서 볼 수 있습니다.
+여러 통장에 나눠 담을 때의 최적 배분은 <a href="../split">쪼개기 계산기</a>가 계산합니다.</p>
+<p class="small">계산 기준: ${A.asOf} 공시 기준. 실효금리는 "한도 이하 금액에는 최고금리, 초과분에는 기본금리"로 계산했습니다
+(구간별 금리가 확인된 상품은 구간별 계산). 우대조건은 <b>전부 충족했다고 가정</b>했으므로, 조건을 못 채우면 실효금리는 더 낮아집니다.
+같은 상품이 이자지급 주기(수시·월·분기)별로 나뉘어 공시되는 경우가 있어 집계에서는 중복을 제거했습니다.
+공시 목록에는 개인이 가입할 수 없는 <b>법인·사업자 전용 통장</b>도 섞여 있으니(상품명에 Biz·기업 등이 붙습니다), 가입 전 대상을 확인하세요.</p>`,
+  },
+  {
+    slug: "파킹통장-금액별-정답",
+    title: "예치금이 얼마냐에 따라 최적 파킹통장이 달라집니다 — 100만·1,000만·5,000만원 비교",
+    desc: "같은 파킹통장 목록도 넣는 금액에 따라 1위가 바뀝니다. 100만원·1,000만원·5,000만원 세 구간의 실효금리 순위를 각각 계산했습니다.",
+    date: "2026-08-11",
+    body: `
+<p>"파킹통장 1위"라는 표현은 사실 성립하기 어렵습니다.
+한도가 걸린 상품이 많아서, <b>얼마를 넣느냐에 따라 순위가 바뀌기 때문</b>입니다.
+같은 데이터로 금액만 바꿔 세 번 계산해 봤습니다.</p>
+
+${[
+  { label: "100만원", key: "rank100" },
+  { label: "1,000만원", key: "rank1000" },
+  { label: "5,000만원", key: "rank5000" },
+].map(({ label, key }) => `
+<h2 class="sec">${label}을 넣는다면</h2>
+<table><thead><tr><th>#</th><th>상품</th><th>실효금리</th><th>광고금리</th><th>한도</th></tr></thead><tbody>
+${A[key].byEff.slice(0, 5).map((r, i) => `<tr><td>${i + 1}</td><td>${r.bank} ${r.product}</td><td class="r rate-em">연 ${A.r2(r.eff)}%</td><td class="r">연 ${A.r2(r.max)}%</td><td>${r.cond}</td></tr>`).join("")}
+</tbody></table>`).join("")}
+
+<h2 class="sec">읽는 법</h2>
+<p>금액이 작을수록 <b>한도가 낮은 고금리 상품</b>이 상위로 올라옵니다. 한도 안에 다 들어가니 광고금리를 그대로 받기 때문입니다.
+반대로 금액이 커지면 한도 낮은 상품은 실효금리가 급격히 희석되고,
+<b>"제한없음"이거나 한도가 넉넉한 상품</b>이 올라옵니다.</p>
+<p>100만원 기준 1위(${A.rank100.byEff[0].bank} ${A.rank100.byEff[0].product}, 실효 연 ${A.r2(A.rank100.byEff[0].eff)}%)와
+5,000만원 기준 1위(${A.rank5000.byEff[0].bank} ${A.rank5000.byEff[0].product}, 실효 연 ${A.r2(A.rank5000.byEff[0].eff)}%)가
+${A.rank100.byEff[0].bank + A.rank100.byEff[0].product === A.rank5000.byEff[0].bank + A.rank5000.byEff[0].product ? "같은 상품이라면, 그건 한도 제약을 받지 않는 상품이라는 뜻입니다" : "다른 상품이라는 점이 이 구조를 그대로 보여줍니다"}.</p>
+
+<h2 class="sec">금액이 크다면 나눠 담는 쪽이 유리합니다</h2>
+<p>한도가 낮은 고금리 상품은 <b>한도까지만</b> 넣고 나머지를 다른 통장에 두면,
+각 상품의 좋은 구간만 골라 쓸 수 있습니다. 여기에 예금자보호 한도(1인당 1억원, 원금+이자 합산)까지 겹쳐서
+금액이 커질수록 나눠 담기의 실익이 커집니다.
+어떤 조합이 최적인지는 <a href="../split">쪼개기 계산기</a>가 한도·보호한도를 함께 반영해 계산합니다.</p>
+<p>내 금액 기준 순위는 <a href="../">홈</a>에서 금액을 입력하면 바로 다시 정렬됩니다.
+광고금리와 실효금리가 왜 벌어지는지는 <a href="파킹통장-실효금리-순위">광고금리 vs 실효금리 비교</a>에 정리했습니다.</p>
+<p class="small">계산 기준: ${A.asOf} 공시 기준, 우대조건은 전부 충족 가정. 이자소득세 15.4%는 실효금리 표기에는 반영하지 않았습니다(세전 연이율).</p>`,
+  },
+  {
+    slug: "파킹통장-정기예금-비교",
+    title: "파킹통장에 계속 둘까, 정기예금으로 묶을까 — 금리 차이로 계산해보기",
+    desc: "파킹통장 최고 기본금리와 12개월 정기예금 금리를 비교해, 돈을 언제 묶는 게 유리한지 정리했습니다.",
+    date: "2026-08-11",
+    body: `
+<p>여유자금을 파킹통장에 두면 언제든 뺄 수 있지만, 금리는 정기예금보다 낮은 게 보통입니다.
+"묶어도 되는 돈"이라면 얼마나 손해를 보고 있는지 실제 숫자로 비교해 봤습니다.</p>
+
+<h2 class="sec">지금 시점의 두 금리</h2>
+<table><thead><tr><th>구분</th><th>금리</th><th>돈이 묶이나</th></tr></thead><tbody>
+<tr><td>파킹통장 (한도·우대조건 없는 상품의 최고 기본금리)</td><td class="r rate-em">연 ${A.r2(A.parkBest)}%</td><td>아니오 (수시 입출금)</td></tr>
+${A.depBest != null ? `<tr><td>정기예금 (공시 상위, 우대 없는 기본금리)</td><td class="r rate-em">연 ${A.r2(A.depBest)}%</td><td>예 (만기까지)</td></tr>` : ""}
+</tbody></table>
+${A.depGap != null ? `<p>차이는 <b>약 ${A.r2(A.depGap)}%p</b>(${A.deposits[0].bank} ${A.deposits[0].product} 기준)입니다.
+1,000만원을 1년 둔다면 세전 약 <b>${A.money(Math.round((A.depGap / 100) * 10000000 / 1000) * 1000)}</b> 차이가 납니다.
+적은 돈은 아니지만, 아래에서 보듯 <b>중간에 깨면 이 차이는 그대로 날아갑니다.</b></p>` : ""}
+
+<h2 class="sec">판단 기준은 금리가 아니라 "언제 쓸 돈인가"입니다</h2>
+<ul>
+<li><b>3개월 안에 쓸 가능성이 있는 돈</b> → 파킹통장. 정기예금을 중도해지하면 약정금리가 아니라
+중도해지이율(보통 연 0.2~1%대)이 적용돼서, 금리 차이로 번 것보다 훨씬 크게 잃습니다.</li>
+<li><b>1년 이상 안 쓸 게 확실한 돈</b> → 정기예금. 위 차이만큼이 그대로 이득입니다.</li>
+<li><b>애매한 돈</b> → 나눕니다. 3~6개월치 생활비는 파킹통장에, 나머지는 정기예금으로.
+비상금 규모를 먼저 정하는 게 순서입니다.</li>
+</ul>
+
+<h2 class="sec">중도해지 손익분기</h2>
+<p>정기예금을 중간에 깨면 얼마나 손해인지가 실제 판단 근거입니다.
+연 ${A.depBest != null ? A.r2(A.depBest) : "-"}% 예금을 6개월 만에 해지해 중도해지이율 연 1%가 적용된다면,
+그 6개월 동안 받는 이자는 파킹통장(연 ${A.r2(A.parkBest)}%)에 그대로 뒀을 때의
+<b>약 ${A.parkBest > 0 ? (1 / A.parkBest).toFixed(2) : "-"}배</b>, 즉 ${A.parkBest > 1 ? "오히려 더 적습니다" : "비슷하거나 더 적습니다"}.
+<b>"만기까지 버틸 자신이 없으면 파킹통장이 낫다"</b>가 결론입니다.</p>
+<p class="small">중도해지이율은 은행·상품·경과기간마다 다르므로 가입 전 상품설명서에서 반드시 확인하세요.</p>
+
+<h2 class="sec">파킹통장 안에서도 최적화가 남아 있습니다</h2>
+<p>정기예금으로 넘어가기 전에, 지금 쓰는 파킹통장이 실제로 좋은 금리인지부터 확인하는 게 순서입니다.
+광고금리가 높아 보여도 한도 때문에 실효금리가 낮은 경우가 흔합니다 —
+<a href="파킹통장-실효금리-순위">광고금리 vs 실효금리 ${A.total}개 비교</a>와
+<a href="파킹통장-금액별-정답">금액별 최적 상품</a>을 함께 보세요.</p>
+<p>정기예금 금리 순위는 <a href="../rates">예·적금 금리</a>에서, 파킹통장은 <a href="../">홈</a>에서 확인할 수 있습니다.</p>
+<p class="small">비교 기준: ${A.asOf} 공시 기준. 파킹통장은 한도·우대조건이 없는 상품의 기본금리 최고값,
+정기예금은 12개월 만기 공시 상위 금리입니다. 두 값 모두 세전이며 이자소득세 15.4%가 별도로 붙습니다.</p>`,
+  },
+  ];
+};

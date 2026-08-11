@@ -1735,7 +1735,8 @@ function buildListPages() {
 
 // ---------- 가이드 ----------
 function buildGuidePages() {
-  const ALL_GUIDES = require("./guides-content.js");
+  // guides-content는 함수 — 집계 해석 기사가 DATA(공시 금리)로 본문 수치를 빌드 시 계산한다.
+  const ALL_GUIDES = require("./guides-content.js")(DATA);
   // 발행일(date)이 오늘(KST) 이하인 글만 공개 — 미래 날짜 글은 매일 새벽 빌드가 날짜 도래 시 자동 공개
   const todayKST = process.env.BUILD_DATE || new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
   const GUIDES = ALL_GUIDES.filter((g) => g.date <= todayKST);
