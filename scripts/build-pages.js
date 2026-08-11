@@ -68,7 +68,7 @@ const dclsStr = DATA.finlifeDisclosureMonth
 const NAV = (active, base) => `
   <div class="nav-wrap">
   <nav class="tabs">
-    <a href="${base}./" class="${active === "instant" ? "active" : ""}">바로 이자</a>
+    <a href="${base === "/" ? "/" : `${base}./`}" class="${active === "instant" ? "active" : ""}">바로 이자</a>
     <a href="${base}parking" class="${active === "parking" ? "active" : ""}">전체 목록</a>
     <a href="${base}bank" class="${active === "bank" ? "active" : ""}">은행별</a>
     <a href="${base}calculator" class="${active === "calc" ? "active" : ""}">계산기</a>
@@ -86,8 +86,11 @@ const FOOTER = (base = "") => `
     운영자: Jason Jung (정 제이슨) · <a href="${base}about">사이트 소개</a> · <a href="${base}privacy">개인정보처리방침</a>
   </footer>`;
 
-function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, active = "" }) {
-  const base = depth > 0 ? "../" : "";
+// abs=true → 자산·네비 링크를 절대경로("/")로. 404 페이지 전용.
+// CF Pages는 매칭되지 않는 경로에 404.html을 "그 경로 그대로" 서빙하므로(/guide/xxx, /p/xxx …),
+// depth 기준 상대경로를 쓰면 /guide/style.css 처럼 어긋나 스타일·스크립트가 전부 깨진다.
+function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, active = "", abs = false }) {
+  const base = abs ? "/" : depth > 0 ? "../" : "";
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -1971,6 +1974,34 @@ ${urls.map((u) => `  <url><loc>${ORIGIN}${u}</loc><lastmod>${today}</lastmod></u
   fs.writeFileSync(path.join(PUB, "robots.txt"), `User-agent: *\nAllow: /\nSitemap: ${ORIGIN}/sitemap.xml\n`);
 }
 
+// ---------- 404 ----------
+// 없으면 CF Pages가 매칭 실패 경로에 index.html을 200으로 서빙한다(soft-404).
+// 오타·마감 상품·옛 URL이 전부 "홈과 같은 내용의 200 페이지"가 되어 구글에 중복으로 쌓이므로 반드시 있어야 한다.
+function build404() {
+  const body = `${NAV("", "/")}
+  <section class="hero">
+    <h1 class="h1">페이지를 찾을 수 없어요</h1>
+    <p class="sub">주소가 바뀌었거나, 판매가 끝난 상품일 수 있어요. 아래에서 다시 찾아보세요.</p>
+  </section>
+  <div class="quick">
+    <a class="qbtn" href="/">오늘의 파킹통장 금리 순위</a>
+    <a class="qbtn" href="/parking">파킹통장 전체 목록</a>
+    <a class="qbtn" href="/bank">은행별 금리</a>
+    <a class="qbtn" href="/calculator">이자계산기</a>
+    <a class="qbtn" href="/guide">가이드</a>
+  </div>`;
+  fs.writeFileSync(
+    path.join(PUB, "404.html"),
+    layout({
+      title: "페이지를 찾을 수 없어요 (404) | 이자계산기",
+      desc: "요청하신 페이지가 없거나 판매가 종료된 상품일 수 있습니다.",
+      canonicalPath: "/404",
+      body,
+      abs: true,
+    })
+  );
+}
+
 buildIndex();
 buildCalculator();
 const slugs = buildProductPages();
@@ -1982,4 +2013,5 @@ buildListPages();
 const guideSlugs = buildGuidePages();
 buildInfoPages();
 buildSitemap(slugs, guideSlugs, amountSlugs, bankSlugs);
-console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + 은행별 ${bankSlugs.length}개 + 금액대별 ${amountSlugs.length}개 + 쪼개기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + sitemap (${ORIGIN})`);
+build404();
+console.log(`페이지 생성 완료: index + 계산기 + 전체목록 허브 + 은행별 ${bankSlugs.length}개 + 금액대별 ${amountSlugs.length}개 + 쪼개기 + rates/loans/new + 가이드 ${guideSlugs.length}편 + 상품 ${slugs.length}개 + 404 + sitemap (${ORIGIN})`);
