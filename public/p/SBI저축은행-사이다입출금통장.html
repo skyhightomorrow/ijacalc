@@ -71,7 +71,7 @@
   <div class="btns"><a class="btn pri" href="https://www.sbisb.co.kr/" target="_blank" rel="noopener">공식 페이지 보기 ↗</a><a class="btn sec" href="https://play.google.com/store/apps/details?id=com.sbi.saidabank" target="_blank" rel="noopener">📱 구글 플레이</a><a class="btn sec" href="https://apps.apple.com/kr/app/id1460544457" target="_blank" rel="noopener">🍎 앱스토어</a></div>
 
   <p class="prose">이 통장은 <b>오늘 입금하면 내일부터 이자를 받을 수 있는</b> 상품입니다. 이자는 매일 밤 12시(자정) 최종 잔액을 기준으로 하루 단위로 계산됩니다. 수령 방법: <b>내일 앱에서 '이자 바로 지급'으로 수령</b></p>
-  <p class="prose">명목 최고금리 1위는 <a href="SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EC%83%9D%ED%99%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5">SBI저축은행 생활파킹통장</a>(연 7.70%)이지만, 1위 상품의 한도 조건(2,000,000원 이하) 때문에 <b>1천만원 기준 실수령은 이 상품이 하루 세후 269원 더 많습니다</b>. 파킹통장은 표시 금리가 아니라 내 예치 금액 기준 실수령으로 비교해야 합니다. SBI저축은행에는 이 상품 외에 파킹통장이 1개 더 있습니다: <a href="SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EC%83%9D%ED%99%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5">생활파킹통장</a>(연 7.70%).</p>
+  <p class="prose">명목 최고금리 1위는 <a href="SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EC%83%9D%ED%99%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5">SBI저축은행 생활파킹통장</a>(연 7.70%)이지만, 1위 상품의 한도 조건(2,000,000원 이하) 때문에 <b>1천만원 기준 실수령은 이 상품이 하루 세후 232원 더 많습니다</b>. 파킹통장은 표시 금리가 아니라 내 예치 금액 기준 실수령으로 비교해야 합니다. SBI저축은행에는 이 상품 외에 파킹통장이 1개 더 있습니다: <a href="SBI%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89-%EC%83%9D%ED%99%9C%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5">생활파킹통장</a>(연 7.70%).</p>
   
   
   <h2 class="sec">우대조건 <small>조건 없음</small></h2>
@@ -113,7 +113,7 @@ var P={"bank":"SBI저축은행","product":"사이다입출금통장","baseRate":
 var amt=document.getElementById("pc-amt"),d=document.getElementById("pc-d"),m=document.getElementById("pc-m"),y=document.getElementById("pc-y"),note=document.getElementById("pc-note");
 function upd(){var a=parseAmount(amt.value)||0;var c=calcDaily(P,a);
 d.textContent="+"+won(c.daily);m.textContent=won(c.daily*30);y.textContent=won(c.daily*365);
-note.textContent=(c.tiered?"구간 반영 실효금리 연 ":"적용 금리 연 ")+c.rate.toFixed(2)+"%"+(c.applied<a?" · "+fmtKorMoney(c.applied)+"까지만 최고금리 적용, 초과분은 계산 제외":"");
+note.textContent=(c.tiered?"구간 반영 실효금리 연 ":(c.blended?"실효 금리 연 ":"적용 금리 연 "))+c.rate.toFixed(2)+"%"+(c.capLimit!=null?" · "+fmtKorMoney(c.capLimit)+"까지만 최고금리, 초과분은 기본금리 연 "+(P.baseRate!=null?P.baseRate.toFixed(2):"-")+"%":"");
 if(a)amt.value=fmt(a);}
 amt.addEventListener("input",upd);upd();
 })();</script>

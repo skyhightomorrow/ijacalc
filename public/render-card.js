@@ -31,7 +31,15 @@
 
   // 입력 금액 기준 적용 원금·금리·하루 세후 이자 계산
   // p.tiers가 있으면 구간별(marginal) 계산 — 각 구간 금액분에 그 구간 금리를 적용한다.
-  // 없으면 공시의 최고금리·한도조건만으로 근사한다(한도 초과분은 계산에서 제외).
+  // 없으면 공시의 최고금리·한도조건으로 계산하되, 한도를 넘긴 금액분에는 기본금리를 적용한다.
+  //   (2026-08-11 변경: 이전에는 초과분을 계산에서 아예 제외해 이자를 0으로 봤는데,
+  //    한도를 넘긴 돈도 그 통장에 두면 기본금리는 받으므로 과소 계산이었다.
+  //    가이드 기사 /guide/파킹통장-실효금리-순위 의 실효금리와 계산 기준을 일치시킨 것이기도 하다.)
+  // 반환값:
+  //   rate    — 표시용 실효 연이율(한도·구간이 섞이면 금액 가중평균)
+  //   blended — rate가 단일 금리가 아니라 혼합 결과인가(표시를 "실효"로 바꾸는 신호)
+  //   capLimit— 최고금리가 적용되는 상한(초과분이 실제로 생긴 경우에만 값이 있음)
+  //   applied — 이자가 붙는 원금. 이제 항상 amt와 같다(초과분도 기본금리를 받으므로).
   function calcDaily(p, amt) {
     if (p.tiers && p.tiers.length) {
       let pretax = 0;
@@ -47,15 +55,24 @@
       const daily = pretax * (1 - TAX);
       // 표시용 실효금리 — 구간이 섞이면 단일 금리로 말할 수 없으므로 가중평균을 쓴다
       const rate = amt > 0 ? ((pretax * 365) / amt) * 100 : 0;
-      return { applied: amt, rate, daily, tiered: true };
+      return { applied: amt, rate, daily, tiered: true, blended: true, capLimit: null };
     }
     const cond = parseCondition(p.maxRateCondition);
-    let applied = amt;
-    let rate = p.maxRate || 0;
-    if (cond.type === "upto") applied = Math.min(amt, cond.value);
-    else if (cond.type === "above" && amt <= cond.value) rate = p.baseRate ?? rate;
-    const daily = ((applied * rate) / 100 / 365) * (1 - TAX);
-    return { applied, rate, daily, tiered: false };
+    const maxRate = p.maxRate || 0;
+    const baseRate = p.baseRate != null ? p.baseRate : maxRate;
+    let rate = maxRate;
+    let capLimit = null;
+    let blended = false;
+    if (cond.type === "upto" && amt > cond.value) {
+      // 한도 이하분 = 최고금리, 초과분 = 기본금리 → 금액 가중평균이 실효금리
+      capLimit = cond.value;
+      blended = true;
+      rate = (cond.value * maxRate + (amt - cond.value) * baseRate) / amt;
+    } else if (cond.type === "above" && amt <= cond.value) {
+      rate = baseRate;
+    }
+    const daily = ((amt * rate) / 100 / 365) * (1 - TAX);
+    return { applied: amt, rate, daily, tiered: false, blended, capLimit };
   }
 
   function condTag(p, amt) {
@@ -66,7 +83,8 @@
     const label = fmtKorMoney(cond.value);
     if (cond.type === "upto") {
       const hit = amt > cond.value;
-      return `<span class="tag ${hit ? "cond-hit" : "cond"}">${label}까지만 최고금리${hit ? " · 초과분 계산 제외" : ""}</span>`;
+      const base = p.baseRate != null ? ` 연 ${p.baseRate.toFixed(2)}%` : "";
+      return `<span class="tag ${hit ? "cond-hit" : "cond"}">${label}까지만 최고금리${hit ? ` · 초과분은 기본금리${base}` : ""}</span>`;
     }
     const miss = amt <= cond.value;
     return `<span class="tag ${miss ? "cond-hit" : "cond"}">${label} 넘어야 최고금리${miss ? " · 지금은 기본금리 적용" : ""}</span>`;

@@ -455,7 +455,7 @@ function buildProductPages() {
     const calcRows = amounts
       .map((a) => {
         const c = R.calcDaily(p, a);
-        return `<tr><td>${R.fmtKorMoney(a)}</td><td class="r">${c.tiered ? "실효" : "적용"} ${c.rate.toFixed(2)}%</td><td class="r rate-em">+${R.won(c.daily)}</td><td class="r">${R.won(c.daily * 30)}</td><td class="r">${R.won(c.daily * 365)}</td></tr>`;
+        return `<tr><td>${R.fmtKorMoney(a)}</td><td class="r">${c.tiered || c.blended ? "실효" : "적용"} ${c.rate.toFixed(2)}%</td><td class="r rate-em">+${R.won(c.daily)}</td><td class="r">${R.won(c.daily * 30)}</td><td class="r">${R.won(c.daily * 365)}</td></tr>`;
       })
       .join("");
 
@@ -509,8 +509,8 @@ function buildProductPages() {
     if (rk === 1) {
       const c1 = R.calcDaily(p, DEFAULT_AMT);
       compareProse =
-        c1.applied < DEFAULT_AMT
-          ? `<p class="prose">현재 <b>${PARKING_LIST.length}개 파킹통장 중 명목 최고금리 1위</b> 상품입니다. 단 최고 연 ${p.maxRate?.toFixed(2)}%는 <b>${R.fmtKorMoney(c1.applied)}까지만</b> 적용되는 소액 우대형이라, 1천만원을 넣어도 하루 세후 이자는 <b>+${R.won(myDaily)}</b>입니다. ${R.fmtKorMoney(c1.applied)} 이하 비상금 통장으로 쓰고 나머지는 한도가 넉넉한 통장에 나누는 것이 정석입니다.${sameBankProse}</p>`
+        c1.capLimit != null
+          ? `<p class="prose">현재 <b>${PARKING_LIST.length}개 파킹통장 중 명목 최고금리 1위</b> 상품입니다. 단 최고 연 ${p.maxRate?.toFixed(2)}%는 <b>${R.fmtKorMoney(c1.capLimit)}까지만</b> 적용되는 소액 우대형이라, 1천만원을 넣으면 초과분에는 기본금리 연 ${p.baseRate?.toFixed(2)}%가 붙어 <b>실효 연 ${c1.rate.toFixed(2)}%</b>(하루 세후 <b>+${R.won(myDaily)}</b>)가 됩니다. ${R.fmtKorMoney(c1.capLimit)} 이하 비상금 통장으로 쓰고 나머지는 한도가 넉넉한 통장에 나누는 것이 정석입니다.${sameBankProse}</p>`
           : `<p class="prose">현재 <b>${PARKING_LIST.length}개 파킹통장 중 최고금리 1위</b> 상품입니다. 1천만원 예치 기준 하루 세후 <b>+${R.won(myDaily)}</b>을 받습니다.${sameBankProse}</p>`;
     } else {
       const topDaily = R.calcDaily(top1.p, DEFAULT_AMT).daily;
@@ -681,7 +681,7 @@ var P=${calcProduct};
 var amt=document.getElementById("pc-amt"),d=document.getElementById("pc-d"),m=document.getElementById("pc-m"),y=document.getElementById("pc-y"),note=document.getElementById("pc-note");
 function upd(){var a=parseAmount(amt.value)||0;var c=calcDaily(P,a);
 d.textContent="+"+won(c.daily);m.textContent=won(c.daily*30);y.textContent=won(c.daily*365);
-note.textContent=(c.tiered?"구간 반영 실효금리 연 ":"적용 금리 연 ")+c.rate.toFixed(2)+"%"+(c.applied<a?" · "+fmtKorMoney(c.applied)+"까지만 최고금리 적용, 초과분은 계산 제외":"");
+note.textContent=(c.tiered?"구간 반영 실효금리 연 ":(c.blended?"실효 금리 연 ":"적용 금리 연 "))+c.rate.toFixed(2)+"%"+(c.capLimit!=null?" · "+fmtKorMoney(c.capLimit)+"까지만 최고금리, 초과분은 기본금리 연 "+(P.baseRate!=null?P.baseRate.toFixed(2):"-")+"%":"");
 if(a)amt.value=fmt(a);}
 amt.addEventListener("input",upd);upd();
 })();</script>`;
@@ -1330,7 +1330,7 @@ function buildAmountPages() {
         (x, i) =>
           `<tr><td>${i + 1}</td><td>${x.p.bank}<div class="b2">${x.p.group}</div></td>` +
           `<td><a href="../p/${encodeURIComponent(x.slug)}">${x.p.product}</a></td>` +
-          `<td class="r">${x.tiered ? "실효 " : ""}연 ${x.rate.toFixed(2)}%</td>` +
+          `<td class="r">${x.tiered || x.blended ? "실효 " : ""}연 ${x.rate.toFixed(2)}%</td>` +
           `<td class="r rate-em">+${R.won(x.daily)}</td>` +
           `<td class="r">${R.won(x.daily * 30)}</td>` +
           `<td class="r">${R.won(x.year)}</td></tr>`
