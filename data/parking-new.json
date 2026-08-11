@@ -1,4 +1,14 @@
 {
-  "detectedAt": "2026-08-10T21:11:57.267Z",
-  "products": []
+  "detectedAt": "2026-08-11T21:15:19.957Z",
+  "products": [
+    {
+      "bank": "예가람",
+      "product": "모임통장",
+      "baseRate": 0.2,
+      "maxRate": 2.6,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260811",
+      "payout": "분기지급"
+    }
+  ]
 }
