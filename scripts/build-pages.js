@@ -52,6 +52,9 @@ const DATA = JSON.parse(fs.readFileSync(path.join(PUB, "data.json"), "utf8"));
 const DEFAULT_AMT = 10000000;
 
 // 파킹통장 상품 목록 (슬러그 중복 제거) — 상품 상세·전체목록 허브·사이트맵이 공유한다
+// 실효금리 순위 집계 (2026-08-17) — /p/의 본문 편차 문제를 푸는 축
+const EFF = require("./_eff-rank.js");
+
 const PARKING_LIST = (() => {
   const seen = new Set();
   const out = [];
@@ -63,6 +66,9 @@ const PARKING_LIST = (() => {
   }
   return out;
 })();
+
+// 156개 전체를 금액대별로 줄 세운 결과. 페이지마다 다시 계산하면 156번 반복되므로 한 번만 만든다.
+const EFF_INDEX = EFF.buildEffIndex(PARKING_LIST, R);
 
 const naverLink = (bank, product) =>
   `https://search.naver.com/search.naver?query=${encodeURIComponent(bank + " " + product)}`;
@@ -474,10 +480,10 @@ function buildProductPages() {
       })
       .join("");
 
-    const related = instantTop
-      .filter((q) => R.slugify(q) !== slug)
-      .slice(0, 5)
-      .map((q) => `<a href="${encodeURIComponent(R.slugify(q))}">${q.bank} ${q.product}<span class="r-rate">연 ${q.maxRate?.toFixed(2)}%</span></a>`)
+    // 2026-08-17: 전 상품 공통 top5 → 실효금리 순위상 이웃으로 교체.
+    // 공통 top5는 156p에 똑같이 붙는 533자 블록이었고(본문 공통 1,197자 중 최대) /p/ 미색인의 주요 원인이었다.
+    const related = EFF.effNeighbors(p, EFF_INDEX, 5)
+      .map(({ p: q, slug: s, rate, rank }) => `<a href="${encodeURIComponent(s)}">${escHtml(q.bank)} ${escHtml(q.product)}<span class="r-rate">실효 연 ${rate.toFixed(2)}% · ${rank}위</span></a>`)
       .join("");
 
     const officialBtn = p.linkUrl
@@ -536,6 +542,64 @@ function buildProductPages() {
         gap >= 0
           ? `<p class="prose">명목 최고금리 1위는 ${topName}이지만, 1위 상품의 한도 조건(${top1.p.maxRateCondition || "-"}) 때문에 <b>1천만원 기준 실수령은 이 상품이 하루 세후 ${R.won(gap)} 더 많습니다</b>. 파킹통장은 표시 금리가 아니라 내 예치 금액 기준 실수령으로 비교해야 합니다.${sameBankProse}</p>`
           : `<p class="prose">현재 최고금리 1위 ${topName} 대비 1천만원 기준 하루 세후 이자가 <b>${R.won(-gap)} 적습니다</b>. 다만 상품마다 우대 조건과 한도(이 상품: ${p.maxRateCondition || "제한 없음"})가 달라, 내 예치 금액 기준으로 비교하는 것이 정확합니다.${sameBankProse}</p>`;
+    }
+
+    // --- 광고금리 vs 실효금리 (2026-08-17 신설) ---
+    // /p/ 156p가 「크롤링됨-미색인」으로 걸러지던 원인은 본문 편차가 거의 없다는 것이었다
+    // (고유성 44.8~55.6% · 본문 2,055~2,803자). 새 데이터 없이, 이미 계산하던 실효금리를
+    // 156개 전체에 걸쳐 순위로 집계해 상품마다 완전히 다른 문장이 나오게 한다.
+    // 실측 근거: 광고순위≠실효순위 125/156(80%) · 금액대별 5계단 이상 이동 50개(32%).
+    const ef = EFF.effSummary(p, EFF_INDEX);
+    let effSection = "";
+    if (ef.adR != null && ef.effR != null) {
+      const amtRows = ef.ranks
+        .map(
+          (r) =>
+            `<tr><td>${r.label}</td><td class="r rate-em">연 ${r.rate.toFixed(2)}%</td><td class="r">${r.rank}위 / ${ef.total}개</td></tr>`
+        )
+        .join("");
+
+      // 낙차 크기에 따라 해석 문장을 바꾼다 — 상품마다 결론이 정반대일 수 있다
+      let verdict;
+      if (ef.drop >= 10) {
+        const alts = EFF.betterAlternatives(p, EFF_INDEX, 3);
+        const altLinks = alts
+          .map(({ p: q, slug: s, rate }) => `<a href="${encodeURIComponent(s)}">${escHtml(q.bank)} ${escHtml(q.product)}</a>(실효 연 ${rate.toFixed(2)}%)`)
+          .join(", ");
+        verdict = `<p class="prose">이 상품은 <b>광고 금리와 실제 금리의 차이가 큰 편</b>입니다.
+        광고 최고 연 ${ef.ad.toFixed(2)}%는 전체 ${ef.total}개 중 <b>${ef.adR}위</b>지만,
+        1,000만원을 넣었을 때 실제로 붙는 실효금리는 연 <b>${ef.eff.toFixed(2)}%</b>로 <b>${ef.effR}위</b>까지 밀립니다
+        (광고 숫자의 <b>${Math.round(ef.ratio * 100)}%</b>, ${ef.drop}계단 하락).
+        한도·우대조건(${escHtml(p.maxRateCondition || "-")}) 때문입니다.
+        ${alts.length ? `1,000만원 기준으로는 ${altLinks} 쪽이 실수령이 많습니다.` : ""}</p>`;
+      } else if (ef.drop <= -10) {
+        verdict = `<p class="prose">이 상품은 <b>광고 금리보다 실제 성적이 좋은 쪽</b>입니다.
+        광고 최고 연 ${ef.ad.toFixed(2)}%는 전체 ${ef.total}개 중 ${ef.adR}위에 그치지만,
+        1,000만원 기준 실효금리로 줄을 세우면 연 <b>${ef.eff.toFixed(2)}%</b>로 <b>${ef.effR}위</b>까지 올라옵니다(${-ef.drop}계단 상승).
+        한도가 넉넉해 예치금 전체에 금리가 고르게 붙기 때문입니다.</p>`;
+      } else {
+        verdict = `<p class="prose">광고 최고 연 ${ef.ad.toFixed(2)}%(전체 ${ef.adR}위)와
+        1,000만원 기준 실효금리 연 <b>${ef.eff.toFixed(2)}%</b>(${ef.effR}위)의 차이가 크지 않습니다.
+        표시 금리와 실제 수령액이 대체로 일치하는 상품입니다.</p>`;
+      }
+
+      // 금액에 따라 순위가 흔들리는 상품만 추가 해석 — 32%가 여기 해당한다
+      const spreadProse =
+        ef.spread >= 5
+          ? `<p class="prose"><b>넣는 금액에 따라 순위가 크게 바뀝니다.</b>
+             ${ef.best.label}에서는 ${ef.best.rank}위인데 ${ef.worst.label}에서는 ${ef.worst.rank}위로,
+             ${ef.spread}계단 차이가 납니다. 목돈을 한 통장에 몰기보다
+             <a href="../split">쪼개기 계산기</a>로 나눠 담는 편이 유리할 수 있습니다.</p>`
+          : `<p class="prose">금액대가 달라져도 순위 변동이 ${ef.spread}계단으로 작아, 예치 금액에 관계없이 일정한 성적을 냅니다.</p>`;
+
+      effSection = `
+  <h2 class="sec">광고 금리와 실제 붙는 금리 <small>${PARKING_LIST.length}개 상품 중 순위 · ${updatedStr}</small></h2>
+  <div class="tbl-wrap"><table>
+    <tr><th>예치 금액</th><th class="r">실효금리</th><th class="r">실효 기준 순위</th></tr>
+    ${amtRows}
+  </table></div>
+  ${verdict}
+  ${spreadProse}`;
     }
 
     // --- 금액 구간별 금리 (큐레이션된 상품만) ---
@@ -643,10 +707,18 @@ function buildProductPages() {
         a: `공시 기준 금액 한도 조건이 없습니다. 예치 금액 전체에 최고 연 ${p.maxRate?.toFixed(2)}%가 적용됩니다. 단 우대금리 조건이나 상품 개편으로 조건이 바뀔 수 있으니 가입 전 상품설명서를 확인하세요.`,
       });
     }
-    faqs.push({
-      q: `${p.bank} 파킹통장은 예금자보호가 되나요?`,
-      a: `네. ${p.bank}(${p.group})은 예금자보호법 적용 대상이라 원금과 이자를 합해 1인당 최고 1억 원까지 보호됩니다(2025년 9월 1일부터 5천만 원에서 1억 원으로 상향). 한도는 원금이 아니라 이자까지 더한 금액 기준이므로, 원금을 1억 원에 꽉 채우면 이자는 보호 범위를 벗어납니다. 1억 원을 넘는 돈은 여러 금융회사에 나누면 각각 보호받을 수 있습니다.`,
-    });
+    // 예금자보호 FAQ — 2026-08-17까지 156p에 완전히 동일한 196자였다(본문 공통 1,197자 중 2위).
+    // 이 상품의 실효금리로 "1억을 채우면 이자가 얼마나 한도를 넘는지"를 계산해 상품마다 숫자가 달라지게 한다.
+    {
+      const capWon = 100000000;
+      const capRate = R.calcDaily(p, capWon).rate; // 1억 예치 시 실효금리(구간·한도 반영)
+      const yearPre = Math.round((capWon * capRate) / 100); // 세전 연이자
+      const safePrincipal = capRate > 0 ? Math.floor(capWon / (1 + capRate / 100) / 10000) * 10000 : capWon;
+      faqs.push({
+        q: `${p.bank} 파킹통장은 예금자보호가 되나요?`,
+        a: `네. ${p.bank}(${p.group})은 예금자보호법 적용 대상이라 원금과 이자를 합해 1인당 최고 1억 원까지 보호됩니다(2025년 9월 1일부터 상향). 한도가 이자까지 더한 금액 기준이라는 점이 중요합니다 — 이 상품에 1억 원을 넣으면 실효 연 ${capRate.toFixed(2)}% 기준 1년 이자가 세전 약 ${R.won(yearPre)}이라, 그만큼이 보호 한도를 넘습니다. 이자까지 보호받으려면 원금을 약 ${R.fmtKorMoney(safePrincipal)} 선에서 끊고 나머지는 다른 금융회사로 나누는 것이 안전합니다.`,
+      });
+    }
     faqs.push({
       q: `이자는 언제 받나요?`,
       a: p.instant
@@ -731,6 +803,7 @@ amt.addEventListener("input",upd);upd();
 
   ${timingProse}
   ${compareProse}
+  ${effSection}
   ${tierSection}
   ${conditionSection}
 
@@ -746,7 +819,7 @@ amt.addEventListener("input",upd);upd();
   <h2 class="sec">자주 묻는 질문</h2>
   ${faqHtml}
 
-  <h2 class="sec">함께 볼 만한 파킹통장</h2>
+  <h2 class="sec">실효금리가 비슷한 파킹통장 <small>1,000만원 기준 순위 이웃</small></h2>
   <div class="related">${
     BANK_PAGES.has(p.bank)
       ? `<a href="../bank/${encodeURIComponent(BANK_PAGES.get(p.bank))}">${p.bank} 금리 총정리<span class="r-rate">예금·적금·파킹 전체</span></a>`
