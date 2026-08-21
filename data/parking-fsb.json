@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-20T20:55:55.570Z",
+  "fetchedAt": "2026-08-21T20:49:07.984Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1236,6 +1236,24 @@
       "payout": "분기지급"
     },
     {
+      "bank": "안국",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260821",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260821",
+      "payout": "분기지급"
+    },
+    {
       "bank": "조은",
       "product": "보통예금",
       "baseRate": 0.5,
@@ -1281,21 +1299,12 @@
       "payout": "분기지급"
     },
     {
-      "bank": "안국",
-      "product": "보통예금",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
+      "bank": "애큐온",
+      "product": "애큐온모바일자유예금",
+      "baseRate": 3.1,
+      "maxRate": 3.3,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20260807",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "안국",
-      "product": "보통예금(비대면)",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260807",
+      "disclosedAt": "20260821",
       "payout": "분기지급"
     },
     {
@@ -1431,15 +1440,6 @@
       "maxRate": 0.3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260804",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "애큐온",
-      "product": "애큐온모바일자유예금",
-      "baseRate": 3.1,
-      "maxRate": 3.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260820",
       "payout": "분기지급"
     },
     {
