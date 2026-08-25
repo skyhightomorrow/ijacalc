@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T20:58:29.288Z",
+  "fetchedAt": "2026-08-25T20:55:09.562Z",
   "products": {
     "deposit_020000": [
       {
@@ -21798,9 +21798,9 @@
         "join_member": "제한없음",
         "etc_note": "상품 문의 ☎ 043-256-9114\n금리 적용일자 : 2026.08.11 부터",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -21939,9 +21939,9 @@
         "join_member": "제한없음",
         "etc_note": "상품 문의 ☎ 043-256-9114\n금리 적용일자 : 2026.08.11 부터",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -21990,8 +21990,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 3.4,
+            "intr_rate2": 3.4
           },
           {
             "dcls_month": "202608",
@@ -22050,8 +22050,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "24",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 3.4,
+            "intr_rate2": 3.4
           },
           {
             "dcls_month": "202608",
@@ -22080,9 +22080,9 @@
         "join_member": "반려동물을 키우는 지점방문고객(개인)",
         "etc_note": "상품 문의 ☎ 041-522-9114",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -22141,9 +22141,9 @@
         "join_member": "제한없음",
         "etc_note": "상품 문의 ☎ 041-522-9114",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -25036,9 +25036,9 @@
         "join_member": "제한없음",
         "etc_note": "본 상품은 한도금액 초과 시 조기에 소진될 수 있습니다.",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241727",
         "options": [
           {
             "dcls_month": "202608",
@@ -25077,8 +25077,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 4.1,
+            "intr_rate2": 4.1
           },
           {
             "dcls_month": "202608",
@@ -25137,8 +25137,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 4.1,
+            "intr_rate2": 4.1
           },
           {
             "dcls_month": "202608",
@@ -27639,9 +27639,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240847",
         "options": [
           {
             "dcls_month": "202608",
@@ -27650,8 +27650,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27660,8 +27660,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27670,8 +27670,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27680,8 +27680,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -27700,9 +27700,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240847",
         "options": [
           {
             "dcls_month": "202608",
@@ -27711,8 +27711,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27721,8 +27721,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27731,8 +27731,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27741,8 +27741,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -27761,9 +27761,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240847",
         "options": [
           {
             "dcls_month": "202608",
@@ -27772,8 +27772,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27782,8 +27782,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "36",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -27802,9 +27802,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240847",
         "options": [
           {
             "dcls_month": "202608",
@@ -27813,8 +27813,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202608",
@@ -27823,8 +27823,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "36",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -27843,9 +27843,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -27964,9 +27964,9 @@
         "join_member": "제한없음",
         "etc_note": "인터넷뱅킹, SB톡톡플러스 로그인 시",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28005,8 +28005,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.9,
-            "intr_rate2": 3.9
+            "intr_rate": 3.95,
+            "intr_rate2": 3.95
           },
           {
             "dcls_month": "202608",
@@ -28055,8 +28055,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.9,
-            "intr_rate2": 3.9
+            "intr_rate": 3.95,
+            "intr_rate2": 3.95
           },
           {
             "dcls_month": "202608",
@@ -28085,9 +28085,9 @@
         "join_member": "만19세 이상 내국인(법인불가)",
         "etc_note": "SB톡톡플러스 비로그인서비스로 신규가입 시",
         "max_limit": 100000000,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28126,8 +28126,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.9,
-            "intr_rate2": 3.9
+            "intr_rate": 3.95,
+            "intr_rate2": 3.95
           },
           {
             "dcls_month": "202608",
@@ -28176,8 +28176,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.9,
-            "intr_rate2": 3.9
+            "intr_rate": 3.95,
+            "intr_rate2": 3.95
           },
           {
             "dcls_month": "202608",
@@ -28206,9 +28206,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28247,9 +28247,9 @@
         "join_member": "제한없음",
         "etc_note": "인터넷뱅킹, SB톡톡플러스 로그인 시",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28258,8 +28258,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.92,
-            "intr_rate2": 3.92
+            "intr_rate": 3.97,
+            "intr_rate2": 3.97
           },
           {
             "dcls_month": "202608",
@@ -28268,8 +28268,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.92,
-            "intr_rate2": 3.92
+            "intr_rate": 3.97,
+            "intr_rate2": 3.97
           }
         ],
         "_kind": "deposit",
@@ -28288,9 +28288,9 @@
         "join_member": "만19세 이상 내국인(법인불가)",
         "etc_note": "SB톡톡플러스 비로그인서비스로 신규가입 시",
         "max_limit": 100000000,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28299,8 +28299,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.92,
-            "intr_rate2": 3.92
+            "intr_rate": 3.97,
+            "intr_rate2": 3.97
           },
           {
             "dcls_month": "202608",
@@ -28309,8 +28309,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.92,
-            "intr_rate2": 3.92
+            "intr_rate": 3.97,
+            "intr_rate2": 3.97
           }
         ],
         "_kind": "deposit",
@@ -28329,9 +28329,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28370,9 +28370,9 @@
         "join_member": "제한없음",
         "etc_note": "인터넷뱅킹, SB톡톡플러스 로그인 시",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -28411,9 +28411,9 @@
         "join_member": "만19세 이상 내국인(법인불가)",
         "etc_note": "SB톡톡플러스 비로그인서비스로 신규가입 시",
         "max_limit": 100000000,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -31341,9 +31341,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 1~36개월\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31382,8 +31382,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.7,
-            "intr_rate2": 3.7
+            "intr_rate": 3.5,
+            "intr_rate2": 3.5
           },
           {
             "dcls_month": "202608",
@@ -31442,8 +31442,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.7,
-            "intr_rate2": 3.7
+            "intr_rate": 3.5,
+            "intr_rate2": 3.5
           },
           {
             "dcls_month": "202608",
@@ -31482,9 +31482,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 1~36개월\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31523,8 +31523,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.7,
-            "intr_rate2": 3.7
+            "intr_rate": 3.5,
+            "intr_rate2": 3.5
           },
           {
             "dcls_month": "202608",
@@ -31583,8 +31583,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.7,
-            "intr_rate2": 3.7
+            "intr_rate": 3.5,
+            "intr_rate2": 3.5
           },
           {
             "dcls_month": "202608",
@@ -31623,9 +31623,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 매 회전주기 기준 정기예금 12개월 고시금리 +0.1%p 변동\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31634,8 +31634,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           },
           {
             "dcls_month": "202608",
@@ -31644,8 +31644,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           }
         ],
         "_kind": "deposit",
@@ -31664,9 +31664,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 매 회전주기 기준 e-정기예금 12개월 고시금리 +0.1%p 변동\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31675,8 +31675,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           },
           {
             "dcls_month": "202608",
@@ -31685,8 +31685,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           }
         ],
         "_kind": "deposit",
@@ -31705,9 +31705,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 36개월(6개월 회전주기 변동금리 상품)",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31716,8 +31716,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.4,
+            "intr_rate2": 3.4
           },
           {
             "dcls_month": "202608",
@@ -31726,8 +31726,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.4,
+            "intr_rate2": 3.4
           }
         ],
         "_kind": "deposit",
@@ -31746,9 +31746,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 36개월(6개월 회전주기 변동금리 상품)",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31757,8 +31757,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.4,
+            "intr_rate2": 3.4
           },
           {
             "dcls_month": "202608",
@@ -31767,8 +31767,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "6",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.4,
+            "intr_rate2": 3.4
           }
         ],
         "_kind": "deposit",
@@ -31787,9 +31787,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 1억원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 최소 가입금액 미만으로는 분할해지 불가\n* 비과세종합저축 가입 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31798,8 +31798,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           },
           {
             "dcls_month": "202608",
@@ -31808,8 +31808,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           }
         ],
         "_kind": "deposit",
@@ -31828,9 +31828,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 1억원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 최소 가입금액 미만으로는 분할해지 불가\n* 비과세종합저축 가입 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240908",
         "options": [
           {
             "dcls_month": "202608",
@@ -31839,8 +31839,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           },
           {
             "dcls_month": "202608",
@@ -31849,8 +31849,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           }
         ],
         "_kind": "deposit",
@@ -51766,9 +51766,9 @@
         "join_member": "제한없음",
         "etc_note": "상품 문의 ☎ 043-256-9114",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -51907,9 +51907,9 @@
         "join_member": "제한없음",
         "etc_note": "상품 문의 ☎ 043-256-9114",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -51976,9 +51976,9 @@
         "join_member": "반려동물을 키우는 지점방문고객(개인)",
         "etc_note": "상품 문의 ☎ 041-522-9114",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -52009,9 +52009,9 @@
         "join_member": "제한없음",
         "etc_note": "상품 문의 ☎ 043-256-9114",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608241841",
         "options": [
           {
             "dcls_month": "202608",
@@ -56881,9 +56881,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -56938,9 +56938,9 @@
         "join_member": "만19세 이상 내국인(법인불가)",
         "etc_note": "SB톡톡플러스 비로그인서비스로 신규가입 시",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
@@ -56995,9 +56995,9 @@
         "join_member": "제한없음",
         "etc_note": "인터넷뱅킹, SB톡톡플러스 로그인 시",
         "max_limit": null,
-        "dcls_strt_day": "20260820",
+        "dcls_strt_day": "20260824",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202608201500",
+        "fin_co_subm_day": "202608240915",
         "options": [
           {
             "dcls_month": "202608",
