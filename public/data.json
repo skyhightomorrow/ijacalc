@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-08-26T01:52:28.150Z",
-  "finlifeFetchedAt": "2026-08-26T01:52:13.651Z",
+  "builtAt": "2026-08-26T23:56:04.668Z",
+  "finlifeFetchedAt": "2026-08-26T23:55:47.453Z",
   "finlifeDisclosureMonth": "202608",
   "parking": [
     {
@@ -3258,17 +3258,21 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [
-    {
-      "bank": "하나저축은행",
-      "product": "내맘대로 중도해지 정기예금",
-      "kind": "deposit",
-      "group": "저축은행",
-      "disclosureStart": "20260825",
-      "maxRate": 3.3
-    }
-  ],
+  "newProducts": [],
   "topDeposits": [
+    {
+      "bank": "우리저축은행",
+      "product": "정기예금(비대면)",
+      "group": "저축은행",
+      "baseRate": 4.11,
+      "maxRate": 4.11,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202608"
+    },
     {
       "bank": "동양저축은행",
       "product": "정기예금(비대면,인터넷뱅킹,스마트폰뱅킹)",
@@ -3348,6 +3352,19 @@
       "disclosureMonth": "202608"
     },
     {
+      "bank": "국제저축은행",
+      "product": "꿈 찾아 정기예금(비대면)",
+      "group": "저축은행",
+      "baseRate": 4,
+      "maxRate": 4,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 100000000,
+      "disclosureMonth": "202608"
+    },
+    {
       "bank": "모아저축은행",
       "product": "생일축하 회전 정기예금",
       "group": "저축은행",
@@ -3382,45 +3399,6 @@
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202608"
-    },
-    {
-      "bank": "안국저축은행",
-      "product": "회전식정기예금",
-      "group": "저축은행",
-      "baseRate": 4,
-      "maxRate": 4,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "영업점",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202608"
-    },
-    {
-      "bank": "안국저축은행",
-      "product": "e-회전식정기예금",
-      "group": "저축은행",
-      "baseRate": 4,
-      "maxRate": 4,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202608"
-    },
-    {
-      "bank": "안국저축은행",
-      "product": "회전식정기예금(비대면)",
-      "group": "저축은행",
-      "baseRate": 4,
-      "maxRate": 4,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
       "specialCondition": "없음",
       "maxLimit": null,
       "disclosureMonth": "202608"
@@ -3462,6 +3440,19 @@
       "joinWay": "인터넷,스마트폰",
       "specialCondition": "없음",
       "maxLimit": 1000000000,
+      "disclosureMonth": "202608"
+    },
+    {
+      "bank": "청주저축은행",
+      "product": "정기예금_본점",
+      "group": "저축은행",
+      "baseRate": 4,
+      "maxRate": 4,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "영업점",
+      "specialCondition": "없음",
+      "maxLimit": null,
       "disclosureMonth": "202608"
     }
   ],
