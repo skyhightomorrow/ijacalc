@@ -1,4 +1,36 @@
 {
-  "detectedAt": "2026-08-25T20:55:09.562Z",
-  "products": []
+  "detectedAt": "2026-08-26T01:52:13.651Z",
+  "products": [
+    {
+      "dcls_month": "202608",
+      "fin_co_no": "0013166",
+      "fin_prdt_cd": "240008",
+      "kor_co_nm": "하나저축은행",
+      "fin_prdt_nm": "내맘대로 중도해지 정기예금",
+      "join_way": "영업점,인터넷,스마트폰",
+      "mtrt_int": "-1개월 이내 : 가입 당시 약정금리나 만기(해지)시 동일상품 · 계약기간 신규 약정금리 중 낮은 금리\n-1개월 초과 : 현행 고시 보통예금 금리",
+      "spcl_cnd": "-",
+      "join_deny": "1",
+      "join_member": "개인 및 개인사업자",
+      "etc_note": "1. 중도해지시에도 예치기간별 이율로 지급하는 정기예금\n\n2. 최저가입금액 : 10만원이상\n\n3. 중도해지금리\n-1개월미만 : 0.2%\n-1개월이상 3개월미만: 3.30%\n-3개월이상 6개월미만: 3.30%\n-6개월 이상 12개월 미만: 3.30%",
+      "max_limit": null,
+      "dcls_strt_day": "20260825",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202608250910",
+      "options": [
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0013166",
+          "fin_prdt_cd": "240008",
+          "intr_rate_type": "M",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 3.3,
+          "intr_rate2": 3.3
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "저축은행"
+    }
+  ]
 }
