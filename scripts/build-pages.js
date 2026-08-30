@@ -989,6 +989,33 @@ for (const [name, b] of BANKS) {
     BANK_PAGES.set(name, bankSlugify(name));
 }
 
+// 🔴 안전망: 은행 페이지가 직전 빌드보다 크게 줄면 빌드를 중단한다(2026-08-30 신설).
+// 근거: 8/7·8/11·8/28 세 번, 금감원 API 장애로 /bank/ 47개(97→50)가 하루씩 사라졌다가 복구됐다.
+// 근본 원인은 fetch-finlife.js가 실패분을 null로 덮어쓴 것이고 거기서 고쳤지만,
+// 데이터 소스가 조용히 비는 사고는 형태를 바꿔 또 올 수 있다. 그때 삭제가 커밋·배포되는 것만은 막는다.
+// ⛔ 정상적인 감소(은행 폐업·상품 정리)까지 막지 않도록 임계값은 넉넉히 20%로 둔다.
+//    임계를 넘으면 라이브를 건드리지 않고 실패시키는 쪽이 항상 낫다 — 되돌리는 비용이 더 크다.
+{
+  const DROP_LIMIT = 0.2;
+  const bankDir = path.join(PUB, "bank");
+  const prevCount = fs.existsSync(bankDir)
+    ? fs.readdirSync(bankDir).filter((f) => f.endsWith(".html")).length
+    : 0;
+  const now = BANK_PAGES.size;
+  if (prevCount > 0 && now < prevCount * (1 - DROP_LIMIT)) {
+    console.error(
+      `\n🔴 빌드 중단 — 은행 페이지가 ${prevCount}개 → ${now}개로 급감했습니다 ` +
+        `(허용 하한 ${Math.ceil(prevCount * (1 - DROP_LIMIT))}개).\n` +
+        `   데이터 소스가 비었을 가능성이 큽니다. data/latest.json의 products에 null이 있는지 확인하세요.\n` +
+        `   (의도한 감소라면 이 가드의 DROP_LIMIT을 조정하거나 public/bank를 먼저 비우고 다시 빌드하세요.)`
+    );
+    process.exit(1);
+  }
+  if (prevCount > 0 && now < prevCount) {
+    console.warn(`⚠️ 은행 페이지 ${prevCount} → ${now} (감소, 허용 범위 내)`);
+  }
+}
+
 const escHtml = (s) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/\s+/g, " ").trim();
 const clip = (s, n) => {

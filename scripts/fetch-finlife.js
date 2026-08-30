@@ -83,7 +83,28 @@ async function main() {
 
   const result = { fetchedAt: new Date().toISOString(), products: {} };
 
+  // 직전 수집본 — 카테고리 수집이 실패했을 때 어제 값을 이어받는 데 쓴다.
+  // 🔴 왜 이게 필요한가(2026-08-30 규명): 예전에는 실패한 카테고리를 null로 넣고 그대로 덮어썼다.
+  //    금감원 API가 통째로 죽으면 6개 카테고리가 전부 null이 되고, build-pages.js의
+  //    `if (LATEST && LATEST.products)`가 조용히 통과해 **파킹 상품이 없는 은행 47곳**
+  //    (카카오뱅크·케이뱅크·신한·하나·국민·농협 등)이 /bank/ 페이지를 통째로 잃었다.
+  //    Actions는 그 삭제를 그대로 커밋·배포했다 — 에러도 빌드 실패도 없이 라이브가 404가 됐다.
+  //    실제로 8/7·8/11·8/28 **세 번** 재발했고 매번 정확히 같은 47개였다.
+  //    ⛔ 그러므로 수집 실패분을 절대 null로 덮어쓰지 말 것. 어제 값이 낡은 건 괜찮지만,
+  //       페이지가 사라지는 건 괜찮지 않다(네이버 웹문서 TOP10에 오른 자산이다).
+  const latestPath = path.join(DATA_DIR, "latest.json");
+  let prev = null;
+  try {
+    prev = JSON.parse(fs.readFileSync(latestPath, "utf8"));
+  } catch {
+    prev = null;
+  }
+
+  let ok = 0;
+  const carried = [];
+  const lost = [];
   for (const t of TARGETS) {
+    const key = `${t.kind}_${t.group}`;
     const label = `${t.kind}/${t.groupName}`;
     try {
       const { products, options } = await fetchAllPages(t.endpoint, t.group);
@@ -92,24 +113,46 @@ async function main() {
         _kind: t.kind,
         _group: t.groupName,
       }));
-      result.products[`${t.kind}_${t.group}`] = merged;
+      result.products[key] = merged;
+      ok++;
       console.log(`${label}: ${merged.length}개 상품`);
     } catch (e) {
-      // 한 카테고리가 실패해도 나머지는 계속 수집
-      console.error(`${label} 수집 실패: ${e.message}`);
-      result.products[`${t.kind}_${t.group}`] = null;
+      // 한 카테고리가 실패해도 나머지는 계속 수집한다. 단 실패분은 **직전 값을 이어받는다**.
+      const fallback = prev && prev.products ? prev.products[key] : null;
+      if (fallback && fallback.length) {
+        result.products[key] = fallback;
+        carried.push(`${label}(${fallback.length})`);
+        console.error(`${label} 수집 실패 → 직전 값 유지 (${fallback.length}개): ${e.message}`);
+      } else {
+        result.products[key] = null;
+        lost.push(label);
+        console.error(`${label} 수집 실패 · 이어받을 직전 값도 없음: ${e.message}`);
+      }
     }
   }
+  if (carried.length) console.warn(`⚠️ 직전 값 유지: ${carried.join(", ")}`);
 
-  // 신규 상품 감지: 직전 latest.json과 비교
-  const latestPath = path.join(DATA_DIR, "latest.json");
+  // 전 카테고리 실패 = API 자체가 죽은 것. 이럴 땐 조용히 넘어가지 말고 소리 나게 실패시킨다.
+  // (직전 값을 이어받아 데이터는 지켜지지만, 원인을 모른 채 며칠씩 낡은 값이 나가는 걸 막는다.)
+  if (ok === 0) {
+    console.error(`전 카테고리(${TARGETS.length}개) 수집 실패 — 금감원 API 장애로 판단.`);
+    if (lost.length === TARGETS.length) {
+      console.error("이어받을 직전 값도 없어 latest.json을 쓰지 않고 중단합니다.");
+      process.exit(1);
+    }
+    console.error("직전 값을 유지한 채 중단합니다 — latest.json은 건드리지 않습니다.");
+    process.exit(1);
+  }
+
+  // 신규 상품 감지: 직전 latest.json(위에서 읽어 둔 prev)과 비교
   const newProducts = [];
-  if (fs.existsSync(latestPath)) {
-    const prev = JSON.parse(fs.readFileSync(latestPath, "utf8"));
+  if (prev) {
     for (const [cat, list] of Object.entries(result.products)) {
       if (!list) continue;
       const prevList = prev.products?.[cat];
       if (!prevList) continue; // 이전 수집이 실패한 카테고리는 비교 불가
+      // 직전 값을 그대로 이어받은 카테고리는 비교해 봐야 항상 0건이라 건너뛴다
+      if (list === prevList) continue;
       const prevKeys = new Set(prevList.map(productKey));
       for (const p of list) {
         if (!prevKeys.has(productKey(p))) newProducts.push(p);
