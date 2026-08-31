@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-30T22:52:52.486Z",
+  "fetchedAt": "2026-08-31T23:58:56.740Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -62,7 +62,7 @@
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20260708",
+      "disclosedAt": "20260831",
       "payout": "수시지급"
     },
     {
@@ -1209,6 +1209,15 @@
       "payout": "분기지급"
     },
     {
+      "bank": "한국투자",
+      "product": "한투 ACE 파킹통장",
+      "baseRate": 0.2,
+      "maxRate": 2.8,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260901",
+      "payout": "분기지급"
+    },
+    {
       "bank": "안국",
       "product": "보통예금",
       "baseRate": 0.2,
@@ -1395,15 +1404,6 @@
       "maxRate": 2.7,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260702",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "한국투자",
-      "product": "한투 ACE 파킹통장",
-      "baseRate": 0.2,
-      "maxRate": 3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260715",
       "payout": "분기지급"
     },
     {
