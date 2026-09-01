@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-31T23:58:56.740Z",
+  "fetchedAt": "2026-09-01T22:44:11.822Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -165,15 +165,6 @@
       "payout": "월지급"
     },
     {
-      "bank": "NH",
-      "product": "NH FIC-One 보통예금",
-      "baseRate": 0.2,
-      "maxRate": 2.8,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20251201",
-      "payout": "월지급"
-    },
-    {
       "bank": "하나",
       "product": "하이(High)하나 보통예금",
       "baseRate": 2,
@@ -279,6 +270,15 @@
       "maxRate": 3.3,
       "maxRateCondition": "300,000,000원 이하",
       "disclosedAt": "20260812",
+      "payout": "월지급"
+    },
+    {
+      "bank": "NH",
+      "product": "NH FIC-One 보통예금",
+      "baseRate": 0.2,
+      "maxRate": 3.3,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260901",
       "payout": "월지급"
     },
     {
@@ -867,7 +867,7 @@
       "payout": "분기지급"
     },
     {
-      "bank": "더블",
+      "bank": "라인",
       "product": "보통예금",
       "baseRate": 0.2,
       "maxRate": 0.2,

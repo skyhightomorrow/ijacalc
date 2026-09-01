@@ -1,4 +1,14 @@
 {
-  "detectedAt": "2026-08-31T23:58:56.740Z",
-  "products": []
+  "detectedAt": "2026-09-01T22:44:11.822Z",
+  "products": [
+    {
+      "bank": "라인",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20240619",
+      "payout": "분기지급"
+    }
+  ]
 }
