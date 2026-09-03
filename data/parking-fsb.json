@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T22:46:36.859Z",
+  "fetchedAt": "2026-09-03T22:44:20.551Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1263,6 +1263,33 @@
       "payout": "분기지급"
     },
     {
+      "bank": "참",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260903",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "기업자유예금",
+      "baseRate": 0.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "30,000,000,000원 이하",
+      "disclosedAt": "20260903",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "생계비계좌",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260903",
+      "payout": "분기지급"
+    },
+    {
       "bank": "예가람",
       "product": "The프리미엄 Biz통장",
       "baseRate": 0.2,
@@ -1422,33 +1449,6 @@
       "maxRate": 0.3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260804",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260824",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "기업자유예금",
-      "baseRate": 0.1,
-      "maxRate": 3.4,
-      "maxRateCondition": "30,000,000,000원 이하",
-      "disclosedAt": "20260824",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "생계비계좌",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260824",
       "payout": "분기지급"
     }
   ]
