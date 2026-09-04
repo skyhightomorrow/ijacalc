@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T22:44:20.551Z",
+  "fetchedAt": "2026-09-04T22:27:59.114Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -230,10 +230,10 @@
     {
       "bank": "다올",
       "product": "Fi 쌈짓돈Ⅲ 통장",
-      "baseRate": 1,
+      "baseRate": 1.5,
       "maxRate": 5,
       "maxRateCondition": "1,000,000원 이하",
-      "disclosedAt": "20260626",
+      "disclosedAt": "20260904",
       "payout": "월지급"
     },
     {
