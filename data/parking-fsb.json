@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-06T22:13:42.508Z",
+  "fetchedAt": "2026-09-07T22:57:41.032Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -57,15 +57,6 @@
       "payout": "수시지급"
     },
     {
-      "bank": "한화",
-      "product": "Mymo 파킹통장",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260831",
-      "payout": "수시지급"
-    },
-    {
       "bank": "고려",
       "product": "보고파플러스 파킹통장",
       "baseRate": 3.1,
@@ -90,6 +81,15 @@
       "maxRate": 2.91,
       "maxRateCondition": "200,000,000원 미만",
       "disclosedAt": "20260824",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "한화",
+      "product": "Mymo 파킹통장",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260907",
       "payout": "수시지급"
     },
     {
