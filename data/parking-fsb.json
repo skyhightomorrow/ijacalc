@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-07T22:57:41.032Z",
+  "fetchedAt": "2026-09-08T22:53:29.133Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -255,15 +255,6 @@
       "payout": "월지급"
     },
     {
-      "bank": "대신",
-      "product": "더드리고입출금통장",
-      "baseRate": 0.1,
-      "maxRate": 2.3,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20260804",
-      "payout": "월지급"
-    },
-    {
       "bank": "웰컴",
       "product": "웰컴 주거래통장",
       "baseRate": 0.8,
@@ -306,6 +297,15 @@
       "maxRate": 2.8,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260814",
+      "payout": "월지급"
+    },
+    {
+      "bank": "대신",
+      "product": "더드리고입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 2.85,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20260908",
       "payout": "월지급"
     },
     {
@@ -1236,24 +1236,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "조은",
-      "product": "보통예금",
-      "baseRate": 0.5,
-      "maxRate": 0.5,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260810",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "조은",
-      "product": "e-보통예금",
-      "baseRate": 1,
-      "maxRate": 1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260810",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "모임통장",
       "baseRate": 0.2,
@@ -1449,6 +1431,24 @@
       "maxRate": 0.3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260804",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260908",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "e-보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260908",
       "payout": "분기지급"
     }
   ]
