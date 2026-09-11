@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-10T22:43:04.991Z",
+  "fetchedAt": "2026-09-11T22:42:56.645Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -237,24 +237,6 @@
       "payout": "월지급"
     },
     {
-      "bank": "DB",
-      "product": "M-DreamBig 보통예금",
-      "baseRate": 0.5,
-      "maxRate": 3,
-      "maxRateCondition": "70,000,000원 이하",
-      "disclosedAt": "20260730",
-      "payout": "월지급"
-    },
-    {
-      "bank": "DB",
-      "product": "DreamBig 보통예금",
-      "baseRate": 0.5,
-      "maxRate": 3,
-      "maxRateCondition": "70,000,000원 이하",
-      "disclosedAt": "20260730",
-      "payout": "월지급"
-    },
-    {
       "bank": "웰컴",
       "product": "웰컴 주거래통장",
       "baseRate": 0.8,
@@ -283,11 +265,20 @@
     },
     {
       "bank": "신한",
+      "product": "참신한파킹통장",
+      "baseRate": 2.2,
+      "maxRate": 3.2,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20260911",
+      "payout": "월지급"
+    },
+    {
+      "bank": "신한",
       "product": "e-저축예금",
       "baseRate": 1.3,
       "maxRate": 1.3,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20260713",
+      "disclosedAt": "20260911",
       "payout": "월지급"
     },
     {
@@ -315,6 +306,24 @@
       "maxRate": 7.7,
       "maxRateCondition": "2,000,000원 이하",
       "disclosedAt": "20260807",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "M-DreamBig 보통예금",
+      "baseRate": 0.5,
+      "maxRate": 3.2,
+      "maxRateCondition": "70,000,000원 이하",
+      "disclosedAt": "20260911",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "DreamBig 보통예금",
+      "baseRate": 0.5,
+      "maxRate": 3.2,
+      "maxRateCondition": "70,000,000원 이하",
+      "disclosedAt": "20260911",
       "payout": "월지급"
     },
     {
