@@ -1,14 +1,4 @@
 {
-  "detectedAt": "2026-09-11T22:42:56.644Z",
-  "products": [
-    {
-      "bank": "신한",
-      "product": "참신한파킹통장",
-      "baseRate": 2.2,
-      "maxRate": 3.2,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20260911",
-      "payout": "월지급"
-    }
-  ]
+  "detectedAt": "2026-09-12T22:27:52.281Z",
+  "products": []
 }
