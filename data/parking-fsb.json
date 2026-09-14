@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-13T22:32:19.000Z",
+  "fetchedAt": "2026-09-14T23:17:40.696Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -57,6 +57,15 @@
       "payout": "수시지급"
     },
     {
+      "bank": "예가람",
+      "product": "The프리미엄 멤버십 파킹통장",
+      "baseRate": 2.9,
+      "maxRate": 2.91,
+      "maxRateCondition": "200,000,000원 미만",
+      "disclosedAt": "20260914",
+      "payout": "수시지급"
+    },
+    {
       "bank": "고려",
       "product": "보고파플러스 파킹통장",
       "baseRate": 3.1,
@@ -71,15 +80,6 @@
       "baseRate": 2.4,
       "maxRate": 2.9,
       "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260824",
-      "payout": "수시지급"
-    },
-    {
-      "bank": "예가람",
-      "product": "The프리미엄 멤버십 파킹통장",
-      "baseRate": 2.9,
-      "maxRate": 2.91,
-      "maxRateCondition": "200,000,000원 미만",
       "disclosedAt": "20260824",
       "payout": "수시지급"
     },
@@ -1246,38 +1246,20 @@
     },
     {
       "bank": "예가람",
+      "product": "The프리미엄 멤버십 파킹통장",
+      "baseRate": 2.9,
+      "maxRate": 2.91,
+      "maxRateCondition": "200,000,000원 미만",
+      "disclosedAt": "20260914",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
       "product": "모임통장",
       "baseRate": 0.2,
       "maxRate": 2.6,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260811",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260903",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "기업자유예금",
-      "baseRate": 0.1,
-      "maxRate": 3.4,
-      "maxRateCondition": "30,000,000,000원 이하",
-      "disclosedAt": "20260903",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "생계비계좌",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260903",
       "payout": "분기지급"
     },
     {
@@ -1304,15 +1286,6 @@
       "baseRate": 2.4,
       "maxRate": 2.9,
       "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260824",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "예가람",
-      "product": "The프리미엄 멤버십 파킹통장",
-      "baseRate": 2.9,
-      "maxRate": 2.91,
-      "maxRateCondition": "200,000,000원 미만",
       "disclosedAt": "20260824",
       "payout": "분기지급"
     },
@@ -1458,6 +1431,33 @@
       "maxRate": 1,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260908",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260914",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "기업자유예금",
+      "baseRate": 0.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "30,000,000,000원 이하",
+      "disclosedAt": "20260914",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "참",
+      "product": "생계비계좌",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20260914",
       "payout": "분기지급"
     }
   ]
