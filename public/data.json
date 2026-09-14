@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-09-13T22:32:19.047Z",
+  "builtAt": "2026-09-14T00:14:20.274Z",
   "finlifeFetchedAt": "2026-09-13T22:32:03.040Z",
   "finlifeDisclosureMonth": "202608",
   "parking": [
@@ -265,7 +265,7 @@
       "appIos": "1178872627",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-09-08",
+      "asOf": "2026-09-14",
       "needsVerify": false,
       "tiers": [
         {
@@ -322,8 +322,8 @@
     {
       "bank": "카카오뱅크",
       "product": "세이프박스",
-      "baseRate": 1.6,
-      "maxRate": 1.6,
+      "baseRate": 1.8,
+      "maxRate": 1.8,
       "maxRateCondition": "최대 1억원",
       "payout": "수시지급",
       "timing": "내일 앱에서 '이자 바로 받기'로 수령",
@@ -332,12 +332,12 @@
       "appIos": "1258016944",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-09-08",
+      "asOf": "2026-09-14",
       "needsVerify": false,
       "tiers": [
         {
           "upto": null,
-          "rate": 1.6
+          "rate": 1.8
         }
       ],
       "conditionFree": true,
@@ -345,7 +345,7 @@
       "tierSource": {
         "url": "https://www.kakaobank.com/products/safeboxes",
         "name": "카카오뱅크 공식 상품페이지",
-        "verified": "2026-07-28"
+        "verified": "2026-09-14"
       }
     },
     {
@@ -361,7 +361,7 @@
       "appIos": "839333328",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-09-08",
+      "asOf": "2026-09-14",
       "needsVerify": false,
       "tiers": [
         {
@@ -390,7 +390,7 @@
       "appIos": "839333328",
       "group": "인터넷은행",
       "instant": true,
-      "asOf": "2026-09-08",
+      "asOf": "2026-09-14",
       "needsVerify": false,
       "tiers": [
         {

@@ -1,6 +1,6 @@
 {
   "_comment": "저축은행중앙회 공시에 없는 은행권(인터넷은행 등) 파킹통장 수동 큐레이션. 금리는 asOf 기준이며 needsVerify=true 항목은 공식 페이지 재확인 필요.",
-  "asOf": "2026-09-08",
+  "asOf": "2026-09-14",
   "products": [
     {
       "bank": "토스뱅크",
@@ -33,8 +33,8 @@
     {
       "bank": "카카오뱅크",
       "product": "세이프박스",
-      "baseRate": 1.6,
-      "maxRate": 1.6,
+      "baseRate": 1.8,
+      "maxRate": 1.8,
       "maxRateCondition": "최대 1억원",
       "payout": "수시지급",
       "timing": "내일 앱에서 '이자 바로 받기'로 수령",

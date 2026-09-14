@@ -38,10 +38,10 @@
       "sourceName": "케이뱅크 공식"
     },
     "카카오뱅크|세이프박스": {
-      "tiers": [{ "upto": null, "rate": 1.6 }],
+      "tiers": [{ "upto": null, "rate": 1.8 }],
       "conditionFree": true,
       "conditions": "금액 구간별 차등 없이 전액 동일 금리입니다. 우대조건도 없습니다.",
-      "verified": "2026-07-28",
+      "verified": "2026-09-14",
       "sourceUrl": "https://www.kakaobank.com/products/safeboxes",
       "sourceName": "카카오뱅크 공식 상품페이지"
     },
