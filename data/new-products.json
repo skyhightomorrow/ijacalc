@@ -1,4 +1,87 @@
 {
-  "detectedAt": "2026-09-15T23:01:20.835Z",
-  "products": []
+  "detectedAt": "2026-09-16T23:07:38.416Z",
+  "products": [
+    {
+      "dcls_month": "202608",
+      "fin_co_no": "0010460",
+      "fin_prdt_cd": "240023",
+      "kor_co_nm": "평택저축은행",
+      "fin_prdt_nm": "+정기예금",
+      "join_way": "스마트폰",
+      "mtrt_int": "보통예금이율",
+      "spcl_cnd": "없음",
+      "join_deny": "1",
+      "join_member": "제한없음",
+      "etc_note": "보호금융상품 1인당 최고 1억원,",
+      "max_limit": 5000000000,
+      "dcls_strt_day": "20260915",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202609151906",
+      "options": [
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010460",
+          "fin_prdt_cd": "240023",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.97,
+          "intr_rate2": 3.97
+        },
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010460",
+          "fin_prdt_cd": "240023",
+          "intr_rate_type": "M",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 3.97,
+          "intr_rate2": 3.97
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "저축은행"
+    },
+    {
+      "dcls_month": "202608",
+      "fin_co_no": "0010460",
+      "fin_prdt_cd": "240025",
+      "kor_co_nm": "평택저축은행",
+      "fin_prdt_nm": "+회전정기예금",
+      "join_way": "스마트폰",
+      "mtrt_int": "보통예금이율",
+      "spcl_cnd": "없음",
+      "join_deny": "2",
+      "join_member": "제한없음",
+      "etc_note": "보호금융상품 1인당 최고 2억원,",
+      "max_limit": 5000000000,
+      "dcls_strt_day": "20260915",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202609151906",
+      "options": [
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010460",
+          "fin_prdt_cd": "240025",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.97,
+          "intr_rate2": 3.97
+        },
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010460",
+          "fin_prdt_cd": "240025",
+          "intr_rate_type": "M",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 3.97,
+          "intr_rate2": 3.97
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "저축은행"
+    }
+  ]
 }
