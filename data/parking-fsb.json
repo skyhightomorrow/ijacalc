@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-16T23:07:52.878Z",
+  "fetchedAt": "2026-09-17T22:58:05.669Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1390,20 +1390,20 @@
     },
     {
       "bank": "IBK",
-      "product": "IBKSB e-파킹통장",
-      "baseRate": 0.1,
-      "maxRate": 3.2,
-      "maxRateCondition": "300,000,000원 이하",
-      "disclosedAt": "20260910",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "IBK",
       "product": "IBK모임통장",
       "baseRate": 0.1,
       "maxRate": 3.2,
       "maxRateCondition": "300,000,000원 이하",
-      "disclosedAt": "20260910",
+      "disclosedAt": "20260917",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "IBK",
+      "product": "IBKSB e-파킹통장 프로",
+      "baseRate": 0.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20260917",
       "payout": "분기지급"
     },
     {

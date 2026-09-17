@@ -1,4 +1,14 @@
 {
-  "detectedAt": "2026-09-16T23:07:52.877Z",
-  "products": []
+  "detectedAt": "2026-09-17T22:58:05.669Z",
+  "products": [
+    {
+      "bank": "IBK",
+      "product": "IBKSB e-파킹통장 프로",
+      "baseRate": 0.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20260917",
+      "payout": "분기지급"
+    }
+  ]
 }
