@@ -1,4 +1,76 @@
 {
-  "detectedAt": "2026-09-17T22:57:50.463Z",
-  "products": []
+  "detectedAt": "2026-09-18T22:43:30.088Z",
+  "products": [
+    {
+      "dcls_month": "202608",
+      "fin_co_no": "0010022",
+      "fin_prdt_cd": "10-01-20-024-0068-0000",
+      "kor_co_nm": "전북은행",
+      "fin_prdt_nm": "JB 다이렉트(자유만기) 예금",
+      "join_way": "스마트폰",
+      "mtrt_int": "만기후 1개월 이하 : 만기일 현재 계약기간별 정기예금 실행이율 1/2\n만기후 1개월 초과 : 연 0.01%",
+      "spcl_cnd": "우대조건\n없음",
+      "join_deny": "1",
+      "join_member": "실명의 개인(임의단체 제외",
+      "etc_note": "가입금액 1계좌당 1백만원이상\n인터넷/스마트폰뱅킹 가입상품",
+      "max_limit": null,
+      "dcls_strt_day": "20260918",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202609181337",
+      "options": [
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010022",
+          "fin_prdt_cd": "10-01-20-024-0068-0000",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "1",
+          "intr_rate": 2.3,
+          "intr_rate2": 2.3
+        },
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010022",
+          "fin_prdt_cd": "10-01-20-024-0068-0000",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "3",
+          "intr_rate": 2.5,
+          "intr_rate2": 2.5
+        },
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010022",
+          "fin_prdt_cd": "10-01-20-024-0068-0000",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.5,
+          "intr_rate2": 3.5
+        },
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010022",
+          "fin_prdt_cd": "10-01-20-024-0068-0000",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.8,
+          "intr_rate2": 3.8
+        },
+        {
+          "dcls_month": "202608",
+          "fin_co_no": "0010022",
+          "fin_prdt_cd": "10-01-20-024-0068-0000",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.82,
+          "intr_rate2": 3.82
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "은행"
+    }
+  ]
 }
