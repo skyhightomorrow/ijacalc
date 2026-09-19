@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T22:43:30.088Z",
+  "fetchedAt": "2026-09-19T22:22:49.286Z",
   "products": {
     "deposit_020000": [
       {
@@ -64672,18 +64672,6 @@
             "dcls_month": "202608",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10561",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.79,
-            "lend_rate_max": 4.49,
-            "lend_rate_avg": 4.18
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010001",
-            "fin_prdt_cd": "10561",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
@@ -64696,18 +64684,6 @@
             "dcls_month": "202608",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10561",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.13,
-            "lend_rate_max": 5.83,
-            "lend_rate_avg": 5.3
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010001",
-            "fin_prdt_cd": "10561",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "F",
@@ -64715,6 +64691,30 @@
             "lend_rate_min": 5.13,
             "lend_rate_max": 5.83,
             "lend_rate_avg": null
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010001",
+            "fin_prdt_cd": "10561",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.79,
+            "lend_rate_max": 4.49,
+            "lend_rate_avg": 4.18
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010001",
+            "fin_prdt_cd": "10561",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.13,
+            "lend_rate_max": 5.83,
+            "lend_rate_avg": 5.3
           }
         ],
         "_kind": "rentLoan",
@@ -64739,13 +64739,13 @@
             "dcls_month": "202608",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10562",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.14,
-            "lend_rate_max": 5.84,
-            "lend_rate_avg": 5.66
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.75,
+            "lend_rate_max": 4.45,
+            "lend_rate_avg": 4.14
           },
           {
             "dcls_month": "202608",
@@ -64775,13 +64775,13 @@
             "dcls_month": "202608",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10562",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.75,
-            "lend_rate_max": 4.45,
-            "lend_rate_avg": 4.14
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.14,
+            "lend_rate_max": 5.84,
+            "lend_rate_avg": 5.66
           }
         ],
         "_kind": "rentLoan",
@@ -64963,23 +64963,11 @@
             "fin_prdt_cd": "1029",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.12,
-            "lend_rate_max": 5.92,
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.22,
+            "lend_rate_max": 5.02,
             "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "1029",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.12,
-            "lend_rate_max": 5.92,
-            "lend_rate_avg": 5.55
           },
           {
             "dcls_month": "202608",
@@ -64987,10 +64975,10 @@
             "fin_prdt_cd": "1029",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.22,
-            "lend_rate_max": 5.02,
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.12,
+            "lend_rate_max": 5.92,
             "lend_rate_avg": null
           },
           {
@@ -65004,6 +64992,18 @@
             "lend_rate_min": 4.22,
             "lend_rate_max": 5.02,
             "lend_rate_avg": 4.28
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "1029",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.12,
+            "lend_rate_max": 5.92,
+            "lend_rate_avg": 5.55
           }
         ],
         "_kind": "rentLoan",
@@ -65040,6 +65040,18 @@
             "dcls_month": "202608",
             "fin_co_no": "0010017",
             "fin_prdt_cd": "126",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.22,
+            "lend_rate_max": 5.02,
+            "lend_rate_avg": 4.32
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "126",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "F",
@@ -65059,18 +65071,6 @@
             "lend_rate_min": 4.22,
             "lend_rate_max": 5.02,
             "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "126",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.22,
-            "lend_rate_max": 5.02,
-            "lend_rate_avg": 4.32
           }
         ],
         "_kind": "rentLoan",
@@ -65095,36 +65095,24 @@
             "dcls_month": "202608",
             "fin_co_no": "0010017",
             "fin_prdt_cd": "486",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.22,
-            "lend_rate_max": 6.22,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "486",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.22,
-            "lend_rate_max": 6.22,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "486",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
             "lend_rate_type_nm": "변동금리",
             "lend_rate_min": 4.02,
             "lend_rate_max": 5.02,
+            "lend_rate_avg": null
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "486",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.22,
+            "lend_rate_max": 6.22,
             "lend_rate_avg": null
           },
           {
@@ -65138,6 +65126,18 @@
             "lend_rate_min": 4.02,
             "lend_rate_max": 5.02,
             "lend_rate_avg": 4.22
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "486",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.22,
+            "lend_rate_max": 6.22,
+            "lend_rate_avg": null
           }
         ],
         "_kind": "rentLoan",
@@ -65441,13 +65441,13 @@
             "dcls_month": "202608",
             "fin_co_no": "0010026",
             "fin_prdt_cd": "212020007",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
             "lend_rate_type_nm": "변동금리",
             "lend_rate_min": 4.75,
             "lend_rate_max": 4.75,
-            "lend_rate_avg": 4.09
+            "lend_rate_avg": null
           },
           {
             "dcls_month": "202608",
@@ -65465,13 +65465,13 @@
             "dcls_month": "202608",
             "fin_co_no": "0010026",
             "fin_prdt_cd": "212020007",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "C",
             "lend_rate_type_nm": "변동금리",
             "lend_rate_min": 4.75,
             "lend_rate_max": 4.75,
-            "lend_rate_avg": null
+            "lend_rate_avg": 4.09
           },
           {
             "dcls_month": "202608",
@@ -65508,18 +65508,6 @@
             "dcls_month": "202608",
             "fin_co_no": "0010026",
             "fin_prdt_cd": "212020111",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.9,
-            "lend_rate_max": 6.1,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010026",
-            "fin_prdt_cd": "212020111",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "F",
@@ -65532,18 +65520,6 @@
             "dcls_month": "202608",
             "fin_co_no": "0010026",
             "fin_prdt_cd": "212020111",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.85,
-            "lend_rate_max": 4.85,
-            "lend_rate_avg": 4.05
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010026",
-            "fin_prdt_cd": "212020111",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "C",
@@ -65551,6 +65527,30 @@
             "lend_rate_min": 4.9,
             "lend_rate_max": 4.9,
             "lend_rate_avg": 4.04
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010026",
+            "fin_prdt_cd": "212020111",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.9,
+            "lend_rate_max": 6.1,
+            "lend_rate_avg": null
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010026",
+            "fin_prdt_cd": "212020111",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.85,
+            "lend_rate_max": 4.85,
+            "lend_rate_avg": 4.05
           }
         ],
         "_kind": "rentLoan",
@@ -65577,11 +65577,11 @@
             "fin_prdt_cd": "212020112",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.79,
-            "lend_rate_max": 5.99,
-            "lend_rate_avg": 5.3
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.74,
+            "lend_rate_max": 4.74,
+            "lend_rate_avg": 3.87
           },
           {
             "dcls_month": "202608",
@@ -65589,11 +65589,11 @@
             "fin_prdt_cd": "212020112",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.74,
-            "lend_rate_max": 4.74,
-            "lend_rate_avg": 3.87
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.79,
+            "lend_rate_max": 5.99,
+            "lend_rate_avg": 5.3
           }
         ],
         "_kind": "rentLoan",
@@ -65618,18 +65618,6 @@
             "dcls_month": "202608",
             "fin_co_no": "0010927",
             "fin_prdt_cd": "KB200331500005",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.21,
-            "lend_rate_max": 5.61,
-            "lend_rate_avg": 4.18
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0010927",
-            "fin_prdt_cd": "KB200331500005",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
@@ -65637,6 +65625,18 @@
             "lend_rate_min": 4.21,
             "lend_rate_max": 5.61,
             "lend_rate_avg": 4.17
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0010927",
+            "fin_prdt_cd": "KB200331500005",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.21,
+            "lend_rate_max": 5.61,
+            "lend_rate_avg": 4.18
           }
         ],
         "_kind": "rentLoan",
@@ -65704,8 +65704,8 @@
             "dcls_month": "202608",
             "fin_co_no": "0011625",
             "fin_prdt_cd": "WR0001A",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 4.46,
@@ -65718,6 +65718,18 @@
             "fin_prdt_cd": "WR0001A",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.23,
+            "lend_rate_max": 5.43,
+            "lend_rate_avg": 4.64
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0011625",
+            "fin_prdt_cd": "WR0001A",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 4.46,
@@ -65734,18 +65746,6 @@
             "lend_rate_type_nm": "변동금리",
             "lend_rate_min": 4.19,
             "lend_rate_max": 5.39,
-            "lend_rate_avg": 4.64
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0011625",
-            "fin_prdt_cd": "WR0001A",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.23,
-            "lend_rate_max": 5.43,
             "lend_rate_avg": 4.64
           }
         ],
@@ -65773,6 +65773,18 @@
             "fin_prdt_cd": "WR0002B",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.29,
+            "lend_rate_max": 5.19,
+            "lend_rate_avg": 4.73
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0011625",
+            "fin_prdt_cd": "WR0002B",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 4.46,
@@ -65785,23 +65797,11 @@
             "fin_prdt_cd": "WR0002B",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 4.47,
-            "lend_rate_max": 5.37,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0011625",
-            "fin_prdt_cd": "WR0002B",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
             "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.29,
-            "lend_rate_max": 5.19,
-            "lend_rate_avg": 4.73
+            "lend_rate_min": 4.33,
+            "lend_rate_max": 5.23,
+            "lend_rate_avg": 4.43
           },
           {
             "dcls_month": "202608",
@@ -65809,11 +65809,11 @@
             "fin_prdt_cd": "WR0002B",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.33,
-            "lend_rate_max": 5.23,
-            "lend_rate_avg": 4.43
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 4.47,
+            "lend_rate_max": 5.37,
+            "lend_rate_avg": null
           }
         ],
         "_kind": "rentLoan",
@@ -65840,11 +65840,11 @@
             "fin_prdt_cd": "2001105030002",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 3.89,
-            "lend_rate_max": 6.49,
-            "lend_rate_avg": 5.36
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.3,
+            "lend_rate_max": 6,
+            "lend_rate_avg": 4.24
           },
           {
             "dcls_month": "202608",
@@ -65852,11 +65852,11 @@
             "fin_prdt_cd": "2001105030002",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.3,
-            "lend_rate_max": 6,
-            "lend_rate_avg": 4.24
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 3.89,
+            "lend_rate_max": 6.49,
+            "lend_rate_avg": 5.36
           }
         ],
         "_kind": "rentLoan",
@@ -65883,6 +65883,18 @@
             "fin_prdt_cd": "2001108330001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 3.89,
+            "lend_rate_max": 6.49,
+            "lend_rate_avg": 4.75
+          },
+          {
+            "dcls_month": "202608",
+            "fin_co_no": "0013175",
+            "fin_prdt_cd": "2001108330001",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "C",
             "lend_rate_type_nm": "변동금리",
             "lend_rate_min": 3.3,
@@ -65900,18 +65912,6 @@
             "lend_rate_min": 3.89,
             "lend_rate_max": 6.49,
             "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202608",
-            "fin_co_no": "0013175",
-            "fin_prdt_cd": "2001108330001",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 3.89,
-            "lend_rate_max": 6.49,
-            "lend_rate_avg": 4.75
           },
           {
             "dcls_month": "202608",
@@ -65950,11 +65950,11 @@
             "fin_prdt_cd": "2001109030001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 3.91,
-            "lend_rate_max": 6.51,
-            "lend_rate_avg": 5.48
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.31,
+            "lend_rate_max": 6.01,
+            "lend_rate_avg": 4.2
           },
           {
             "dcls_month": "202608",
@@ -65962,11 +65962,11 @@
             "fin_prdt_cd": "2001109030001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.31,
-            "lend_rate_max": 6.01,
-            "lend_rate_avg": 4.2
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 3.91,
+            "lend_rate_max": 6.51,
+            "lend_rate_avg": 5.48
           }
         ],
         "_kind": "rentLoan",
@@ -66339,11 +66339,11 @@
             "fin_prdt_cd": "03027",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.05,
-            "lend_rate_max": 5.25,
-            "lend_rate_avg": 4.78
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.27,
+            "lend_rate_max": 4.47,
+            "lend_rate_avg": 4.04
           },
           {
             "dcls_month": "202608",
@@ -66351,11 +66351,11 @@
             "fin_prdt_cd": "03027",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.27,
-            "lend_rate_max": 4.47,
-            "lend_rate_avg": 4.04
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.05,
+            "lend_rate_max": 5.25,
+            "lend_rate_avg": 4.78
           }
         ],
         "_kind": "rentLoan",
