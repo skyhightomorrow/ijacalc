@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-21T23:27:39.859Z",
+  "fetchedAt": "2026-09-22T23:07:51.950Z",
   "products": {
     "deposit_020000": [
       {
@@ -345,14 +345,14 @@
         "fin_prdt_nm": "더(The) 특판 정기예금",
         "join_way": "인터넷,스마트폰",
         "mtrt_int": "- 만기후1년내: 가입기간별 일반정기예금이율 월이자지급식x 50%,\n- 만기후1년초과:가입기간별 일반정기예금이율 월이자지급식 x 20%",
-        "spcl_cnd": "* 우대이율 (최대 1.57%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 신규고객 또는 정기예금 중도해지고객 우대이율 0.97%p\n다. 특판우대이율 : 0.50%p(24개월 0.85%p)",
+        "spcl_cnd": "\"* 우대이율 (최대 1.82%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 신규고객 또는 정기예금 중도해지고객 우대이율 1.12%p\n다. 특판우대이율 : 0.60%p(24개월 0.95%p)\"",
         "join_deny": "1",
         "join_member": "실명의 개인",
         "etc_note": "1. 가입금액 : 1백만원 이상 제한없음 (원단위)\n2. 가입기간 : 1개월, 3개월, 6개월, 1년, 2년, 3년\n3. 이자지급방식 : 만기일시지급식",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211223",
+        "fin_co_subm_day": "202609220958",
         "options": [
           {
             "dcls_month": "202609",
@@ -362,7 +362,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "1",
             "intr_rate": 1.3,
-            "intr_rate2": 3.02
+            "intr_rate2": 3.12
           },
           {
             "dcls_month": "202609",
@@ -372,7 +372,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "3",
             "intr_rate": 1.55,
-            "intr_rate2": 3.27
+            "intr_rate2": 3.37
           },
           {
             "dcls_month": "202609",
@@ -382,7 +382,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
             "intr_rate": 1.7,
-            "intr_rate2": 3.42
+            "intr_rate2": 3.52
           },
           {
             "dcls_month": "202609",
@@ -392,7 +392,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
             "intr_rate": 2.1,
-            "intr_rate2": 3.82
+            "intr_rate2": 3.92
           },
           {
             "dcls_month": "202609",
@@ -402,7 +402,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
             "intr_rate": 1.75,
-            "intr_rate2": 3.82
+            "intr_rate2": 3.92
           },
           {
             "dcls_month": "202609",
@@ -412,7 +412,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
             "intr_rate": 1.15,
-            "intr_rate2": 2.87
+            "intr_rate2": 2.97
           }
         ],
         "_kind": "deposit",
@@ -426,14 +426,14 @@
         "fin_prdt_nm": "더(The) 레벨업 정기예금",
         "join_way": "스마트폰",
         "mtrt_int": "- 만기후1년내: 가입기간별 일반정기예금이율 월이자지급식 x 50%,\n- 만기후1년초과:가입기간별 일반정기예금이율월 이자지급식 x 20%",
-        "spcl_cnd": "*우대이율(최대 0.90%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 비대면 정기예금 재예치 우대이율  : 0.80%",
+        "spcl_cnd": "*우대이율(최대 1.22%p)\n가. 모바일뱅킹 금융정보 및 혜택알림 동의 우대이율 : 0.10%p\n나. 비대면 정기예금 재예치 우대이율  : 1.12%",
         "join_deny": "1",
         "join_member": "실명의 개인",
         "etc_note": "1. 가입금액 : 1백만원 이상 제한없음 (원단위)\n2. 가입기간 : 6개월, 1년\n3. 이자지급방식 : 만기일시지급식",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211223",
+        "fin_co_subm_day": "202609221002",
         "options": [
           {
             "dcls_month": "202609",
@@ -443,7 +443,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
             "intr_rate": 2.5,
-            "intr_rate2": 3.4
+            "intr_rate2": 3.72
           },
           {
             "dcls_month": "202609",
@@ -453,7 +453,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
             "intr_rate": 2.65,
-            "intr_rate2": 3.55
+            "intr_rate2": 3.87
           }
         ],
         "_kind": "deposit",
@@ -474,7 +474,7 @@
         "max_limit": 50000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211546",
+        "fin_co_subm_day": "202609220937",
         "options": [
           {
             "dcls_month": "202609",
@@ -483,6 +483,16 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
+            "intr_rate": 3.65,
+            "intr_rate2": 3.85
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010019",
+            "fin_prdt_cd": "TD11300027000",
+            "intr_rate_type": "M",
+            "intr_rate_type_nm": "복리",
+            "save_trm": "24",
             "intr_rate": 3.55,
             "intr_rate2": 3.75
           },
@@ -492,19 +502,9 @@
             "fin_prdt_cd": "TD11300027000",
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
-            "save_trm": "24",
-            "intr_rate": 3.38,
-            "intr_rate2": 3.58
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010019",
-            "fin_prdt_cd": "TD11300027000",
-            "intr_rate_type": "M",
-            "intr_rate_type_nm": "복리",
             "save_trm": "36",
-            "intr_rate": 3.29,
-            "intr_rate2": 3.49
+            "intr_rate": 3.43,
+            "intr_rate2": 3.63
           }
         ],
         "_kind": "deposit",
@@ -525,7 +525,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211546",
+        "fin_co_subm_day": "202609220939",
         "options": [
           {
             "dcls_month": "202609",
@@ -534,8 +534,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "1",
-            "intr_rate": 2.23,
-            "intr_rate2": 2.33
+            "intr_rate": 2.64,
+            "intr_rate2": 2.74
           },
           {
             "dcls_month": "202609",
@@ -544,8 +544,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "3",
-            "intr_rate": 2.62,
-            "intr_rate2": 2.72
+            "intr_rate": 2.92,
+            "intr_rate2": 3.02
           },
           {
             "dcls_month": "202609",
@@ -554,8 +554,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 2.87,
-            "intr_rate2": 2.97
+            "intr_rate": 3.23,
+            "intr_rate2": 3.33
           },
           {
             "dcls_month": "202609",
@@ -564,6 +564,16 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
+            "intr_rate": 3.55,
+            "intr_rate2": 3.75
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010019",
+            "fin_prdt_cd": "TD11300031000",
+            "intr_rate_type": "S",
+            "intr_rate_type_nm": "단리",
+            "save_trm": "24",
             "intr_rate": 3.45,
             "intr_rate2": 3.65
           },
@@ -573,19 +583,9 @@
             "fin_prdt_cd": "TD11300031000",
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
-            "save_trm": "24",
-            "intr_rate": 3.28,
-            "intr_rate2": 3.48
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010019",
-            "fin_prdt_cd": "TD11300031000",
-            "intr_rate_type": "S",
-            "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 3.19,
-            "intr_rate2": 3.39
+            "intr_rate": 3.33,
+            "intr_rate2": 3.53
           }
         ],
         "_kind": "deposit",
@@ -606,7 +606,7 @@
         "max_limit": 100000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211546",
+        "fin_co_subm_day": "202609220940",
         "options": [
           {
             "dcls_month": "202609",
@@ -615,8 +615,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.35,
-            "intr_rate2": 3.85
+            "intr_rate": 3.45,
+            "intr_rate2": 3.95
           }
         ],
         "_kind": "deposit",
@@ -637,7 +637,7 @@
         "max_limit": 1000000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211546",
+        "fin_co_subm_day": "202609220935",
         "options": [
           {
             "dcls_month": "202609",
@@ -1337,9 +1337,9 @@
         "join_member": "실명의 개인\n(개인사업자 제외)",
         "etc_note": "계좌 수 제한 없으며, 최소 1백만원 이상 납입한도 제한 없음",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609210937",
+        "fin_co_subm_day": "202609220905",
         "options": [
           {
             "dcls_month": "202609",
@@ -1348,8 +1348,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.3,
-            "intr_rate2": 3.3
+            "intr_rate": 3.34,
+            "intr_rate2": 3.34
           },
           {
             "dcls_month": "202609",
@@ -1358,8 +1358,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.52,
+            "intr_rate2": 3.52
           },
           {
             "dcls_month": "202609",
@@ -1368,8 +1368,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
-            "intr_rate": 3.55,
-            "intr_rate2": 3.55
+            "intr_rate": 3.59,
+            "intr_rate2": 3.59
           },
           {
             "dcls_month": "202609",
@@ -1378,8 +1378,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 3.54,
-            "intr_rate2": 3.54
+            "intr_rate": 3.56,
+            "intr_rate2": 3.56
           }
         ],
         "_kind": "deposit",
@@ -1398,9 +1398,9 @@
         "join_member": "실명의 개인\n(개인사업자 제외)",
         "etc_note": "계좌 수 제한 없으며, 최소 1백만원 이상 통합한도 3억원 이내 가입 가능",
         "max_limit": 300000000,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609210937",
+        "fin_co_subm_day": "202609220906",
         "options": [
           {
             "dcls_month": "202609",
@@ -1409,8 +1409,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "1",
-            "intr_rate": 2.76,
-            "intr_rate2": 2.76
+            "intr_rate": 2.77,
+            "intr_rate2": 2.77
           },
           {
             "dcls_month": "202609",
@@ -1419,8 +1419,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "3",
-            "intr_rate": 3.04,
-            "intr_rate2": 3.04
+            "intr_rate": 3.07,
+            "intr_rate2": 3.07
           },
           {
             "dcls_month": "202609",
@@ -1429,8 +1429,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.39,
-            "intr_rate2": 3.39
+            "intr_rate": 3.43,
+            "intr_rate2": 3.43
           },
           {
             "dcls_month": "202609",
@@ -1439,8 +1439,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.65,
-            "intr_rate2": 3.65
+            "intr_rate": 3.67,
+            "intr_rate2": 3.67
           }
         ],
         "_kind": "deposit",
@@ -1987,9 +1987,9 @@
         "join_member": "실명의 개인 또는 개인사업자",
         "etc_note": "1. 가입금액: 1백만원이상\n2. 1인 최대가입한도 : 제한 없음",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211606",
+        "fin_co_subm_day": "202609220852",
         "options": [
           {
             "dcls_month": "202609",
@@ -2019,7 +2019,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
             "intr_rate": 2.25,
-            "intr_rate2": 3.2
+            "intr_rate2": 3.3
           },
           {
             "dcls_month": "202609",
@@ -2029,7 +2029,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
             "intr_rate": 2.3,
-            "intr_rate2": 3.3
+            "intr_rate2": 3.4
           },
           {
             "dcls_month": "202609",
@@ -2039,7 +2039,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
             "intr_rate": 2.3,
-            "intr_rate2": 2.7
+            "intr_rate2": 3
           },
           {
             "dcls_month": "202609",
@@ -2049,7 +2049,7 @@
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
             "intr_rate": 2.3,
-            "intr_rate2": 2.6
+            "intr_rate2": 2.7
           }
         ],
         "_kind": "deposit",
@@ -9744,9 +9744,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220831",
         "options": [
           {
             "dcls_month": "202609",
@@ -9785,8 +9785,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.9,
+            "intr_rate2": 3.9
           },
           {
             "dcls_month": "202609",
@@ -9835,8 +9835,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.9,
+            "intr_rate2": 3.9
           },
           {
             "dcls_month": "202609",
@@ -9865,9 +9865,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220831",
         "options": [
           {
             "dcls_month": "202609",
@@ -9906,8 +9906,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.3,
-            "intr_rate2": 3.3
+            "intr_rate": 3.8,
+            "intr_rate2": 3.8
           },
           {
             "dcls_month": "202609",
@@ -9946,8 +9946,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.3,
-            "intr_rate2": 3.3
+            "intr_rate": 3.8,
+            "intr_rate2": 3.8
           }
         ],
         "_kind": "deposit",
@@ -10573,7 +10573,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210828",
         "options": [
           {
             "dcls_month": "202609",
@@ -10692,9 +10692,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220830",
         "options": [
           {
             "dcls_month": "202609",
@@ -10733,8 +10733,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 4.04,
-            "intr_rate2": 4.04
+            "intr_rate": 3.5,
+            "intr_rate2": 3.5
           },
           {
             "dcls_month": "202609",
@@ -10783,8 +10783,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 4.11,
-            "intr_rate2": 4.11
+            "intr_rate": 3.55,
+            "intr_rate2": 3.55
           },
           {
             "dcls_month": "202609",
@@ -25110,7 +25110,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609211734",
         "options": [
           {
             "dcls_month": "202609",
@@ -25149,8 +25149,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 4.01,
-            "intr_rate2": 4.01
+            "intr_rate": 4.06,
+            "intr_rate2": 4.06
           },
           {
             "dcls_month": "202609",
@@ -25209,8 +25209,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 4.01,
-            "intr_rate2": 4.01
+            "intr_rate": 4.06,
+            "intr_rate2": 4.06
           },
           {
             "dcls_month": "202609",
@@ -27897,7 +27897,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28018,7 +28018,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28139,7 +28139,7 @@
         "max_limit": 100000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28260,7 +28260,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28301,7 +28301,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28342,7 +28342,7 @@
         "max_limit": 100000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28383,7 +28383,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28424,7 +28424,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -28465,7 +28465,7 @@
         "max_limit": 100000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -31393,9 +31393,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 1~36개월\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220721",
         "options": [
           {
             "dcls_month": "202609",
@@ -31434,8 +31434,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.9,
+            "intr_rate2": 3.9
           },
           {
             "dcls_month": "202609",
@@ -31494,8 +31494,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.9,
+            "intr_rate2": 3.9
           },
           {
             "dcls_month": "202609",
@@ -31534,9 +31534,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 1~36개월\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220721",
         "options": [
           {
             "dcls_month": "202609",
@@ -31575,8 +31575,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.9,
+            "intr_rate2": 3.9
           },
           {
             "dcls_month": "202609",
@@ -31635,8 +31635,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.5,
-            "intr_rate2": 3.5
+            "intr_rate": 3.9,
+            "intr_rate2": 3.9
           },
           {
             "dcls_month": "202609",
@@ -31675,9 +31675,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 매 회전주기 기준 정기예금 12개월 고시금리 +0.1%p 변동\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220721",
         "options": [
           {
             "dcls_month": "202609",
@@ -31686,8 +31686,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202609",
@@ -31696,8 +31696,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -31716,9 +31716,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 10만원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 매 회전주기 기준 e-정기예금 12개월 고시금리 +0.1%p 변동\n* 최소 가입금액 미만으로는 분할해지 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220721",
         "options": [
           {
             "dcls_month": "202609",
@@ -31727,8 +31727,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202609",
@@ -31737,8 +31737,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -31839,9 +31839,9 @@
         "join_member": "제한없음",
         "etc_note": "* 창구 전용 상품\n* 가입금액: 1억원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 최소 가입금액 미만으로는 분할해지 불가\n* 비과세종합저축 가입 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220721",
         "options": [
           {
             "dcls_month": "202609",
@@ -31850,8 +31850,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202609",
@@ -31860,8 +31860,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -31880,9 +31880,9 @@
         "join_member": "제한없음",
         "etc_note": "* 비대면 전용 상품\n* 가입금액: 1억원 이상\n* 계약기간: 36개월(12개월 회전주기 변동금리 상품)\n* 최소 가입금액 미만으로는 분할해지 불가\n* 비과세종합저축 가입 불가",
         "max_limit": null,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609220721",
         "options": [
           {
             "dcls_month": "202609",
@@ -31891,8 +31891,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           },
           {
             "dcls_month": "202609",
@@ -31901,8 +31901,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 4,
+            "intr_rate2": 4
           }
         ],
         "_kind": "deposit",
@@ -37956,7 +37956,7 @@
         "max_limit": 10000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211454",
+        "fin_co_subm_day": "202609221000",
         "options": [
           {
             "dcls_month": "202609",
@@ -39061,9 +39061,9 @@
         "join_member": "개인",
         "etc_note": "가입기간 1개월 이상 6개월 이하(일 단위)\n\n초입금 및 매일 1천원이상  5만원이내(천원 단위)",
         "max_limit": 1550000,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211141",
+        "fin_co_subm_day": "202609221100",
         "options": [
           {
             "dcls_month": "202609",
@@ -39118,9 +39118,9 @@
         "join_member": "만19세~만34세 개인 및 개인사업자",
         "etc_note": "초입금 및 매회 1만원 이상, 월 50만원 이내 자유적립\n\n급여이체 실적과 개인사업자 계좌 실적 우대금리는 중복 적용 불가\n\n * 급여입금실적 인정기준\n  - 가입기간 12개월 이하 : 3개월 이상 급여이체\n  - 가입기간 24개월 이하 : 12개월 이상 급여이체",
         "max_limit": 500000,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211141",
+        "fin_co_subm_day": "202609221100",
         "options": [
           {
             "dcls_month": "202609",
@@ -39175,9 +39175,9 @@
         "join_member": "개인",
         "etc_note": "초입금5만원 이상 및 매회 1만원 이상, 매월50만원이내\n(단, 만기일 전 3개월 이내에는 이전 적립금 합계액을 초과하여 입금불가)\n\n※자세한 사항은 상품설명서 참조",
         "max_limit": 500000,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211141",
+        "fin_co_subm_day": "202609221100",
         "options": [
           {
             "dcls_month": "202609",
@@ -39227,14 +39227,14 @@
         "fin_prdt_nm": "NH고향사랑기부적금",
         "join_way": "영업점,인터넷,스마트폰",
         "mtrt_int": "만기후 1년 이내 : 만기시점 계약기간별 기본금리의 1/2\n만기후 1년 초과 : 보통예금 금리",
-        "spcl_cnd": "1. 고향사랑기부금 납부고객 우대 : 0.5%p\n\n2-1. 만 65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.3%p\n\n3. NH채움카드 또는 [zgm.고향으로 카드] 이용실적 우대 : 0.1%p\n\n4. 고향사랑특별금리 : 0.1%p(금리시장상황에 따라 변동 가능)\n - 고향사랑특별금리는 상품 가입고객 모두에게 적용",
+        "spcl_cnd": "1. 고향사랑기부금을 건당 5만원이상 납부한 가입자 우대 : 0.5%p\n\n2-1. 만 65세 이상 고령자 우대 : 0.1%p\n2-2. 만 19~34세 MZ고객 우대 : 0.3%p",
         "join_deny": "1",
         "join_member": "개인",
         "etc_note": "1.초입금1만원 이상 및 매회 1천원 이상, 매월50만원이내\n\n2. 고향사랑기부금 우대금리는 농협은행/농축협 영업점 또는 고향사랑e음 홈페이지를 통한 고향사랑기부금 납부실적이 확인되는 경우 제공\n\n3. 연간 판매액의 0.1% 공익기금 적립\n\n※자세한 사항은 상품설명서 참조",
         "max_limit": 500000,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211141",
+        "fin_co_subm_day": "202609221100",
         "options": [
           {
             "dcls_month": "202609",
@@ -39289,9 +39289,9 @@
         "join_member": "만18세이상 개인",
         "etc_note": "초입금 및 매회 입금 1만원 이상 원 단위,  1인당 분기별 3백만원 이내 적립 가능\n(단,계약기간 3/4 경과 후 적립할 수 있는 금액은 이전 적립누계액의 1/2이내)",
         "max_limit": 3000000,
-        "dcls_strt_day": "20260921",
+        "dcls_strt_day": "20260922",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211141",
+        "fin_co_subm_day": "202609221100",
         "options": [
           {
             "dcls_month": "202609",
@@ -39302,8 +39302,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "12",
-            "intr_rate": 3.09,
-            "intr_rate2": 3.89
+            "intr_rate": 3.11,
+            "intr_rate2": 3.91
           },
           {
             "dcls_month": "202609",
@@ -56861,7 +56861,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -56918,7 +56918,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -56975,7 +56975,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609211300",
+        "fin_co_subm_day": "202609210909",
         "options": [
           {
             "dcls_month": "202609",
@@ -64616,13 +64616,13 @@
             "dcls_month": "202609",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10561",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.46,
-            "lend_rate_max": 6.16,
-            "lend_rate_avg": 5.22
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.93,
+            "lend_rate_max": 4.63,
+            "lend_rate_avg": 4.17
           },
           {
             "dcls_month": "202609",
@@ -64652,13 +64652,13 @@
             "dcls_month": "202609",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10561",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.93,
-            "lend_rate_max": 4.63,
-            "lend_rate_avg": 4.17
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.46,
+            "lend_rate_max": 6.16,
+            "lend_rate_avg": 5.22
           }
         ],
         "_kind": "rentLoan",
@@ -64683,18 +64683,6 @@
             "dcls_month": "202609",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10562",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.99,
-            "lend_rate_max": 4.69,
-            "lend_rate_avg": 4.2
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010001",
-            "fin_prdt_cd": "10562",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
@@ -64707,24 +64695,36 @@
             "dcls_month": "202609",
             "fin_co_no": "0010001",
             "fin_prdt_cd": "10562",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.47,
-            "lend_rate_max": 6.17,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010001",
-            "fin_prdt_cd": "10562",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 5.37,
             "lend_rate_max": 6.07,
+            "lend_rate_avg": null
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010001",
+            "fin_prdt_cd": "10562",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.99,
+            "lend_rate_max": 4.69,
+            "lend_rate_avg": 4.2
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010001",
+            "fin_prdt_cd": "10562",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.47,
+            "lend_rate_max": 6.17,
             "lend_rate_avg": null
           }
         ],
@@ -64907,23 +64907,11 @@
             "fin_prdt_cd": "1029",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.37,
-            "lend_rate_max": 6.17,
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.33,
+            "lend_rate_max": 5.13,
             "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "1029",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.37,
-            "lend_rate_max": 6.17,
-            "lend_rate_avg": 5.55
           },
           {
             "dcls_month": "202609",
@@ -64931,10 +64919,10 @@
             "fin_prdt_cd": "1029",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.33,
-            "lend_rate_max": 5.13,
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.37,
+            "lend_rate_max": 6.17,
             "lend_rate_avg": null
           },
           {
@@ -64948,6 +64936,18 @@
             "lend_rate_min": 4.33,
             "lend_rate_max": 5.13,
             "lend_rate_avg": 4.34
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "1029",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.37,
+            "lend_rate_max": 6.17,
+            "lend_rate_avg": 5.55
           }
         ],
         "_kind": "rentLoan",
@@ -64972,36 +64972,12 @@
             "dcls_month": "202609",
             "fin_co_no": "0010017",
             "fin_prdt_cd": "126",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.37,
-            "lend_rate_max": 6.17,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "126",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 5.37,
             "lend_rate_max": 6.17,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "126",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.33,
-            "lend_rate_max": 5.13,
             "lend_rate_avg": null
           },
           {
@@ -65015,6 +64991,30 @@
             "lend_rate_min": 4.33,
             "lend_rate_max": 5.13,
             "lend_rate_avg": 4.37
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "126",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.37,
+            "lend_rate_max": 6.17,
+            "lend_rate_avg": null
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "126",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.33,
+            "lend_rate_max": 5.13,
+            "lend_rate_avg": null
           }
         ],
         "_kind": "rentLoan",
@@ -65041,22 +65041,10 @@
             "fin_prdt_cd": "486",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.47,
-            "lend_rate_max": 6.47,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "486",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.47,
-            "lend_rate_max": 6.47,
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.13,
+            "lend_rate_max": 5.13,
             "lend_rate_avg": null
           },
           {
@@ -65065,10 +65053,10 @@
             "fin_prdt_cd": "486",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.13,
-            "lend_rate_max": 5.13,
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.47,
+            "lend_rate_max": 6.47,
             "lend_rate_avg": null
           },
           {
@@ -65082,6 +65070,18 @@
             "lend_rate_min": 4.13,
             "lend_rate_max": 5.13,
             "lend_rate_avg": 4.43
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "486",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.47,
+            "lend_rate_max": 6.47,
+            "lend_rate_avg": null
           }
         ],
         "_kind": "rentLoan",
@@ -65385,24 +65385,12 @@
             "dcls_month": "202609",
             "fin_co_no": "0010026",
             "fin_prdt_cd": "212020007",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 6.07,
-            "lend_rate_max": 6.27,
-            "lend_rate_avg": 5.62
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010026",
-            "fin_prdt_cd": "212020007",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 6.07,
-            "lend_rate_max": 6.27,
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.9,
+            "lend_rate_max": 4.9,
             "lend_rate_avg": null
           },
           {
@@ -65411,10 +65399,10 @@
             "fin_prdt_cd": "212020007",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.9,
-            "lend_rate_max": 4.9,
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 6.07,
+            "lend_rate_max": 6.27,
             "lend_rate_avg": null
           },
           {
@@ -65428,6 +65416,18 @@
             "lend_rate_min": 4.9,
             "lend_rate_max": 4.9,
             "lend_rate_avg": 4.64
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010026",
+            "fin_prdt_cd": "212020007",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 6.07,
+            "lend_rate_max": 6.27,
+            "lend_rate_avg": 5.62
           }
         ],
         "_kind": "rentLoan",
@@ -65454,6 +65454,18 @@
             "fin_prdt_cd": "212020111",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 6.31,
+            "lend_rate_max": 6.51,
+            "lend_rate_avg": 5.88
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010026",
+            "fin_prdt_cd": "212020111",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "C",
             "lend_rate_type_nm": "변동금리",
             "lend_rate_min": 5.14,
@@ -65471,18 +65483,6 @@
             "lend_rate_min": 6.24,
             "lend_rate_max": 6.44,
             "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010026",
-            "fin_prdt_cd": "212020111",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 6.31,
-            "lend_rate_max": 6.51,
-            "lend_rate_avg": 5.88
           },
           {
             "dcls_month": "202609",
@@ -65562,18 +65562,6 @@
             "dcls_month": "202609",
             "fin_co_no": "0010927",
             "fin_prdt_cd": "KB200331500005",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.21,
-            "lend_rate_max": 5.61,
-            "lend_rate_avg": 4.39
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010927",
-            "fin_prdt_cd": "KB200331500005",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
@@ -65581,6 +65569,18 @@
             "lend_rate_min": 4.21,
             "lend_rate_max": 5.61,
             "lend_rate_avg": 4.08
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010927",
+            "fin_prdt_cd": "KB200331500005",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.21,
+            "lend_rate_max": 5.61,
+            "lend_rate_avg": 4.39
           }
         ],
         "_kind": "rentLoan",
@@ -65648,8 +65648,8 @@
             "dcls_month": "202609",
             "fin_co_no": "0011625",
             "fin_prdt_cd": "WR0001A",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 4.73,
@@ -65662,6 +65662,18 @@
             "fin_prdt_cd": "WR0001A",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.36,
+            "lend_rate_max": 5.56,
+            "lend_rate_avg": 4.55
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0011625",
+            "fin_prdt_cd": "WR0001A",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 4.73,
@@ -65679,18 +65691,6 @@
             "lend_rate_min": 4.41,
             "lend_rate_max": 5.61,
             "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0011625",
-            "fin_prdt_cd": "WR0001A",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.36,
-            "lend_rate_max": 5.56,
-            "lend_rate_avg": 4.55
           }
         ],
         "_kind": "rentLoan",
@@ -65715,12 +65715,12 @@
             "dcls_month": "202609",
             "fin_co_no": "0011625",
             "fin_prdt_cd": "WR0002B",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 4.73,
-            "lend_rate_max": 5.63,
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.5,
+            "lend_rate_max": 5.4,
             "lend_rate_avg": null
           },
           {
@@ -65729,10 +65729,10 @@
             "fin_prdt_cd": "WR0002B",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.5,
-            "lend_rate_max": 5.4,
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 4.73,
+            "lend_rate_max": 5.63,
             "lend_rate_avg": null
           },
           {
@@ -65751,8 +65751,8 @@
             "dcls_month": "202609",
             "fin_co_no": "0011625",
             "fin_prdt_cd": "WR0002B",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "F",
             "lend_rate_type_nm": "고정금리",
             "lend_rate_min": 4.73,
@@ -65784,11 +65784,11 @@
             "fin_prdt_cd": "2001105030002",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 4.22,
-            "lend_rate_max": 6.82,
-            "lend_rate_avg": 4.96
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.69,
+            "lend_rate_max": 6.39,
+            "lend_rate_avg": 4.5
           },
           {
             "dcls_month": "202609",
@@ -65796,11 +65796,11 @@
             "fin_prdt_cd": "2001105030002",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.69,
-            "lend_rate_max": 6.39,
-            "lend_rate_avg": 4.5
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 4.22,
+            "lend_rate_max": 6.82,
+            "lend_rate_avg": 4.96
           }
         ],
         "_kind": "rentLoan",
@@ -65825,18 +65825,6 @@
             "dcls_month": "202609",
             "fin_co_no": "0013175",
             "fin_prdt_cd": "2001108330001",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 4.22,
-            "lend_rate_max": 6.82,
-            "lend_rate_avg": null
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0013175",
-            "fin_prdt_cd": "2001108330001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "F",
@@ -65849,18 +65837,6 @@
             "dcls_month": "202609",
             "fin_co_no": "0013175",
             "fin_prdt_cd": "2001108330001",
-            "rpay_type": "D",
-            "rpay_type_nm": "분할상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.69,
-            "lend_rate_max": 6.39,
-            "lend_rate_avg": 4.38
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0013175",
-            "fin_prdt_cd": "2001108330001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
             "lend_rate_type": "C",
@@ -65868,6 +65844,30 @@
             "lend_rate_min": 3.69,
             "lend_rate_max": 6.39,
             "lend_rate_avg": 4.5
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0013175",
+            "fin_prdt_cd": "2001108330001",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 4.22,
+            "lend_rate_max": 6.82,
+            "lend_rate_avg": null
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0013175",
+            "fin_prdt_cd": "2001108330001",
+            "rpay_type": "D",
+            "rpay_type_nm": "분할상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.69,
+            "lend_rate_max": 6.39,
+            "lend_rate_avg": 4.38
           }
         ],
         "_kind": "rentLoan",
@@ -65894,11 +65894,11 @@
             "fin_prdt_cd": "2001109030001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 4.24,
-            "lend_rate_max": 6.84,
-            "lend_rate_avg": null
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 3.7,
+            "lend_rate_max": 6.4,
+            "lend_rate_avg": 4.48
           },
           {
             "dcls_month": "202609",
@@ -65906,11 +65906,11 @@
             "fin_prdt_cd": "2001109030001",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 3.7,
-            "lend_rate_max": 6.4,
-            "lend_rate_avg": 4.48
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 4.24,
+            "lend_rate_max": 6.84,
+            "lend_rate_avg": null
           }
         ],
         "_kind": "rentLoan",
@@ -65978,18 +65978,6 @@
             "dcls_month": "202609",
             "fin_co_no": "0013909",
             "fin_prdt_cd": "0300326201001",
-            "rpay_type": "S",
-            "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.95,
-            "lend_rate_max": 6.25,
-            "lend_rate_avg": 4.58
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0013909",
-            "fin_prdt_cd": "0300326201001",
             "rpay_type": "D",
             "rpay_type_nm": "분할상환방식",
             "lend_rate_type": "C",
@@ -65997,6 +65985,18 @@
             "lend_rate_min": 4.95,
             "lend_rate_max": 6.25,
             "lend_rate_avg": 4.62
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0013909",
+            "fin_prdt_cd": "0300326201001",
+            "rpay_type": "S",
+            "rpay_type_nm": "만기일시상환방식",
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.95,
+            "lend_rate_max": 6.25,
+            "lend_rate_avg": 4.58
           }
         ],
         "_kind": "rentLoan",
@@ -66283,11 +66283,11 @@
             "fin_prdt_cd": "03027",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "F",
-            "lend_rate_type_nm": "고정금리",
-            "lend_rate_min": 5.41,
-            "lend_rate_max": 5.61,
-            "lend_rate_avg": 5.04
+            "lend_rate_type": "C",
+            "lend_rate_type_nm": "변동금리",
+            "lend_rate_min": 4.41,
+            "lend_rate_max": 4.61,
+            "lend_rate_avg": 4.23
           },
           {
             "dcls_month": "202609",
@@ -66295,11 +66295,11 @@
             "fin_prdt_cd": "03027",
             "rpay_type": "S",
             "rpay_type_nm": "만기일시상환방식",
-            "lend_rate_type": "C",
-            "lend_rate_type_nm": "변동금리",
-            "lend_rate_min": 4.41,
-            "lend_rate_max": 4.61,
-            "lend_rate_avg": 4.23
+            "lend_rate_type": "F",
+            "lend_rate_type_nm": "고정금리",
+            "lend_rate_min": 5.41,
+            "lend_rate_max": 5.61,
+            "lend_rate_avg": 5.04
           }
         ],
         "_kind": "rentLoan",
@@ -66357,6 +66357,23 @@
             "fin_co_no": "0010001",
             "fin_prdt_cd": "CR0001A",
             "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 2.93,
+            "crdt_grad_4": 3.24,
+            "crdt_grad_5": 3.51,
+            "crdt_grad_6": 3.87,
+            "crdt_grad_10": 4.11,
+            "crdt_grad_11": 4.45,
+            "crdt_grad_12": 4.1,
+            "crdt_grad_13": 4.1,
+            "crdt_grad_avg": 3.18
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010001",
+            "fin_prdt_cd": "CR0001A",
+            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "A",
             "crdt_lend_rate_type_nm": "대출금리",
             "crdt_grad_1": 5.86,
@@ -66385,23 +66402,6 @@
             "crdt_grad_12": 4.22,
             "crdt_grad_13": 3.86,
             "crdt_grad_avg": 3.69
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010001",
-            "fin_prdt_cd": "CR0001A",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 2.93,
-            "crdt_grad_4": 3.24,
-            "crdt_grad_5": 3.51,
-            "crdt_grad_6": 3.87,
-            "crdt_grad_10": 4.11,
-            "crdt_grad_11": 4.45,
-            "crdt_grad_12": 4.1,
-            "crdt_grad_13": 4.1,
-            "crdt_grad_avg": 3.18
           },
           {
             "dcls_month": "202609",
@@ -66443,17 +66443,17 @@
             "fin_co_no": "0010001",
             "fin_prdt_cd": "CR0001C",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.56,
-            "crdt_grad_4": 5.78,
-            "crdt_grad_5": 6.21,
-            "crdt_grad_6": 6.22,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 2.78,
+            "crdt_grad_4": 2.85,
+            "crdt_grad_5": 3.22,
+            "crdt_grad_6": 2.82,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 5.59
+            "crdt_grad_avg": 2.79
           },
           {
             "dcls_month": "202609",
@@ -66477,17 +66477,17 @@
             "fin_co_no": "0010001",
             "fin_prdt_cd": "CR0001C",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 2.78,
-            "crdt_grad_4": 2.85,
-            "crdt_grad_5": 3.22,
-            "crdt_grad_6": 2.82,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.56,
+            "crdt_grad_4": 5.78,
+            "crdt_grad_5": 6.21,
+            "crdt_grad_6": 6.22,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 2.79
+            "crdt_grad_avg": 5.59
           },
           {
             "dcls_month": "202609",
@@ -66529,17 +66529,17 @@
             "fin_co_no": "0010002",
             "fin_prdt_cd": "SC001217",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.64,
-            "crdt_grad_4": 6.55,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 4.47,
+            "crdt_grad_4": 5.47,
             "crdt_grad_5": null,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 6.12
+            "crdt_grad_avg": 4.05
           },
           {
             "dcls_month": "202609",
@@ -66563,17 +66563,17 @@
             "fin_co_no": "0010002",
             "fin_prdt_cd": "SC001217",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 4.47,
-            "crdt_grad_4": 5.47,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.64,
+            "crdt_grad_4": 6.55,
             "crdt_grad_5": null,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 4.05
+            "crdt_grad_avg": 6.12
           },
           {
             "dcls_month": "202609",
@@ -66649,23 +66649,6 @@
             "fin_co_no": "0010002",
             "fin_prdt_cd": "SC001217_1",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 4.79,
-            "crdt_grad_4": 6.49,
-            "crdt_grad_5": null,
-            "crdt_grad_6": null,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 4.39
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010002",
-            "fin_prdt_cd": "SC001217_1",
-            "crdt_prdt_type": "2",
             "crdt_lend_rate_type": "D",
             "crdt_lend_rate_type_nm": "가감조정금리",
             "crdt_grad_1": 1.6,
@@ -66677,6 +66660,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 1.14
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010002",
+            "fin_prdt_cd": "SC001217_1",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 4.79,
+            "crdt_grad_4": 6.49,
+            "crdt_grad_5": null,
+            "crdt_grad_6": null,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 4.39
           }
         ],
         "_kind": "creditLoan",
@@ -66753,6 +66753,23 @@
             "fin_co_no": "0010016",
             "fin_prdt_cd": "WR0001F",
             "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.5,
+            "crdt_grad_4": 0.44,
+            "crdt_grad_5": 0.46,
+            "crdt_grad_6": 0.57,
+            "crdt_grad_10": null,
+            "crdt_grad_11": 10.26,
+            "crdt_grad_12": null,
+            "crdt_grad_13": 3.7,
+            "crdt_grad_avg": 0.48
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010016",
+            "fin_prdt_cd": "WR0001F",
+            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "B",
             "crdt_lend_rate_type_nm": "기준금리",
             "crdt_grad_1": 3.52,
@@ -66781,23 +66798,6 @@
             "crdt_grad_12": null,
             "crdt_grad_13": 11.15,
             "crdt_grad_avg": 4.02
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010016",
-            "fin_prdt_cd": "WR0001F",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.5,
-            "crdt_grad_4": 0.44,
-            "crdt_grad_5": 0.46,
-            "crdt_grad_6": 0.57,
-            "crdt_grad_10": null,
-            "crdt_grad_11": 10.26,
-            "crdt_grad_12": null,
-            "crdt_grad_13": 3.7,
-            "crdt_grad_avg": 0.48
           }
         ],
         "_kind": "creditLoan",
@@ -66817,23 +66817,6 @@
         "dcls_end_day": null,
         "fin_co_subm_day": "202609111437",
         "options": [
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010016",
-            "fin_prdt_cd": "WR0002F",
-            "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.56,
-            "crdt_grad_4": 2.64,
-            "crdt_grad_5": 1.1,
-            "crdt_grad_6": 0.5,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 0.78
-          },
           {
             "dcls_month": "202609",
             "fin_co_no": "0010016",
@@ -66867,6 +66850,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 3.33
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010016",
+            "fin_prdt_cd": "WR0002F",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.56,
+            "crdt_grad_4": 2.64,
+            "crdt_grad_5": 1.1,
+            "crdt_grad_6": 0.5,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 0.78
           },
           {
             "dcls_month": "202609",
@@ -66959,23 +66959,6 @@
             "fin_co_no": "0010017",
             "fin_prdt_cd": "1300",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 3.48,
-            "crdt_grad_4": 3.82,
-            "crdt_grad_5": 4.06,
-            "crdt_grad_6": 4.88,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 3.57
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "1300",
-            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "D",
             "crdt_lend_rate_type_nm": "가감조정금리",
             "crdt_grad_1": 0.8,
@@ -66987,6 +66970,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 0.64
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "1300",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 3.48,
+            "crdt_grad_4": 3.82,
+            "crdt_grad_5": 4.06,
+            "crdt_grad_6": 4.88,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 3.57
           }
         ],
         "_kind": "creditLoan",
@@ -67011,34 +67011,17 @@
             "fin_co_no": "0010017",
             "fin_prdt_cd": "1301",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.45,
-            "crdt_grad_4": 6.35,
-            "crdt_grad_5": 6.48,
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.5,
+            "crdt_grad_4": 0.04,
+            "crdt_grad_5": null,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 5.53
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010017",
-            "fin_prdt_cd": "1301",
-            "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 2.58,
-            "crdt_grad_4": 2.77,
-            "crdt_grad_5": 2.63,
-            "crdt_grad_6": null,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 2.6
+            "crdt_grad_avg": 0.46
           },
           {
             "dcls_month": "202609",
@@ -67062,17 +67045,34 @@
             "fin_co_no": "0010017",
             "fin_prdt_cd": "1301",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.5,
-            "crdt_grad_4": 0.04,
-            "crdt_grad_5": null,
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 2.58,
+            "crdt_grad_4": 2.77,
+            "crdt_grad_5": 2.63,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 0.46
+            "crdt_grad_avg": 2.6
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010017",
+            "fin_prdt_cd": "1301",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.45,
+            "crdt_grad_4": 6.35,
+            "crdt_grad_5": 6.48,
+            "crdt_grad_6": null,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 5.53
           }
         ],
         "_kind": "creditLoan",
@@ -67149,6 +67149,23 @@
             "fin_co_no": "0010019",
             "fin_prdt_cd": "1",
             "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.95,
+            "crdt_grad_4": 1,
+            "crdt_grad_5": 1.26,
+            "crdt_grad_6": 2.06,
+            "crdt_grad_10": 1.18,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 1.04
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010019",
+            "fin_prdt_cd": "1",
+            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "B",
             "crdt_lend_rate_type_nm": "기준금리",
             "crdt_grad_1": 3.07,
@@ -67177,23 +67194,6 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 6.08
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010019",
-            "fin_prdt_cd": "1",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.95,
-            "crdt_grad_4": 1,
-            "crdt_grad_5": 1.26,
-            "crdt_grad_6": 2.06,
-            "crdt_grad_10": 1.18,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 1.04
           }
         ],
         "_kind": "creditLoan",
@@ -67356,23 +67356,6 @@
             "fin_co_no": "0010020",
             "fin_prdt_cd": "WR0001F",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 3.52,
-            "crdt_grad_4": 3.49,
-            "crdt_grad_5": 3.6,
-            "crdt_grad_6": 3.3,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": 3.3,
-            "crdt_grad_13": 3.35,
-            "crdt_grad_avg": 3.51
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010020",
-            "fin_prdt_cd": "WR0001F",
-            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "C",
             "crdt_lend_rate_type_nm": "가산금리",
             "crdt_grad_1": 2.42,
@@ -67384,6 +67367,23 @@
             "crdt_grad_12": 18.44,
             "crdt_grad_13": 18.27,
             "crdt_grad_avg": 2.74
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010020",
+            "fin_prdt_cd": "WR0001F",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 3.52,
+            "crdt_grad_4": 3.49,
+            "crdt_grad_5": 3.6,
+            "crdt_grad_6": 3.3,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": 3.3,
+            "crdt_grad_13": 3.35,
+            "crdt_grad_avg": 3.51
           },
           {
             "dcls_month": "202609",
@@ -67425,17 +67425,17 @@
             "fin_co_no": "0010020",
             "fin_prdt_cd": "WR0002F",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.82,
-            "crdt_grad_4": 0.76,
-            "crdt_grad_5": 0.85,
-            "crdt_grad_6": null,
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 3.56,
+            "crdt_grad_4": 3.57,
+            "crdt_grad_5": 3.46,
+            "crdt_grad_6": 3.46,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 0.79
+            "crdt_grad_avg": 3.56
           },
           {
             "dcls_month": "202609",
@@ -67459,23 +67459,6 @@
             "fin_co_no": "0010020",
             "fin_prdt_cd": "WR0002F",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 3.56,
-            "crdt_grad_4": 3.57,
-            "crdt_grad_5": 3.46,
-            "crdt_grad_6": 3.46,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 3.56
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010020",
-            "fin_prdt_cd": "WR0002F",
-            "crdt_prdt_type": "2",
             "crdt_lend_rate_type": "A",
             "crdt_lend_rate_type_nm": "대출금리",
             "crdt_grad_1": 5.71,
@@ -67487,6 +67470,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 5.76
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010020",
+            "fin_prdt_cd": "WR0002F",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.82,
+            "crdt_grad_4": 0.76,
+            "crdt_grad_5": 0.85,
+            "crdt_grad_6": null,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 0.79
           }
         ],
         "_kind": "creditLoan",
@@ -67506,6 +67506,23 @@
         "dcls_end_day": "20261019",
         "fin_co_subm_day": "202609181258",
         "options": [
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010022",
+            "fin_prdt_cd": "CR0001A",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.95,
+            "crdt_grad_4": 0.72,
+            "crdt_grad_5": 1.03,
+            "crdt_grad_6": 1.65,
+            "crdt_grad_10": 2.68,
+            "crdt_grad_11": 4.23,
+            "crdt_grad_12": 5.56,
+            "crdt_grad_13": 5.39,
+            "crdt_grad_avg": 1
+          },
           {
             "dcls_month": "202609",
             "fin_co_no": "0010022",
@@ -67556,23 +67573,6 @@
             "crdt_grad_12": 18.89,
             "crdt_grad_13": 18.42,
             "crdt_grad_avg": 9.12
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010022",
-            "fin_prdt_cd": "CR0001A",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.95,
-            "crdt_grad_4": 0.72,
-            "crdt_grad_5": 1.03,
-            "crdt_grad_6": 1.65,
-            "crdt_grad_10": 2.68,
-            "crdt_grad_11": 4.23,
-            "crdt_grad_12": 5.56,
-            "crdt_grad_13": 5.39,
-            "crdt_grad_avg": 1
           }
         ],
         "_kind": "creditLoan",
@@ -67614,17 +67614,17 @@
             "fin_co_no": "0010022",
             "fin_prdt_cd": "CR0001C",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 3.06,
-            "crdt_grad_4": 3.41,
-            "crdt_grad_5": 4.26,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.99,
+            "crdt_grad_4": 6.36,
+            "crdt_grad_5": 7.11,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 3.17
+            "crdt_grad_avg": 6.11
           },
           {
             "dcls_month": "202609",
@@ -67648,17 +67648,17 @@
             "fin_co_no": "0010022",
             "fin_prdt_cd": "CR0001C",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.99,
-            "crdt_grad_4": 6.36,
-            "crdt_grad_5": 7.11,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 3.06,
+            "crdt_grad_4": 3.41,
+            "crdt_grad_5": 4.26,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 6.11
+            "crdt_grad_avg": 3.17
           }
         ],
         "_kind": "creditLoan",
@@ -67718,6 +67718,23 @@
             "fin_co_no": "0010024",
             "fin_prdt_cd": "CR0001A",
             "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 3.6,
+            "crdt_grad_4": 4.33,
+            "crdt_grad_5": 6.13,
+            "crdt_grad_6": 7.81,
+            "crdt_grad_10": 9.23,
+            "crdt_grad_11": 9.95,
+            "crdt_grad_12": 9.9,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 4.52
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010024",
+            "fin_prdt_cd": "CR0001A",
+            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "A",
             "crdt_lend_rate_type_nm": "대출금리",
             "crdt_grad_1": 6.1,
@@ -67746,23 +67763,6 @@
             "crdt_grad_12": 3.1,
             "crdt_grad_13": null,
             "crdt_grad_avg": 3.28
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010024",
-            "fin_prdt_cd": "CR0001A",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 3.6,
-            "crdt_grad_4": 4.33,
-            "crdt_grad_5": 6.13,
-            "crdt_grad_6": 7.81,
-            "crdt_grad_10": 9.23,
-            "crdt_grad_11": 9.95,
-            "crdt_grad_12": 9.9,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 4.52
           },
           {
             "dcls_month": "202609",
@@ -67804,40 +67804,6 @@
             "fin_co_no": "0010024",
             "fin_prdt_cd": "CR0001B",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.42,
-            "crdt_grad_4": 6.21,
-            "crdt_grad_5": null,
-            "crdt_grad_6": null,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 5.47
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010024",
-            "fin_prdt_cd": "CR0001B",
-            "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 3.1,
-            "crdt_grad_4": 3.21,
-            "crdt_grad_5": null,
-            "crdt_grad_6": null,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 3.11
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010024",
-            "fin_prdt_cd": "CR0001B",
-            "crdt_prdt_type": "2",
             "crdt_lend_rate_type": "C",
             "crdt_lend_rate_type_nm": "가산금리",
             "crdt_grad_1": 2.98,
@@ -67855,6 +67821,23 @@
             "fin_co_no": "0010024",
             "fin_prdt_cd": "CR0001B",
             "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.42,
+            "crdt_grad_4": 6.21,
+            "crdt_grad_5": null,
+            "crdt_grad_6": null,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 5.47
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010024",
+            "fin_prdt_cd": "CR0001B",
+            "crdt_prdt_type": "2",
             "crdt_lend_rate_type": "D",
             "crdt_lend_rate_type_nm": "가감조정금리",
             "crdt_grad_1": 0.66,
@@ -67866,6 +67849,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 0.64
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010024",
+            "fin_prdt_cd": "CR0001B",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 3.1,
+            "crdt_grad_4": 3.21,
+            "crdt_grad_5": null,
+            "crdt_grad_6": null,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 3.11
           }
         ],
         "_kind": "creditLoan",
@@ -67942,23 +67942,6 @@
             "fin_co_no": "0010026",
             "fin_prdt_cd": "21",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 3.41,
-            "crdt_grad_4": 3.55,
-            "crdt_grad_5": 3.66,
-            "crdt_grad_6": 3.72,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 3.44
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010026",
-            "fin_prdt_cd": "21",
-            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "C",
             "crdt_lend_rate_type_nm": "가산금리",
             "crdt_grad_1": 2.36,
@@ -67970,6 +67953,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 2.52
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010026",
+            "fin_prdt_cd": "21",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 3.41,
+            "crdt_grad_4": 3.55,
+            "crdt_grad_5": 3.66,
+            "crdt_grad_6": 3.72,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 3.44
           },
           {
             "dcls_month": "202609",
@@ -68045,23 +68045,6 @@
             "fin_co_no": "0010026",
             "fin_prdt_cd": "31",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 2.29,
-            "crdt_grad_4": 2.85,
-            "crdt_grad_5": 5,
-            "crdt_grad_6": 2.65,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 2.35
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0010026",
-            "fin_prdt_cd": "31",
-            "crdt_prdt_type": "2",
             "crdt_lend_rate_type": "D",
             "crdt_lend_rate_type_nm": "가감조정금리",
             "crdt_grad_1": -0.17,
@@ -68073,6 +68056,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": -0.12
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0010026",
+            "fin_prdt_cd": "31",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 2.29,
+            "crdt_grad_4": 2.85,
+            "crdt_grad_5": 5,
+            "crdt_grad_6": 2.65,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 2.35
           }
         ],
         "_kind": "creditLoan",
@@ -68252,17 +68252,17 @@
             "fin_co_no": "0010927",
             "fin_prdt_cd": "KB200200000002",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 4.95,
-            "crdt_grad_4": 5.42,
-            "crdt_grad_5": 5.92,
-            "crdt_grad_6": 7.7,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 2.96,
+            "crdt_grad_4": 3.37,
+            "crdt_grad_5": 3.82,
+            "crdt_grad_6": 5.26,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 5
+            "crdt_grad_avg": 3.01
           },
           {
             "dcls_month": "202609",
@@ -68286,17 +68286,17 @@
             "fin_co_no": "0010927",
             "fin_prdt_cd": "KB200200000002",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 2.96,
-            "crdt_grad_4": 3.37,
-            "crdt_grad_5": 3.82,
-            "crdt_grad_6": 5.26,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 4.95,
+            "crdt_grad_4": 5.42,
+            "crdt_grad_5": 5.92,
+            "crdt_grad_6": 7.7,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 3.01
+            "crdt_grad_avg": 5
           },
           {
             "dcls_month": "202609",
@@ -68333,23 +68333,6 @@
         "dcls_end_day": null,
         "fin_co_subm_day": "202609181752",
         "options": [
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0011625",
-            "fin_prdt_cd": "CR0001A",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 1.36,
-            "crdt_grad_4": 1.27,
-            "crdt_grad_5": 1.07,
-            "crdt_grad_6": 0.76,
-            "crdt_grad_10": 0.44,
-            "crdt_grad_11": 0.58,
-            "crdt_grad_12": null,
-            "crdt_grad_13": 0.29,
-            "crdt_grad_avg": 1.23
-          },
           {
             "dcls_month": "202609",
             "fin_co_no": "0011625",
@@ -68400,6 +68383,23 @@
             "crdt_grad_12": 6.89,
             "crdt_grad_13": 5.97,
             "crdt_grad_avg": 6.12
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0011625",
+            "fin_prdt_cd": "CR0001A",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 1.36,
+            "crdt_grad_4": 1.27,
+            "crdt_grad_5": 1.07,
+            "crdt_grad_6": 0.76,
+            "crdt_grad_10": 0.44,
+            "crdt_grad_11": 0.58,
+            "crdt_grad_12": null,
+            "crdt_grad_13": 0.29,
+            "crdt_grad_avg": 1.23
           }
         ],
         "_kind": "creditLoan",
@@ -68419,6 +68419,23 @@
         "dcls_end_day": null,
         "fin_co_subm_day": "202609181752",
         "options": [
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0011625",
+            "fin_prdt_cd": "CR0001C",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 1.17,
+            "crdt_grad_4": 1.02,
+            "crdt_grad_5": 1.14,
+            "crdt_grad_6": 1.14,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 0.13
+          },
           {
             "dcls_month": "202609",
             "fin_co_no": "0011625",
@@ -68469,23 +68486,6 @@
             "crdt_grad_12": null,
             "crdt_grad_13": 2.51,
             "crdt_grad_avg": 2.61
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0011625",
-            "fin_prdt_cd": "CR0001C",
-            "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 1.17,
-            "crdt_grad_4": 1.02,
-            "crdt_grad_5": 1.14,
-            "crdt_grad_6": 1.14,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 0.13
           }
         ],
         "_kind": "creditLoan",
@@ -68527,17 +68527,17 @@
             "fin_co_no": "0013175",
             "fin_prdt_cd": "CR0001A",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 3.75,
-            "crdt_grad_4": 4.58,
-            "crdt_grad_5": 5.35,
-            "crdt_grad_6": 5.97,
-            "crdt_grad_10": 5.94,
-            "crdt_grad_11": 6.5,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.34,
+            "crdt_grad_4": 6.07,
+            "crdt_grad_5": 6.85,
+            "crdt_grad_6": 7.67,
+            "crdt_grad_10": 8.1,
+            "crdt_grad_11": 8.83,
             "crdt_grad_12": null,
-            "crdt_grad_13": 4.17,
-            "crdt_grad_avg": 4.16
+            "crdt_grad_13": 7.29,
+            "crdt_grad_avg": 5.72
           },
           {
             "dcls_month": "202609",
@@ -68561,17 +68561,17 @@
             "fin_co_no": "0013175",
             "fin_prdt_cd": "CR0001A",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.34,
-            "crdt_grad_4": 6.07,
-            "crdt_grad_5": 6.85,
-            "crdt_grad_6": 7.67,
-            "crdt_grad_10": 8.1,
-            "crdt_grad_11": 8.83,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 3.75,
+            "crdt_grad_4": 4.58,
+            "crdt_grad_5": 5.35,
+            "crdt_grad_6": 5.97,
+            "crdt_grad_10": 5.94,
+            "crdt_grad_11": 6.5,
             "crdt_grad_12": null,
-            "crdt_grad_13": 7.29,
-            "crdt_grad_avg": 5.72
+            "crdt_grad_13": 4.17,
+            "crdt_grad_avg": 4.16
           }
         ],
         "_kind": "creditLoan",
@@ -68717,34 +68717,17 @@
             "fin_co_no": "0013909",
             "fin_prdt_cd": "1",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 2.09,
-            "crdt_grad_4": 2.26,
-            "crdt_grad_5": 2.35,
-            "crdt_grad_6": 2.53,
-            "crdt_grad_10": 2.69,
-            "crdt_grad_11": 2.29,
-            "crdt_grad_12": 3.41,
-            "crdt_grad_13": 7.15,
-            "crdt_grad_avg": 2.22
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0013909",
-            "fin_prdt_cd": "1",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 4.57,
-            "crdt_grad_4": 5.63,
-            "crdt_grad_5": 6.57,
-            "crdt_grad_6": 7.1,
-            "crdt_grad_10": 8.15,
-            "crdt_grad_11": 10.46,
-            "crdt_grad_12": 11.79,
-            "crdt_grad_13": 14.14,
-            "crdt_grad_avg": 5.43
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 5.89,
+            "crdt_grad_4": 6.93,
+            "crdt_grad_5": 7.83,
+            "crdt_grad_6": 8.22,
+            "crdt_grad_10": 9.09,
+            "crdt_grad_11": 11.66,
+            "crdt_grad_12": 11.85,
+            "crdt_grad_13": 10.41,
+            "crdt_grad_avg": 6.71
           },
           {
             "dcls_month": "202609",
@@ -68768,17 +68751,34 @@
             "fin_co_no": "0013909",
             "fin_prdt_cd": "1",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 5.89,
-            "crdt_grad_4": 6.93,
-            "crdt_grad_5": 7.83,
-            "crdt_grad_6": 8.22,
-            "crdt_grad_10": 9.09,
-            "crdt_grad_11": 11.66,
-            "crdt_grad_12": 11.85,
-            "crdt_grad_13": 10.41,
-            "crdt_grad_avg": 6.71
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 4.57,
+            "crdt_grad_4": 5.63,
+            "crdt_grad_5": 6.57,
+            "crdt_grad_6": 7.1,
+            "crdt_grad_10": 8.15,
+            "crdt_grad_11": 10.46,
+            "crdt_grad_12": 11.79,
+            "crdt_grad_13": 14.14,
+            "crdt_grad_avg": 5.43
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0013909",
+            "fin_prdt_cd": "1",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 2.09,
+            "crdt_grad_4": 2.26,
+            "crdt_grad_5": 2.35,
+            "crdt_grad_6": 2.53,
+            "crdt_grad_10": 2.69,
+            "crdt_grad_11": 2.29,
+            "crdt_grad_12": 3.41,
+            "crdt_grad_13": 7.15,
+            "crdt_grad_avg": 2.22
           }
         ],
         "_kind": "creditLoan",
@@ -68820,6 +68820,23 @@
             "fin_co_no": "0013909",
             "fin_prdt_cd": "3",
             "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 1.52,
+            "crdt_grad_4": 1.5,
+            "crdt_grad_5": 1.68,
+            "crdt_grad_6": 1.24,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 1.52
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0013909",
+            "fin_prdt_cd": "3",
+            "crdt_prdt_type": "2",
             "crdt_lend_rate_type": "B",
             "crdt_lend_rate_type_nm": "기준금리",
             "crdt_grad_1": 3.31,
@@ -68848,23 +68865,6 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 3.79
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0013909",
-            "fin_prdt_cd": "3",
-            "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 1.52,
-            "crdt_grad_4": 1.5,
-            "crdt_grad_5": 1.68,
-            "crdt_grad_6": 1.24,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 1.52
           }
         ],
         "_kind": "creditLoan",
@@ -68906,23 +68906,6 @@
             "fin_co_no": "0014674",
             "fin_prdt_cd": "010200010000000001",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 3.07,
-            "crdt_grad_4": 3.13,
-            "crdt_grad_5": 3.16,
-            "crdt_grad_6": 3.19,
-            "crdt_grad_10": 3.36,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 3.11
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0014674",
-            "fin_prdt_cd": "010200010000000001",
-            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "A",
             "crdt_lend_rate_type_nm": "대출금리",
             "crdt_grad_1": 6.22,
@@ -68934,6 +68917,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 6.62
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0014674",
+            "fin_prdt_cd": "010200010000000001",
+            "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 3.07,
+            "crdt_grad_4": 3.13,
+            "crdt_grad_5": 3.16,
+            "crdt_grad_6": 3.19,
+            "crdt_grad_10": 3.36,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 3.11
           }
         ],
         "_kind": "creditLoan",
@@ -68958,17 +68958,17 @@
             "fin_co_no": "0014674",
             "fin_prdt_cd": "010200040000000001",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 6.69,
-            "crdt_grad_4": 7.52,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 3.65,
+            "crdt_grad_4": 4.54,
             "crdt_grad_5": null,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 6.7
+            "crdt_grad_avg": 3.66
           },
           {
             "dcls_month": "202609",
@@ -68992,17 +68992,17 @@
             "fin_co_no": "0014674",
             "fin_prdt_cd": "010200040000000001",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 3.65,
-            "crdt_grad_4": 4.54,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 6.69,
+            "crdt_grad_4": 7.52,
             "crdt_grad_5": null,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 3.66
+            "crdt_grad_avg": 6.7
           }
         ],
         "_kind": "creditLoan",
@@ -69027,17 +69027,17 @@
             "fin_co_no": "0014807",
             "fin_prdt_cd": "601",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 4.95,
-            "crdt_grad_4": 5.18,
-            "crdt_grad_5": 7.5,
-            "crdt_grad_6": 7.36,
-            "crdt_grad_10": 7.58,
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 1.09,
+            "crdt_grad_4": 0.88,
+            "crdt_grad_5": 0.33,
+            "crdt_grad_6": 0.35,
+            "crdt_grad_10": 0.29,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 5.15
+            "crdt_grad_avg": 1.01
           },
           {
             "dcls_month": "202609",
@@ -69078,17 +69078,17 @@
             "fin_co_no": "0014807",
             "fin_prdt_cd": "601",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 1.09,
-            "crdt_grad_4": 0.88,
-            "crdt_grad_5": 0.33,
-            "crdt_grad_6": 0.35,
-            "crdt_grad_10": 0.29,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 4.95,
+            "crdt_grad_4": 5.18,
+            "crdt_grad_5": 7.5,
+            "crdt_grad_6": 7.36,
+            "crdt_grad_10": 7.58,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 1.01
+            "crdt_grad_avg": 5.15
           }
         ],
         "_kind": "creditLoan",
@@ -69130,17 +69130,17 @@
             "fin_co_no": "0014807",
             "fin_prdt_cd": "804",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "C",
-            "crdt_lend_rate_type_nm": "가산금리",
-            "crdt_grad_1": 3.33,
-            "crdt_grad_4": 3.77,
-            "crdt_grad_5": 5.26,
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 6,
+            "crdt_grad_4": 6.82,
+            "crdt_grad_5": 7.91,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 3.46
+            "crdt_grad_avg": 6.16
           },
           {
             "dcls_month": "202609",
@@ -69164,17 +69164,17 @@
             "fin_co_no": "0014807",
             "fin_prdt_cd": "804",
             "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 6,
-            "crdt_grad_4": 6.82,
-            "crdt_grad_5": 7.91,
+            "crdt_lend_rate_type": "C",
+            "crdt_lend_rate_type_nm": "가산금리",
+            "crdt_grad_1": 3.33,
+            "crdt_grad_4": 3.77,
+            "crdt_grad_5": 5.26,
             "crdt_grad_6": null,
             "crdt_grad_10": null,
             "crdt_grad_11": null,
             "crdt_grad_12": null,
             "crdt_grad_13": null,
-            "crdt_grad_avg": 6.16
+            "crdt_grad_avg": 3.46
           }
         ],
         "_kind": "creditLoan",
@@ -69199,6 +69199,23 @@
             "fin_co_no": "0015130",
             "fin_prdt_cd": "030020001",
             "crdt_prdt_type": "1",
+            "crdt_lend_rate_type": "D",
+            "crdt_lend_rate_type_nm": "가감조정금리",
+            "crdt_grad_1": 0.01,
+            "crdt_grad_4": 0.02,
+            "crdt_grad_5": 0.02,
+            "crdt_grad_6": 0.02,
+            "crdt_grad_10": null,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 0.01
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0015130",
+            "fin_prdt_cd": "030020001",
+            "crdt_prdt_type": "1",
             "crdt_lend_rate_type": "A",
             "crdt_lend_rate_type_nm": "대출금리",
             "crdt_grad_1": 5.54,
@@ -69210,23 +69227,6 @@
             "crdt_grad_12": 9.79,
             "crdt_grad_13": 7.99,
             "crdt_grad_avg": 6.21
-          },
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0015130",
-            "fin_prdt_cd": "030020001",
-            "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "B",
-            "crdt_lend_rate_type_nm": "기준금리",
-            "crdt_grad_1": 2.91,
-            "crdt_grad_4": 3.37,
-            "crdt_grad_5": 3.42,
-            "crdt_grad_6": 3.37,
-            "crdt_grad_10": 3.64,
-            "crdt_grad_11": 3.7,
-            "crdt_grad_12": 3.71,
-            "crdt_grad_13": 3.7,
-            "crdt_grad_avg": 3.11
           },
           {
             "dcls_month": "202609",
@@ -69250,17 +69250,17 @@
             "fin_co_no": "0015130",
             "fin_prdt_cd": "030020001",
             "crdt_prdt_type": "1",
-            "crdt_lend_rate_type": "D",
-            "crdt_lend_rate_type_nm": "가감조정금리",
-            "crdt_grad_1": 0.01,
-            "crdt_grad_4": 0.02,
-            "crdt_grad_5": 0.02,
-            "crdt_grad_6": 0.02,
-            "crdt_grad_10": null,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 0.01
+            "crdt_lend_rate_type": "B",
+            "crdt_lend_rate_type_nm": "기준금리",
+            "crdt_grad_1": 2.91,
+            "crdt_grad_4": 3.37,
+            "crdt_grad_5": 3.42,
+            "crdt_grad_6": 3.37,
+            "crdt_grad_10": 3.64,
+            "crdt_grad_11": 3.7,
+            "crdt_grad_12": 3.71,
+            "crdt_grad_13": 3.7,
+            "crdt_grad_avg": 3.11
           }
         ],
         "_kind": "creditLoan",
@@ -69280,23 +69280,6 @@
         "dcls_end_day": null,
         "fin_co_subm_day": "202609171753",
         "options": [
-          {
-            "dcls_month": "202609",
-            "fin_co_no": "0015130",
-            "fin_prdt_cd": "030020003",
-            "crdt_prdt_type": "2",
-            "crdt_lend_rate_type": "A",
-            "crdt_lend_rate_type_nm": "대출금리",
-            "crdt_grad_1": 6.07,
-            "crdt_grad_4": 8.66,
-            "crdt_grad_5": 8.82,
-            "crdt_grad_6": 8.65,
-            "crdt_grad_10": 8.25,
-            "crdt_grad_11": null,
-            "crdt_grad_12": null,
-            "crdt_grad_13": null,
-            "crdt_grad_avg": 7.94
-          },
           {
             "dcls_month": "202609",
             "fin_co_no": "0015130",
@@ -69330,6 +69313,23 @@
             "crdt_grad_12": null,
             "crdt_grad_13": null,
             "crdt_grad_avg": 4.52
+          },
+          {
+            "dcls_month": "202609",
+            "fin_co_no": "0015130",
+            "fin_prdt_cd": "030020003",
+            "crdt_prdt_type": "2",
+            "crdt_lend_rate_type": "A",
+            "crdt_lend_rate_type_nm": "대출금리",
+            "crdt_grad_1": 6.07,
+            "crdt_grad_4": 8.66,
+            "crdt_grad_5": 8.82,
+            "crdt_grad_6": 8.65,
+            "crdt_grad_10": 8.25,
+            "crdt_grad_11": null,
+            "crdt_grad_12": null,
+            "crdt_grad_13": null,
+            "crdt_grad_avg": 7.94
           }
         ],
         "_kind": "creditLoan",
