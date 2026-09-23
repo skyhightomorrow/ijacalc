@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T23:08:08.023Z",
+  "fetchedAt": "2026-09-23T23:02:26.728Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -75,21 +75,21 @@
       "payout": "수시지급"
     },
     {
-      "bank": "예가람",
-      "product": "E-RUN플러스 파킹통장",
-      "baseRate": 2.4,
-      "maxRate": 2.9,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260824",
-      "payout": "수시지급"
-    },
-    {
       "bank": "한화",
       "product": "Mymo 파킹통장",
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260907",
+      "payout": "수시지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "E-RUN플러스 파킹통장",
+      "baseRate": 2.4,
+      "maxRate": 3.2,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260923",
       "payout": "수시지급"
     },
     {
@@ -1308,15 +1308,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "예가람",
-      "product": "E-RUN플러스 파킹통장",
-      "baseRate": 2.4,
-      "maxRate": 2.9,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260824",
-      "payout": "분기지급"
-    },
-    {
       "bank": "융창",
       "product": "보통예금",
       "baseRate": 0.2,
@@ -1413,6 +1404,15 @@
       "maxRate": 2.5,
       "maxRateCondition": "50,000,000원 이하",
       "disclosedAt": "20260828",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "E-RUN플러스 파킹통장",
+      "baseRate": 2.4,
+      "maxRate": 3.2,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20260923",
       "payout": "분기지급"
     },
     {
