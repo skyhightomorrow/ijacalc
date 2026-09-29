@@ -1,23 +1,4 @@
 {
-  "detectedAt": "2026-09-29T00:28:26.380Z",
-  "products": [
-    {
-      "bank": "참",
-      "product": "파킹통장",
-      "baseRate": 0.1,
-      "maxRate": 3,
-      "maxRateCondition": "5,000,000원 이하",
-      "disclosedAt": "20260929",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "참",
-      "product": "모임통장",
-      "baseRate": 0.1,
-      "maxRate": 3,
-      "maxRateCondition": "10,000,000원 이하",
-      "disclosedAt": "20260929",
-      "payout": "분기지급"
-    }
-  ]
+  "detectedAt": "2026-09-29T23:52:01.200Z",
+  "products": []
 }

@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-09-29T00:28:26.432Z",
-  "finlifeFetchedAt": "2026-09-29T00:28:12.053Z",
+  "builtAt": "2026-09-29T23:52:01.252Z",
+  "finlifeFetchedAt": "2026-09-29T23:51:46.094Z",
   "finlifeDisclosureMonth": "202609",
   "parking": [
     {
@@ -3215,24 +3215,7 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [
-    {
-      "bank": "참저축은행",
-      "product": "파킹통장",
-      "kind": "parking",
-      "group": "저축은행",
-      "disclosureStart": "20260929",
-      "maxRate": 3
-    },
-    {
-      "bank": "참저축은행",
-      "product": "모임통장",
-      "kind": "parking",
-      "group": "저축은행",
-      "disclosureStart": "20260929",
-      "maxRate": 3
-    }
-  ],
+  "newProducts": [],
   "topDeposits": [
     {
       "bank": "우리저축은행",
@@ -3287,6 +3270,19 @@
       "disclosureMonth": "202609"
     },
     {
+      "bank": "광주은행",
+      "product": "굿스타트예금",
+      "group": "은행",
+      "baseRate": 3.54,
+      "maxRate": 4.04,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
+      "maxLimit": 100000000,
+      "disclosureMonth": "202609"
+    },
+    {
       "bank": "대한저축은행",
       "product": "정기예금(인터넷뱅킹)",
       "group": "저축은행",
@@ -3323,19 +3319,6 @@
       "joinWay": "스마트폰",
       "specialCondition": "-",
       "maxLimit": null,
-      "disclosureMonth": "202609"
-    },
-    {
-      "bank": "광주은행",
-      "product": "굿스타트예금",
-      "group": "은행",
-      "baseRate": 3.52,
-      "maxRate": 4.02,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "▶ 최고우대금리 0.5% \n ① 첫예금거래 : 0.4% -최근1년동안 정기예금 계좌 신규 또는 해지이력이 없는경우\n ② 개인(신용)정보 수집이용동의 : 0.1% -만기일전일까지 유지시",
-      "maxLimit": 100000000,
       "disclosureMonth": "202609"
     },
     {
