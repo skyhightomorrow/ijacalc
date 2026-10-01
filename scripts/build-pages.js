@@ -185,7 +185,7 @@ function buildIndex() {
       <input id="amount" type="text" value="" placeholder="예: 10,000,000" inputmode="numeric" autofocus>
       <span class="won">원</span>
     </div>
-    <div class="hint">하루 이자는 세후(이자소득세 15.4% 차감) 기준 · 한도/조건 자동 반영 · 비어있으면 1,000만원 기준</div>
+    <div class="hint">하루 이자는 세후(이자소득세 15.4% 차감) 기준 · 금액 한도 자동 반영 · 우대조건은 모두 충족했다고 보고 최고금리로 계산 · 비어있으면 1,000만원 기준</div>
   </div>
 
   <div class="notice">
@@ -1217,7 +1217,7 @@ function buildBankPages() {
       creditSection = `
   <h2 class="sec">${b.name} 신용대출 금리 공시 <small>${dclsStr} · 신용점수별 공시 금리</small></h2>
   <div class="tbl-wrap"><table>
-    <tr><th>상품</th><th>유형</th><th class="r">1~2등급</th><th class="r">평균금리</th></tr>
+    <tr><th>상품</th><th>유형</th><th class="r">900점 초과</th><th class="r">평균금리</th></tr>
     ${rows}
   </table></div>
   <p class="prose">위 금리는 금융감독원 공시 기준이며 <b>광고가 아닙니다</b>. 실제 금리는 개인 신용도·조건에 따라 달라집니다. 은행권 대출 비교는 <a href="../loans">대출 공시 페이지</a>에서 확인하세요.</p>`;
@@ -1398,6 +1398,11 @@ const AMOUNT_BRACKETS = [
 ];
 const PROTECT_LIMIT = 100000000; // 예금자보호 한도 (2025-09-01 상향)
 
+// 법인·사업자 전용 통장 — 상품명 또는 큐레이션 notice로 판별
+function isBusinessOnly(p) {
+  return /기업자유|Biz통장|법인|사업자/.test(p.product || "") || /개인은 가입할 수 없/.test(p.notice || "");
+}
+
 function buildAmountPages() {
   const dir = path.join(PUB, "amount");
   fs.rmSync(dir, { recursive: true, force: true });
@@ -1409,6 +1414,8 @@ function buildAmountPages() {
       return { p, slug, ...c, year: c.daily * 365 };
     })
       .filter((x) => x.daily > 0)
+      // 개인이 가입할 수 없는 통장을 «내 돈을 넣었을 때» 순위에 올리지 않는다
+      .filter((x) => !isBusinessOnly(x.p))
       .sort((a, b2) => b2.daily - a.daily);
 
     const top = ranked.slice(0, 20);
@@ -1500,7 +1507,7 @@ function buildAmountPages() {
     ${rows}
   </table></div>
   <p class="prose">순위는 <b>${b.slug}을 넣었을 때 실제로 받는 이자</b> 기준입니다. 상품의 한도 조건 때문에 최고금리를 다 못 받는 경우
-  적용 금리가 낮아지며, 그래서 금액대마다 순위가 달라집니다. 다른 금액으로 보려면 <a href="../calculator">이자 계산기</a>를 이용하세요.</p>
+  적용 금리가 낮아지며, 그래서 금액대마다 순위가 달라집니다. ⚠️ <b>우대조건(첫 거래·자동이체·카드 실적 등)은 모두 충족했다고 가정한 최고금리 기준</b>이라, 조건을 채우지 못하면 실제 금리는 이보다 낮습니다 — 상품 이름을 눌러 조건을 확인하세요. 법인·사업자 전용 통장은 순위에서 뺐습니다. 다른 금액으로 보려면 <a href="../calculator">이자 계산기</a>를 이용하세요.</p>
 
   ${protectProse}
 
@@ -1740,7 +1747,7 @@ function rateTable(rows) {
 
 function loanTable(rows, credit) {
   return (
-    `<tr><th>금융회사</th><th>상품</th><th class='r'>${credit ? "1등급" : "최저"}</th><th class='r'>평균</th><th>유형</th></tr>` +
+    `<tr><th>금융회사</th><th>상품</th><th class='r'>${credit ? "900점 초과" : "최저"}</th><th class='r'>평균</th><th>유형</th></tr>` +
     rows
       .map(
         (r) =>
@@ -1878,9 +1885,9 @@ function buildGuidePages() {
 
   <div style="margin:22px 0 4px; padding:14px 16px; border:1px solid var(--border); border-radius:10px; font-size:13.5px; color:var(--sub); line-height:1.8">
     작성 <b>Jason Jung (정 제이슨)</b> — 이자계산기(ijacalc.com) 운영자 · 1인 개발자<br>
-    금융 전문가가 아닌 개발자가 금융감독원·저축은행중앙회 공시 데이터를 근거로 작성했으며, 본문의 금리·수치는 매일 자동 갱신되는 공시 기준으로 관리합니다.
+    금융 전문가가 아닌 개발자가 금융감독원·저축은행중앙회 공시 데이터를 근거로 작성했습니다. 본문 중 자동으로 만들어지는 표·순위는 매일 공시 기준으로 갱신되지만, <b>손으로 쓴 설명 속 금리·제도 수치는 발행일 기준</b>이라 그 뒤 바뀌었을 수 있습니다.
     <a href="../about">운영자 소개 →</a><br>
-    발행 ${g.date} · 최종 확인 ${builtDateKST}
+    발행 ${g.date} · 표·순위 데이터 갱신 ${builtDateKST}
   </div>
 
   <h2 class="sec">내 금액으로 계산해보기</h2>
@@ -1982,12 +1989,15 @@ function buildInfoPages() {
     <ul style="margin:8px 0 0 20px; line-height:1.9">
       <li><b>출처는 공시 원본 두 곳입니다.</b> 금융감독원 금융상품통합비교공시 「금융상품한눈에」 오픈API(정기예금·적금·대출)와
       저축은행중앙회 소비자포털(입출금자유예금·파킹통장) 공시에서 직접 받아옵니다.</li>
+      <li><b>손으로 옮기는 부분도 있습니다.</b> 공시에 없는 인터넷은행 파킹통장(토스뱅크·카카오뱅크·케이뱅크) 금리와,
+      공시가 알려주지 않는 금액 구간별 금리·우대조건 설명은 각 회사 공식 페이지를 보고 직접 입력합니다.
+      이 부분은 자동 수집보다 늦게 반영될 수 있어, 상품 페이지에 확인한 날짜를 따로 적습니다.</li>
       <li><b>매일 새벽 5시 30분(KST)에 자동으로 수집·재생성됩니다.</b> 수집부터 계산, 페이지 생성까지 전 과정이
-      자동화되어 있어 사람이 손으로 옮겨 적다가 생기는 오타가 끼어들 틈이 없습니다.</li>
+      자동화되어 있어, 공시에서 받아오는 숫자에는 사람이 손으로 옮겨 적다가 생기는 오타가 끼어들지 않습니다.</li>
       <li><b>페이지마다 기준일을 표시합니다.</b> 상단의 "○월 ○일 업데이트"와 상품별 금리 기준일로,
       지금 보고 있는 숫자가 언제 것인지 항상 확인할 수 있습니다.</li>
       <li><b>계산 기준은 하나로 통일되어 있습니다.</b> 모든 이자는 이자소득세 15.4%(소득세 14% + 지방소득세 1.4%)를
-      차감한 세후 금액, 단리 기준으로 계산하며, 상품별 한도·구간(예: "1억원 이하")도 계산에 자동 반영됩니다.
+      차감한 세후 금액, 단리 기준으로 계산하며, 상품별 한도·구간(예: "1억원 이하")도 계산에 자동 반영됩니다. 다만 우대조건은 모두 충족했다고 보고 최고금리로 계산합니다.
       상품 페이지와 계산기가 같은 데이터, 같은 계산 기준을 사용하므로 페이지와 계산기가 서로 다른 말을 하지 않습니다.</li>
       <li><b>금리 변동 이력은 날짜별 수집 기록에서 복원합니다.</b> 어느 날 금리가 바뀌면 그 변동이 기록으로 남습니다.</li>
     </ul>

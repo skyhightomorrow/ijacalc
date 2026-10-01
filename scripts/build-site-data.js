@@ -106,8 +106,18 @@ for (const p of parkingFsb?.products || []) {
       const tierMax = Math.max(...t.tiers.map((x) => x.rate || 0));
       const gap = tierMax - (p.maxRate ?? 0);
       const intentionalDowngrade = gap < -0.001 && t.belowDisclosedReason;
+      // 최저 구간도 본다 — 다올 Fi 쌈짓돈Ⅲ가 2026-09-04에 중간·하위 구간만 바꿨을 때 최고금리(5.0%)는
+      // 그대로여서 이 검사를 통과했고, 낡은 구간값이 «실효 1위»로 한 달 가까이 나갔다.
+      const tierMin = Math.min(...t.tiers.map((x) => x.rate ?? 99));
+      const baseGap = p.baseRate != null ? tierMin - p.baseRate : 0;
+      // 공시 기본금리와 최저 구간이 원래 다른 상품도 있다(공시 기본금리가 큐레이션 범위 밖 구간인 경우).
+      // 그래서 «우리가 확인한 날 이후에 은행이 공시를 바꾼» 경우에만 낡은 것으로 본다.
+      const changedSinceVerified = !!(p.disclosedAt && t.verified && String(p.disclosedAt) > t.verified.replace(/-/g, ""));
       if (Math.abs(gap) > 0.001 && !intentionalDowngrade) {
         console.warn(`  ⚠️ 구간금리 불일치로 제외: ${key} (큐레이션 최고 ${tierMax}% vs 공시 ${p.maxRate}%)`);
+        rejected++;
+      } else if (Math.abs(baseGap) > 0.001 && changedSinceVerified && !t.baseMismatchOk) {
+        console.warn(`  ⚠️ 구간금리 불일치로 제외: ${key} (큐레이션 최저 ${tierMin}% vs 공시 기본 ${p.baseRate}%) — 공식 페이지에서 구간을 다시 확인하세요`);
         rejected++;
       } else {
         if (intentionalDowngrade) {
@@ -200,12 +210,15 @@ function loanRanking(kind, limit = 10) {
     if (!opts.length) continue;
     let minRate = null, maxRate = null, avgRate = null, detail = "";
     if (kind === "creditLoan") {
-      const withAvg = opts.filter((o) => o.crdt_grad_avg != null);
-      if (!withAvg.length) continue;
-      const best = withAvg.reduce((a, b) => (b.crdt_grad_avg < a.crdt_grad_avg ? b : a));
+      // 🔴 finlife 신용대출 옵션에는 대출금리(A)·기준금리(B)·가산금리(C)·가감조정금리(D)가 한 상품에 섞여 온다.
+      //    유형을 가리지 않고 «평균이 가장 낮은 행»을 고르면 가감조정금리(-0.17% 같은 조정 폭)가
+      //    대출금리처럼 순위에 올라간다(2026-10-01 실제로 그렇게 나가고 있었다). 반드시 A만 쓴다.
+      const lend = opts.filter((o) => o.crdt_lend_rate_type === "A" && o.crdt_grad_avg != null);
+      if (!lend.length) continue;
+      const best = lend.reduce((a, b) => (b.crdt_grad_avg < a.crdt_grad_avg ? b : a));
       minRate = best.crdt_grad_1 ?? null;
       avgRate = best.crdt_grad_avg;
-      detail = best.crdt_lend_rate_type_nm || "";
+      detail = p.crdt_prdt_type_nm || "";
     } else {
       const withMin = opts.filter((o) => o.lend_rate_min != null);
       if (!withMin.length) continue;

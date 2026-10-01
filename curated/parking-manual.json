@@ -47,7 +47,7 @@
     {
       "bank": "케이뱅크",
       "product": "플러스박스",
-      "baseRate": 1.7,
+      "baseRate": 1.81,
       "maxRate": 2.2,
       "maxRateCondition": "50,000,000원 초과",
       "payout": "수시지급",
