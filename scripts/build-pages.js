@@ -101,8 +101,8 @@ const NAV = (active, base) => `
 const FOOTER = (base = "") => `
   <footer>
     출처: 금융감독원 금융상품통합비교공시 「금융상품한눈에」, 저축은행중앙회 소비자포털 · 금리는 수시로 변동될 수 있으며 실제 가입 조건은 각 금융회사에서 확인하세요.<br>
-    본 사이트는 정보 제공 목적이며 금융상품 판매·중개를 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.<br>
-    운영자: Jason Jung (정 제이슨) · <a href="${base}about">사이트 소개</a> · <a href="${base}privacy">개인정보처리방침</a>
+    본 사이트는 금융감독원·금융회사와 무관한 개인 운영 정보 서비스로, 금융상품 판매·중개·자문을 하지 않습니다. 어떤 금융회사로부터도 광고비나 수수료를 받지 않습니다.<br>
+    운영자: Jason Jung (정 제이슨) · <a href="${base}about">사이트 소개</a> · <a href="${base}terms">이용안내·정정 요청</a> · <a href="${base}privacy">개인정보처리방침</a>
   </footer>`;
 
 // abs=true → 자산·네비 링크를 절대경로("/")로. 404 페이지 전용.
@@ -141,7 +141,7 @@ ${extraHead}
     <a class="logo" href="${base}./">이자<b>계산기</b></a>
     <div class="top-right">
       <span class="date">${updatedStr}</span>
-      <a class="loan-btn" href="${base}loans">🏛️ 금감원 대출공시 조회</a>
+      <a class="loan-btn" href="${base}loans">🏛️ 대출 금리 비교 (금감원 공시 기준)</a>
     </div>
   </div>
 ${NAV(active, base)}
@@ -2019,7 +2019,36 @@ function buildInfoPages() {
     <h2 class="sec">오류 제보 · 문의</h2>
     <p>숫자가 틀렸다고 생각되시면 해당 페이지와 예상하신 값을 적어
     <a href="mailto:${CONTACT}">${CONTACT}</a>로 보내주세요.
-    확인되는 대로 고치거나, 그 숫자가 나온 공시 원본을 보여드리겠습니다. 제휴·기타 문의도 같은 주소로 받습니다.</p>
+    확인되는 대로 고치거나, 그 숫자가 나온 공시 원본을 보여드리겠습니다(보통 영업일 3일 이내). 금융회사 담당자의 정정 요청도 같은 주소로 받습니다. 절차는 <a href="terms">이용안내·정정 요청</a>에 있습니다.</p>
+  </div>`,
+    })
+  );
+
+  fs.writeFileSync(
+    path.join(PUB, "terms.html"),
+    layout({
+      title: "이용안내·정정 요청 | 이자계산기 (ijacalc.com)",
+      desc: "이자계산기(ijacalc.com)의 정보 제공 범위, 데이터 기준, 틀린 내용의 정정 요청 절차 안내입니다.",
+      canonicalPath: "/terms",
+      body: `
+  <div class="hero"><h1>이용안내 · <span class="em">정정 요청</span></h1><p>시행일: 2026년 10월 1일</p></div>
+  <div class="prose">
+    <p><b>1. 이 사이트가 하는 일.</b> 이자계산기(ijacalc.com)는 공시된 예금·적금·파킹통장·대출 금리를 모아 비교하고
+    세후 이자를 계산해 보여주는 <b>개인 운영 정보 서비스</b>입니다. 금융감독원·저축은행중앙회·각 금융회사와 무관하며,
+    금융상품을 판매·중개·자문하지 않고 어떤 금융회사에서도 광고비나 수수료를 받지 않습니다.</p>
+    <p style="margin-top:12px"><b>2. 데이터 기준.</b> 금리는 금융감독원 「금융상품한눈에」 오픈API와 저축은행중앙회 소비자포털 공시에서 매일 받아옵니다.
+    공시에 없는 인터넷은행 파킹통장 금리와 금액 구간별 금리·우대조건은 각 회사 공식 페이지를 보고 직접 입력하며, 확인한 날짜를 상품 페이지에 적습니다.
+    순위와 계산은 <b>우대조건을 모두 충족했을 때의 최고금리</b>를 기준으로 하므로, 실제로 받는 금리는 이보다 낮을 수 있습니다.</p>
+    <p style="margin-top:12px"><b>3. 가입 전 확인.</b> 금리와 조건은 수시로 바뀝니다. 페이지에 표시된 기준일 이후의 변동은 반영되지 않았을 수 있으므로,
+    가입 전에는 반드시 해당 금융회사의 공식 페이지에서 최종 조건을 확인하세요. 대출 금리는 공시된 평균값이며 개인의 실제 금리는 심사 결과에 따라 다릅니다.</p>
+    <p style="margin-top:12px"><b>4. 틀린 내용의 정정 요청.</b> 숫자가 틀렸다고 생각되시거나, 금융회사 담당자로서 정정을 원하시면
+    해당 페이지 주소와 틀린 부분을 <a href="mailto:${CONTACT}">${CONTACT}</a>로 보내 주세요.
+    공시 원본·공식 페이지와 대조하고, 확인에 시간이 걸리면 그동안 해당 표시를 내려 둡니다.
+    확인되는 대로 바로잡고 결과를 회신드립니다(보통 영업일 3일 이내).</p>
+    <p style="margin-top:12px"><b>5. 책임의 범위.</b> 운영자는 정보를 정확하게 유지하려고 노력하지만, 모든 내용이 항상 최신이고 오류가 없다고 보증하지는 못합니다.
+    이 사이트의 정보와 계산 결과는 참고용이며, 가입 여부와 그 결과에 대한 판단은 이용자에게 있습니다.
+    운영자의 고의 또는 중대한 과실로 생긴 손해에 대한 책임까지 배제하는 것은 아닙니다.</p>
+    <p style="margin-top:12px"><b>6. 문의.</b> 운영자 Jason Jung · <a href="mailto:${CONTACT}">${CONTACT}</a></p>
   </div>`,
     })
   );
@@ -2031,10 +2060,11 @@ function buildInfoPages() {
       desc: "이자계산기(ijacalc.com)의 개인정보처리방침입니다.",
       canonicalPath: "/privacy",
       body: `
-  <div class="hero"><h1>개인정보<span class="em">처리방침</span></h1><p>시행일: 2026년 7월 11일</p></div>
+  <div class="hero"><h1>개인정보<span class="em">처리방침</span></h1><p>시행일: 2026년 7월 11일 · 개정: 2026년 10월 1일</p></div>
   <div class="prose">
     <p><b>1. 수집하는 개인정보.</b> 이자계산기(ijacalc.com)는 회원가입 없이 이용하는 서비스로,
-    이름·이메일·전화번호 등 개인 식별 정보를 수집하지 않습니다.</p>
+    이름·전화번호 등 개인 식별 정보를 수집하지 않습니다. 다만 이용자가 문의·정정 요청 메일을 보내면
+    <b>이메일 주소와 메일 내용</b>을 받게 되며, 답변과 내용 정정에만 쓰고 처리 후 1년간 보관한 뒤 삭제합니다.</p>
     <p style="margin-top:12px"><b>2. 브라우저에 저장되는 정보.</b> 계산기에 입력한 금액은 이용 편의를 위해
     이용자의 기기(브라우저 localStorage)에만 저장되며, 서버로 전송되거나 수집되지 않습니다.</p>
     <p style="margin-top:12px"><b>3. 자동으로 수집되는 정보.</b> 서비스 운영을 위해 호스팅 사업자(Cloudflare)가
@@ -2048,8 +2078,11 @@ function buildInfoPages() {
     Google을 포함한 제3자 광고 사업자는 쿠키를 사용하여 이용자의 이전 방문 기록에 기반한 맞춤 광고를 표시할 수 있습니다.
     이용자는 <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google 광고 설정</a>에서 맞춤 광고를 해제하거나,
     <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a>에서 제3자 광고 쿠키 사용을 거부할 수 있습니다.</p>
-    <p style="margin-top:12px"><b>6. 개인정보의 제3자 제공.</b> 본 사이트는 이용자의 개인정보를 수집하지 않으므로 제3자에게 제공하지 않습니다.</p>
-    <p style="margin-top:12px"><b>7. 문의처.</b> 개인정보 관련 문의: <a href="mailto:${CONTACT}">${CONTACT}</a></p>
+    <p style="margin-top:12px"><b>6. 개인정보의 제3자 제공·국외 처리.</b> 본 사이트는 이용자의 개인정보를 제3자에게 제공하지 않습니다.
+    다만 위 3~5항의 도구를 쓰는 과정에서 접속 기록(IP 주소, 브라우저·기기 정보, 방문한 페이지, 쿠키 식별자)이
+    <b>Google LLC</b>(미국 — Google Analytics, 광고 게재 시 AdSense)와 <b>Cloudflare, Inc.</b>(미국 — 호스팅·전송·방문 통계)의 서버에서 처리될 수 있습니다.
+    쿠키를 차단해도 사이트 이용에는 지장이 없습니다.</p>
+    <p style="margin-top:12px"><b>7. 개인정보 보호책임자·문의처.</b> 운영자 Jason Jung · <a href="mailto:${CONTACT}">${CONTACT}</a></p>
     <p style="margin-top:12px"><b>8. 변경 고지.</b> 본 방침이 변경되는 경우 이 페이지를 통해 고지합니다.</p>
   </div>`,
     })
@@ -2060,7 +2093,7 @@ function buildInfoPages() {
 function buildSitemap(slugs, guideSlugs, amountSlugs, bankSlugs) {
   const today = DATA.builtAt.slice(0, 10);
   const urls = [
-    "/", "/parking", "/bank", "/calculator", "/split", "/new", "/rates", "/loans", "/guide", "/about", "/privacy",
+    "/", "/parking", "/bank", "/calculator", "/split", "/new", "/rates", "/loans", "/guide", "/about", "/terms", "/privacy",
     ...amountSlugs.map((s) => `/amount/${encodeURIComponent(s)}`),
     ...guideSlugs.map((s) => `/guide/${encodeURIComponent(s)}`),
     ...bankSlugs.map((s) => `/bank/${encodeURIComponent(s)}`),
