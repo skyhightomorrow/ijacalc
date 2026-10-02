@@ -1,14 +1,4 @@
 {
-  "detectedAt": "2026-10-01T00:02:35.215Z",
-  "products": [
-    {
-      "bank": "CK",
-      "product": "모임통장_보통예금",
-      "baseRate": 2,
-      "maxRate": 2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261001",
-      "payout": "분기지급"
-    }
-  ]
+  "detectedAt": "2026-10-02T00:01:23.557Z",
+  "products": []
 }
