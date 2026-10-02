@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-10-02T00:01:23.610Z",
-  "finlifeFetchedAt": "2026-10-02T00:01:08.378Z",
+  "builtAt": "2026-10-02T23:56:19.248Z",
+  "finlifeFetchedAt": "2026-10-02T23:56:02.426Z",
   "finlifeDisclosureMonth": "202609",
   "parking": [
     {
@@ -3231,16 +3231,7 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [
-    {
-      "bank": "주식회사 케이뱅크",
-      "product": "내맘대로 이자받는 정기예금",
-      "kind": "deposit",
-      "group": "은행",
-      "disclosureStart": "20261001",
-      "maxRate": 3.71
-    }
-  ],
+  "newProducts": [],
   "topDeposits": [
     {
       "bank": "OK저축은행",
