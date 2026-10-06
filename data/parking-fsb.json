@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-04T23:27:48.204Z",
+  "fetchedAt": "2026-10-06T01:23:13.261Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1371,24 +1371,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "IBK",
-      "product": "IBK모임통장",
-      "baseRate": 0.1,
-      "maxRate": 3.2,
-      "maxRateCondition": "300,000,000원 이하",
-      "disclosedAt": "20260917",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "IBK",
-      "product": "IBKSB e-파킹통장 프로",
-      "baseRate": 0.1,
-      "maxRate": 3.5,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20260917",
-      "payout": "분기지급"
-    },
-    {
       "bank": "우리금융",
       "product": "첫번째저축예금",
       "baseRate": 0.1,
@@ -1422,24 +1404,6 @@
       "maxRate": 2.7,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260702",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "조은",
-      "product": "보통예금",
-      "baseRate": 0.5,
-      "maxRate": 0.5,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260908",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "조은",
-      "product": "e-보통예금",
-      "baseRate": 1,
-      "maxRate": 1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260908",
       "payout": "분기지급"
     },
     {
@@ -1485,6 +1449,42 @@
       "maxRate": 3,
       "maxRateCondition": "10,000,000원 이하",
       "disclosedAt": "20260929",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261006",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "e-보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261006",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "IBK",
+      "product": "IBK모임통장",
+      "baseRate": 0.1,
+      "maxRate": 3.2,
+      "maxRateCondition": "300,000,000원 이하",
+      "disclosedAt": "20261006",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "IBK",
+      "product": "IBKSB e-파킹통장 프로",
+      "baseRate": 0.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20261006",
       "payout": "분기지급"
     }
   ]
