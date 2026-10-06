@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-06T01:21:53.561Z",
+  "fetchedAt": "2026-10-06T23:57:22.229Z",
   "products": {
     "deposit_020000": [
       {
@@ -474,7 +474,7 @@
         "max_limit": 50000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610021029",
+        "fin_co_subm_day": "202610061057",
         "options": [
           {
             "dcls_month": "202609",
@@ -483,8 +483,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.49,
-            "intr_rate2": 3.69
+            "intr_rate": 3.46,
+            "intr_rate2": 3.66
           },
           {
             "dcls_month": "202609",
@@ -493,8 +493,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "24",
-            "intr_rate": 3.31,
-            "intr_rate2": 3.51
+            "intr_rate": 3.28,
+            "intr_rate2": 3.48
           },
           {
             "dcls_month": "202609",
@@ -503,8 +503,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "36",
-            "intr_rate": 3.17,
-            "intr_rate2": 3.37
+            "intr_rate": 3.14,
+            "intr_rate2": 3.34
           }
         ],
         "_kind": "deposit",
@@ -525,7 +525,7 @@
         "max_limit": null,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610021028",
+        "fin_co_subm_day": "202610061100",
         "options": [
           {
             "dcls_month": "202609",
@@ -534,8 +534,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "1",
-            "intr_rate": 2.45,
-            "intr_rate2": 2.55
+            "intr_rate": 2.36,
+            "intr_rate2": 2.46
           },
           {
             "dcls_month": "202609",
@@ -544,8 +544,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "3",
-            "intr_rate": 2.8,
-            "intr_rate2": 2.9
+            "intr_rate": 2.7,
+            "intr_rate2": 2.8
           },
           {
             "dcls_month": "202609",
@@ -554,8 +554,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.15,
-            "intr_rate2": 3.25
+            "intr_rate": 3.05,
+            "intr_rate2": 3.15
           },
           {
             "dcls_month": "202609",
@@ -564,8 +564,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.49,
-            "intr_rate2": 3.69
+            "intr_rate": 3.36,
+            "intr_rate2": 3.56
           },
           {
             "dcls_month": "202609",
@@ -574,8 +574,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
-            "intr_rate": 3.31,
-            "intr_rate2": 3.51
+            "intr_rate": 3.18,
+            "intr_rate2": 3.38
           },
           {
             "dcls_month": "202609",
@@ -584,8 +584,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 3.17,
-            "intr_rate2": 3.37
+            "intr_rate": 3.04,
+            "intr_rate2": 3.24
           }
         ],
         "_kind": "deposit",
@@ -606,7 +606,7 @@
         "max_limit": 100000000,
         "dcls_strt_day": "20260921",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610021029",
+        "fin_co_subm_day": "202610061055",
         "options": [
           {
             "dcls_month": "202609",
@@ -615,8 +615,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.39,
-            "intr_rate2": 3.89
+            "intr_rate": 3.36,
+            "intr_rate2": 3.86
           }
         ],
         "_kind": "deposit",
@@ -1286,9 +1286,9 @@
         "join_member": "실명의 개인\n(개인사업자 제외)",
         "etc_note": "계좌 수 제한 없으며, 최소 1백만원 이상 납입한도 제한 없음",
         "max_limit": null,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020906",
+        "fin_co_subm_day": "202610060902",
         "options": [
           {
             "dcls_month": "202609",
@@ -1297,8 +1297,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.44,
-            "intr_rate2": 3.44
+            "intr_rate": 3.43,
+            "intr_rate2": 3.43
           },
           {
             "dcls_month": "202609",
@@ -1307,8 +1307,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.66,
-            "intr_rate2": 3.66
+            "intr_rate": 3.62,
+            "intr_rate2": 3.62
           },
           {
             "dcls_month": "202609",
@@ -1317,8 +1317,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
-            "intr_rate": 3.56,
-            "intr_rate2": 3.56
+            "intr_rate": 3.49,
+            "intr_rate2": 3.49
           },
           {
             "dcls_month": "202609",
@@ -1327,8 +1327,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 3.54,
-            "intr_rate2": 3.54
+            "intr_rate": 3.45,
+            "intr_rate2": 3.45
           }
         ],
         "_kind": "deposit",
@@ -1347,9 +1347,9 @@
         "join_member": "실명의 개인\n(개인사업자 제외)",
         "etc_note": "계좌 수 제한 없으며, 최소 1백만원 이상 통합한도 3억원 이내 가입 가능",
         "max_limit": 300000000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020906",
+        "fin_co_subm_day": "202610060903",
         "options": [
           {
             "dcls_month": "202609",
@@ -1368,8 +1368,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "3",
-            "intr_rate": 3.1,
-            "intr_rate2": 3.1
+            "intr_rate": 3.09,
+            "intr_rate2": 3.09
           },
           {
             "dcls_month": "202609",
@@ -1378,8 +1378,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.49,
-            "intr_rate2": 3.49
+            "intr_rate": 3.48,
+            "intr_rate2": 3.48
           },
           {
             "dcls_month": "202609",
@@ -1388,8 +1388,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.69,
-            "intr_rate2": 3.69
+            "intr_rate": 3.65,
+            "intr_rate2": 3.65
           }
         ],
         "_kind": "deposit",
@@ -1712,9 +1712,9 @@
         "join_member": "개인",
         "etc_note": "기타유의사항없음.",
         "max_limit": null,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020927",
+        "fin_co_subm_day": "202610061002",
         "options": [
           {
             "dcls_month": "202609",
@@ -1743,8 +1743,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.26,
-            "intr_rate2": 3.36
+            "intr_rate": 3.25,
+            "intr_rate2": 3.35
           },
           {
             "dcls_month": "202609",
@@ -1753,8 +1753,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.46,
-            "intr_rate2": 3.56
+            "intr_rate": 3.45,
+            "intr_rate2": 3.55
           }
         ],
         "_kind": "deposit",
@@ -1773,9 +1773,9 @@
         "join_member": "개인",
         "etc_note": "1. 300만원이상 가입\n2. 온실가스 줄이기 실천서약서 동의시 가입가능\n3. 신규가입 계좌당 2천원씩 녹색환경기금 적립\n※ 자세한 사항은 상품설명서 참조",
         "max_limit": null,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020927",
+        "fin_co_subm_day": "202610061002",
         "options": [
           {
             "dcls_month": "202609",
@@ -1824,9 +1824,9 @@
         "join_member": "개인",
         "etc_note": "1. 10만원 이상 10억원 이내 가입",
         "max_limit": 1000000000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020927",
+        "fin_co_subm_day": "202610061002",
         "options": [
           {
             "dcls_month": "202609",
@@ -1855,8 +1855,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "6",
-            "intr_rate": 3.36,
-            "intr_rate2": 3.36
+            "intr_rate": 3.35,
+            "intr_rate2": 3.35
           },
           {
             "dcls_month": "202609",
@@ -1865,8 +1865,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.56,
-            "intr_rate2": 3.56
+            "intr_rate": 3.55,
+            "intr_rate2": 3.55
           },
           {
             "dcls_month": "202609",
@@ -1875,8 +1875,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "24",
-            "intr_rate": 3.01,
-            "intr_rate2": 3.01
+            "intr_rate": 3,
+            "intr_rate2": 3
           },
           {
             "dcls_month": "202609",
@@ -1885,8 +1885,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "36",
-            "intr_rate": 2.71,
-            "intr_rate2": 2.71
+            "intr_rate": 2.7,
+            "intr_rate2": 2.7
           }
         ],
         "_kind": "deposit",
@@ -1905,9 +1905,9 @@
         "join_member": "개인",
         "etc_note": "1. 100만원 이상 가입\n2. 고향사랑기부금 우대금리는 농협은행/농축협 영업점 또는 고향사랑e음 홈페이지를 통한 고향사랑기부금 납부실적이 확인되는 경우 제공\n3. 연간 판매액의 0.1% 공익기금 적립\n\n※ 우대조건 관련 자세한 사항은 상품설명서 참조",
         "max_limit": null,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020927",
+        "fin_co_subm_day": "202610061002",
         "options": [
           {
             "dcls_month": "202609",
@@ -38612,9 +38612,9 @@
         "join_member": "개인사업자, 조합(비영리법인 포함), 법인",
         "etc_note": "해당없음",
         "max_limit": null,
-        "dcls_strt_day": "20260928",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609281016",
+        "fin_co_subm_day": "202610061022",
         "options": [
           {
             "dcls_month": "202609",
@@ -38625,8 +38625,8 @@
             "rsrv_type": "S",
             "rsrv_type_nm": "정액적립식",
             "save_trm": "6",
-            "intr_rate": 3,
-            "intr_rate2": 3
+            "intr_rate": 3.02,
+            "intr_rate2": 3.02
           },
           {
             "dcls_month": "202609",
@@ -38637,8 +38637,8 @@
             "rsrv_type": "S",
             "rsrv_type_nm": "정액적립식",
             "save_trm": "12",
-            "intr_rate": 3.6,
-            "intr_rate2": 3.6
+            "intr_rate": 3.66,
+            "intr_rate2": 3.66
           },
           {
             "dcls_month": "202609",
@@ -38649,8 +38649,8 @@
             "rsrv_type": "S",
             "rsrv_type_nm": "정액적립식",
             "save_trm": "24",
-            "intr_rate": 3.7,
-            "intr_rate2": 3.7
+            "intr_rate": 3.77,
+            "intr_rate2": 3.77
           },
           {
             "dcls_month": "202609",
@@ -38661,8 +38661,8 @@
             "rsrv_type": "S",
             "rsrv_type_nm": "정액적립식",
             "save_trm": "36",
-            "intr_rate": 3.86,
-            "intr_rate2": 3.86
+            "intr_rate": 3.92,
+            "intr_rate2": 3.92
           }
         ],
         "_kind": "saving",
@@ -38681,9 +38681,9 @@
         "join_member": "개인, 개인사업자, 임의단체",
         "etc_note": "해당없음",
         "max_limit": 5000000,
-        "dcls_strt_day": "20260928",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202609281020",
+        "fin_co_subm_day": "202610061025",
         "options": [
           {
             "dcls_month": "202609",
@@ -38718,8 +38718,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "6",
-            "intr_rate": 3.3,
-            "intr_rate2": 3.3
+            "intr_rate": 3.32,
+            "intr_rate2": 3.32
           },
           {
             "dcls_month": "202609",
@@ -38730,8 +38730,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.86,
+            "intr_rate2": 3.86
           },
           {
             "dcls_month": "202609",
@@ -38742,8 +38742,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "24",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.87,
+            "intr_rate2": 3.87
           },
           {
             "dcls_month": "202609",
@@ -38754,8 +38754,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "36",
-            "intr_rate": 3.96,
-            "intr_rate2": 3.96
+            "intr_rate": 4.02,
+            "intr_rate2": 4.02
           }
         ],
         "_kind": "saving",
@@ -39071,9 +39071,9 @@
         "join_member": "개인",
         "etc_note": "가입기간 1개월 이상 6개월 이하(일 단위)\n\n초입금 및 매일 1천원이상  5만원이내(천원 단위)",
         "max_limit": 1550000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020930",
+        "fin_co_subm_day": "202610061003",
         "options": [
           {
             "dcls_month": "202609",
@@ -39128,9 +39128,9 @@
         "join_member": "만19세~만34세 개인 및 개인사업자",
         "etc_note": "초입금 및 매회 1만원 이상, 월 50만원 이내 자유적립\n\n급여이체 실적과 개인사업자 계좌 실적 우대금리는 중복 적용 불가\n\n * 급여입금실적 인정기준\n  - 가입기간 12개월 이하 : 3개월 이상 급여이체\n  - 가입기간 24개월 이하 : 12개월 이상 급여이체",
         "max_limit": 500000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020930",
+        "fin_co_subm_day": "202610061003",
         "options": [
           {
             "dcls_month": "202609",
@@ -39185,9 +39185,9 @@
         "join_member": "개인",
         "etc_note": "초입금5만원 이상 및 매회 1만원 이상, 매월50만원이내\n(단, 만기일 전 3개월 이내에는 이전 적립금 합계액을 초과하여 입금불가)\n\n※자세한 사항은 상품설명서 참조",
         "max_limit": 500000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020930",
+        "fin_co_subm_day": "202610061003",
         "options": [
           {
             "dcls_month": "202609",
@@ -39242,9 +39242,9 @@
         "join_member": "개인",
         "etc_note": "1.초입금1만원 이상 및 매회 1천원 이상, 매월50만원이내\n\n2. 고향사랑기부금 우대금리는 농협은행/농축협 영업점 또는 고향사랑e음 홈페이지를 통한 고향사랑기부금 납부실적이 확인되는 경우 제공\n\n3. 연간 판매액의 0.1% 공익기금 적립\n\n※자세한 사항은 상품설명서 참조",
         "max_limit": 500000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020930",
+        "fin_co_subm_day": "202610061003",
         "options": [
           {
             "dcls_month": "202609",
@@ -39299,9 +39299,9 @@
         "join_member": "만18세이상 개인",
         "etc_note": "초입금 및 매회 입금 1만원 이상 원 단위,  1인당 분기별 3백만원 이내 적립 가능\n(단,계약기간 3/4 경과 후 적립할 수 있는 금액은 이전 적립누계액의 1/2이내)",
         "max_limit": 3000000,
-        "dcls_strt_day": "20261002",
+        "dcls_strt_day": "20261006",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610020930",
+        "fin_co_subm_day": "202610061003",
         "options": [
           {
             "dcls_month": "202609",
@@ -39312,8 +39312,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "12",
-            "intr_rate": 3.28,
-            "intr_rate2": 4.08
+            "intr_rate": 3.27,
+            "intr_rate2": 4.07
           },
           {
             "dcls_month": "202609",
@@ -39324,8 +39324,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "24",
-            "intr_rate": 3.01,
-            "intr_rate2": 3.81
+            "intr_rate": 3,
+            "intr_rate2": 3.8
           },
           {
             "dcls_month": "202609",
@@ -39336,8 +39336,8 @@
             "rsrv_type": "F",
             "rsrv_type_nm": "자유적립식",
             "save_trm": "36",
-            "intr_rate": 2.71,
-            "intr_rate2": 3.51
+            "intr_rate": 2.7,
+            "intr_rate2": 3.5
           }
         ],
         "_kind": "saving",
