@@ -1,46 +1,4 @@
 {
-  "detectedAt": "2026-10-10T23:42:14.217Z",
-  "products": [
-    {
-      "dcls_month": "202609",
-      "fin_co_no": "0010366",
-      "fin_prdt_cd": "024242002",
-      "kor_co_nm": "조은저축은행",
-      "fin_prdt_nm": "(특판한도)SB톡톡 정기예금",
-      "join_way": "스마트폰",
-      "mtrt_int": "- 1개월이내 해지: 만기시 e-정기예금 동일 계약기간의 신규약정금리\n'- 1개월초과 이후 해지: 보통예금 이율",
-      "spcl_cnd": "없음",
-      "join_deny": "1",
-      "join_member": "SB 톡톡",
-      "etc_note": "한도 30억 / 1일 소진 시 마감(금리변경시 까지)",
-      "max_limit": null,
-      "dcls_strt_day": "20261008",
-      "dcls_end_day": null,
-      "fin_co_subm_day": "202610080818",
-      "options": [
-        {
-          "dcls_month": "202609",
-          "fin_co_no": "0010366",
-          "fin_prdt_cd": "024242002",
-          "intr_rate_type": "S",
-          "intr_rate_type_nm": "단리",
-          "save_trm": "12",
-          "intr_rate": 4.1,
-          "intr_rate2": 4.1
-        },
-        {
-          "dcls_month": "202609",
-          "fin_co_no": "0010366",
-          "fin_prdt_cd": "024242002",
-          "intr_rate_type": "M",
-          "intr_rate_type_nm": "복리",
-          "save_trm": "12",
-          "intr_rate": 4.1,
-          "intr_rate2": 4.1
-        }
-      ],
-      "_kind": "deposit",
-      "_group": "저축은행"
-    }
-  ]
+  "detectedAt": "2026-10-11T23:49:13.720Z",
+  "products": []
 }
