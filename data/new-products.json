@@ -1,4 +1,167 @@
 {
-  "detectedAt": "2026-10-13T02:10:27.770Z",
-  "products": []
+  "detectedAt": "2026-10-13T23:47:38.566Z",
+  "products": [
+    {
+      "dcls_month": "202609",
+      "fin_co_no": "0012711",
+      "fin_prdt_cd": "24241",
+      "kor_co_nm": "엔에이치저축은행",
+      "fin_prdt_nm": "농촌사랑정기예금",
+      "join_way": "영업점",
+      "mtrt_int": "-1개월 이내: 신규 가입 당시 기본이율 또는 만기시 동일상품* 동일계약기간의 신규 기본이율 중 낮은이율\n-1개월 초과: 보통예금 이율 (연 0.2%)",
+      "spcl_cnd": "없음",
+      "join_deny": "1",
+      "join_member": "제한없음",
+      "etc_note": "-가입금액: 일백만원 이상(상품판매 총 한도 250억원)\n-가입기간: 6개월 이상 ~ 36개월 이하",
+      "max_limit": null,
+      "dcls_strt_day": "20261012",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202610121006",
+      "options": [
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24241",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "1",
+          "intr_rate": 3.3,
+          "intr_rate2": 3.3
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24241",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "3",
+          "intr_rate": 3.3,
+          "intr_rate2": 3.3
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24241",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.3,
+          "intr_rate2": 3.3
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24241",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 3.9,
+          "intr_rate2": 3.9
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24241",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.6,
+          "intr_rate2": 3.6
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24241",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 3.6,
+          "intr_rate2": 3.6
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "저축은행"
+    },
+    {
+      "dcls_month": "202609",
+      "fin_co_no": "0012711",
+      "fin_prdt_cd": "24541",
+      "kor_co_nm": "엔에이치저축은행",
+      "fin_prdt_nm": "비대면농촌사랑정기예금",
+      "join_way": "인터넷,스마트폰",
+      "mtrt_int": "-1개월 이내: 신규 가입 당시 기본이율 또는 만기시 동일상품* 동일계약기간의 신규 기본이율 중 낮은이율\n-1개월 초과: 보통예금 이율 (연 0.2%)",
+      "spcl_cnd": "없음",
+      "join_deny": "1",
+      "join_member": "제한없음",
+      "etc_note": "-가입금액: 일백만원 이상(상품판매 총 한도 250억원)\n-가입기간: 6개월 이상 ~ 36개월 이하",
+      "max_limit": null,
+      "dcls_strt_day": "20261012",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202610121006",
+      "options": [
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24541",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "1",
+          "intr_rate": 3.4,
+          "intr_rate2": 3.4
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24541",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "3",
+          "intr_rate": 3.4,
+          "intr_rate2": 3.4
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24541",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "6",
+          "intr_rate": 3.4,
+          "intr_rate2": 3.4
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24541",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 4,
+          "intr_rate2": 4
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24541",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "24",
+          "intr_rate": 3.7,
+          "intr_rate2": 3.7
+        },
+        {
+          "dcls_month": "202609",
+          "fin_co_no": "0012711",
+          "fin_prdt_cd": "24541",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "36",
+          "intr_rate": 3.7,
+          "intr_rate2": 3.7
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "저축은행"
+    }
+  ]
 }

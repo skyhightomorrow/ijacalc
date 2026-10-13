@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-10-13T02:11:47.342Z",
-  "finlifeFetchedAt": "2026-10-13T02:10:27.770Z",
+  "builtAt": "2026-10-13T23:49:00.305Z",
+  "finlifeFetchedAt": "2026-10-13T23:47:38.566Z",
   "finlifeDisclosureMonth": "202609",
   "parking": [
     {
@@ -3231,7 +3231,24 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [],
+  "newProducts": [
+    {
+      "bank": "엔에이치저축은행",
+      "product": "농촌사랑정기예금",
+      "kind": "deposit",
+      "group": "저축은행",
+      "disclosureStart": "20261012",
+      "maxRate": 3.9
+    },
+    {
+      "bank": "엔에이치저축은행",
+      "product": "비대면농촌사랑정기예금",
+      "kind": "deposit",
+      "group": "저축은행",
+      "disclosureStart": "20261012",
+      "maxRate": 4
+    }
+  ],
   "topDeposits": [
     {
       "bank": "조은저축은행",
@@ -3325,6 +3342,71 @@
       "disclosureMonth": "202609"
     },
     {
+      "bank": "OK저축은행",
+      "product": "OK정기예금",
+      "group": "저축은행",
+      "baseRate": 3.95,
+      "maxRate": 4.05,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "영업점",
+      "specialCondition": "당행 보통예금(활동계좌) 보유 시 +0.1%p",
+      "maxLimit": 10000000000,
+      "disclosureMonth": "202609"
+    },
+    {
+      "bank": "OK저축은행",
+      "product": "OK e-정기예금",
+      "group": "저축은행",
+      "baseRate": 4.05,
+      "maxRate": 4.05,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 10000000000,
+      "disclosureMonth": "202609"
+    },
+    {
+      "bank": "OK저축은행",
+      "product": "OK안심정기예금(변동금리)",
+      "group": "저축은행",
+      "baseRate": 3.95,
+      "maxRate": 4.05,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "영업점",
+      "specialCondition": "당행 보통예금(활동계좌) 보유 시 +0.1%p",
+      "maxLimit": 10000000000,
+      "disclosureMonth": "202609"
+    },
+    {
+      "bank": "OK저축은행",
+      "product": "OK e-안심정기예금(변동금리)",
+      "group": "저축은행",
+      "baseRate": 4.05,
+      "maxRate": 4.05,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 10000000000,
+      "disclosureMonth": "202609"
+    },
+    {
+      "bank": "CK저축은행",
+      "product": "정기예금(인터넷,모바일,비대면)",
+      "group": "저축은행",
+      "baseRate": 4.04,
+      "maxRate": 4.04,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 1000000000,
+      "disclosureMonth": "202609"
+    },
+    {
       "bank": "상상인플러스저축은행",
       "product": "회전정기예금",
       "group": "저축은행",
@@ -3353,71 +3435,6 @@
     {
       "bank": "상상인플러스저축은행",
       "product": "회전정기예금(비대면)",
-      "group": "저축은행",
-      "baseRate": 4.03,
-      "maxRate": 4.03,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202609"
-    },
-    {
-      "bank": "상상인플러스저축은행",
-      "product": "크크크 회전정기예금",
-      "group": "저축은행",
-      "baseRate": 4.03,
-      "maxRate": 4.03,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202609"
-    },
-    {
-      "bank": "상상인플러스저축은행",
-      "product": "정기예금",
-      "group": "저축은행",
-      "baseRate": 4.03,
-      "maxRate": 4.03,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "영업점",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202609"
-    },
-    {
-      "bank": "상상인플러스저축은행",
-      "product": "e-정기예금",
-      "group": "저축은행",
-      "baseRate": 4.03,
-      "maxRate": 4.03,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202609"
-    },
-    {
-      "bank": "상상인플러스저축은행",
-      "product": "비대면 정기예금",
-      "group": "저축은행",
-      "baseRate": 4.03,
-      "maxRate": 4.03,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202609"
-    },
-    {
-      "bank": "상상인플러스저축은행",
-      "product": "크크크 정기예금",
       "group": "저축은행",
       "baseRate": 4.03,
       "maxRate": 4.03,
