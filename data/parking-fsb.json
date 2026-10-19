@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T22:32:13.921Z",
+  "fetchedAt": "2026-10-19T23:51:42.029Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -228,30 +228,12 @@
       "payout": "월지급"
     },
     {
-      "bank": "다올",
-      "product": "Fi 쌈짓돈Ⅲ 통장",
-      "baseRate": 1.5,
-      "maxRate": 5,
-      "maxRateCondition": "1,000,000원 이하",
-      "disclosedAt": "20260904",
-      "payout": "월지급"
-    },
-    {
       "bank": "웰컴",
       "product": "웰컴 주거래통장",
       "baseRate": 0.8,
       "maxRate": 3.3,
       "maxRateCondition": "300,000,000원 이하",
       "disclosedAt": "20260812",
-      "payout": "월지급"
-    },
-    {
-      "bank": "대신",
-      "product": "더드리고입출금통장",
-      "baseRate": 0.1,
-      "maxRate": 3,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20260929",
       "payout": "월지급"
     },
     {
@@ -264,12 +246,48 @@
       "payout": "월지급"
     },
     {
+      "bank": "대신",
+      "product": "더드리고입출금통장",
+      "baseRate": 0.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20261019",
+      "payout": "월지급"
+    },
+    {
       "bank": "고려",
       "product": "보고파플러스 파킹통장",
       "baseRate": 3.1,
       "maxRate": 3.4,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20260729",
+      "payout": "월지급"
+    },
+    {
+      "bank": "다올",
+      "product": "Fi 쌈짓돈Ⅲ 통장",
+      "baseRate": 2.5,
+      "maxRate": 5,
+      "maxRateCondition": "1,000,000원 이하",
+      "disclosedAt": "20261019",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "M-DreamBig 보통예금",
+      "baseRate": 0.5,
+      "maxRate": 3.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20261019",
+      "payout": "월지급"
+    },
+    {
+      "bank": "DB",
+      "product": "DreamBig 보통예금",
+      "baseRate": 0.5,
+      "maxRate": 3.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20261019",
       "payout": "월지급"
     },
     {
@@ -306,24 +324,6 @@
       "maxRate": 7.7,
       "maxRateCondition": "2,000,000원 이하",
       "disclosedAt": "20260807",
-      "payout": "월지급"
-    },
-    {
-      "bank": "DB",
-      "product": "M-DreamBig 보통예금",
-      "baseRate": 0.5,
-      "maxRate": 3.2,
-      "maxRateCondition": "70,000,000원 이하",
-      "disclosedAt": "20260911",
-      "payout": "월지급"
-    },
-    {
-      "bank": "DB",
-      "product": "DreamBig 보통예금",
-      "baseRate": 0.5,
-      "maxRate": 3.2,
-      "maxRateCondition": "70,000,000원 이하",
-      "disclosedAt": "20260911",
       "payout": "월지급"
     },
     {
