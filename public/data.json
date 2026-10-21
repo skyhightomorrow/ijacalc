@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-10-21T08:43:16.789Z",
-  "finlifeFetchedAt": "2026-10-21T08:42:26.102Z",
+  "builtAt": "2026-10-21T23:30:52.389Z",
+  "finlifeFetchedAt": "2026-10-21T23:30:05.324Z",
   "finlifeDisclosureMonth": "202610",
   "parking": [
     {
@@ -3231,56 +3231,7 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [
-    {
-      "bank": "토스뱅크 주식회사",
-      "product": "토스뱅크 원하는 날 만기되는 정기예금",
-      "kind": "deposit",
-      "group": "은행",
-      "disclosureStart": "20261021",
-      "maxRate": 3.8
-    },
-    {
-      "bank": "주식회사 카카오뱅크",
-      "product": "카카오뱅크 AI 목표적금",
-      "kind": "saving",
-      "group": "은행",
-      "disclosureStart": "20261020",
-      "maxRate": 5
-    },
-    {
-      "bank": "아이엠뱅크",
-      "product": "IM주택담보대출-코픽스6개월변동(생활)",
-      "kind": "mortgageLoan",
-      "group": "은행",
-      "disclosureStart": "20261020",
-      "maxRate": null
-    },
-    {
-      "bank": "아이엠뱅크",
-      "product": "IM주택담보대출-코픽스6개월변동(구입)",
-      "kind": "mortgageLoan",
-      "group": "은행",
-      "disclosureStart": "20261020",
-      "maxRate": null
-    },
-    {
-      "bank": "MS저축은행",
-      "product": "개인신용대출",
-      "kind": "creditLoan",
-      "group": "저축은행",
-      "disclosureStart": "20261015",
-      "maxRate": null
-    },
-    {
-      "bank": "대한저축은행",
-      "product": "개인신용대출",
-      "kind": "creditLoan",
-      "group": "저축은행",
-      "disclosureStart": "20261015",
-      "maxRate": null
-    }
-  ],
+  "newProducts": [],
   "topDeposits": [
     {
       "bank": "경남은행",
