@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T23:30:52.337Z",
+  "fetchedAt": "2026-10-22T23:29:32.585Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -993,15 +993,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "에스앤티",
-      "product": "우리가족사랑통장",
-      "baseRate": 0.5,
-      "maxRate": 2.75,
-      "maxRateCondition": "10,000,000원 이상",
-      "disclosedAt": "20260520",
-      "payout": "분기지급"
-    },
-    {
       "bank": "인천",
       "product": "e-보다보통예금(비대면)",
       "baseRate": 0.1,
@@ -1467,6 +1458,15 @@
       "maxRate": 2.7,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260702",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "에스앤티",
+      "product": "우리가족사랑통장",
+      "baseRate": 0.5,
+      "maxRate": 3.1,
+      "maxRateCondition": "10,000,000원 이상",
+      "disclosedAt": "20261022",
       "payout": "분기지급"
     },
     {
