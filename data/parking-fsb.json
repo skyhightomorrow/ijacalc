@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-25T22:43:43.053Z",
+  "fetchedAt": "2026-10-26T23:58:35.432Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1236,24 +1236,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "OSB",
-      "product": "E-보통예금",
-      "baseRate": 0.2,
-      "maxRate": 2.3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20261016",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "OSB",
-      "product": "S-보통예금",
-      "baseRate": 0.2,
-      "maxRate": 2.3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20261016",
-      "payout": "분기지급"
-    },
-    {
       "bank": "예가람",
       "product": "The프리미엄 Biz통장",
       "baseRate": 0.2,
@@ -1413,6 +1395,24 @@
       "maxRate": 3,
       "maxRateCondition": "10,000,000원 이하",
       "disclosedAt": "20261023",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "E-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20261026",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "S-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20261026",
       "payout": "분기지급"
     },
     {
