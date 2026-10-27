@@ -1,38 +1,4 @@
 {
-  "detectedAt": "2026-10-26T23:58:22.868Z",
-  "products": [
-    {
-      "dcls_month": "202610",
-      "fin_co_no": "0011551",
-      "fin_prdt_cd": "310024",
-      "kor_co_nm": "예가람저축은행",
-      "fin_prdt_nm": "핑크스파이더스 V6 적금",
-      "join_way": "영업점,인터넷,스마트폰",
-      "mtrt_int": "* 만기 후 1개월 이내 : 가입 당시 기본이율 또는 만기 시 동일 상품 동일 계약기간의 신규 기본이율 중 낮은 이율\n* 만기 후 1개월 초과 : 보통예금이율",
-      "spcl_cnd": "* 정규시즌 승수 누적 적용\n* 플레이오프 진출\n* 챔피연결정전 진출\n* 최종 우승",
-      "join_deny": "1",
-      "join_member": "개인",
-      "etc_note": "* 흥국생명 배구단 핑크스파이더스의 경기 성과에 따라 우대금리를 제공\n* 1인 1계좌 제한\n* 판매기간: 26.10.23 ~ 27.02.16\n* 판매한도: 10,000좌",
-      "max_limit": 300000,
-      "dcls_strt_day": "20261023",
-      "dcls_end_day": null,
-      "fin_co_subm_day": "202610230906",
-      "options": [
-        {
-          "dcls_month": "202610",
-          "fin_co_no": "0011551",
-          "fin_prdt_cd": "310024",
-          "intr_rate_type": "S",
-          "intr_rate_type_nm": "단리",
-          "rsrv_type": "S",
-          "rsrv_type_nm": "정액적립식",
-          "save_trm": "12",
-          "intr_rate": 4,
-          "intr_rate2": 15
-        }
-      ],
-      "_kind": "saving",
-      "_group": "저축은행"
-    }
-  ]
+  "detectedAt": "2026-10-27T23:54:00.358Z",
+  "products": []
 }
