@@ -1,23 +1,4 @@
 {
-  "detectedAt": "2026-10-27T23:54:11.912Z",
-  "products": [
-    {
-      "bank": "키움",
-      "product": "더 키움 플러스 파킹통장",
-      "baseRate": 2,
-      "maxRate": 3.4,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20261028",
-      "payout": "수시지급"
-    },
-    {
-      "bank": "키움",
-      "product": "더 키움 플러스 파킹통장",
-      "baseRate": 2,
-      "maxRate": 3.4,
-      "maxRateCondition": "200,000,000원 이하",
-      "disclosedAt": "20261028",
-      "payout": "분기지급"
-    }
-  ]
+  "detectedAt": "2026-10-29T00:10:43.083Z",
+  "products": []
 }
