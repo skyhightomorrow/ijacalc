@@ -1,4 +1,46 @@
 {
-  "detectedAt": "2026-10-30T00:04:09.125Z",
-  "products": []
+  "detectedAt": "2026-10-30T23:56:38.143Z",
+  "products": [
+    {
+      "dcls_month": "202610",
+      "fin_co_no": "0010464",
+      "fin_prdt_cd": "240019",
+      "kor_co_nm": "영진저축은행",
+      "fin_prdt_nm": "(특판)SB톡톡-정기예금",
+      "join_way": "영업점,스마트폰",
+      "mtrt_int": "만기후 1개월이내 해지시 약정이율 적용(가입시점 이율과 만기시점 이율 중 낮은 이율)\n만기후 1개월이후 해지시 보통예금금리(0.5%)적용",
+      "spcl_cnd": "없음",
+      "join_deny": "1",
+      "join_member": "내국인",
+      "etc_note": "10만원이상 가입가능 / \n한도소진 시 가입불가",
+      "max_limit": null,
+      "dcls_strt_day": "20261030",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202610300817",
+      "options": [
+        {
+          "dcls_month": "202610",
+          "fin_co_no": "0010464",
+          "fin_prdt_cd": "240019",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "save_trm": "12",
+          "intr_rate": 4.05,
+          "intr_rate2": 4.05
+        },
+        {
+          "dcls_month": "202610",
+          "fin_co_no": "0010464",
+          "fin_prdt_cd": "240019",
+          "intr_rate_type": "M",
+          "intr_rate_type_nm": "복리",
+          "save_trm": "12",
+          "intr_rate": 4.05,
+          "intr_rate2": 4.05
+        }
+      ],
+      "_kind": "deposit",
+      "_group": "저축은행"
+    }
+  ]
 }

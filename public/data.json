@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-10-30T00:04:19.401Z",
-  "finlifeFetchedAt": "2026-10-30T00:04:09.125Z",
+  "builtAt": "2026-10-30T23:56:50.703Z",
+  "finlifeFetchedAt": "2026-10-30T23:56:38.143Z",
   "finlifeDisclosureMonth": "202610",
   "parking": [
     {
@@ -3221,8 +3221,43 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [],
+  "newProducts": [
+    {
+      "bank": "영진저축은행",
+      "product": "(특판)SB톡톡-정기예금",
+      "kind": "deposit",
+      "group": "저축은행",
+      "disclosureStart": "20261030",
+      "maxRate": 4.05
+    }
+  ],
   "topDeposits": [
+    {
+      "bank": "머스트삼일저축은행",
+      "product": "e-정기예금",
+      "group": "저축은행",
+      "baseRate": 4.2,
+      "maxRate": 4.2,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "머스트삼일저축은행",
+      "product": "비대면정기예금",
+      "group": "저축은행",
+      "baseRate": 4.2,
+      "maxRate": 4.2,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
     {
       "bank": "예가람저축은행",
       "product": "The프리미엄 회전정기예금",
@@ -3245,6 +3280,32 @@
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "바로저축은행",
+      "product": "스마트정기예금(인터넷)",
+      "group": "저축은행",
+      "baseRate": 4.12,
+      "maxRate": 4.12,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "바로저축은행",
+      "product": "SB톡톡 정기예금(비대면)",
+      "group": "저축은행",
+      "baseRate": 4.12,
+      "maxRate": 4.12,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
       "specialCondition": "없음",
       "maxLimit": null,
       "disclosureMonth": "202610"
@@ -3362,58 +3423,6 @@
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "영업점",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "바로저축은행",
-      "product": "스마트정기예금(인터넷)",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "바로저축은행",
-      "product": "SB톡톡 정기예금(비대면)",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "고려저축은행",
-      "product": "정기예금(비대면)",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "고려저축은행",
-      "product": "회전정기예금(비대면)",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
       "specialCondition": "없음",
       "maxLimit": null,
       "disclosureMonth": "202610"
