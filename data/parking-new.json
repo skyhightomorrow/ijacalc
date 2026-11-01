@@ -1,4 +1,14 @@
 {
-  "detectedAt": "2026-10-31T23:31:39.341Z",
-  "products": []
+  "detectedAt": "2026-11-01T23:44:23.648Z",
+  "products": [
+    {
+      "bank": "HB",
+      "product": "HB하루플러스통장",
+      "baseRate": 2.5,
+      "maxRate": 5,
+      "maxRateCondition": "1,000,000원 이하",
+      "disclosedAt": "20261102",
+      "payout": "분기지급"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-31T23:31:39.341Z",
+  "fetchedAt": "2026-11-01T23:44:23.648Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -89,7 +89,7 @@
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20260907",
+      "disclosedAt": "20261102",
       "payout": "수시지급"
     },
     {
@@ -1263,6 +1263,24 @@
       "payout": "분기지급"
     },
     {
+      "bank": "스타",
+      "product": "보통예금",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "스타",
+      "product": "생계비계좌",
+      "baseRate": 0.3,
+      "maxRate": 0.3,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
       "bank": "애큐온",
       "product": "애큐온모바일자유예금",
       "baseRate": 3.1,
@@ -1389,24 +1407,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "스타",
-      "product": "보통예금",
-      "baseRate": 0.3,
-      "maxRate": 0.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260928",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "스타",
-      "product": "생계비계좌",
-      "baseRate": 0.3,
-      "maxRate": 0.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20260928",
-      "payout": "분기지급"
-    },
-    {
       "bank": "참",
       "product": "모임통장",
       "baseRate": 0.1,
@@ -1416,21 +1416,12 @@
       "payout": "분기지급"
     },
     {
-      "bank": "OSB",
-      "product": "E-보통예금",
-      "baseRate": 0.2,
-      "maxRate": 2.3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20261026",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "OSB",
-      "product": "S-보통예금",
-      "baseRate": 0.2,
-      "maxRate": 2.3,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20261026",
+      "bank": "HB",
+      "product": "HB하루플러스통장",
+      "baseRate": 2.5,
+      "maxRate": 5,
+      "maxRateCondition": "1,000,000원 이하",
+      "disclosedAt": "20261102",
       "payout": "분기지급"
     },
     {
@@ -1467,6 +1458,24 @@
       "maxRate": 2,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20261029",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "E-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "OSB",
+      "product": "S-보통예금",
+      "baseRate": 0.2,
+      "maxRate": 2.3,
+      "maxRateCondition": "100,000,000원 이하",
+      "disclosedAt": "20261102",
       "payout": "분기지급"
     },
     {
