@@ -1,4 +1,38 @@
 {
-  "detectedAt": "2026-11-01T23:44:10.822Z",
-  "products": []
+  "detectedAt": "2026-11-03T02:31:06.256Z",
+  "products": [
+    {
+      "dcls_month": "202610",
+      "fin_co_no": "0010370",
+      "fin_prdt_cd": "310030",
+      "kor_co_nm": "SBI저축은행",
+      "fin_prdt_nm": "희망 정기적금",
+      "join_way": "영업점",
+      "mtrt_int": "- 만기 후 1개월 이하: 가입 당시 기본이율과 만기 시점 동기간 기본이율 중 낮은 이율 적용\n\n- 만기 후 1개월 초과: 만기일자 보통예금 이율(연0.2%)",
+      "spcl_cnd": "- 가입대상에 해당하는 경우 : 연 1.5%\n\n- 교보SBI FAMILY 멤버십 최초 가입 당일 적금 가입 시 1인 1계좌 우대금리 적용 : 연 0.1%",
+      "join_deny": "2",
+      "join_member": "기초생활수급자, 소년소녀가장, 모자가정, 조부모가정, 재래시장 상인, 저소득자/기간제 근로자(직전연도기준 연소득 2천만원 이하), 새터민, 다문화가정, 학생(초등학생~고등학생), 장애인, 자립청소년(위탁보호종료아동)인 개인",
+      "etc_note": "- 가입대상별 서류제출 필수(가입신청일로부터 3개월 이내 실명번호 기재 서류)\n- 학생의 경우 월납입액 최소 1만원 ~ 최대 30만원까지 가능",
+      "max_limit": 500000,
+      "dcls_strt_day": "20261102",
+      "dcls_end_day": null,
+      "fin_co_subm_day": "202611020945",
+      "options": [
+        {
+          "dcls_month": "202610",
+          "fin_co_no": "0010370",
+          "fin_prdt_cd": "310030",
+          "intr_rate_type": "S",
+          "intr_rate_type_nm": "단리",
+          "rsrv_type": "S",
+          "rsrv_type_nm": "정액적립식",
+          "save_trm": "12",
+          "intr_rate": 3.6,
+          "intr_rate2": 5.1
+        }
+      ],
+      "_kind": "saving",
+      "_group": "저축은행"
+    }
+  ]
 }
