@@ -1,41 +1,4 @@
 {
-  "detectedAt": "2026-11-03T02:31:18.161Z",
-  "products": [
-    {
-      "bank": "교보SBI",
-      "product": "사이다입출금통장",
-      "baseRate": 0.2,
-      "maxRate": 2.7,
-      "maxRateCondition": "100,000,000원 이하",
-      "disclosedAt": "20261102",
-      "payout": "월지급"
-    },
-    {
-      "bank": "교보SBI",
-      "product": "생활파킹통장",
-      "baseRate": 0.2,
-      "maxRate": 7.7,
-      "maxRateCondition": "2,000,000원 이하",
-      "disclosedAt": "20261102",
-      "payout": "월지급"
-    },
-    {
-      "bank": "IBK",
-      "product": "IBKSB e-파킹통장",
-      "baseRate": 0.1,
-      "maxRate": 3.2,
-      "maxRateCondition": "300,000,000원 이하",
-      "disclosedAt": "20261102",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "IBK",
-      "product": "IBK모임통장",
-      "baseRate": 0.1,
-      "maxRate": 3.2,
-      "maxRateCondition": "300,000,000원 이하",
-      "disclosedAt": "20261102",
-      "payout": "분기지급"
-    }
-  ]
+  "detectedAt": "2026-11-04T00:46:37.018Z",
+  "products": []
 }
