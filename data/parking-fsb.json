@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T00:46:37.019Z",
+  "fetchedAt": "2026-11-05T00:58:29.411Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -210,15 +210,6 @@
       "payout": "월지급"
     },
     {
-      "bank": "JT",
-      "product": "JT점프업Ⅱ저축예금",
-      "baseRate": 0.5,
-      "maxRate": 3.01,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20260615",
-      "payout": "월지급"
-    },
-    {
       "bank": "DB",
       "product": "DB행복파킹통장",
       "baseRate": 0.8,
@@ -243,6 +234,15 @@
       "maxRate": 3.3,
       "maxRateCondition": "300,000,000원 이하",
       "disclosedAt": "20260812",
+      "payout": "월지급"
+    },
+    {
+      "bank": "JT",
+      "product": "JT점프업Ⅱ저축예금",
+      "baseRate": 0.5,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20261105",
       "payout": "월지급"
     },
     {
@@ -675,24 +675,6 @@
       "maxRate": 1,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20240611",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "모아",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20240613",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "모아",
-      "product": "e-모아저축예금",
-      "baseRate": 0.2,
-      "maxRate": 0.5,
-      "maxRateCondition": "100,000원 이상",
-      "disclosedAt": "20240613",
       "payout": "분기지급"
     },
     {
@@ -1422,6 +1404,24 @@
       "maxRate": 5,
       "maxRateCondition": "1,000,000원 이하",
       "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "모아",
+      "product": "e-모아저축예금",
+      "baseRate": 0.2,
+      "maxRate": 0.5,
+      "maxRateCondition": "100,000원 이상",
+      "disclosedAt": "20261105",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "모아",
+      "product": "e-모아파킹통장",
+      "baseRate": 1,
+      "maxRate": 4,
+      "maxRateCondition": "1,000,000원 이하",
+      "disclosedAt": "20261105",
       "payout": "분기지급"
     },
     {
