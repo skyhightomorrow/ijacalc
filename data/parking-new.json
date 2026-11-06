@@ -1,14 +1,4 @@
 {
-  "detectedAt": "2026-11-05T00:58:29.411Z",
-  "products": [
-    {
-      "bank": "모아",
-      "product": "e-모아파킹통장",
-      "baseRate": 1,
-      "maxRate": 4,
-      "maxRateCondition": "1,000,000원 이하",
-      "disclosedAt": "20261105",
-      "payout": "분기지급"
-    }
-  ]
+  "detectedAt": "2026-11-06T01:01:53.589Z",
+  "products": []
 }

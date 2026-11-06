@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-11-05T00:58:29.465Z",
-  "finlifeFetchedAt": "2026-11-05T00:58:17.179Z",
+  "builtAt": "2026-11-06T01:01:53.644Z",
+  "finlifeFetchedAt": "2026-11-06T01:01:41.565Z",
   "finlifeDisclosureMonth": "202610",
   "parking": [
     {
@@ -16,7 +16,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "기본금리가 5천만원 이하분은 연 2.90%, 초과분은 연 2.40%이고, 여기에 우대금리가 항목당 0.10%p씩 최대 0.30%p 붙어 최고 3.20%가 됩니다. 우대 조건은 ①예가람 첫 거래 고객 ②당행 대출·적금 자동이체를 이 통장으로 등록 ③체크카드 월 10만원 이상 결제입니다.",
@@ -39,7 +39,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -55,7 +55,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "금액 구간별 차등 없이 기본금리 연 3.10%가 적용되고, 우대금리가 항목당 0.10%p씩 최대 0.30%p 붙어 최고 3.40%가 됩니다. 우대 조건은 ①고려저축은행 첫 거래 고객 ②당행 대출·적금 자동이체를 이 통장으로 등록 ③체크카드 월 10만원 이상 결제입니다.",
@@ -78,7 +78,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -94,7 +94,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -110,7 +110,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -126,7 +126,7 @@
       "appIos": "1460544457",
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -142,7 +142,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -176,7 +176,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -210,7 +210,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -281,7 +281,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -402,7 +402,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": true,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -418,7 +418,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -434,7 +434,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "최고금리를 받으려면 4대페이(네이버·카카오·페이코·토스) 중 한 곳 이상에 계좌를 등록하거나 카드 결제계좌로 등록하고(+1.8%p), 마케팅 활용에 동의(+0.2%p)해야 합니다. 우대금리는 5천만원 이하분에만 적용됩니다.",
@@ -457,7 +457,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -490,7 +490,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -523,6 +523,29 @@
       }
     },
     {
+      "bank": "DB저축은행",
+      "product": "DB행복파킹통장",
+      "baseRate": 0.5,
+      "maxRate": 5,
+      "maxRateCondition": "3,000,000원 이하",
+      "payout": "월지급",
+      "timing": "",
+      "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DB%ED%96%89%EB%B3%B5%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
+      "appAndroid": null,
+      "appIos": null,
+      "group": "저축은행",
+      "instant": false,
+      "asOf": "2026-11-06",
+      "needsVerify": false,
+      "conditionFree": false,
+      "conditions": "DB저축은행과 모바일로 처음 거래하는 신규 고객에게 우대금리가 적용됩니다(신규 +1.0%p, 마케팅 동의 +0.2%p). 만 19세 이상 개인, 1인 1계좌, 모바일뱅킹 전용입니다.",
+      "tierSource": {
+        "url": "https://www.m-i.kr/news/articleView.html?idxno=1342876",
+        "name": "매일일보 (2026-03)",
+        "verified": "2026-07-28"
+      }
+    },
+    {
       "bank": "HB저축은행",
       "product": "HB하루플러스통장",
       "baseRate": 2.5,
@@ -535,7 +558,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -551,70 +574,8 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
-    },
-    {
-      "bank": "참저축은행",
-      "product": "기업자유예금",
-      "baseRate": 0.1,
-      "maxRate": 3.6,
-      "maxRateCondition": "30,000,000,000원 이하",
-      "payout": "분기지급",
-      "timing": "",
-      "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
-      "appAndroid": null,
-      "appIos": null,
-      "group": "저축은행",
-      "instant": false,
-      "asOf": "2026-11-05",
-      "needsVerify": false,
-      "conditionFree": null,
-      "conditions": "저축은행중앙회 공시 기준 기본 0.10%·최고 3.40%이며 300억원 이하 구간에 최고금리가 적용됩니다. 우대조건은 확인하지 못했습니다.",
-      "notice": "⚠️ 상품명이 '기업자유예금'이라 <b>개인 가입이 가능한지 은행에 먼저 확인</b>하세요.",
-      "tierSource": {
-        "url": "https://www.fsb.or.kr/mobratanym_0100.act",
-        "name": "저축은행중앙회 통합공시",
-        "verified": "2026-07-28"
-      }
-    },
-    {
-      "bank": "DB저축은행",
-      "product": "DB행복파킹통장",
-      "baseRate": 0.8,
-      "maxRate": 3.5,
-      "maxRateCondition": "5,000,000원 이하",
-      "payout": "월지급",
-      "timing": "",
-      "linkUrl": "https://search.naver.com/search.naver?query=DB%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20DB%ED%96%89%EB%B3%B5%ED%8C%8C%ED%82%B9%ED%86%B5%EC%9E%A5",
-      "appAndroid": null,
-      "appIos": null,
-      "group": "저축은행",
-      "instant": false,
-      "asOf": "2026-11-05",
-      "needsVerify": false,
-      "tiers": [
-        {
-          "upto": 5000000,
-          "rate": 3.5
-        },
-        {
-          "upto": 30000000,
-          "rate": 2.7
-        },
-        {
-          "upto": null,
-          "rate": 2
-        }
-      ],
-      "conditionFree": false,
-      "conditions": "기본금리가 구간별로 5백만원 이하 2.3%, 5백만~3천만원 1.5%, 3천만원 초과 0.8%이고, 여기에 우대금리가 최대 1.2%p 붙습니다. ①DB저축은행 첫 거래 고객(또는 가입일 직전 1개월간 이 은행 보통예금이 없던 고객) +1.0%p ②가입 시 마케팅 전체동의 +0.2%p. <b>최고 3.5%는 500만원 이하분에만</b> 적용됩니다.",
-      "notice": "만 19세 이상 개인 1인 1계좌, DB저축은행 모바일뱅킹 앱 비대면 전용입니다. 마케팅 동의를 철회하면 우대금리가 빠집니다.",
-      "tierSource": {
-        "url": "https://www.idbsb.com/websquare/websquare.jsp?w2xPath=/w2/itb/main.xml&contentUrl=/w2/itb/dps/dpstInfo.xml",
-        "name": "DB저축은행 공식 예금상품공시",
-        "verified": "2026-07-28"
-      }
     },
     {
       "bank": "JT저축은행",
@@ -629,7 +590,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -645,7 +606,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "기본금리가 5천만원 이하분은 연 2.90%, 초과분은 연 2.40%이고, 여기에 우대금리가 항목당 0.10%p씩 최대 0.30%p 붙어 최고 3.20%가 됩니다. 우대 조건은 ①예가람 첫 거래 고객 ②당행 대출·적금 자동이체를 이 통장으로 등록 ③체크카드 월 10만원 이상 결제입니다.",
@@ -668,7 +629,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": null,
       "conditions": "공시 기준 금리 범위는 연 0.20~3.30%이며, 500억원 이하 구간에 최고금리가 적용됩니다. 구간 경계와 우대조건은 확인하지 못했습니다.",
@@ -678,6 +639,22 @@
         "name": "예가람저축은행 공식 상품공시실",
         "verified": "2026-07-28"
       }
+    },
+    {
+      "bank": "우리금융저축은행",
+      "product": "첫번째저축예금",
+      "baseRate": 1.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000원 이하",
+      "payout": "분기지급",
+      "timing": "",
+      "linkUrl": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%EA%B8%88%EC%9C%B5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B2%AB%EB%B2%88%EC%A7%B8%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
+      "appAndroid": null,
+      "appIos": null,
+      "group": "저축은행",
+      "instant": false,
+      "asOf": "2026-11-06",
+      "needsVerify": false
     },
     {
       "bank": "대신저축은행",
@@ -692,7 +669,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -708,7 +685,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "금액 구간별 차등 없이 기본금리 연 3.10%가 적용되고, 우대금리가 항목당 0.10%p씩 최대 0.30%p 붙어 최고 3.40%가 됩니다. 우대 조건은 ①고려저축은행 첫 거래 고객 ②당행 대출·적금 자동이체를 이 통장으로 등록 ③체크카드 월 10만원 이상 결제입니다.",
@@ -731,8 +708,42 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
+    },
+    {
+      "bank": "참저축은행",
+      "product": "기업자유예금",
+      "baseRate": 0.1,
+      "maxRate": 3.4,
+      "maxRateCondition": "30,000,000,000원 이하",
+      "payout": "분기지급",
+      "timing": "",
+      "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EA%B8%B0%EC%97%85%EC%9E%90%EC%9C%A0%EC%98%88%EA%B8%88",
+      "appAndroid": null,
+      "appIos": null,
+      "group": "저축은행",
+      "instant": false,
+      "asOf": "2026-11-06",
+      "needsVerify": false,
+      "tiers": [
+        {
+          "upto": 100000000,
+          "rate": 1
+        },
+        {
+          "upto": 30000000000,
+          "rate": 3.4
+        }
+      ],
+      "conditionFree": true,
+      "conditions": "우대조건은 없지만 <b>금리 구조가 거꾸로</b>입니다. 1억원 이하는 연 1.0%뿐이고, 1억원을 넘는 금액분에만 연 3.4%가 적용됩니다. 소액을 넣으면 오히려 불리합니다.",
+      "notice": "⚠️ <b>개인은 가입할 수 없습니다.</b> 가입대상이 법인·개인사업자(1사 1계좌)이며 영업점 방문으로만 개설됩니다.",
+      "tierSource": {
+        "url": "https://www.charmbank.co.kr/gdm/productInfo500",
+        "name": "참저축은행 공식 예금상품공시",
+        "verified": "2026-07-28"
+      }
     },
     {
       "bank": "예가람저축은행",
@@ -747,7 +758,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -763,7 +774,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "기본금리는 연 0.8%이고, 우대조건 4개를 모두 채워야 최고금리가 됩니다. ①100만원 이상 급여·생활비 이체 +0.5%p ②이 예금을 연결한 CMS·지로 자동납부 1건 이상 +0.5%p ③연결 간편결제(토스·카카오페이·페이코·네이버페이) 또는 체크카드 실적 10만원 이상 +1.3%p ④마케팅 동의·멤버십 가입 +0.2%p. 우대이율은 조건을 채운 달의 <b>다음 달</b>부터 붙습니다.",
@@ -787,7 +798,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -803,7 +814,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -819,7 +830,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -835,7 +846,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": false,
       "conditions": "금액 구간별 차등 없이 기본금리 연 3.10%가 적용되고, 우대금리 0.20%p가 붙어 최고 3.30%가 됩니다. 우대 조건은 ①모바일뱅킹으로 신규 가입 +0.1%p ②애큐온멤버십플러스 가입 +0.1%p이며, 모바일 전용 상품이라 ①은 사실상 자동 충족됩니다.",
@@ -858,7 +869,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -874,7 +885,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -890,7 +901,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -906,7 +917,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -922,7 +933,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -938,7 +949,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -975,7 +986,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1008,7 +1019,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1041,7 +1052,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1075,7 +1086,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1091,7 +1102,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1107,7 +1118,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1123,7 +1134,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1139,7 +1150,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1155,7 +1166,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1171,7 +1182,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1187,7 +1198,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1203,7 +1214,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1237,7 +1248,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1253,7 +1264,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1269,7 +1280,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "conditionFree": null,
       "conditions": "구간금리와 우대조건을 확인하지 못했습니다.",
@@ -1293,7 +1304,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1309,7 +1320,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1325,7 +1336,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1341,7 +1352,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1363,22 +1374,6 @@
       }
     },
     {
-      "bank": "우리금융저축은행",
-      "product": "첫번째저축예금",
-      "baseRate": 0.1,
-      "maxRate": 2.5,
-      "maxRateCondition": "50,000,000원 이하",
-      "payout": "분기지급",
-      "timing": "",
-      "linkUrl": "https://search.naver.com/search.naver?query=%EC%9A%B0%EB%A6%AC%EA%B8%88%EC%9C%B5%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%B2%AB%EB%B2%88%EC%A7%B8%EC%A0%80%EC%B6%95%EC%98%88%EA%B8%88",
-      "appAndroid": null,
-      "appIos": null,
-      "group": "저축은행",
-      "instant": false,
-      "asOf": "2026-11-05",
-      "needsVerify": false
-    },
-    {
       "bank": "JT친애저축은행",
       "product": "플러스입출금통장",
       "baseRate": 0.1,
@@ -1391,7 +1386,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1407,7 +1402,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1423,7 +1418,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1461,7 +1456,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1477,7 +1472,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1493,7 +1488,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1509,7 +1504,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1543,7 +1538,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1559,7 +1554,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1575,7 +1570,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1591,7 +1586,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1607,7 +1602,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1623,7 +1618,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1639,7 +1634,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1655,7 +1650,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1671,7 +1666,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1705,7 +1700,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1721,7 +1716,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1737,7 +1732,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1767,7 +1762,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "tiers": [
         {
@@ -1797,7 +1792,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1813,7 +1808,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1829,7 +1824,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1845,7 +1840,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1861,7 +1856,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1877,7 +1872,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1893,7 +1888,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1909,7 +1904,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1925,7 +1920,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false,
       "disclosedMaxRate": 3,
       "belowDisclosedReason": "공시 최고 3.0%는 '예금거래기간 3년 이상 + 직전 2년 평균잔액 10억원 이상'인 고객에게만 적용된다. 일반 개인 예금자는 도달할 수 없어, 실수령 기준 비교가 왜곡되지 않도록 실질 금리 1.0%로 순위를 매긴다.",
@@ -1957,7 +1952,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1973,7 +1968,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -1989,7 +1984,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2005,7 +2000,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2021,7 +2016,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2037,7 +2032,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2053,7 +2048,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2069,7 +2064,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2085,7 +2080,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2101,7 +2096,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2117,7 +2112,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2133,7 +2128,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2149,7 +2144,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2165,7 +2160,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2181,7 +2176,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2197,7 +2192,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2213,7 +2208,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2229,7 +2224,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2245,7 +2240,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2261,7 +2256,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2277,7 +2272,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2293,7 +2288,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2309,7 +2304,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2325,7 +2320,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2341,7 +2336,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2357,7 +2352,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2373,7 +2368,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2389,7 +2384,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2405,7 +2400,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2421,7 +2416,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2437,7 +2432,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2453,7 +2448,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2469,7 +2464,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2485,7 +2480,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2501,7 +2496,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2517,7 +2512,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2533,7 +2528,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2549,7 +2544,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2565,7 +2560,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2581,7 +2576,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2597,7 +2592,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2613,7 +2608,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2629,7 +2624,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2645,7 +2640,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2661,7 +2656,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2677,7 +2672,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2693,7 +2688,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2709,7 +2704,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2725,7 +2720,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2741,7 +2736,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2757,7 +2752,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2773,7 +2768,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2789,7 +2784,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2805,7 +2800,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2821,7 +2816,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2837,7 +2832,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2853,7 +2848,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2869,7 +2864,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2885,7 +2880,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2901,7 +2896,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2917,7 +2912,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2933,7 +2928,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2949,7 +2944,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2965,7 +2960,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2981,7 +2976,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -2997,7 +2992,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3013,7 +3008,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3029,7 +3024,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3045,7 +3040,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3061,7 +3056,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3077,7 +3072,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3093,7 +3088,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3109,7 +3104,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3125,7 +3120,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3141,7 +3136,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3157,7 +3152,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3173,39 +3168,7 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
-      "needsVerify": false
-    },
-    {
-      "bank": "참저축은행",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "payout": "분기지급",
-      "timing": "",
-      "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
-      "appAndroid": null,
-      "appIos": null,
-      "group": "저축은행",
-      "instant": false,
-      "asOf": "2026-11-05",
-      "needsVerify": false
-    },
-    {
-      "bank": "참저축은행",
-      "product": "생계비계좌",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "payout": "분기지급",
-      "timing": "",
-      "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
-      "appAndroid": null,
-      "appIos": null,
-      "group": "저축은행",
-      "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3221,7 +3184,39 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
+      "needsVerify": false
+    },
+    {
+      "bank": "참저축은행",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "payout": "분기지급",
+      "timing": "",
+      "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EB%B3%B4%ED%86%B5%EC%98%88%EA%B8%88",
+      "appAndroid": null,
+      "appIos": null,
+      "group": "저축은행",
+      "instant": false,
+      "asOf": "2026-11-06",
+      "needsVerify": false
+    },
+    {
+      "bank": "참저축은행",
+      "product": "생계비계좌",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "payout": "분기지급",
+      "timing": "",
+      "linkUrl": "https://search.naver.com/search.naver?query=%EC%B0%B8%EC%A0%80%EC%B6%95%EC%9D%80%ED%96%89%20%EC%83%9D%EA%B3%84%EB%B9%84%EA%B3%84%EC%A2%8C",
+      "appAndroid": null,
+      "appIos": null,
+      "group": "저축은행",
+      "instant": false,
+      "asOf": "2026-11-06",
       "needsVerify": false
     },
     {
@@ -3237,44 +3232,113 @@
       "appIos": null,
       "group": "저축은행",
       "instant": false,
-      "asOf": "2026-11-05",
+      "asOf": "2026-11-06",
       "needsVerify": false
     }
   ],
-  "newProducts": [
-    {
-      "bank": "모아저축은행",
-      "product": "e-모아파킹통장",
-      "kind": "parking",
-      "group": "저축은행",
-      "disclosureStart": "20261105",
-      "maxRate": 4
-    }
-  ],
+  "newProducts": [],
   "topDeposits": [
     {
-      "bank": "바로저축은행",
-      "product": "스마트정기예금(인터넷)",
+      "bank": "상상인플러스저축은행",
+      "product": "회전E-정기예금",
       "group": "저축은행",
-      "baseRate": 4.12,
-      "maxRate": 4.12,
+      "baseRate": 4.13,
+      "maxRate": 4.13,
       "rateType": "단리",
       "reserveType": null,
-      "joinWay": "인터넷",
+      "joinWay": "인터넷,스마트폰",
       "specialCondition": "없음",
       "maxLimit": null,
       "disclosureMonth": "202610"
     },
     {
-      "bank": "바로저축은행",
-      "product": "SB톡톡 정기예금(비대면)",
+      "bank": "상상인플러스저축은행",
+      "product": "회전정기예금(비대면)",
       "group": "저축은행",
-      "baseRate": 4.12,
-      "maxRate": 4.12,
+      "baseRate": 4.13,
+      "maxRate": 4.13,
       "rateType": "단리",
       "reserveType": null,
       "joinWay": "스마트폰",
       "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "상상인플러스저축은행",
+      "product": "크크크 회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.13,
+      "maxRate": 4.13,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "상상인플러스저축은행",
+      "product": "e-정기예금",
+      "group": "저축은행",
+      "baseRate": 4.13,
+      "maxRate": 4.13,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "상상인플러스저축은행",
+      "product": "비대면 정기예금",
+      "group": "저축은행",
+      "baseRate": 4.13,
+      "maxRate": 4.13,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "상상인플러스저축은행",
+      "product": "크크크 정기예금",
+      "group": "저축은행",
+      "baseRate": 4.13,
+      "maxRate": 4.13,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "HB저축은행",
+      "product": "e-회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.11,
+      "maxRate": 4.11,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷",
+      "specialCondition": "해당사항없음",
+      "maxLimit": null,
+      "disclosureMonth": "202610"
+    },
+    {
+      "bank": "HB저축은행",
+      "product": "스마트회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.11,
+      "maxRate": 4.11,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "해당사항없음",
       "maxLimit": null,
       "disclosureMonth": "202610"
     },
@@ -3363,84 +3427,6 @@
       "baseRate": 4.1,
       "maxRate": 4.1,
       "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "디비저축은행",
-      "product": "DreamBig 정기예금",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "영업점",
-      "specialCondition": "해당사항없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "디비저축은행",
-      "product": "DreamBig E-정기예금",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷",
-      "specialCondition": "해당사항없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "디비저축은행",
-      "product": "M-DreamBig 정기예금",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "해당사항없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "조은저축은행",
-      "product": "정기예금(서울본점)",
-      "group": "저축은행",
-      "baseRate": 4.1,
-      "maxRate": 4.1,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "영업점",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "다올저축은행",
-      "product": "Fi 하이브리드 정기예금 (대면)",
-      "group": "저축은행",
-      "baseRate": 2.6,
-      "maxRate": 4.1,
-      "rateType": "복리",
-      "reserveType": null,
-      "joinWay": "영업점",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202610"
-    },
-    {
-      "bank": "다올저축은행",
-      "product": "Fi 하이브리드 정기예금 (비대면)",
-      "group": "저축은행",
-      "baseRate": 2.6,
-      "maxRate": 4.1,
-      "rateType": "복리",
       "reserveType": null,
       "joinWay": "인터넷,스마트폰",
       "specialCondition": "없음",
