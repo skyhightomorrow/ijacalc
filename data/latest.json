@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-07T23:46:57.066Z",
+  "fetchedAt": "2026-11-08T23:52:20.510Z",
   "products": {
     "deposit_020000": [
       {
@@ -9835,9 +9835,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20261027",
+        "dcls_strt_day": "20261106",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610270824",
+        "fin_co_subm_day": "202611061805",
         "options": [
           {
             "dcls_month": "202610",
@@ -9876,8 +9876,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.83,
-            "intr_rate2": 3.83
+            "intr_rate": 3.7,
+            "intr_rate2": 3.7
           },
           {
             "dcls_month": "202610",
@@ -9926,8 +9926,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.83,
-            "intr_rate2": 3.83
+            "intr_rate": 3.7,
+            "intr_rate2": 3.7
           },
           {
             "dcls_month": "202610",
@@ -9956,9 +9956,9 @@
         "join_member": "제한없음",
         "etc_note": "없음",
         "max_limit": null,
-        "dcls_strt_day": "20261027",
+        "dcls_strt_day": "20261106",
         "dcls_end_day": null,
-        "fin_co_subm_day": "202610270824",
+        "fin_co_subm_day": "202611061805",
         "options": [
           {
             "dcls_month": "202610",
@@ -9997,8 +9997,8 @@
             "intr_rate_type": "S",
             "intr_rate_type_nm": "단리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           },
           {
             "dcls_month": "202610",
@@ -10037,8 +10037,8 @@
             "intr_rate_type": "M",
             "intr_rate_type_nm": "복리",
             "save_trm": "12",
-            "intr_rate": 3.8,
-            "intr_rate2": 3.8
+            "intr_rate": 3.6,
+            "intr_rate2": 3.6
           }
         ],
         "_kind": "deposit",
