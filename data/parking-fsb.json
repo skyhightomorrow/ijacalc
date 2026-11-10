@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T23:52:33.584Z",
+  "fetchedAt": "2026-11-10T02:50:14.090Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1389,21 +1389,12 @@
       "payout": "분기지급"
     },
     {
-      "bank": "키움YES",
-      "product": "예스파킹통장",
-      "baseRate": 0.5,
-      "maxRate": 3.3,
-      "maxRateCondition": "100,000,000원 초과",
-      "disclosedAt": "20260929",
-      "payout": "분기지급"
-    },
-    {
       "bank": "CK",
       "product": "보통예금",
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20261029",
+      "disclosedAt": "20261110",
       "payout": "분기지급"
     },
     {
@@ -1412,7 +1403,16 @@
       "baseRate": 2,
       "maxRate": 2,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20261029",
+      "disclosedAt": "20261110",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "키움YES",
+      "product": "예스파킹통장",
+      "baseRate": 0.5,
+      "maxRate": 3.3,
+      "maxRateCondition": "100,000,000원 초과",
+      "disclosedAt": "20260929",
       "payout": "분기지급"
     },
     {
