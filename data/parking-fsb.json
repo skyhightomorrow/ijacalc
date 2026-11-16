@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T00:03:41.044Z",
+  "fetchedAt": "2026-11-16T00:09:57.539Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1128,24 +1128,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "조은",
-      "product": "보통예금",
-      "baseRate": 0.5,
-      "maxRate": 0.5,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261016",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "조은",
-      "product": "e-보통예금",
-      "baseRate": 1,
-      "maxRate": 1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261016",
-      "payout": "분기지급"
-    },
-    {
       "bank": "한국투자",
       "product": "한투 ACE 파킹통장",
       "baseRate": 0.2,
@@ -1260,6 +1242,15 @@
       "maxRate": 0.3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "우리금융",
+      "product": "첫번째저축예금",
+      "baseRate": 1.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000원 이하",
+      "disclosedAt": "20261116",
       "payout": "분기지급"
     },
     {
@@ -1380,15 +1371,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "우리금융",
-      "product": "첫번째저축예금",
-      "baseRate": 1.1,
-      "maxRate": 3.5,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20261106",
-      "payout": "분기지급"
-    },
-    {
       "bank": "CK",
       "product": "보통예금",
       "baseRate": 0.1,
@@ -1404,6 +1386,24 @@
       "maxRate": 2,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20261110",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "보통예금",
+      "baseRate": 0.5,
+      "maxRate": 0.5,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261116",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "조은",
+      "product": "e-보통예금",
+      "baseRate": 1,
+      "maxRate": 1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261116",
       "payout": "분기지급"
     },
     {
