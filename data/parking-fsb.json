@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-17T03:01:39.143Z",
+  "fetchedAt": "2026-11-18T02:31:20.094Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1290,15 +1290,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "우리금융",
-      "product": "첫번째저축예금",
-      "baseRate": 1.1,
-      "maxRate": 3.5,
-      "maxRateCondition": "50,000,000원 이하",
-      "disclosedAt": "20261116",
-      "payout": "분기지급"
-    },
-    {
       "bank": "애큐온",
       "product": "애큐온모바일자유예금",
       "baseRate": 3.1,
@@ -1476,6 +1467,15 @@
       "maxRate": 2.3,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "우리금융",
+      "product": "첫번째저축예금",
+      "baseRate": 1.1,
+      "maxRate": 3.5,
+      "maxRateCondition": "200,000,000원 이하",
+      "disclosedAt": "20261118",
       "payout": "분기지급"
     },
     {
