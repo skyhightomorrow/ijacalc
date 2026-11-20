@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T01:56:49.370Z",
+  "fetchedAt": "2026-11-20T01:50:08.423Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1128,6 +1128,24 @@
       "payout": "분기지급"
     },
     {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261120",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "모임통장_보통예금",
+      "baseRate": 2,
+      "maxRate": 2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261120",
+      "payout": "분기지급"
+    },
+    {
       "bank": "한국투자",
       "product": "한투 ACE 파킹통장",
       "baseRate": 0.2,
@@ -1209,21 +1227,12 @@
       "payout": "분기지급"
     },
     {
-      "bank": "예가람",
-      "product": "The프리미엄 Biz통장",
-      "baseRate": 0.2,
-      "maxRate": 3.5,
-      "maxRateCondition": "50,000,000,000원 이하",
-      "disclosedAt": "20261029",
-      "payout": "분기지급"
-    },
-    {
       "bank": "참",
       "product": "보통예금",
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20261116",
+      "disclosedAt": "20261120",
       "payout": "분기지급"
     },
     {
@@ -1232,7 +1241,7 @@
       "baseRate": 0.1,
       "maxRate": 3.4,
       "maxRateCondition": "30,000,000,000원 이하",
-      "disclosedAt": "20261116",
+      "disclosedAt": "20261120",
       "payout": "분기지급"
     },
     {
@@ -1241,7 +1250,7 @@
       "baseRate": 0.1,
       "maxRate": 0.1,
       "maxRateCondition": "제한없음",
-      "disclosedAt": "20261116",
+      "disclosedAt": "20261120",
       "payout": "분기지급"
     },
     {
@@ -1250,7 +1259,7 @@
       "baseRate": 0.1,
       "maxRate": 3,
       "maxRateCondition": "5,000,000원 이하",
-      "disclosedAt": "20261116",
+      "disclosedAt": "20261120",
       "payout": "분기지급"
     },
     {
@@ -1259,7 +1268,16 @@
       "baseRate": 0.1,
       "maxRate": 3,
       "maxRateCondition": "10,000,000원 이하",
-      "disclosedAt": "20261116",
+      "disclosedAt": "20261120",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "예가람",
+      "product": "The프리미엄 Biz통장",
+      "baseRate": 0.2,
+      "maxRate": 3.5,
+      "maxRateCondition": "50,000,000,000원 이하",
+      "disclosedAt": "20261029",
       "payout": "분기지급"
     },
     {
@@ -1386,24 +1404,6 @@
       "maxRate": 4,
       "maxRateCondition": "1,000,000원 이하",
       "disclosedAt": "20261105",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261110",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "모임통장_보통예금",
-      "baseRate": 2,
-      "maxRate": 2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261110",
       "payout": "분기지급"
     },
     {
