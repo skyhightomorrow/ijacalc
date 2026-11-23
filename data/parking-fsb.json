@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-22T00:33:44.460Z",
+  "fetchedAt": "2026-11-23T01:01:37.839Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1128,24 +1128,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261120",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "모임통장_보통예금",
-      "baseRate": 2,
-      "maxRate": 2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261120",
-      "payout": "분기지급"
-    },
-    {
       "bank": "한국투자",
       "product": "한투 ACE 파킹통장",
       "baseRate": 0.2,
@@ -1260,6 +1242,24 @@
       "maxRate": 0.3,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20261102",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261123",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "모임통장_보통예금",
+      "baseRate": 2,
+      "maxRate": 2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261123",
       "payout": "분기지급"
     },
     {
