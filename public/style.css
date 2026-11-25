@@ -170,3 +170,4 @@ details.faq p { font-size: 14px; color: var(--sub2); line-height: 1.7; padding: 
 
 /* 상단 광고 자리 (본문 중간에는 광고 없음) */
 .ad-top { margin: 4px 0 16px; min-height: 100px; }
+.ad-bottom { margin: 32px 0 8px; min-height: 100px; }

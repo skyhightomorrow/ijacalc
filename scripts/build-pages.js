@@ -59,6 +59,10 @@ const ADS_TAG = ORIGIN.startsWith("https")
 const ADS_TOP = ORIGIN.startsWith("https")
   ? `<div class="ad-top"><ins class="adsbygoogle" style="display:block" data-ad-client="${ADSENSE_CLIENT}" data-ad-slot="7413312810" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>`
   : "";
+// 본문 끝(푸터 바로 위) 광고 1개 (11-25 사용자 요청). 본문 중간이 아니라 다 읽은 뒤 자리. 404 제외.
+const ADS_BOTTOM = ORIGIN.startsWith("https")
+  ? `<div class="ad-bottom"><ins class="adsbygoogle" style="display:block" data-ad-client="${ADSENSE_CLIENT}" data-ad-slot="6404443936" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>`
+  : "";
 const DATA = JSON.parse(fs.readFileSync(path.join(PUB, "data.json"), "utf8"));
 const DEFAULT_AMT = 10000000;
 
@@ -158,6 +162,7 @@ ${extraHead}
 ${NAV(active, base)}
 ${abs ? "" : ADS_TOP}
 ${body}
+${abs ? "" : ADS_BOTTOM}
 ${FOOTER(base)}
 </div>
 </body>
