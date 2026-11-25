@@ -167,3 +167,6 @@ footer a { color: var(--sub); }
 details.faq { border-bottom: 1px solid #eef0f3; padding: 4px 0; }
 details.faq summary { font-size: 14px; font-weight: 700; padding: 9px 0; cursor: pointer; list-style-position: inside; }
 details.faq p { font-size: 14px; color: var(--sub2); line-height: 1.7; padding: 0 0 12px 4px; margin: 0; }
+
+/* 상단 광고 자리 (본문 중간에는 광고 없음) */
+.ad-top { margin: 4px 0 16px; min-height: 100px; }

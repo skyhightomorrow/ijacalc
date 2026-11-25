@@ -54,6 +54,11 @@ const ADSENSE_CLIENT = "ca-pub-1103086579577678";
 const ADS_TAG = ORIGIN.startsWith("https")
   ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`
   : "";
+// 상단 고정 광고 1개 (11-25 사용자 결정: 자동광고 인페이지는 끄고, 본문 중간에는 광고를 넣지 않는다.
+// 양옆·하단은 자동광고 오버레이 형식이 맡는다). 404에는 넣지 않는다.
+const ADS_TOP = ORIGIN.startsWith("https")
+  ? `<div class="ad-top"><ins class="adsbygoogle" style="display:block" data-ad-client="${ADSENSE_CLIENT}" data-ad-slot="7413312810" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>`
+  : "";
 const DATA = JSON.parse(fs.readFileSync(path.join(PUB, "data.json"), "utf8"));
 const DEFAULT_AMT = 10000000;
 
@@ -151,6 +156,7 @@ ${extraHead}
     </div>
   </div>
 ${NAV(active, base)}
+${abs ? "" : ADS_TOP}
 ${body}
 ${FOOTER(base)}
 </div>
