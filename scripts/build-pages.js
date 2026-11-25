@@ -49,6 +49,11 @@ const GA_TAG = ORIGIN.startsWith("https")
   ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`
   : "";
+// 애드센스 (2026-11-24 ijacalc 승인). GA와 같은 이유로 localhost 빌드에는 넣지 않는다(무효 노출 방지).
+const ADSENSE_CLIENT = "ca-pub-1103086579577678";
+const ADS_TAG = ORIGIN.startsWith("https")
+  ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}" crossorigin="anonymous"></script>`
+  : "";
 const DATA = JSON.parse(fs.readFileSync(path.join(PUB, "data.json"), "utf8"));
 const DEFAULT_AMT = 10000000;
 
@@ -132,6 +137,7 @@ function layout({ title, desc, canonicalPath, body, extraHead = "", depth = 0, a
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 ${GA_TAG}
+${ADS_TAG}
 <link rel="stylesheet" href="${base}style.css">
 ${extraHead}
 </head>
