@@ -63,12 +63,29 @@ async function main() {
     if (!res.ok) throw new Error(`HTTP ${res.status} (지급방식 ${label})`);
     const html = await res.text();
     const rows = parseRows(html);
+    if (rows.length === 0 && !html.includes("no-data")) {
+      // 2026-11-24부터 CI(해외 IP)에서만 200 + 0행이 나온다. 응답이 무엇인지 남긴다.
+      const title = (html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || "";
+      console.warn(`  ⚠️ ${label}: 표 없음 — 길이 ${html.length}, title="${title.trim()}", 앞부분: ${stripTags(html).slice(0, 200)}`);
+    }
     for (const r of rows) all.push({ ...r, payout: label });
     console.log(`${label}: ${rows.length}개`);
   }
 
   // 신규 파킹통장 감지: 직전 수집본과 비교
   const outPath = path.join(DATA_DIR, "parking-fsb.json");
+
+  // 수집이 통째로 비면 0개로 덮어쓰지 않는다(페이지 158개가 사라지고 빌드가 멈춘다).
+  // 직전 수집본이 3일 이내면 그대로 두고 나머지 일일 갱신은 진행, 더 오래되면 실패시켜 알린다.
+  if (all.length === 0) {
+    const prev = fs.existsSync(outPath) ? JSON.parse(fs.readFileSync(outPath, "utf8")) : null;
+    const ageH = prev ? (Date.now() - new Date(prev.fetchedAt).getTime()) / 36e5 : Infinity;
+    if (prev && (prev.products || []).length && ageH <= 72) {
+      console.warn(`⚠️ 저축은행중앙회 수집 0개 — 직전 수집본(${prev.fetchedAt}, ${Math.round(ageH)}시간 전) 유지`);
+      return;
+    }
+    throw new Error(`저축은행중앙회 수집 0개, 직전 수집본도 ${prev ? Math.round(ageH) + "시간 전" : "없음"} — 중단`);
+  }
   if (fs.existsSync(outPath)) {
     const prev = JSON.parse(fs.readFileSync(outPath, "utf8"));
     const prevKeys = new Set((prev.products || []).map((p) => `${p.bank}:${p.product}`));
