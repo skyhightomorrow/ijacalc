@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-11-25T03:29:10.483Z",
-  "finlifeFetchedAt": "2026-11-25T02:50:50.618Z",
+  "builtAt": "2026-11-25T03:38:55.842Z",
+  "finlifeFetchedAt": "2026-11-25T03:38:39.470Z",
   "finlifeDisclosureMonth": "202611",
   "parking": [
     {
@@ -3226,16 +3226,7 @@
       "needsVerify": false
     }
   ],
-  "newProducts": [
-    {
-      "bank": "토스뱅크 주식회사",
-      "product": "주택담보대출",
-      "kind": "mortgageLoan",
-      "group": "은행",
-      "disclosureStart": "20261120",
-      "maxRate": null
-    }
-  ],
+  "newProducts": [],
   "topDeposits": [
     {
       "bank": "애큐온저축은행",
