@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-25T23:05:04.906Z",
+  "fetchedAt": "2026-11-26T23:05:05.462Z",
   "source": "저축은행중앙회 소비자포털",
   "products": [
     {
@@ -1209,15 +1209,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "CK",
-      "product": "모임통장_보통예금",
-      "baseRate": 2,
-      "maxRate": 2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261125",
-      "payout": "분기지급"
-    },
-    {
       "bank": "참",
       "product": "보통예금",
       "baseRate": 0.1,
@@ -1272,12 +1263,48 @@
       "payout": "분기지급"
     },
     {
+      "bank": "안국",
+      "product": "보통예금",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261126",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "안국",
+      "product": "보통예금(비대면)",
+      "baseRate": 0.2,
+      "maxRate": 0.2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261126",
+      "payout": "분기지급"
+    },
+    {
       "bank": "예가람",
       "product": "모임통장",
       "baseRate": 0.2,
       "maxRate": 2.6,
       "maxRateCondition": "100,000,000원 이하",
       "disclosedAt": "20260811",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "보통예금",
+      "baseRate": 0.1,
+      "maxRate": 0.1,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261126",
+      "payout": "분기지급"
+    },
+    {
+      "bank": "CK",
+      "product": "모임통장_보통예금",
+      "baseRate": 2,
+      "maxRate": 2,
+      "maxRateCondition": "제한없음",
+      "disclosedAt": "20261126",
       "payout": "분기지급"
     },
     {
@@ -1434,24 +1461,6 @@
       "payout": "분기지급"
     },
     {
-      "bank": "안국",
-      "product": "보통예금",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261119",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "안국",
-      "product": "보통예금(비대면)",
-      "baseRate": 0.2,
-      "maxRate": 0.2,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261119",
-      "payout": "분기지급"
-    },
-    {
       "bank": "BNK",
       "product": "삼삼한파킹통장",
       "baseRate": 1.2,
@@ -1501,15 +1510,6 @@
       "product": "생계비계좌",
       "baseRate": 0.3,
       "maxRate": 0.3,
-      "maxRateCondition": "제한없음",
-      "disclosedAt": "20261125",
-      "payout": "분기지급"
-    },
-    {
-      "bank": "CK",
-      "product": "보통예금",
-      "baseRate": 0.1,
-      "maxRate": 0.1,
       "maxRateCondition": "제한없음",
       "disclosedAt": "20261125",
       "payout": "분기지급"
