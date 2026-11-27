@@ -1,6 +1,6 @@
 {
-  "builtAt": "2026-11-26T23:05:05.578Z",
-  "finlifeFetchedAt": "2026-11-26T02:58:03.389Z",
+  "builtAt": "2026-11-27T03:02:07.327Z",
+  "finlifeFetchedAt": "2026-11-27T03:01:54.189Z",
   "finlifeDisclosureMonth": "202611",
   "parking": [
     {
@@ -3242,6 +3242,45 @@
       "disclosureMonth": "202611"
     },
     {
+      "bank": "CK저축은행",
+      "product": "정기예금(인터넷,모바일,비대면)",
+      "group": "저축은행",
+      "baseRate": 4.3,
+      "maxRate": 4.3,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 1000000000,
+      "disclosureMonth": "202611"
+    },
+    {
+      "bank": "참저축은행",
+      "product": "e- 회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.3,
+      "maxRate": 4.3,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202611"
+    },
+    {
+      "bank": "참저축은행",
+      "product": "비대면 회전정기예금",
+      "group": "저축은행",
+      "baseRate": 4.3,
+      "maxRate": 4.3,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 100000000,
+      "disclosureMonth": "202611"
+    },
+    {
       "bank": "OK저축은행",
       "product": "OK정기예금",
       "group": "저축은행",
@@ -3294,6 +3333,32 @@
       "disclosureMonth": "202611"
     },
     {
+      "bank": "참저축은행",
+      "product": "e-정기예금",
+      "group": "저축은행",
+      "baseRate": 4.28,
+      "maxRate": 4.28,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "인터넷,스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": null,
+      "disclosureMonth": "202611"
+    },
+    {
+      "bank": "참저축은행",
+      "product": "비대면정기예금",
+      "group": "저축은행",
+      "baseRate": 4.28,
+      "maxRate": 4.28,
+      "rateType": "단리",
+      "reserveType": null,
+      "joinWay": "스마트폰",
+      "specialCondition": "없음",
+      "maxLimit": 100000000,
+      "disclosureMonth": "202611"
+    },
+    {
       "bank": "애큐온저축은행",
       "product": "다시만난예금(모바일전용)",
       "group": "저축은행",
@@ -3333,45 +3398,6 @@
       "disclosureMonth": "202611"
     },
     {
-      "bank": "CK저축은행",
-      "product": "정기예금(인터넷,모바일,비대면)",
-      "group": "저축은행",
-      "baseRate": 4.25,
-      "maxRate": 4.25,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": 1000000000,
-      "disclosureMonth": "202611"
-    },
-    {
-      "bank": "참저축은행",
-      "product": "e- 회전정기예금",
-      "group": "저축은행",
-      "baseRate": 4.23,
-      "maxRate": 4.23,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202611"
-    },
-    {
-      "bank": "참저축은행",
-      "product": "비대면 회전정기예금",
-      "group": "저축은행",
-      "baseRate": 4.23,
-      "maxRate": 4.23,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": 100000000,
-      "disclosureMonth": "202611"
-    },
-    {
       "bank": "상상인저축은행",
       "product": "뱅뱅뱅 회전정기예금",
       "group": "저축은행",
@@ -3387,32 +3413,6 @@
     {
       "bank": "상상인저축은행",
       "product": "회전E-정기예금",
-      "group": "저축은행",
-      "baseRate": 4.21,
-      "maxRate": 4.21,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "인터넷,스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202611"
-    },
-    {
-      "bank": "상상인저축은행",
-      "product": "비대면 회전정기예금",
-      "group": "저축은행",
-      "baseRate": 4.21,
-      "maxRate": 4.21,
-      "rateType": "단리",
-      "reserveType": null,
-      "joinWay": "스마트폰",
-      "specialCondition": "없음",
-      "maxLimit": null,
-      "disclosureMonth": "202611"
-    },
-    {
-      "bank": "상상인저축은행",
-      "product": "e-정기예금",
       "group": "저축은행",
       "baseRate": 4.21,
       "maxRate": 4.21,
